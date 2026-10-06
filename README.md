@@ -951,6 +951,12 @@ The production dependency audit passed. The full audit reports five high-severit
 
 The owner originally approved transitive development-only Zod introduced through the lint tooling, then explicitly authorized direct Zod use for T04 case validation. The owner also accepted the documented development-tooling braces risk and retained compatible ESLint 9. No audit suppression, forced overrides, forks, or dependency downgrades were introduced.
 
+`src/game/domain/session-machine.ts` provides the deterministic T06 foundation: `createInitialSession(validatedCase, { attemptId, startedAt })`, `getNextPhase(phase)`, and `applySessionCommand(state, command, prerequisite)`. The existing `CaseSession` is the sole authoritative state. Initialization starts at `case_briefing` with fresh empty collections and null future outcomes. Case identity, authored case version, and supplied attempt identity remain separate. Malformed injected initialization values are programmer errors; the engine does not revalidate case JSON.
+
+The command shape is `{ type: "advance_phase", from, to, at }`. Only adjacent phases in the documented standard sequence are legal; `from` also rejects stale commands. Every request requires an explicit `{ ok: true }` or `{ ok: false }` prerequisite decision from future approved orchestration. That boundary is not a gameplay gate implementation or a player-controlled approval: future application logic must evaluate the approved condition. There is no permissive default, timer, deduction submission/evaluation, scoring, or evidence behavior. Results is terminal for this attempt; replay will initialize a separate attempt later.
+
+Accepted commands return `{ ok: true, state }` with a new session object. Rejected commands return `{ ok: false, code, state }` retaining the original state. Codes are `command_not_allowed_in_phase`, `invalid_session_state`, `invalid_command_timestamp`, and `prerequisite_not_satisfied`. The core never mutates the input; readonly fields protect consumers at compile time rather than freezing runtime objects. Supplied finite timestamps record observation start/end, investigation start, and completion; commands cannot precede already recorded milestones. This is not a full command history or observation-timer policy. Entering results records attempt completion independently of final-decision correctness; score and reasoning remain untouched. Future React/context hosts the state, while rendering, clocks, persistence, and other side effects stay outside the core. ESLint also rejects direct Date.now, Math.random, and crypto.randomUUID calls in the domain.
+
 ---
 
 # 25. Environment Variables
@@ -1246,11 +1252,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T05 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, and relationship integrity.
+M0/S0 architecture planning is approved. T01–T06 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, and session state machine foundation. M1/S2 are complete.
 
 The next task is:
 
-> **T06 — Implement Game State Machine — READY, awaiting explicit authorization**
+> **T07 — Implement Evidence Domain — READY, awaiting explicit authorization**
 
 ---
 

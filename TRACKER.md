@@ -70,18 +70,18 @@ CANCELLED
 | Field | Current Value |
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
-| Current Milestone | M1 — Foundation |
-| Current Sprint | S2 — Case validation & state machine (IN_PROGRESS) |
-| Implementation Status | T01–T05 complete; S1 complete; S2 2/3 |
-| Current Engineering Task | T06 — Implement game state machine (READY) |
-| Next Implementation Task | T06 after explicit authorization |
+| Current Milestone | M2 — Core Game Engine |
+| Current Sprint | S3 — Core Domain (READY) |
+| Implementation Status | T01–T06 complete; M1 6/6; S1 and S2 complete |
+| Current Engineering Task | T07 — Implement evidence domain (READY; awaiting authorization) |
+| Next Implementation Task | T07 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 5 / 34 |
+| Overall T01–T34 Completion | 6 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-06 |
 
-**Important:** T01–T05 are DONE. T06 is READY but has not started.
+**Important:** T01–T06 and M1/S2 are DONE. T07 is READY but has not started.
 
 ---
 
@@ -90,8 +90,8 @@ CANCELLED
 | ID | Milestone | Sprint(s) | Tasks | Status | Completion | Exit Gate |
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
-| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 5/6 | Build + domain + validation + state model healthy |
-| M2 | Core Game Engine | S3–S4 | T07–T13 | NOT_STARTED | 0/7 | Reusable engine foundations operational |
+| M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
+| M2 | Core Game Engine | S3–S4 | T07–T13 | READY | 0/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
@@ -105,8 +105,8 @@ CANCELLED
 |---|---|---|---|---|
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
-| S2 | M1 | T04–T06 | IN_PROGRESS | 2/3 complete; validation/integrity verified; T06 awaits authorization |
-| S3 | M2 | T07–T10 | NOT_STARTED | Evidence + deduction + scoring + persistence |
+| S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
+| S3 | M2 | T07–T10 | READY | Evidence + deduction + scoring + persistence |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
@@ -126,8 +126,8 @@ CANCELLED
 | T03 | Define domain types | M1 | S1 | DONE | HIGH | T01–T02 |
 | T04 | Implement case schema | M1 | S2 | DONE | HIGH | T03 |
 | T05 | Implement cross-reference validator | M1 | S2 | DONE | HIGH | T04 |
-| T06 | Implement game state machine | M1 | S2 | READY | HIGH | T03 |
-| T07 | Implement evidence domain | M2 | S3 | NOT_STARTED | HIGH | T03,T06 |
+| T06 | Implement game state machine | M1 | S2 | DONE | HIGH | T03 |
+| T07 | Implement evidence domain | M2 | S3 | READY | HIGH | T03,T06 |
 | T08 | Implement deduction domain | M2 | S3 | NOT_STARTED | HIGH | T03,T07 |
 | T09 | Implement scoring engine | M2 | S3 | NOT_STARTED | HIGH | T03,T07,T08 |
 | T10 | Implement progress repository | M2 | S3 | NOT_STARTED | HIGH | T03 |
@@ -311,6 +311,23 @@ Human review only.
 
 ---
 
+## T06 — Game Session State Machine Foundation — Completion Record
+
+- Status: DONE; M1/S2; completion recorded 2026-10-06. Canonical ROADMAP scope and dependency T03 confirmed. T07 not started.
+- Implementation: pure domain initialization, explicit adjacent transitions through all 13 existing phases, typed commands/results, immutable accepted updates and original-state rejected results. Reuses CaseSession without changing T03 contracts.
+- Prerequisites: every command requires an explicit approved outcome from future orchestration; no investigation, evidence, testimony, deduction, or decision gate invented.
+- Time/identity: supplied attempt ID and timestamps; observation/investigation/completion milestones recorded. Timestamp checks compare recorded milestones, not a full command history. No timer, random source, clock, storage, React, Next, Phaser, or Zod dependency in the core.
+- Completion: results is terminal and marks the attempt completed independently of solving correctly; score and final decision remain untouched. Replay remains future work.
+- Tests: nine new tests cover initialization, all 12 legal edges, illegal transitions, denied prerequisites, terminal behavior, determinism, immutability, timestamps and inconsistent completion bookkeeping. All 86 tests across four files passed.
+- Boundaries: existing isolated domain compilation and import restrictions retained; lint rejects Date.now, Math.random and crypto.randomUUID. Nine negative boundary probes passed.
+- Verification: npm ci, format:check, lint, typecheck, typecheck:domain, test:run, aggregate check, production build and git diff --check passed. Production browser smoke passed at 390/768/1280px with active Tailwind, no horizontal overflow, and no console warnings/errors. CI configuration parsed and retained.
+- Audit: production zero vulnerabilities; full audit retains five accepted high development-tool findings in the existing Next ESLint → fast-glob → micromatch → braces chain. ESLint 9 support warning retained. No dependencies or lockfile changes; no forced audit fix.
+- Files: added session-machine.ts and session-machine.test.ts; updated ESLint, README and TRACKER. No application UI changes, ROADMAP changes, or commit.
+- Limitations: readonly types and nonmutating functions do not deep-freeze consumer state. Gameplay prerequisite policies and completion correctness remain for their approved later tasks.
+- Progress: M1 DONE 6/6; S2 DONE 3/3; overall 6/34. M2/S3 READY. T07 READY because T03 and T06 are DONE; requires explicit authorization.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -366,10 +383,10 @@ Notes:
 | Format | PASS | 2026-10-06 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-06 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-06 | 66 T04 validation + 10 T05 integrity + one T02 smoke test |
+| Unit tests | PASS | 2026-10-06 | 86 tests: 66 T04, 10 T05, nine T06, and one T02 smoke test |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-06 | T05 build passed; T01 shell retained |
+| Production build | PASS | 2026-10-06 | T06 build passed; T01 shell retained |
 | Case validation | PASS | 2026-10-06 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
@@ -520,13 +537,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 IN_PROGRESS (5/6); S1 DONE; T01–T05 DONE; S2 IN_PROGRESS (2/3)
+M1 DONE (6/6); S1 DONE; T01–T06 DONE; S2 DONE (3/3); M2/S3 READY
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T06 — Implement Game State Machine (READY)
+T07 — Implement Evidence Domain (READY)
 ```
 
-T05 case integrity is verified. Do not start T06 automatically.
+T06 session foundation is verified. Do not start T07 automatically.
 
 ---
 
@@ -534,10 +551,10 @@ T05 case integrity is verified. Do not start T06 automatically.
 
 **Tracker Version:** 1.0  
 **Stage:** Stage 1 — Vertical Slice  
-**Milestone:** M1 — Foundation
+**Milestone:** M2 — Core Game Engine
 
-**Sprint:** S2 — Case validation & state machine (IN_PROGRESS, 2/3)
+**Sprint:** S3 — Core Domain (READY)
 
-**T01–T34 Complete:** 5 / 34
+**T01–T34 Complete:** 6 / 34
 
-**Next Implementation Task:** T06 after explicit authorization
+**Next Implementation Task:** T07 after explicit authorization

@@ -35,6 +35,24 @@ export default defineConfig([
   {
     files: ["src/game/domain/**/*.ts"],
     rules: {
+      "no-restricted-properties": [
+        "error",
+        {
+          object: "Date",
+          property: "now",
+          message: "Inject timestamps into the deterministic domain.",
+        },
+        {
+          object: "Math",
+          property: "random",
+          message: "Inject randomness outside the deterministic domain.",
+        },
+        {
+          object: "crypto",
+          property: "randomUUID",
+          message: "Inject attempt identifiers into the deterministic domain.",
+        },
+      ],
       // The initial domain is flat: imports may only name sibling domain modules.
       "no-restricted-imports": [
         "error",
