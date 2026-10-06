@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "types": [],
+    "plugins": [],
+    "incremental": false
+  },
+  "include": ["src/game/domain/**/*.ts"],
+  "exclude": ["node_modules"]
+}

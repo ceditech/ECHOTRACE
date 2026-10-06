@@ -32,5 +32,29 @@ export default defineConfig([
       ],
     },
   },
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+  {
+    files: ["src/game/domain/**/*.ts"],
+    rules: {
+      // The initial domain is flat: imports may only name sibling domain modules.
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              regex: "^(?!\\./[A-Za-z0-9_-]+$)",
+              message:
+                "Domain imports must stay within sibling domain modules; no frameworks, platforms, or outer layers.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  globalIgnores([
+    ".next/**",
+    ".kilo/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
 ]);

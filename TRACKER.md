@@ -71,17 +71,17 @@ CANCELLED
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M1 — Foundation |
-| Current Sprint | S1 — Foundation |
-| Implementation Status | T01 scaffold and T02 quality baseline complete |
-| Current Engineering Task | T03 — Define domain types (READY) |
-| Next Implementation Task | T03 after explicit authorization |
+| Current Sprint | S2 — Case validation & state machine (READY) |
+| Implementation Status | T01–T03 complete; S1 complete |
+| Current Engineering Task | T04 — Implement case schema (READY) |
+| Next Implementation Task | T04 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 2 / 34 |
+| Overall T01–T34 Completion | 3 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-06 |
 
-**Important:** T01/T02 are DONE. T03 is READY but has not started.
+**Important:** T01–T03 are DONE. T04 is READY but has not started.
 
 ---
 
@@ -90,7 +90,7 @@ CANCELLED
 | ID | Milestone | Sprint(s) | Tasks | Status | Completion | Exit Gate |
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
-| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 2/6 | Build + domain + validation + state model healthy |
+| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 3/6 | Build + domain + validation + state model healthy |
 | M2 | Core Game Engine | S3–S4 | T07–T13 | NOT_STARTED | 0/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
@@ -104,8 +104,8 @@ CANCELLED
 | Sprint | Milestone | Tasks | Status | Primary Outcome |
 |---|---|---|---|---|
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
-| S1 | M1 | T01–T03 | IN_PROGRESS | 2/3 complete; scaffold and quality baseline verified, domain types pending |
-| S2 | M1 | T04–T06 | NOT_STARTED | Case validation + state machine |
+| S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
+| S2 | M1 | T04–T06 | READY | Case validation + state machine; T04 awaits authorization |
 | S3 | M2 | T07–T10 | NOT_STARTED | Evidence + deduction + scoring + persistence |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
@@ -123,8 +123,8 @@ CANCELLED
 |---|---|---|---|---|---|---|
 | T01 | Scaffold application | M1 | S1 | DONE | HIGH | M0 |
 | T02 | Configure quality tooling | M1 | S1 | DONE | HIGH | T01 |
-| T03 | Define domain types | M1 | S1 | READY | HIGH | T01–T02 |
-| T04 | Implement case schema | M1 | S2 | NOT_STARTED | HIGH | T03 |
+| T03 | Define domain types | M1 | S1 | DONE | HIGH | T01–T02 |
+| T04 | Implement case schema | M1 | S2 | READY | HIGH | T03 |
 | T05 | Implement cross-reference validator | M1 | S2 | NOT_STARTED | HIGH | T04 |
 | T06 | Implement game state machine | M1 | S2 | NOT_STARTED | HIGH | T03 |
 | T07 | Implement evidence domain | M2 | S3 | NOT_STARTED | HIGH | T03,T06 |
@@ -260,6 +260,22 @@ Human review only.
 
 ---
 
+## T03 — Establish Core Domain Types — Completion Record
+
+- Status: DONE; M1/S1; completion recorded 2026-10-06. S1 complete; T04 not started.
+- Created six populated plain-TypeScript modules in src/game/domain: identity, scene, reasoning, scoring, case, session. No empty architecture directories, engine behavior, runtime validation, case data, or Case 001 truth.
+- Contracts cover semantic string ID aliases; localization/asset references; separate schemaVersion/caseVersion; scene objects, visuals and independent rectangle/circle regions; finite documented changes; evidence, characters, witnesses, statement truth, contradictions, choice-based deductions, final decision, canonical solution/reconstruction, three hint levels, configurable scoring/result shapes, phases, session attempts, and progress facts.
+- Modeling: readonly JSON-compatible data with type-only sibling imports. Person changes use logical objects linked to characters; missing objects can retain interaction regions without visuals. No branded factories, callbacks, framework types, or policy constants. IDs/numeric ranges/references still require T04/T05 validation.
+- Boundaries: targeted ESLint permits sibling domain imports only. Isolated tsconfig.domain.json uses ES2022 libraries and no ambient Node/DOM types; typecheck runs both project and domain checks. Six manual lint probes rejected react, next, phaser, zod, node:fs, and an application-layer import.
+- Tests: lightweight compile-time positive/negative contracts cover independent regions, distinct versions, readonly data, phase/hint vocabularies, change kinds, and deduction answer shapes. No artificial runtime domain tests. Existing Vitest smoke test remains unchanged and passed.
+- Verification: npm ci, format:check, lint, typecheck (including isolated domain), test:run, aggregate check, production build, both dependency audits, and git diff --check executed. Quality/build checks passed; one existing runtime test passed. Production audit reports zero; full audit retains the same five accepted development-only braces-chain findings. No new dependencies; lockfile SHA256 unchanged.
+- Regression: app startup/rendering passed; Tailwind active at 390/768/1280 widths without horizontal overflow; no captured browser warnings/errors. CI YAML still parses; hosted execution not claimed. Temporary server stopped.
+- Workspace preservation: nested .kilo worktree was reached by the existing formatter; only line endings changed, and they were restored with its Git status clean. Formatting and lint now exclude .kilo to prevent recurrence. Product specs, AGENTS.md, ROADMAP.md, and unrelated user work preserved. No commit created.
+- Deferred product decisions: Case 001 truth, scoring formulas/threshold values, deduction/final-decision retries, investigation progression, hint penalties, timing/background policy. Types do not choose these policies.
+- Next: T04 READY after explicit authorization. M1 3/6; S1 3/3 DONE; overall 3/34.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -314,7 +330,7 @@ Notes:
 |---|---|---|---|
 | Format | PASS | 2026-10-06 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
-| Type-check | PASS | 2026-10-06 | Strict T01 configuration retained |
+| Type-check | PASS | 2026-10-06 | Strict project + isolated domain + compile-time contracts |
 | Unit tests | PASS | 2026-10-06 | Vitest: one smoke test |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
@@ -468,13 +484,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 / S1 — Foundation; T01/T02 DONE
+M1 IN_PROGRESS; S1 DONE; T01–T03 DONE; S2 READY
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T03 — Define Domain Types (READY)
+T04 — Implement Case Schema (READY)
 ```
 
-T02 quality baseline is verified. Do not start T03 automatically.
+T03 domain contracts are verified. Do not start T04 automatically.
 
 ---
 
@@ -484,8 +500,8 @@ T02 quality baseline is verified. Do not start T03 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M1 — Foundation
 
-**Sprint:** S1 — Foundation
+**Sprint:** S2 — Case validation & state machine (READY)
 
-**T01–T34 Complete:** 2 / 34
+**T01–T34 Complete:** 3 / 34
 
-**Next Implementation Task:** T03 after explicit authorization
+**Next Implementation Task:** T04 after explicit authorization

@@ -933,7 +933,11 @@ Strict TypeScript includes `noUncheckedIndexedAccess`, `exactOptionalPropertyTyp
 
 `npm run format` writes Prettier formatting; `format:check` verifies it. Product Markdown documents, generated files, and the npm-managed lockfile are excluded to avoid unrelated churn. `test` and `test:run` run Vitest once and exit; `test:watch` is the explicit interactive command. Tests live in `tests/unit/` or `tests/integration/`, use the Node environment and the `@/` alias, and currently smoke-test the existing page without gameplay logic. `check` stops at the first failure across format, lint, typecheck, and tests; run the production build separately. Use `npm ci` for reproducible installs and `npm install` only when intentionally changing dependencies.
 
-DOM/React Testing Library support is deferred until UI behavior warrants component tests. Playwright/browser lifecycle tooling is deferred to later integration tasks, with broader E2E at T31. No empty future architecture directories were added. ESLint currently rejects test-only imports in `src/`; preserve Presentation → Application → Domain imports and keep domain logic framework-independent. Stronger layer-specific enforcement will be added as T03+ introduces actual modules. Phaser rendering must never become authoritative game state.
+DOM/React Testing Library support is deferred until UI behavior warrants component tests. Playwright/browser lifecycle tooling is deferred to later integration tasks, with broader E2E at T31. ESLint rejects test-only imports in `src/`. Domain imports currently permit only sibling domain modules; the separate `tsconfig.domain.json` check excludes DOM and Node ambient types. Expand that import allow-list deliberately if the domain later needs subdirectories. Preserve Presentation → Application → Domain imports; Phaser rendering must never become authoritative game state.
+
+`src/game/domain/` contains plain readonly TypeScript contracts: `identity.ts`, `scene.ts`, `reasoning.ts`, `scoring.ts`, `case.ts`, and `session.ts`. ID aliases communicate meaning but are not runtime validation or nominal brands. Text/asset references separate authored content from presentation. Logical objects, scene visuals, and interaction regions are independent, allowing a disappeared object to retain a selectable region. Person changes use objects linked to character IDs. Schema compatibility (`schemaVersion`) and authored revision (`caseVersion`) remain distinct.
+
+`npm run typecheck` checks both the application and the isolated domain, including positive/negative compile-time contracts in `tests/types/domain-contracts.ts`. These contracts define no engine behavior or published case format: T04 owns runtime validation and T05 owns cross-reference checks. Scoring formulas, retry/progression/timing policy, hint penalties, and Case 001 truth remain later decisions. Ordered reconstruction references describe authored events rather than an executable timeline engine.
 
 The production dependency audit passed. The full audit reports five high-severity findings in the development-only lint dependency chain rooted in `braces` (GHSA-vfj7-8cjw-p6xm), with no published patch at verification. ESLint 9.39.5 also reports an unsupported-version warning; ESLint 10 is outside the current React/accessibility lint plugins' declared peer ranges. Do not use `npm audit fix --force` to downgrade the approved Next.js baseline.
 
@@ -1234,11 +1238,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01 — Scaffold Application and T02 — Configure Quality Tooling are complete.
+M0/S0 architecture planning is approved. T01–T03 are complete, including the scaffold, quality tooling, and framework-independent domain contracts.
 
 The next task is:
 
-> **T03 — Define Domain Types — READY, awaiting explicit authorization**
+> **T04 — Implement Case Schema — READY, awaiting explicit authorization**
 
 ---
 
