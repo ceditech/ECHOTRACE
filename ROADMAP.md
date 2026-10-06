@@ -3,8 +3,8 @@
 **File:** `ROADMAP.md`  
 **Product:** EchoTrace  
 **Document Type:** Product & Engineering Execution Roadmap  
-**Version:** 1.0  
-**Status:** Initial Execution Baseline  
+**Version:** 1.1  
+**Status:** Execution & Tracking Baseline  
 **Date:** October 2026  
 **Depends On:** `PRD.md`, `GAME_SPEC.md`, `CASE_AUTHORING_GUIDE.md`, `ARCHITECTURE.md`, `AGENTS.md`, `TESTING_STRATEGY.md`  
 **Previous Document:** `TESTING_STRATEGY.md`  
@@ -1500,7 +1500,379 @@ Tasks may be split further if implementation complexity warrants it.
 
 ---
 
-# 59. No Calendar Fiction
+
+# 59. Sprint, Milestone & Task Tracking Model
+
+`ROADMAP.md` is the strategic execution source of truth for **what should be built, in what order, and behind which gates**.
+
+For day-to-day execution, every implementation task should map to a stable task ID and a milestone/sprint.
+
+The tracking hierarchy is:
+
+```text
+Stage
+  ↓
+Milestone
+  ↓
+Sprint
+  ↓
+Task
+  ↓
+Acceptance Criteria
+  ↓
+Verification
+  ↓
+Status
+```
+
+The roadmap remains human-readable and strategic. Operational status is mirrored in `TRACKER.md`.
+
+Do **not** make a future tracker UI parse this Markdown file directly as its runtime datastore.
+
+---
+
+# 60. Tracker Source-of-Truth Policy
+
+The relationship between the two files is:
+
+```text
+ROADMAP.md
+Strategic plan / sequencing / gates
+          ↓ mirrored by stable IDs
+TRACKER.md
+Operational execution ledger
+          ↓ future structured representation
+tracker.json / database / API
+          ↓
+Project Tracker UI
+```
+
+Rules:
+
+1. `ROADMAP.md` defines the approved sequence and scope.
+2. `TRACKER.md` mirrors actionable tasks and current execution status.
+3. Task IDs such as `T01`–`T34` must remain stable once work begins.
+4. If roadmap scope changes, update `ROADMAP.md` first, then synchronize `TRACKER.md`.
+5. Status changes alone normally update `TRACKER.md`; they do not require rewriting the strategic roadmap.
+6. A future UI should consume structured tracker data derived from the tracker model, not scrape Markdown.
+7. The Markdown tracker remains useful for humans, Codex, code review, Git history, and recovery if the UI is unavailable.
+
+---
+
+# 61. Status Vocabulary
+
+Use only the following primary task statuses unless this document is intentionally revised:
+
+```text
+NOT_STARTED
+READY
+IN_PROGRESS
+BLOCKED
+IN_REVIEW
+VERIFICATION
+DONE
+DEFERRED
+CANCELLED
+```
+
+Meaning:
+
+- `NOT_STARTED` — task exists but prerequisites are not yet satisfied.
+- `READY` — prerequisites are satisfied and work may begin.
+- `IN_PROGRESS` — implementation is actively underway.
+- `BLOCKED` — progress cannot continue until a dependency or decision is resolved.
+- `IN_REVIEW` — implementation is complete and awaiting human/technical review.
+- `VERIFICATION` — review passed sufficiently to run final required checks.
+- `DONE` — acceptance criteria and required verification are complete.
+- `DEFERRED` — intentionally postponed.
+- `CANCELLED` — intentionally removed from execution.
+
+A task must not be marked `DONE` merely because code was generated.
+
+---
+
+# 62. Task Tracking Fields
+
+Each tracked task should support:
+
+```text
+Task ID
+Title
+Stage
+Milestone
+Sprint
+Status
+Priority
+Dependencies
+Owner / Agent
+Relevant Specs
+Acceptance Criteria
+Verification Requirements
+Start Date
+Completion Date
+Commit / PR
+Blockers
+Notes
+```
+
+Future structured tracker data may add timestamps, estimates, actual effort, labels, and audit history.
+
+---
+
+# 63. Stage 1 Milestones
+
+The Vertical Slice execution is grouped into the following milestones.
+
+## M0 — Planning & Approval
+
+Goal: turn the documentation package into an approved technical implementation plan.
+
+Includes the Codex architecture-planning task before T01.
+
+Exit gate: project owner approves architecture decisions required to scaffold.
+
+## M1 — Foundation
+
+Tasks:
+
+```text
+T01 Scaffold application
+T02 Configure quality tooling
+T03 Define domain types
+T04 Implement case schema
+T05 Implement cross-reference validator
+T06 Implement game state machine
+```
+
+Exit gate: clean build, validated domain foundation, deterministic phase model.
+
+## M2 — Core Game Engine
+
+Tasks:
+
+```text
+T07 Implement evidence domain
+T08 Implement deduction domain
+T09 Implement scoring engine
+T10 Implement progress repository
+T11 Integrate Phaser shell
+T12 Implement typed React–Phaser bridge
+T13 Implement case loader
+```
+
+Exit gate: reusable engine foundations operate without Case 001-specific hacks.
+
+## M3 — Case 001 Content & Core Loop
+
+Tasks:
+
+```text
+T14 Finalize Case 001 authoring
+T15 Add Case 001 structured data
+T16 Build briefing
+T17 Build observation scene
+T18 Build observation timer
+T19 Build transition
+T20 Build investigation
+```
+
+Exit gate: player can progress from briefing through observation into functional investigation.
+
+## M4 — Detective Reasoning Loop
+
+Tasks:
+
+```text
+T21 Build evidence panel
+T22 Build witness phase
+T23 Build deduction
+T24 Build final decision
+T25 Build resolution
+T26 Build results/scoring UI
+```
+
+Exit gate: complete mystery reasoning loop works end-to-end.
+
+## M5 — Product Shell & Replay
+
+Tasks:
+
+```text
+T27 Implement replay
+T28 Build minimal app shell/case selection
+T29 Accessibility/responsive pass
+T30 Audio/polish
+```
+
+Exit gate: vertical slice behaves like a coherent player-facing product.
+
+## M6 — Quality & Validation
+
+Tasks:
+
+```text
+T31 E2E critical paths
+T32 Production-readiness audit
+T33 Human playtest
+T34 Revision sprint
+```
+
+Exit gate: Vertical Slice Exit Gate in this roadmap is satisfied.
+
+---
+
+# 64. Recommended Sprint Structure
+
+Sprints are execution containers, not promises of fixed calendar duration.
+
+Initial proposed sprint grouping:
+
+| Sprint | Milestone | Tasks | Primary Outcome |
+|---|---|---|---|
+| S0 | M0 | Architecture planning | Approved implementation plan |
+| S1 | M1 | T01–T03 | Healthy scaffold + domain vocabulary |
+| S2 | M1 | T04–T06 | Validation + state-machine foundation |
+| S3 | M2 | T07–T10 | Core deterministic game rules + persistence |
+| S4 | M2 | T11–T13 | Phaser integration + case loading |
+| S5 | M3 | T14–T18 | Approved Case 001 + observation experience |
+| S6 | M3/M4 | T19–T23 | Investigation, evidence, witness, deduction |
+| S7 | M4 | T24–T26 | Final decision, resolution, results |
+| S8 | M5 | T27–T30 | Replay, shell, accessibility, polish |
+| S9 | M6 | T31–T32 | Automated QA + production-readiness |
+| S10 | M6 | T33–T34 | Human validation + revision |
+
+Sprint composition may change after real velocity is observed. Stable task IDs should not change merely because tasks move between sprints.
+
+---
+
+# 65. Progress Calculation
+
+A future tracker may display progress at task, sprint, milestone, and stage level.
+
+For the initial tracker, use simple completion counts:
+
+```text
+Task Progress = DONE tasks / total active tasks
+Milestone Progress = DONE milestone tasks / total active milestone tasks
+Stage Progress = DONE stage tasks / total active stage tasks
+```
+
+Do not pretend partial percentages are precise unless a consistent estimation model is adopted.
+
+Status such as `IN_PROGRESS` should be displayed separately rather than arbitrarily counted as “50% done.”
+
+---
+
+# 66. Dependency Rules
+
+A task may become `READY` only when:
+
+- required predecessor tasks are complete;
+- required product decisions are approved;
+- required specifications exist;
+- no known blocking ambiguity remains.
+
+Codex should not bypass a blocked dependency by inventing requirements.
+
+---
+
+# 67. Milestone Exit Rules
+
+A milestone is complete only when:
+
+1. all required tasks are `DONE`;
+2. milestone-level verification passes;
+3. no unresolved Critical/High defect blocks the next milestone;
+4. required documentation is synchronized;
+5. the project owner approves any explicit human gate.
+
+---
+
+# 68. Tracker UI Direction
+
+A future internal tracker UI may visualize:
+
+- overall Stage 1 completion;
+- current sprint;
+- current milestone;
+- task status board;
+- dependencies;
+- blockers;
+- acceptance criteria;
+- verification status;
+- test/build health;
+- recent commits/PRs;
+- milestone gates;
+- playtest status.
+
+Recommended views:
+
+```text
+Dashboard
+Roadmap Timeline
+Sprint Board
+Milestone View
+Task Detail
+Quality / Verification
+Blockers
+Release Readiness
+```
+
+The tracker is a **development/admin tool**, not part of the player-facing EchoTrace game.
+
+---
+
+# 69. Future Structured Tracker Model
+
+When a UI is actually implemented, introduce a machine-readable source such as:
+
+```text
+tracker.json
+```
+
+or a database-backed equivalent.
+
+Conceptual record:
+
+```json
+{
+  "id": "T01",
+  "title": "Scaffold application",
+  "stage": "STAGE_1",
+  "milestone": "M1",
+  "sprint": "S1",
+  "status": "NOT_STARTED",
+  "priority": "HIGH",
+  "dependencies": ["M0"],
+  "acceptanceCriteria": [],
+  "verification": [],
+  "blockers": [],
+  "commit": null
+}
+```
+
+This is illustrative only. Do not implement the structured tracker or UI before an explicit task approves it.
+
+`TRACKER.md` is the immediate operational mirror and should be kept synchronized manually or by a future safe synchronization tool.
+
+---
+
+# 70. Tracker Governance
+
+When completing a task:
+
+1. implement according to `AGENTS.md`;
+2. verify according to `TESTING_STRATEGY.md`;
+3. obtain required review;
+4. update `TRACKER.md`;
+5. record verification result;
+6. record commit/PR when available;
+7. move the next dependency-satisfied task to `READY`.
+
+A task's status history should remain understandable through Git history even before a dedicated audit log exists.
+
+
+# 71. No Calendar Fiction
 
 Do not promise that a phase will take a specific number of days without actual team velocity data.
 
@@ -1518,7 +1890,7 @@ After several tasks, velocity can be measured and projections refined.
 
 ---
 
-# 60. Risk Register
+# 72. Risk Register
 
 ## Risk 1 — Ordinary Spot-the-Difference Feel
 
@@ -1592,7 +1964,7 @@ Mitigation:
 
 ---
 
-# 61. Decision Log Candidates
+# 73. Decision Log Candidates
 
 During development, record material decisions such as:
 
@@ -1609,7 +1981,7 @@ Do not decide these prematurely when requirements do not yet demand them.
 
 ---
 
-# 62. Roadmap Success Definition
+# 74. Roadmap Success Definition
 
 The roadmap succeeds if EchoTrace reaches market validation with:
 
@@ -1625,7 +1997,7 @@ The roadmap does not succeed merely because many features were shipped.
 
 ---
 
-# 63. North-Star Development Question
+# 75. North-Star Development Question
 
 At every stage ask:
 
@@ -1635,11 +2007,11 @@ If not, determine whether it is truly necessary now.
 
 ---
 
-# 64. Document Status
+# 76. Document Status
 
 **Document:** `ROADMAP.md`  
-**Version:** 1.0  
-**Status:** Initial Execution Baseline  
+**Version:** 1.1  
+**Status:** Execution & Tracking Baseline  
 **Product:** EchoTrace  
 **Previous Document:** `TESTING_STRATEGY.md`  
 **Next Document:** `MONETIZATION.md`
@@ -1649,13 +2021,14 @@ If not, determine whether it is truly necessary now.
 ```text
 ECHOTRACE/
 │
-├── README.md                  ○ Pending
+├── README.md                  ● COMPLETE
 ├── PRD.md                     ● COMPLETE
 ├── GAME_SPEC.md               ● COMPLETE
 ├── CASE_AUTHORING_GUIDE.md    ● COMPLETE
 ├── ARCHITECTURE.md            ● COMPLETE
 ├── AGENTS.md                  ● COMPLETE
 ├── TESTING_STRATEGY.md        ● COMPLETE
-├── ROADMAP.md                 ● DOCUMENT 7 — COMPLETE
-└── MONETIZATION.md            ◉ DOCUMENT 8 — NEXT
+├── ROADMAP.md                 ● COMPLETE
+├── MONETIZATION.md            ● COMPLETE
+└── TRACKER.md                 ● EXECUTION MIRROR
 ```
