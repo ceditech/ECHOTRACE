@@ -71,17 +71,17 @@ CANCELLED
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M2 — Core Game Engine |
-| Current Sprint | S3 — Core Domain (READY) |
-| Implementation Status | T01–T06 complete; M1 6/6; S1 and S2 complete |
-| Current Engineering Task | T07 — Implement evidence domain (READY; awaiting authorization) |
-| Next Implementation Task | T07 after explicit authorization |
+| Current Sprint | S3 — Core Domain (IN_PROGRESS, 2/4) |
+| Implementation Status | T01–T08 complete; M1 6/6; M2 2/7; S3 2/4 |
+| Current Engineering Task | T09 — Implement scoring engine (READY; awaiting authorization) |
+| Next Implementation Task | T09 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 6 / 34 |
+| Overall T01–T34 Completion | 8 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-06 |
 
-**Important:** T01–T06 and M1/S2 are DONE. T07 is READY but has not started.
+**Important:** T01–T08 are DONE. M1/S2 remain DONE; T09 is READY but has not started.
 
 ---
 
@@ -91,7 +91,7 @@ CANCELLED
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
-| M2 | Core Game Engine | S3–S4 | T07–T13 | READY | 0/7 | Reusable engine foundations operational |
+| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 2/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
@@ -106,7 +106,7 @@ CANCELLED
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
-| S3 | M2 | T07–T10 | READY | Evidence + deduction + scoring + persistence |
+| S3 | M2 | T07–T10 | IN_PROGRESS | 2/4 complete; evidence and deduction evaluation verified |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
@@ -127,9 +127,9 @@ CANCELLED
 | T04 | Implement case schema | M1 | S2 | DONE | HIGH | T03 |
 | T05 | Implement cross-reference validator | M1 | S2 | DONE | HIGH | T04 |
 | T06 | Implement game state machine | M1 | S2 | DONE | HIGH | T03 |
-| T07 | Implement evidence domain | M2 | S3 | READY | HIGH | T03,T06 |
-| T08 | Implement deduction domain | M2 | S3 | NOT_STARTED | HIGH | T03,T07 |
-| T09 | Implement scoring engine | M2 | S3 | NOT_STARTED | HIGH | T03,T07,T08 |
+| T07 | Implement evidence domain | M2 | S3 | DONE | HIGH | T03,T06 |
+| T08 | Implement deduction domain | M2 | S3 | DONE | HIGH | T03,T07 |
+| T09 | Implement scoring engine | M2 | S3 | READY | HIGH | T03,T07,T08 |
 | T10 | Implement progress repository | M2 | S3 | NOT_STARTED | HIGH | T03 |
 | T11 | Integrate Phaser shell | M2 | S4 | NOT_STARTED | HIGH | T01–T02 |
 | T12 | Implement typed React–Phaser bridge | M2 | S4 | NOT_STARTED | HIGH | T06,T11 |
@@ -328,6 +328,36 @@ Human review only.
 
 ---
 
+## T07 — Selection & Evidence Evaluation — Completion Record
+
+- Status: DONE; M2/S3; 2026-10-06. Canonical evidence-domain task and T03/T06 dependencies confirmed; the owner approved the checkpoint's availability clarification. T08 not started.
+- Added pure selection.ts and evidence.ts using existing CaseDefinition/CaseSession contracts. ObjectId selections require authored investigation regions and unique changes within the case scene pair. Exchanges match either participant; relationships match their subject. Ambiguity rejects without mutation regardless of array order or prior discoveries.
+- Discovery records a SelectionRecord and unique ChangeId; reports available evidence without collecting it. Incorrect interactive selections record existing selection/incorrect history but never unlock evidence or change score. Duplicate discoveries preserve the original state.
+- Availability uses the exact authored change source, not supportingInformation, visibility, UI or phase alone. Other source types return unsupported_source_semantics. One change can support multiple evidence IDs. Explicit collection appends only the requested ID; repeats are idempotent. Observation/terminal restrictions remain. No scoring, progression, deductions, timer, loader, UI or Case 001 work.
+- Tests: 15 new focused tests; all 101 tests across five files passed. Coverage includes all nine change kinds, source identity, ambiguity/order, unsupported sources, multiple evidence items, phase/timestamp/identity checks, immutability, determinism and populated-session preservation through T06 transitions.
+- Verification: npm ci, format:check, lint, typecheck, isolated typecheck:domain, test:run, aggregate check, production build and git diff --check passed. CI YAML parsed (nine steps). Production app/Tailwind baseline passed at 390/768/1280px without horizontal overflow or console warnings/errors.
+- Security: production audit zero vulnerabilities; full audit retains the five accepted high development-only braces-chain findings. ESLint 9 warning retained. No dependencies or lockfile changes, forced fixes, generated artifacts or commit.
+- Documentation: concise approved contract in GAME_SPEC and API/limits in README; decision D005 below. No strategic sequencing change or ROADMAP edit.
+- Preserved decisions: non-change source triggers, investigation advancement, retry policy, scoring/hints, persistence/attempt counts, timing/background policy, Case 001 truth and replay remain later work. No new collection timestamp/event field introduced.
+- Progress: M2 1/7 and S3 1/4 IN_PROGRESS; overall 7/34. T08 READY because T03/T07 are DONE, awaiting explicit authorization.
+
+---
+
+## T08 — Deduction Evaluation — Completion Record
+
+- Status: DONE; M2/S3; 2026-10-06. Canonical deduction-domain task and T03/T07 dependencies confirmed. T09 not started.
+- Added pure evaluateDeduction in deduction.ts using existing trusted CaseDefinition, CaseSession and DeductionAnswer contracts. Single-choice and multiple-choice submissions use the authored canonical solution only; multiple-choice answers compare exact sets independent of order.
+- Approved policy: one valid submission per deduction/attempt. Correct and incorrect answers are recorded and locked. Repeated submissions preserve the first answer/state. Incorrect submissions do not end the case, reveal the answer, change score, collect evidence or advance phase.
+- Typed failures: unknown deduction/choice, foreign choice, invalid kind/empty/duplicate selection, closed attempt and case identity/version mismatch. Invalid/repeated submissions preserve the original state. No evidence prerequisite inferred from supportingInformation; phase-entry/exit policy remains future orchestration. No timestamp added because the existing answer model records none.
+- Tests: 11 focused new tests; all 112 tests across six files passed. Covers canonical correctness, scoped membership, locks after correct/incorrect answers, exact multiple-choice sets, input-array copying, immutability, deterministic results, closed attempts and preservation of unrelated state.
+- Verification: npm ci, format:check, lint, typecheck including isolated typecheck:domain, test:run, aggregate check, production build and git diff --check passed. CI parsed (nine steps). App renders and Tailwind/responsive baseline passes at 390/768/1280px with no overflow or console warnings/errors.
+- Audit: production zero vulnerabilities; full audit retains five accepted high development-only braces-chain findings. ESLint 9 warning retained. No new dependencies, lockfile changes, forced fixes, generated artifacts, secrets or commit.
+- Files: new deduction.ts and deduction.test.ts; concise GAME_SPEC/README policy and this tracker updated. Existing uncommitted T07 work preserved; T06/T07 source, validation and old tests unchanged.
+- Decisions: D006 records the owner-approved single-submission policy. Scoring, final-decision evaluation, progression, partial contradiction semantics, persistence and replay remain deferred. No ROADMAP sequencing change.
+- Progress: M2 2/7, S3 2/4 IN_PROGRESS, overall 8/34. T09 READY because T03/T07/T08 are DONE; requires explicit authorization.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -383,10 +413,10 @@ Notes:
 | Format | PASS | 2026-10-06 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-06 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-06 | 86 tests: 66 T04, 10 T05, nine T06, and one T02 smoke test |
+| Unit tests | PASS | 2026-10-06 | 112 tests: 101 prior tests plus 11 T08 tests |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-06 | T06 build passed; T01 shell retained |
+| Production build | PASS | 2026-10-06 | T08 build passed; T01 shell retained |
 | Case validation | PASS | 2026-10-06 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
@@ -417,6 +447,8 @@ Track execution decisions that affect tasks but do not yet justify a separate AD
 | D002 | Allow transitive development-only Zod | T01 | APPROVED | 2026-10-05 | No direct application dependency, imports, runtime validation, or T04 work |
 | D003 | Retain lint baseline with known development-only braces advisory and ESLint 9 warning | T01 | APPROVED | 2026-10-05 | Production audit clean; no audit suppression, forced overrides, forks, downgrades, or weakened linting |
 | D004 | Direct Zod 4 and entity cross-reference validation authorized in T04 | T04 | APPROVED | 2026-10-06 | Zod outside domain; preserve T03 model; T05 remains unstarted |
+| D005 | Approve source-triggered evidence, separate discovery/collection, idempotency and ambiguity rejection | T07 | APPROVED | 2026-10-06 | Exact discovered ChangeId unlocks change evidence; supportingInformation is not an unlock rule; other triggers remain unsupported |
+| D006 | Approve one valid deduction submission per attempt, including incorrect answers | T08 | APPROVED | 2026-10-06 | Canonical solution determines correctness; first answer locks; no retry, scoring or progression; replay later |
 
 Major architectural decisions should still be reflected in `ARCHITECTURE.md` and, where useful later, ADRs.
 
@@ -537,13 +569,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1 DONE; T01–T06 DONE; S2 DONE (3/3); M2/S3 READY
+M1 DONE (6/6); S1/S2 DONE; T01–T08 DONE; M2 IN_PROGRESS (2/7); S3 IN_PROGRESS (2/4)
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T07 — Implement Evidence Domain (READY)
+T09 — Implement Scoring Engine (READY)
 ```
 
-T06 session foundation is verified. Do not start T07 automatically.
+T08 deduction evaluation is verified. Do not start T09 automatically.
 
 ---
 
@@ -553,8 +585,8 @@ T06 session foundation is verified. Do not start T07 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M2 — Core Game Engine
 
-**Sprint:** S3 — Core Domain (READY)
+**Sprint:** S3 — Core Domain (IN_PROGRESS, 2/4)
 
-**T01–T34 Complete:** 6 / 34
+**T01–T34 Complete:** 8 / 34
 
-**Next Implementation Task:** T07 after explicit authorization
+**Next Implementation Task:** T09 after explicit authorization

@@ -957,6 +957,16 @@ The command shape is `{ type: "advance_phase", from, to, at }`. Only adjacent ph
 
 Accepted commands return `{ ok: true, state }` with a new session object. Rejected commands return `{ ok: false, code, state }` retaining the original state. Codes are `command_not_allowed_in_phase`, `invalid_session_state`, `invalid_command_timestamp`, and `prerequisite_not_satisfied`. The core never mutates the input; readonly fields protect consumers at compile time rather than freezing runtime objects. Supplied finite timestamps record observation start/end, investigation start, and completion; commands cannot precede already recorded milestones. This is not a full command history or observation-timer policy. Entering results records attempt completion independently of final-decision correctness; score and reasoning remain untouched. Future React/context hosts the state, while rendering, clocks, persistence, and other side effects stay outside the core. ESLint also rejects direct Date.now, Math.random, and crypto.randomUUID calls in the domain.
 
+T07 adds `evaluateSelection(caseDefinition, session, selection)` in `src/game/domain/selection.ts` and `evaluateEvidenceAvailability`/`collectEvidence` in `src/game/domain/evidence.ts`. Selections supply an ObjectId and the injected timestamp required by SelectionRecord. Only active investigation evaluates selections. Targets must exist and have an authored investigation interaction region; visuals are not required. Changes match within the case's scene pair: ordinary changes identify their object, exchanges either participant, and relationships their subject. Multiple candidates return AMBIGUOUS before considering prior discovery; array order cannot resolve them.
+
+First discovery records a selection and ChangeId and reports newly available evidence without collecting it. Repeated discovery returns ALREADY_DISCOVERED with the original state. Incorrect interactive selections record selectedObjects/incorrectSelections but never discover, collect or score. Unknown/noninteractive targets and rejected/ambiguous operations leave state unchanged. RELEVANT_EVIDENCE is not produced because direct object/document triggers remain unspecified.
+
+Availability is derived per EvidenceId from its exact source and session, never visibility, UI state, phase alone or supportingInformation. Only change sources currently have approved triggers: the exact ChangeId must be discovered. All six other source kinds return unsupported_source_semantics. One source can make multiple evidence items available. Collection appends only the requested ID and repeats return already_collected; observation and terminal attempts cannot collect. No collection timestamp is added because CaseSession stores IDs rather than collection events. Case identity/version mismatches are rejected. Scoring, advancement and T06 prerequisites remain unchanged.
+
+T08 adds `evaluateDeduction(caseDefinition, session, answer)` in `src/game/domain/deduction.ts`, consuming the existing DeductionAnswer union. Correctness uses only solution.deductionAnswers; multiple-choice selections compare as exact sets without order sensitivity. Choices must belong to their specific question. Valid CORRECT/INCORRECT submissions append a copied answer and lock that question for the attempt; ALREADY_ANSWERED retains the original answer/state even after an incorrect first submission. UNKNOWN_DEDUCTION, UNKNOWN_CHOICE, INVALID_ANSWER, NOT_AVAILABLE and SESSION_CASE_MISMATCH leave state unchanged. Empty/duplicate multiple-choice sets and mismatched kinds are invalid rather than completed submissions.
+
+No timestamp is added because the existing answer model records none. Closed attempts cannot receive new answers. Phase-entry/exit and evidence availability remain orchestration policy; supportingInformation is not an unlock rule. Incorrect submissions do not reveal the canonical answer, finish the case, collect evidence or change score. Scoring is T09; replay is later. Existing T06/T07 behavior is retained.
+
 ---
 
 # 25. Environment Variables
@@ -1252,11 +1262,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T06 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, and session state machine foundation. M1/S2 are complete.
+M0/S0 architecture planning is approved. T01–T08 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, and deduction evaluation. M1/S2 are complete; M2/S3 are in progress.
 
 The next task is:
 
-> **T07 — Implement Evidence Domain — READY, awaiting explicit authorization**
+> **T09 — Implement Scoring Engine — READY, awaiting explicit authorization**
 
 ---
 

@@ -276,6 +276,14 @@ The MVP should not end the case merely because the player makes several incorrec
 
 Repeatedly selecting an already-discovered target must not generate additional points or evidence.
 
+### 9.7 Approved T07 Source and Selection Contract
+
+Evidence becomes available only when its explicitly authored source is satisfied. `supportingInformation` is reasoning/justification, not an unlock condition. Change-sourced evidence requires its exact discovered ChangeId. Other source variants remain structurally supported but return unsupported outcomes until deterministic triggers are approved.
+
+Discovery and collection are separate. One change may make multiple evidence items available; collection requests one EvidenceId and cannot duplicate it. Repeated discovery cannot duplicate a ChangeId or create new scoring opportunities. Incorrect selections do not unlock or collect evidence; T09 owns scoring.
+
+Semantic object selections resolve against authored investigation regions and changes in the case's scene pair. Exchanges identify either participant; relationships identify their subject. Multiple matches produce ambiguity without mutation; array ordering and prior discovery cannot choose a winner. T07 does not decide investigation advancement or make UI-supplied prerequisite booleans authoritative.
+
 ---
 
 ## 10. Investigation Completion
@@ -446,6 +454,12 @@ Every correct deduction must be supported by information available before the qu
 Questions must avoid ambiguous wording.
 
 When multiple answers appear plausible, the evidence must establish why one is superior.
+
+### 14.4 Approved Stage-1 Deduction Submission Policy (T08)
+
+Each deduction has one authored canonical answer. A valid answer is submitted once per deduction per attempt and recorded whether correct or incorrect. Incorrect answers complete that deduction submission without ending the case, revealing the answer, or forcing restart. A second submission cannot replace the first; retries require a future separate replay attempt.
+
+Correctness comes only from the trusted canonical solution. Single-choice IDs must match; a multiple-choice answer must contain exactly the canonical choice set, independent of order. Empty, duplicate, mismatched-kind or foreign-choice submissions are invalid and do not lock the question. Supporting information is narrative justification, not an inferred submission gate. T08 does not define phase entry/exit, evidence prerequisites, scoring or final-decision evaluation.
 
 ---
 
