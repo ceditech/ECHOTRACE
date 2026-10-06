@@ -892,23 +892,52 @@ Early vertical-slice testing should prioritize qualitative evidence before inven
 
 # 24. Setup
 
-**Application setup has not yet been performed.**
+T01 provides the minimal Next.js App Router scaffold in `src/app/`.
 
-Do not invent installation commands before the package manager, dependency versions, and scaffold have been approved.
+Verified prerequisites: the existing NVM-managed Node **22.18.0** and npm **11.5.2**. Next.js **16.3.8** supports Node >=20.9.0; React **19.3.0** is the selected compatible baseline. Use npm and the generated `package-lock.json`; do not switch package managers.
 
-After Phase 2 of `ROADMAP.md`, this section must be updated with exact commands such as:
+From the repository root:
 
-```text
-install dependencies
-start development server
-run lint
-run type-check
-run tests
-run E2E tests
-create production build
+```powershell
+npm ci
+npm run dev
 ```
 
-The commands documented here must match the repository.
+The default development URL is `http://localhost:3000`.
+
+```powershell
+npm run lint
+npm run typecheck
+npm run format:check
+npm run test
+npm run check
+npm run build
+npm run start
+```
+
+Run `build` before `start`. Stop a local server with Ctrl+C before reusing its port. T01 verification used `-- --hostname 127.0.0.1 --port 3100` for development and port `3101` for production.
+
+When Codex cannot resolve the NVM executables, use the existing paths explicitly, with execution approval when required:
+
+```powershell
+$env:Path = 'C:\nvm4w\nodejs;' + $env:Path
+& 'C:\nvm4w\nodejs\node.exe' --version
+& 'C:\nvm4w\nodejs\npm.cmd' --version
+& 'C:\nvm4w\nodejs\npm.cmd' ci
+& 'C:\nvm4w\nodejs\npm.cmd' run dev
+```
+
+This PATH change applies only to that process and its children. No permanent PATH change or Node installation is needed.
+
+Strict TypeScript includes `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`, and the `@/*` source alias. Tailwind CSS 4 uses the PostCSS plugin and `@import "tailwindcss"`; no legacy Tailwind configuration is required. Next.js generates the ignored `next-env.d.ts` during development/build; do not edit it manually. Automatic Next.js agent-rule generation is disabled to preserve `AGENTS.md`.
+
+`npm run format` writes Prettier formatting; `format:check` verifies it. Product Markdown documents, generated files, and the npm-managed lockfile are excluded to avoid unrelated churn. `test` and `test:run` run Vitest once and exit; `test:watch` is the explicit interactive command. Tests live in `tests/unit/` or `tests/integration/`, use the Node environment and the `@/` alias, and currently smoke-test the existing page without gameplay logic. `check` stops at the first failure across format, lint, typecheck, and tests; run the production build separately. Use `npm ci` for reproducible installs and `npm install` only when intentionally changing dependencies.
+
+DOM/React Testing Library support is deferred until UI behavior warrants component tests. Playwright/browser lifecycle tooling is deferred to later integration tasks, with broader E2E at T31. No empty future architecture directories were added. ESLint currently rejects test-only imports in `src/`; preserve Presentation → Application → Domain imports and keep domain logic framework-independent. Stronger layer-specific enforcement will be added as T03+ introduces actual modules. Phaser rendering must never become authoritative game state.
+
+The production dependency audit passed. The full audit reports five high-severity findings in the development-only lint dependency chain rooted in `braces` (GHSA-vfj7-8cjw-p6xm), with no published patch at verification. ESLint 9.39.5 also reports an unsupported-version warning; ESLint 10 is outside the current React/accessibility lint plugins' declared peer ranges. Do not use `npm audit fix --force` to downgrade the approved Next.js baseline.
+
+The owner approved transitive development-only Zod introduced by `eslint-config-next` through `eslint-plugin-react-hooks`. Zod is not a direct application dependency, is not imported by EchoTrace source, and does not authorize T04 validation work. The owner also accepted the documented development-tooling braces risk and retained compatible ESLint 9. No audit suppression, forced overrides, forks, or dependency downgrades were introduced.
 
 ---
 
@@ -928,7 +957,7 @@ Do not create environment variables for configuration that can remain ordinary t
 
 # 26. CI/CD
 
-Continuous integration should be added once the repository scaffold exists.
+`.github/workflows/ci.yml` runs on pushes and pull requests using a GitHub-hosted Ubuntu runner, Node 22.18.0, npm 11.5.2, npm caching, and read-only repository permissions. Official checkout/setup-node actions are pinned to stable major v7. It installs from the lockfile and runs formatting, lint, typecheck, non-interactive tests, and the production build. No deployment or secrets are configured. Local verification does not imply the hosted workflow has run.
 
 Expected baseline:
 
@@ -1205,13 +1234,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-The next milestone is:
+M0/S0 architecture planning is approved. T01 — Scaffold Application and T02 — Configure Quality Tooling are complete.
 
-> **Codex Architecture Planning — No Coding**
+The next task is:
 
-After the plan is reviewed and approved:
-
-> **T01 — Scaffold Application**
+> **T03 — Define Domain Types — READY, awaiting explicit authorization**
 
 ---
 

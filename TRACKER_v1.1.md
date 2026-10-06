@@ -72,16 +72,16 @@ CANCELLED
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M1 — Foundation |
 | Current Sprint | S1 — Foundation |
-| Implementation Status | T01 scaffold and T02 quality baseline complete |
-| Current Engineering Task | T03 — Define domain types (READY) |
-| Next Implementation Task | T03 after explicit authorization |
+| Implementation Status | Not started |
+| Current Engineering Task | T01 — Scaffold application |
+| Next Implementation Task | T01 — Scaffold application (READY) |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 2 / 34 |
-| Blockers | None; accepted development-tooling risks recorded below |
-| Last Tracker Update | 2026-10-06 |
+| Overall T01–T34 Completion | 0 / 34 |
+| Blockers | None recorded |
+| Last Tracker Update | October 2026 |
 
-**Important:** T01/T02 are DONE. T03 is READY but has not started.
+**Important:** T01 is not `READY` until the architecture-planning gate is approved.
 
 ---
 
@@ -89,8 +89,8 @@ CANCELLED
 
 | ID | Milestone | Sprint(s) | Tasks | Status | Completion | Exit Gate |
 |---|---|---|---|---|---:|---|
-| M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
-| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 2/6 | Build + domain + validation + state model healthy |
+| M0 | Planning & Approval | S0 | Planning gate | DONE | 1/1 | Architecture plan approved |
+| M1 | Foundation | S1–S2 | T01–T06 | READY | 0/6 | Build + domain + validation + state model healthy |
 | M2 | Core Game Engine | S3–S4 | T07–T13 | NOT_STARTED | 0/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
@@ -104,7 +104,7 @@ CANCELLED
 | Sprint | Milestone | Tasks | Status | Primary Outcome |
 |---|---|---|---|---|
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
-| S1 | M1 | T01–T03 | IN_PROGRESS | 2/3 complete; scaffold and quality baseline verified, domain types pending |
+| S1 | M1 | T01–T03 | READY | Scaffold + quality baseline + domain vocabulary |
 | S2 | M1 | T04–T06 | NOT_STARTED | Case validation + state machine |
 | S3 | M2 | T07–T10 | NOT_STARTED | Evidence + deduction + scoring + persistence |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
@@ -121,9 +121,9 @@ CANCELLED
 
 | ID | Task | Milestone | Sprint | Status | Priority | Depends On |
 |---|---|---|---|---|---|---|
-| T01 | Scaffold application | M1 | S1 | DONE | HIGH | M0 |
-| T02 | Configure quality tooling | M1 | S1 | DONE | HIGH | T01 |
-| T03 | Define domain types | M1 | S1 | READY | HIGH | T01–T02 |
+| T01 | Scaffold application | M1 | S1 | READY | HIGH | M0 |
+| T02 | Configure quality tooling | M1 | S1 | NOT_STARTED | HIGH | T01 |
+| T03 | Define domain types | M1 | S1 | NOT_STARTED | HIGH | T01–T02 |
 | T04 | Implement case schema | M1 | S2 | NOT_STARTED | HIGH | T03 |
 | T05 | Implement cross-reference validator | M1 | S2 | NOT_STARTED | HIGH | T04 |
 | T06 | Implement game state machine | M1 | S2 | NOT_STARTED | HIGH | T03 |
@@ -164,9 +164,9 @@ Dependencies are the initial planning baseline and may be refined during the app
 
 ## Current Task — Architecture Planning
 
-**Status:** `DONE`
+**Status:** `DONE`  
 **Owner:** Project Owner + Codex  
-**Coding Allowed:** No during M0; T01 was separately authorized after approval.
+**Coding Allowed:** No
 
 ### Required Inputs
 
@@ -203,9 +203,9 @@ TRACKER.md
 
 ```text
 [x] All project documents reviewed
-[x] No code changed during M0
-[x] No dependencies installed during M0
-[x] No scaffold created during M0
+[x] No code changed
+[x] No dependencies installed
+[x] No scaffold created
 [x] Architecture conflicts identified
 [x] Open decisions explicitly listed
 [x] Task sequence reviewed against ROADMAP.md
@@ -219,44 +219,10 @@ Human review only.
 ### Completion Record
 
 - Start Date: —
-- Completion Date: —
+- Completion Date: October 2026
 - Commit / PR: N/A
 - Blockers: None
-- Notes: Owner approved M0/S0 with proposed changes in this chat. Later environment approval selects existing NVM Node 22.18.0/npm 11.5.2 for Stage 1 after compatibility verification. Remaining gameplay/product decisions stay deferred to their blocking tasks.
-
----
-
-## T01 — Scaffold Application — Completion Record
-
-- Status: DONE; M1/S1; completion and reconfirmed verification recorded 2026-10-05.
-- Scope: minimal App Router shell, strict TypeScript, Tailwind 4, npm lockfile, lint and build configuration. No gameplay or T02 tooling implemented.
-- Environment: existing NVM Node 22.18.0/npm 11.5.2, explicit executables with process-only PATH prepend and required execution approvals. No machine PATH or Node installation changes.
-- Baseline: Next.js 16.3.8, React/React DOM 19.3.0, TypeScript 5.9.3, Tailwind/PostCSS plugin 4.3.3, PostCSS 8.5.29, ESLint 9.39.5, eslint-config-next 16.3.8.
-- Verification: `npm ci`, `npm run lint`, `npm run typecheck`, `npm run build` passed. Development startup on 127.0.0.1:3100 and production startup on 127.0.0.1:3101 passed. Browser checks confirmed EchoTrace content, active Tailwind styling, responsive widths 390/768/1280 without horizontal overflow, and no captured warning/error logs. Temporary servers stopped after verification.
-- Audit: `npm audit --omit=dev --json` passed with zero findings. Full audit reports five high findings along the development-only braces → micromatch → fast-glob → Next ESLint plugin/config chain (GHSA-vfj7-8cjw-p6xm); no patched braces release is available. No external glob patterns are accepted by this scaffold. ESLint 9 is unsupported but retained for current plugin peer compatibility; revisit when compatible fixes are published.
-- Preservation: framework agent-rule generation disabled; AGENTS.md has no net changes. Existing untracked TRACKER_v1.1.md preserved. Build output, node_modules, generated next-env.d.ts, and TypeScript caches are ignored.
-- Tests: none added or installed, per T01 scope. Commit/PR: not created.
-- Resolved scope decision: owner approved Zod 4.6.5 solely as a transitive development dependency of eslint-plugin-react-hooks 7.1.1 via eslint-config-next 16.3.8. It is not directly declared or imported by application source; no runtime validation or T04 work was added.
-- Accepted tooling risks: owner retained ESLint 9 and the unpatched braces advisory without suppression, forced overrides, unofficial forks, downgrades, or weakened lint rules. Reconfirmed `npm explain braces` identifies only the development ESLint chain; production audit remains clean and application source has no imports of these packages.
-- Next: T02 READY; not started. M1 1/6; S1 1/3; Stage 1 1/34.
-
----
-
-## T02 — Configure Quality Tooling — Completion Record
-
-- Status: DONE; M1/S1; completion recorded 2026-10-06. T03 has not started.
-- Added development-only Prettier 3.9.9, eslint-config-prettier 10.1.8, and Vitest 5.0.3. Existing T01 dependency versions and strict TypeScript options preserved.
-- Formatting: small LF configuration; project source/config/tests/CI covered. Product Markdown, generated outputs, npm lockfile, and environment files excluded from rewriting.
-- Tests: Node environment, TypeScript and `@/` imports; one smoke test of the existing semantic home page. `test`/`test:run` exit deterministically; `test:watch` explicitly opts into watch mode. No gameplay utility invented.
-- Component/DOM testing deferred per conditional specification until UI behavior warrants it. Playwright deferred to later browser lifecycle work and T31 E2E; none of these dependencies installed.
-- Boundaries: ESLint rejects static test-only imports from application source. Layer import conventions documented; stronger dependency enforcement deferred until T03+ introduces actual modules. No empty architecture folders created.
-- CI: official checkout/setup-node v7, Ubuntu runner, Node 22.18.0/npm 11.5.2, npm cache, read-only permissions, lockfile install, format/lint/typecheck/tests/build. YAML parsed locally; hosted GitHub Actions execution not claimed. No deployment or secrets.
-- Verification: `npm ci`, `npm run format:check`, `npm run lint`, `npm run typecheck`, `npm run test:run`, aggregate `npm run check`, production build, and `git diff --check` passed. One test passed and exited. CI YAML parsed successfully.
-- Lockfile repair: npm initially omitted optional Rolldown bindings. Regenerated the lockfile through npm from the pinned manifest after clearing generated dependencies; Windows/Linux binding entries now present, existing locked versions unchanged, clean `npm ci` and tests passed. No manual lockfile edits.
-- Security: full audit executed and retained the same five accepted high development-only braces-chain findings; production-only audit reports zero. Accepted transitive lint-tool Zod and ESLint 9 warning remain unchanged. No direct Zod, Phaser, or test-only application imports introduced.
-- T01 regression: development startup and browser rendering passed; Tailwind active at widths 390/768/1280, no horizontal overflow, no captured browser warning/error logs. Server stopped after checks.
-- Preservation: AGENTS.md, ROADMAP.md, and product specifications unchanged; existing TRACKER_v1.1.md preserved; generated output ignored. No commit/PR created.
-- Next: T03 READY after explicit authorization. M1 2/6; S1 2/3; overall 2/34.
+- Notes: Architecture plan approved with proposed changes. T01 is READY.
 
 ---
 
@@ -312,13 +278,13 @@ Notes:
 
 | Check | Current State | Last Verified | Notes |
 |---|---|---|---|
-| Format | PASS | 2026-10-06 | T02 Prettier baseline |
-| Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
-| Type-check | PASS | 2026-10-06 | Strict T01 configuration retained |
-| Unit tests | PASS | 2026-10-06 | Vitest: one smoke test |
-| Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
+| Format | NOT_CONFIGURED | — | Begins with scaffold/tooling |
+| Lint | NOT_CONFIGURED | — | Begins with scaffold/tooling |
+| Type-check | NOT_CONFIGURED | — | Begins with scaffold/tooling |
+| Unit tests | NOT_CONFIGURED | — | Begins with scaffold/tooling |
+| Integration tests | NOT_CONFIGURED | — | Begins with scaffold/tooling |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-06 | T02 build passed; T01 shell retained |
+| Production build | NOT_CONFIGURED | — | Begins with scaffold |
 | Case validation | NOT_IMPLEMENTED | — | T04–T05 |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
@@ -328,7 +294,7 @@ Notes:
 
 # 11. Blocker Log
 
-No active blockers. The T01 transitive-Zod scope conflict was resolved by explicit owner approval. The braces advisory and ESLint 9 support warning remain accepted development-tooling risks, documented in the T01 completion record.
+No blockers recorded.
 
 When a blocker occurs, record:
 
@@ -346,8 +312,6 @@ Track execution decisions that affect tasks but do not yet justify a separate AD
 | ID | Decision | Related Task | Status | Date | Notes |
 |---|---|---|---|---|---|
 | D001 | Architecture plan must be approved before T01 | M0/T01 | APPROVED | October 2026 | No coding before planning gate |
-| D002 | Allow transitive development-only Zod | T01 | APPROVED | 2026-10-05 | No direct application dependency, imports, runtime validation, or T04 work |
-| D003 | Retain lint baseline with known development-only braces advisory and ESLint 9 warning | T01 | APPROVED | 2026-10-05 | Production audit clean; no audit suppression, forced overrides, forks, downgrades, or weakened linting |
 
 Major architectural decisions should still be reflected in `ARCHITECTURE.md` and, where useful later, ADRs.
 
@@ -468,13 +432,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 / S1 — Foundation; T01/T02 DONE
+M1 / S1 — Foundation
 
-NEXT AFTER EXPLICIT AUTHORIZATION:
-T03 — Define Domain Types (READY)
+NEXT:
+T01 — Scaffold Application (READY)
 ```
 
-T02 quality baseline is verified. Do not start T03 automatically.
+No coding should begin before M0 approval.
 
 ---
 
@@ -482,10 +446,7 @@ T02 quality baseline is verified. Do not start T03 automatically.
 
 **Tracker Version:** 1.0  
 **Stage:** Stage 1 — Vertical Slice  
-**Milestone:** M1 — Foundation
-
-**Sprint:** S1 — Foundation
-
-**T01–T34 Complete:** 2 / 34
-
-**Next Implementation Task:** T03 after explicit authorization
+**Milestone:** M1 — Foundation  
+**Sprint:** S1 — Foundation  
+**T01–T34 Complete:** 0 / 34  
+**Next Implementation Task:** T01 — Scaffold Application (READY)
