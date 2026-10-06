@@ -72,16 +72,16 @@ CANCELLED
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M1 — Foundation |
 | Current Sprint | S2 — Case validation & state machine (IN_PROGRESS) |
-| Implementation Status | T01–T04 complete; S1 complete; S2 1/3 |
-| Current Engineering Task | T05 — Implement cross-reference validator (READY) |
-| Next Implementation Task | T05 after explicit authorization |
+| Implementation Status | T01–T05 complete; S1 complete; S2 2/3 |
+| Current Engineering Task | T06 — Implement game state machine (READY) |
+| Next Implementation Task | T06 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 4 / 34 |
+| Overall T01–T34 Completion | 5 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-06 |
 
-**Important:** T01–T04 are DONE. T05 is READY but has not started.
+**Important:** T01–T05 are DONE. T06 is READY but has not started.
 
 ---
 
@@ -90,7 +90,7 @@ CANCELLED
 | ID | Milestone | Sprint(s) | Tasks | Status | Completion | Exit Gate |
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
-| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 4/6 | Build + domain + validation + state model healthy |
+| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 5/6 | Build + domain + validation + state model healthy |
 | M2 | Core Game Engine | S3–S4 | T07–T13 | NOT_STARTED | 0/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
@@ -105,7 +105,7 @@ CANCELLED
 |---|---|---|---|---|
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
-| S2 | M1 | T04–T06 | IN_PROGRESS | 1/3 complete; T04 verified; T05 awaits authorization |
+| S2 | M1 | T04–T06 | IN_PROGRESS | 2/3 complete; validation/integrity verified; T06 awaits authorization |
 | S3 | M2 | T07–T10 | NOT_STARTED | Evidence + deduction + scoring + persistence |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
@@ -125,8 +125,8 @@ CANCELLED
 | T02 | Configure quality tooling | M1 | S1 | DONE | HIGH | T01 |
 | T03 | Define domain types | M1 | S1 | DONE | HIGH | T01–T02 |
 | T04 | Implement case schema | M1 | S2 | DONE | HIGH | T03 |
-| T05 | Implement cross-reference validator | M1 | S2 | READY | HIGH | T04 |
-| T06 | Implement game state machine | M1 | S2 | NOT_STARTED | HIGH | T03 |
+| T05 | Implement cross-reference validator | M1 | S2 | DONE | HIGH | T04 |
+| T06 | Implement game state machine | M1 | S2 | READY | HIGH | T03 |
 | T07 | Implement evidence domain | M2 | S3 | NOT_STARTED | HIGH | T03,T06 |
 | T08 | Implement deduction domain | M2 | S3 | NOT_STARTED | HIGH | T03,T07 |
 | T09 | Implement scoring engine | M2 | S3 | NOT_STARTED | HIGH | T03,T07,T08 |
@@ -295,6 +295,22 @@ Human review only.
 
 ---
 
+## T05 — Case Reference & Semantic Integrity — Completion Record
+
+- Status: DONE; M1/S2; completion recorded 2026-10-06. T06 not started. Verified ROADMAP stable T05 definition (cross-reference validator), phase-4 validation acceptance, and TRACKER dependency T04; no material scope conflict.
+- T04 inventory: structural/version validation, all modeled entity references, namespace uniqueness, witness/statement ownership, local canonical choice membership, answer completeness/kinds, geometry/numeric/scoring constraints, no-op changes, self-relationships and self-supporting evidence were already implemented. Retained rather than duplicated.
+- New responsibilities: relationship_changed preserves its subject object; visual/evidence/testimony contradiction categories require compatible reference kinds according to CASE_AUTHORING_GUIDE section 14. Testimony-versus-testimony compares statements from different witnesses. Relation/target changes and reversed contradiction pair order remain allowed.
+- Pipeline: one additional internal relationship integrity pass follows successful T04 checks inside validateCaseDefinition. One public trust API and unchanged normalized issue contract. Stable new semantic codes: relationship_subject_mismatch, contradiction_kind_mismatch, testimony_witness_mismatch. A local statement Map supports ownership checks; no global cache or exposed application indexes.
+- Reasoning/canonical integrity: T04 reference checks remain authoritative; added regression coverage proves a canonical choice cannot come from a different deduction even if its ID exists there. Valid reasoning links, optional flavor, red herrings and descriptive support cycles remain accepted.
+- Conservative limits: current contracts do not define scene ownership, unlock dependencies, phase availability or an acyclic dependency graph. No blanket cycle/orphan rule inferred. Timeline and object-relationship contradictions lack a precise reference-kind matrix; T04 existence/structure checks still apply. Asset/text resource resolution and human fairness remain outside this model. Clarify availability/dependency semantics before stronger reachability checks; no authoring/spec documents rewritten.
+- Tests: 10 focused new tests in tests/unit/case-integrity.test.ts; all 77 tests passed across three files. Existing 66 T04 tests, synthetic fixture and type contracts unchanged. New tests assert stable codes/paths/order and input nonmutation.
+- Verification: approved NVM Node 22.18.0/npm 11.5.2 confirmed; npm ci, format:check, lint, typecheck, typecheck:domain, test:run, aggregate check, production build, both audits and git diff --check executed. Final quality/build checks passed. Production audit zero; full audit exit 1 with the same five accepted high braces-chain development-tool findings; ESLint 9 warning retained.
+- Regression/boundaries: app production startup/rendering passed; Tailwind active at 390/768/1280 widths, no horizontal overflow or captured browser warnings/errors. CI YAML parses (nine steps); six domain import probes rejected Zod, validation, React, Next, Phaser and Node. Hosted CI not claimed. Temporary browser tab/server closed.
+- Diff: added relationships.ts and case-integrity.test.ts; modified pipeline entry, README and this tracker only. No dependency/package-lock, schema, domain, application, tooling, strategic roadmap, generated artifact or secret changes. No human work overwritten and no commit created.
+- Next: T06 READY (T03 dependency DONE), awaiting explicit authorization. M1 5/6; S2 2/3 IN_PROGRESS; overall 5/34.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -350,11 +366,11 @@ Notes:
 | Format | PASS | 2026-10-06 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-06 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-06 | 66 validation tests plus one T02 smoke test |
+| Unit tests | PASS | 2026-10-06 | 66 T04 validation + 10 T05 integrity + one T02 smoke test |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-06 | T04 build passed; T01 shell retained |
-| Case validation | PASS | 2026-10-06 | T04 structural, version, identity, reference, semantic checks |
+| Production build | PASS | 2026-10-06 | T05 build passed; T01 shell retained |
+| Case validation | PASS | 2026-10-06 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
 | Human playtest | NOT_STARTED | — | T33 |
@@ -504,13 +520,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 IN_PROGRESS (4/6); S1 DONE; T01–T04 DONE; S2 IN_PROGRESS (1/3)
+M1 IN_PROGRESS (5/6); S1 DONE; T01–T05 DONE; S2 IN_PROGRESS (2/3)
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T05 — Implement Cross-Reference Validator (READY)
+T06 — Implement Game State Machine (READY)
 ```
 
-T04 validation is verified. Do not start T05 automatically.
+T05 case integrity is verified. Do not start T06 automatically.
 
 ---
 
@@ -520,8 +536,8 @@ T04 validation is verified. Do not start T05 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M1 — Foundation
 
-**Sprint:** S2 — Case validation & state machine (IN_PROGRESS, 1/3)
+**Sprint:** S2 — Case validation & state machine (IN_PROGRESS, 2/3)
 
-**T01–T34 Complete:** 4 / 34
+**T01–T34 Complete:** 5 / 34
 
-**Next Implementation Task:** T05 after explicit authorization
+**Next Implementation Task:** T06 after explicit authorization

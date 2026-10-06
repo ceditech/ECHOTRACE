@@ -4,6 +4,7 @@ import {
 } from "../schemas/case-definition";
 import { checkDeclarativeData } from "./declarative-data";
 import { checkReferences } from "./references";
+import { checkRelationshipIntegrity } from "./relationships";
 import type { ReportIssue, ValidationIssue, ValidationResult } from "./result";
 import { checkSemantics } from "./semantics";
 
@@ -43,6 +44,7 @@ export function validateCaseDefinition(input: unknown): ValidationResult {
   checkReferences(parsed.data, report);
   // References must be sound before semantics can rely on entity identity.
   if (issues.length === 0) checkSemantics(parsed.data, report);
+  if (issues.length === 0) checkRelationshipIntegrity(parsed.data, report);
   return issues.length === 0
     ? { ok: true, value: parsed.data }
     : { ok: false, issues };

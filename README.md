@@ -943,7 +943,9 @@ Case definitions are untrusted until `validateCaseDefinition(input: unknown)` in
 
 Zod 4.6.5 is the sole runtime validation dependency, confined to `src/cases/schemas/`. The domain remains plain TypeScript and never imports Zod. IDs use nonempty alphanumeric/underscore/hyphen tokens beginning with an alphanumeric character; text keys additionally allow dots. Case revisions are positive integers independent of schema support. Coordinates are normalized to [0, 1], region extents are positive and must stay inside the scene. Interaction regions need no visual. Durations and scoring values are finite: observation/estimated duration positive, transition and score/penalty magnitudes nonnegative. No tuning defaults or scoring formulas are supplied. Canonical deduction answers must match their question kind and local choices; witnesses and statements must agree on ownership. Star thresholds increase in star order with nondecreasing score requirements; hint penalty levels cannot repeat. Optional scoring lists may remain empty, without inventing rating or hint policy.
 
-The T04 prompt explicitly includes entity cross-reference checks. Asset IDs and text keys are validated structurally, but T03 has no asset manifest or localization dictionary against which to resolve them. Resource availability remains a future manifest/loader concern. Supporting-information links describe authored justification; they do not yet define evidence-unlock dependencies or phase availability. Machine validation cannot prove clue visibility, narrative truth, fairness, or enjoyment; author review and playtesting remain mandatory. Synthetic test fixtures are not production cases. T05 remains unstarted.
+T04 includes entity cross-reference checks; T05 extends the same API with relationship integrity after those checks pass. A relationship change retains its subject object while its relation or target may change. Contradiction categories enforce the authoring guide's combinations: visual-versus-testimony pairs a change/evidence reference with a statement; evidence-versus-testimony pairs evidence with a statement; testimony-versus-testimony pairs statements belonging to different witnesses. Pair order is irrelevant. The new semantic issue codes are `relationship_subject_mismatch`, `contradiction_kind_mismatch`, and `testimony_witness_mismatch`. Timeline and object-relationship categories have no precise reference-kind matrix yet, so existing structural/reference checks apply without an invented matrix.
+
+Asset IDs and text keys are validated structurally, but T03 has no asset manifest or localization dictionary against which to resolve them. Resource availability remains a future manifest/loader concern. Supporting-information links describe authored justification; they do not define evidence-unlock dependencies or phase availability. Cycles in descriptive links are not automatically impossible dependencies. No blanket cycle ban, scene-ownership rule, or orphan-content rejection is inferred from those links; optional flavor and red herrings remain allowed. The authoring guide requires discoverable evidence and pre-question support, but the current contracts cannot prove those timing/reachability properties. Clarify that dependency/availability model before adding such checks. Machine validation cannot prove clue visibility, narrative truth, fairness, or enjoyment; author review and playtesting remain mandatory. Synthetic test fixtures are not production cases.
 
 The production dependency audit passed. The full audit reports five high-severity findings in the development-only lint dependency chain rooted in `braces` (GHSA-vfj7-8cjw-p6xm), with no published patch at verification. ESLint 9.39.5 also reports an unsupported-version warning; ESLint 10 is outside the current React/accessibility lint plugins' declared peer ranges. Do not use `npm audit fix --force` to downgrade the approved Next.js baseline.
 
@@ -1244,11 +1246,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T04 are complete, including the scaffold, quality tooling, framework-independent domain contracts, and runtime case validation.
+M0/S0 architecture planning is approved. T01–T05 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, and relationship integrity.
 
 The next task is:
 
-> **T05 — Implement Cross-Reference Validator — READY, awaiting explicit authorization**
+> **T06 — Implement Game State Machine — READY, awaiting explicit authorization**
 
 ---
 
