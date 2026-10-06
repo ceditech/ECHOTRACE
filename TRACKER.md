@@ -71,17 +71,17 @@ CANCELLED
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M1 — Foundation |
-| Current Sprint | S2 — Case validation & state machine (READY) |
-| Implementation Status | T01–T03 complete; S1 complete |
-| Current Engineering Task | T04 — Implement case schema (READY) |
-| Next Implementation Task | T04 after explicit authorization |
+| Current Sprint | S2 — Case validation & state machine (IN_PROGRESS) |
+| Implementation Status | T01–T04 complete; S1 complete; S2 1/3 |
+| Current Engineering Task | T05 — Implement cross-reference validator (READY) |
+| Next Implementation Task | T05 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 3 / 34 |
+| Overall T01–T34 Completion | 4 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-06 |
 
-**Important:** T01–T03 are DONE. T04 is READY but has not started.
+**Important:** T01–T04 are DONE. T05 is READY but has not started.
 
 ---
 
@@ -90,7 +90,7 @@ CANCELLED
 | ID | Milestone | Sprint(s) | Tasks | Status | Completion | Exit Gate |
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
-| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 3/6 | Build + domain + validation + state model healthy |
+| M1 | Foundation | S1–S2 | T01–T06 | IN_PROGRESS | 4/6 | Build + domain + validation + state model healthy |
 | M2 | Core Game Engine | S3–S4 | T07–T13 | NOT_STARTED | 0/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
@@ -105,7 +105,7 @@ CANCELLED
 |---|---|---|---|---|
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
-| S2 | M1 | T04–T06 | READY | Case validation + state machine; T04 awaits authorization |
+| S2 | M1 | T04–T06 | IN_PROGRESS | 1/3 complete; T04 verified; T05 awaits authorization |
 | S3 | M2 | T07–T10 | NOT_STARTED | Evidence + deduction + scoring + persistence |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
@@ -124,8 +124,8 @@ CANCELLED
 | T01 | Scaffold application | M1 | S1 | DONE | HIGH | M0 |
 | T02 | Configure quality tooling | M1 | S1 | DONE | HIGH | T01 |
 | T03 | Define domain types | M1 | S1 | DONE | HIGH | T01–T02 |
-| T04 | Implement case schema | M1 | S2 | READY | HIGH | T03 |
-| T05 | Implement cross-reference validator | M1 | S2 | NOT_STARTED | HIGH | T04 |
+| T04 | Implement case schema | M1 | S2 | DONE | HIGH | T03 |
+| T05 | Implement cross-reference validator | M1 | S2 | READY | HIGH | T04 |
 | T06 | Implement game state machine | M1 | S2 | NOT_STARTED | HIGH | T03 |
 | T07 | Implement evidence domain | M2 | S3 | NOT_STARTED | HIGH | T03,T06 |
 | T08 | Implement deduction domain | M2 | S3 | NOT_STARTED | HIGH | T03,T07 |
@@ -276,6 +276,25 @@ Human review only.
 
 ---
 
+## T04 — Implement Case Schema & Runtime Validation — Completion Record
+
+- Status: DONE; M1/S2; completion recorded 2026-10-06. T05 not started.
+- Direct dependency: exact Zod 4.6.5, MIT; registry metadata and official TypeScript/strict-mode compatibility reviewed. Existing NVM Node 22.18.0/npm 11.5.2 verified; no permanent PATH or environment change.
+- Added four schema modules and five validation modules under src/cases. Domain contracts, tsconfig.domain.json, and ESLint boundaries remain unchanged. No application UI, loader, catalog, production case content, scoring engine, persistence, or Phaser.
+- API: validateCaseDefinition(input: unknown) returns a discriminated result containing CaseDefinition or normalized category/code/path/message issues. Ordinary malformed content does not throw. Strict schemas reject unknown properties and unsupported variants; descriptor inspection rejects functions, accessors, non-JSON objects, nonfinite numbers, and cycles without executing content.
+- Pipeline: declarative data, structure, supported schema version 1, namespace uniqueness and entity references, then semantic checks. caseVersion remains independent and positive. Choices are unique within their deduction; IDs need not be globally unique.
+- Semantics: normalized rectangle/circle containment, no-op changes/self-exchanges/self-relationships, witness/statement ownership, distinct contradiction references, complete and matching canonical deduction answers, no self-supporting evidence, nonnegative score/penalty magnitudes, unique hint penalty levels and ordered star thresholds. No tuning constants, algorithms, unlock dependency model, or fairness judgment.
+- Scope decision: the owner's T04 prompt explicitly includes cross-reference checks, superseding earlier README allocation to T05. T05 remains a separate unstarted task; its authorization should build on these checks rather than duplicate them.
+- Model limitation preserved: T03 has asset IDs/text keys but no manifest or translation dictionary. Structure is validated; resource existence belongs to the future resource boundary. Authored support links do not establish phase availability or evidence-unlock dependencies. Human truth/fairness review remains required.
+- Tests: 66 validation tests plus the existing T02 smoke test passed (67 total, two files). Synthetic fixture only; all finite change and evidence-source variants, structural/version/identity/reference/semantic failures, disappeared-object region, declarative safety, error paths, and nonmutation. Bidirectional compile-time schema/domain checks added; T03 contracts retained.
+- Verification: npm ci, format:check, lint, typecheck, typecheck:domain, test:run, aggregate check, production build, both audits, and git diff --check executed. Final quality/build checks passed. Production audit zero; full audit exit 1 with the same five accepted high development-tooling braces-chain findings. ESLint 9 warning retained.
+- Lockfile: npm initially pruned optional bindings; regenerated via npm in a clean temporary directory and verified Windows/Linux bindings. Final lockfile diff only declares direct Zod and removes its development-only flag; no version upgrades or manual lockfile edits.
+- Regression: production startup and app rendering passed; Tailwind flex styles and responsive heading sizes active at 390/768/1280 widths, no horizontal overflow, no captured browser warnings/errors. CI YAML parses (nine steps); hosted CI not claimed. Temporary browser tab/server closed.
+- Review: no domain or application changes, unrelated product documentation changes, generated files, secrets, or human work overwritten. No commit created. Existing development-tooling advisory remains documented.
+- Next: T05 READY after explicit authorization; M1 4/6; S2 1/3 IN_PROGRESS; overall 4/34.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -331,11 +350,11 @@ Notes:
 | Format | PASS | 2026-10-06 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-06 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-06 | Vitest: one smoke test |
+| Unit tests | PASS | 2026-10-06 | 66 validation tests plus one T02 smoke test |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-06 | T02 build passed; T01 shell retained |
-| Case validation | NOT_IMPLEMENTED | — | T04–T05 |
+| Production build | PASS | 2026-10-06 | T04 build passed; T01 shell retained |
+| Case validation | PASS | 2026-10-06 | T04 structural, version, identity, reference, semantic checks |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
 | Human playtest | NOT_STARTED | — | T33 |
@@ -364,6 +383,7 @@ Track execution decisions that affect tasks but do not yet justify a separate AD
 | D001 | Architecture plan must be approved before T01 | M0/T01 | APPROVED | October 2026 | No coding before planning gate |
 | D002 | Allow transitive development-only Zod | T01 | APPROVED | 2026-10-05 | No direct application dependency, imports, runtime validation, or T04 work |
 | D003 | Retain lint baseline with known development-only braces advisory and ESLint 9 warning | T01 | APPROVED | 2026-10-05 | Production audit clean; no audit suppression, forced overrides, forks, downgrades, or weakened linting |
+| D004 | Direct Zod 4 and entity cross-reference validation authorized in T04 | T04 | APPROVED | 2026-10-06 | Zod outside domain; preserve T03 model; T05 remains unstarted |
 
 Major architectural decisions should still be reflected in `ARCHITECTURE.md` and, where useful later, ADRs.
 
@@ -484,13 +504,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 IN_PROGRESS; S1 DONE; T01–T03 DONE; S2 READY
+M1 IN_PROGRESS (4/6); S1 DONE; T01–T04 DONE; S2 IN_PROGRESS (1/3)
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T04 — Implement Case Schema (READY)
+T05 — Implement Cross-Reference Validator (READY)
 ```
 
-T03 domain contracts are verified. Do not start T04 automatically.
+T04 validation is verified. Do not start T05 automatically.
 
 ---
 
@@ -500,8 +520,8 @@ T03 domain contracts are verified. Do not start T04 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M1 — Foundation
 
-**Sprint:** S2 — Case validation & state machine (READY)
+**Sprint:** S2 — Case validation & state machine (IN_PROGRESS, 1/3)
 
-**T01–T34 Complete:** 3 / 34
+**T01–T34 Complete:** 4 / 34
 
-**Next Implementation Task:** T04 after explicit authorization
+**Next Implementation Task:** T05 after explicit authorization

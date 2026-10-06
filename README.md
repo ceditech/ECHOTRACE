@@ -937,11 +937,17 @@ DOM/React Testing Library support is deferred until UI behavior warrants compone
 
 `src/game/domain/` contains plain readonly TypeScript contracts: `identity.ts`, `scene.ts`, `reasoning.ts`, `scoring.ts`, `case.ts`, and `session.ts`. ID aliases communicate meaning but are not runtime validation or nominal brands. Text/asset references separate authored content from presentation. Logical objects, scene visuals, and interaction regions are independent, allowing a disappeared object to retain a selectable region. Person changes use objects linked to character IDs. Schema compatibility (`schemaVersion`) and authored revision (`caseVersion`) remain distinct.
 
-`npm run typecheck` checks both the application and the isolated domain, including positive/negative compile-time contracts in `tests/types/domain-contracts.ts`. These contracts define no engine behavior or published case format: T04 owns runtime validation and T05 owns cross-reference checks. Scoring formulas, retry/progression/timing policy, hint penalties, and Case 001 truth remain later decisions. Ordered reconstruction references describe authored events rather than an executable timeline engine.
+`npm run typecheck` checks both the application and the isolated domain; `typecheck:domain` runs the isolated check alone. Compile-time contracts in `tests/types/` check the domain vocabulary and bidirectional schema/type compatibility. Scoring formulas, retry/progression/timing policy, hint penalties, and Case 001 truth remain later decisions. Ordered reconstruction references describe authored events rather than an executable timeline engine.
+
+Case definitions are untrusted until `validateCaseDefinition(input: unknown)` in `src/cases/validation/validate-case-definition.ts` succeeds. The pipeline checks declarative JSON data, strict Zod structures, supported schema version (currently 1), namespace uniqueness, entity references, and deterministic semantic consistency. It returns `{ ok: true, value: CaseDefinition }` or `{ ok: false, issues }`; issues have category, code, path segments, and an actionable message. Ordinary content errors do not throw. The structural schema alone does not establish trust. Successful parsing returns a copy; readonly domain types are compile-time contracts rather than a runtime freeze.
+
+Zod 4.6.5 is the sole runtime validation dependency, confined to `src/cases/schemas/`. The domain remains plain TypeScript and never imports Zod. IDs use nonempty alphanumeric/underscore/hyphen tokens beginning with an alphanumeric character; text keys additionally allow dots. Case revisions are positive integers independent of schema support. Coordinates are normalized to [0, 1], region extents are positive and must stay inside the scene. Interaction regions need no visual. Durations and scoring values are finite: observation/estimated duration positive, transition and score/penalty magnitudes nonnegative. No tuning defaults or scoring formulas are supplied. Canonical deduction answers must match their question kind and local choices; witnesses and statements must agree on ownership. Star thresholds increase in star order with nondecreasing score requirements; hint penalty levels cannot repeat. Optional scoring lists may remain empty, without inventing rating or hint policy.
+
+The T04 prompt explicitly includes entity cross-reference checks. Asset IDs and text keys are validated structurally, but T03 has no asset manifest or localization dictionary against which to resolve them. Resource availability remains a future manifest/loader concern. Supporting-information links describe authored justification; they do not yet define evidence-unlock dependencies or phase availability. Machine validation cannot prove clue visibility, narrative truth, fairness, or enjoyment; author review and playtesting remain mandatory. Synthetic test fixtures are not production cases. T05 remains unstarted.
 
 The production dependency audit passed. The full audit reports five high-severity findings in the development-only lint dependency chain rooted in `braces` (GHSA-vfj7-8cjw-p6xm), with no published patch at verification. ESLint 9.39.5 also reports an unsupported-version warning; ESLint 10 is outside the current React/accessibility lint plugins' declared peer ranges. Do not use `npm audit fix --force` to downgrade the approved Next.js baseline.
 
-The owner approved transitive development-only Zod introduced by `eslint-config-next` through `eslint-plugin-react-hooks`. Zod is not a direct application dependency, is not imported by EchoTrace source, and does not authorize T04 validation work. The owner also accepted the documented development-tooling braces risk and retained compatible ESLint 9. No audit suppression, forced overrides, forks, or dependency downgrades were introduced.
+The owner originally approved transitive development-only Zod introduced through the lint tooling, then explicitly authorized direct Zod use for T04 case validation. The owner also accepted the documented development-tooling braces risk and retained compatible ESLint 9. No audit suppression, forced overrides, forks, or dependency downgrades were introduced.
 
 ---
 
@@ -1238,11 +1244,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T03 are complete, including the scaffold, quality tooling, and framework-independent domain contracts.
+M0/S0 architecture planning is approved. T01–T04 are complete, including the scaffold, quality tooling, framework-independent domain contracts, and runtime case validation.
 
 The next task is:
 
-> **T04 — Implement Case Schema — READY, awaiting explicit authorization**
+> **T05 — Implement Cross-Reference Validator — READY, awaiting explicit authorization**
 
 ---
 
