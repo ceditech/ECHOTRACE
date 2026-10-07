@@ -541,6 +541,14 @@ meaningfulCorrectActions /
 
 The final formula should be finalized during implementation/playtesting.
 
+### 17.5 Approved Stage-1 Scoring Contract (T09)
+
+Score is derived from the trusted case definition and authoritative session, never incremented during interactions. Authored ScoringConfiguration values remain the tuning source. The base applies even to a fresh session. A change qualifies only when significance is meaningful and isRequired is true; evidence qualifies only when category is primary and isRequired is true. Each discovered ChangeId and collected EvidenceId contributes once; availability alone earns nothing.
+
+Each correctly recorded deduction earns its configured value by comparison with the canonical solution. Multiple-choice answers require the exact set; the first recorded answer remains authoritative. Incorrect or unanswered deductions earn zero without penalty. Each T07 incorrectSelections record contributes one configured penalty, including repeated incorrect attempts; other selection outcomes do not create such records.
+
+ScoreResult exposes rawTotal before the zero floor and total = max(0, rawTotal). Case identity/version mismatch and non-finite arithmetic return typed failures; unknown discovery, evidence and deduction IDs earn nothing. Inputs and session.score are never mutated. Final-decision scoring remains zero until authoritative correctness evaluation exists. Time bonus and hint penalty remain zero; accuracy and star rating remain null pending their approved policies.
+
 ---
 
 ## 18. Rating System

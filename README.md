@@ -967,6 +967,8 @@ T08 adds `evaluateDeduction(caseDefinition, session, answer)` in `src/game/domai
 
 No timestamp is added because the existing answer model records none. Closed attempts cannot receive new answers. Phase-entry/exit and evidence availability remain orchestration policy; supportingInformation is not an unlock rule. Incorrect submissions do not reveal the canonical answer, finish the case, collect evidence or change score. Scoring is T09; replay is later. Existing T06/T07 behavior is retained.
 
+T09 adds `calculateCaseScore(caseDefinition, session)` in `src/game/domain/score-calculation.ts`. It returns `{ ok: true, value: ScoreResult }` or a typed SESSION_CASE_MISMATCH/NON_FINITE_SCORE failure. Authored scoring values determine the base, unique required meaningful discoveries, unique collected required primary evidence, correct first recorded deductions, and penalties for recorded incorrect attempts. Available evidence alone earns nothing. The read-only result exposes rawTotal and a zero-floored total; stored session scores are ignored. Final decisions, time bonuses and hint penalties contribute zero; accuracy and ratings are null until their policies are approved. No UI or persistence integration is introduced.
+
 ---
 
 # 25. Environment Variables
@@ -1262,11 +1264,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T08 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, and deduction evaluation. M1/S2 are complete; M2/S3 are in progress.
+M0/S0 architecture planning is approved. T01–T09 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, and deterministic scoring. M1/S2 are complete; M2/S3 are in progress.
 
 The next task is:
 
-> **T09 — Implement Scoring Engine — READY, awaiting explicit authorization**
+> **T10 — Implement Progress Repository — READY, awaiting explicit authorization**
 
 ---
 

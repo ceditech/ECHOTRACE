@@ -71,17 +71,17 @@ CANCELLED
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M2 — Core Game Engine |
-| Current Sprint | S3 — Core Domain (IN_PROGRESS, 2/4) |
-| Implementation Status | T01–T08 complete; M1 6/6; M2 2/7; S3 2/4 |
-| Current Engineering Task | T09 — Implement scoring engine (READY; awaiting authorization) |
-| Next Implementation Task | T09 after explicit authorization |
+| Current Sprint | S3 — Core Domain (IN_PROGRESS, 3/4) |
+| Implementation Status | T01–T09 complete; M1 6/6; M2 3/7; S3 3/4 |
+| Current Engineering Task | T09 — Implement scoring engine (DONE) |
+| Next Implementation Task | T10 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 8 / 34 |
+| Overall T01–T34 Completion | 9 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
-| Last Tracker Update | 2026-10-06 |
+| Last Tracker Update | 2026-10-07 |
 
-**Important:** T01–T08 are DONE. M1/S2 remain DONE; T09 is READY but has not started.
+**Important:** T01–T09 are DONE. M1/S2 remain DONE; T10 is READY but has not started.
 
 ---
 
@@ -91,7 +91,7 @@ CANCELLED
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
-| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 2/7 | Reusable engine foundations operational |
+| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 3/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
@@ -106,7 +106,7 @@ CANCELLED
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
-| S3 | M2 | T07–T10 | IN_PROGRESS | 2/4 complete; evidence and deduction evaluation verified |
+| S3 | M2 | T07–T10 | IN_PROGRESS | 3/4 complete; evidence, deduction and scoring verified |
 | S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
@@ -129,8 +129,8 @@ CANCELLED
 | T06 | Implement game state machine | M1 | S2 | DONE | HIGH | T03 |
 | T07 | Implement evidence domain | M2 | S3 | DONE | HIGH | T03,T06 |
 | T08 | Implement deduction domain | M2 | S3 | DONE | HIGH | T03,T07 |
-| T09 | Implement scoring engine | M2 | S3 | READY | HIGH | T03,T07,T08 |
-| T10 | Implement progress repository | M2 | S3 | NOT_STARTED | HIGH | T03 |
+| T09 | Implement scoring engine | M2 | S3 | DONE | HIGH | T03,T07,T08 |
+| T10 | Implement progress repository | M2 | S3 | READY | HIGH | T03 |
 | T11 | Integrate Phaser shell | M2 | S4 | NOT_STARTED | HIGH | T01–T02 |
 | T12 | Implement typed React–Phaser bridge | M2 | S4 | NOT_STARTED | HIGH | T06,T11 |
 | T13 | Implement case loader | M2 | S4 | NOT_STARTED | HIGH | T04,T05 |
@@ -358,6 +358,20 @@ Human review only.
 
 ---
 
+## T09 — Deterministic Scoring — Completion Record
+
+- Status: DONE; M2/S3; 2026-10-07. Canonical scoring task and completed T03/T07/T08 dependencies confirmed. T10 not started.
+- Added pure calculateCaseScore in score-calculation.ts, consuming trusted CaseDefinition and authoritative CaseSession. Authored ScoringConfiguration determines all active values; no incremental or stored-score authority.
+- Approved eligibility: primary change means meaningful AND required; important evidence means primary category AND required. Unique discoveries/collections score once; available but uncollected evidence scores zero. Canonically correct first recorded deductions score once; incorrect/unanswered deductions earn zero. Each T07 incorrect attempt record contributes one penalty, including retries.
+- Added rawTotal to ScoreResult; total floors at zero. Case identity/version mismatch and non-finite arithmetic return typed failures. Unknown award IDs are excluded. Final decision/time bonus/hint penalty remain zero; accuracy/rating remain null. No T06/T07/T08, schema, UI, progression, persistence, timer or Case 001 changes.
+- Tests: 20 focused new tests; 132 tests across seven files passed. Eligibility matrices, unique IDs, canonical exact sets, first-answer authority, actual T07 outcomes/availability, penalties, combined breakdown, negative raw total, floor, authored tuning, immutability and repeatability covered.
+- Verification: npm ci; aggregate check (format:check, lint, typecheck including isolated typecheck:domain, test:run); production build; final format/check and diff review passed. CI parsed successfully (nine steps). Production startup and responsive/Tailwind smoke passed at 390/768/1280px without horizontal overflow or console warnings/errors.
+- Audit: production zero vulnerabilities; full audit exits 1 with five accepted high development-tooling findings: eslint-config-next → @next/eslint-plugin-next → fast-glob → micromatch → braces (GHSA-vfj7-8cjw-p6xm). ESLint 9 deprecation warning retained. No dependency/lockfile changes or forced fixes.
+- Files: new score-calculation.ts and score-calculation.test.ts; scoring.ts result shape, GAME_SPEC, README and TRACKER updated. No ROADMAP sequencing change or commit.
+- Progress: M2 3/7, S3 3/4 IN_PROGRESS; overall 9/34. T10 READY because T03 is DONE; requires explicit authorization.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -410,14 +424,14 @@ Notes:
 
 | Check | Current State | Last Verified | Notes |
 |---|---|---|---|
-| Format | PASS | 2026-10-06 | T02 Prettier baseline |
-| Lint | PASS | 2026-10-06 | Next.js lint plus test-import protection |
-| Type-check | PASS | 2026-10-06 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-06 | 112 tests: 101 prior tests plus 11 T08 tests |
+| Format | PASS | 2026-10-07 | T02 Prettier baseline |
+| Lint | PASS | 2026-10-07 | Next.js lint plus test-import protection |
+| Type-check | PASS | 2026-10-07 | Strict project + isolated domain + compile-time contracts |
+| Unit tests | PASS | 2026-10-07 | 132 tests: 112 prior tests plus 20 T09 tests |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-06 | T08 build passed; T01 shell retained |
-| Case validation | PASS | 2026-10-06 | T04 pipeline plus T05 relationship integrity |
+| Production build | PASS | 2026-10-07 | T09 build passed; T01 shell retained |
+| Case validation | PASS | 2026-10-07 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
 | Human playtest | NOT_STARTED | — | T33 |
@@ -449,6 +463,7 @@ Track execution decisions that affect tasks but do not yet justify a separate AD
 | D004 | Direct Zod 4 and entity cross-reference validation authorized in T04 | T04 | APPROVED | 2026-10-06 | Zod outside domain; preserve T03 model; T05 remains unstarted |
 | D005 | Approve source-triggered evidence, separate discovery/collection, idempotency and ambiguity rejection | T07 | APPROVED | 2026-10-06 | Exact discovered ChangeId unlocks change evidence; supportingInformation is not an unlock rule; other triggers remain unsupported |
 | D006 | Approve one valid deduction submission per attempt, including incorrect answers | T08 | APPROVED | 2026-10-06 | Canonical solution determines correctness; first answer locks; no retry, scoring or progression; replay later |
+| D007 | Approve derived scoring and existing-field eligibility | T09 | APPROVED | 2026-10-07 | Primary change = meaningful AND required; important evidence = primary AND required; authored values, unique awards, first-answer truth, incorrect-attempt penalties, rawTotal/zero floor; final/time/hint/accuracy/rating deferred |
 
 Major architectural decisions should still be reflected in `ARCHITECTURE.md` and, where useful later, ADRs.
 
@@ -569,13 +584,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1/S2 DONE; T01–T08 DONE; M2 IN_PROGRESS (2/7); S3 IN_PROGRESS (2/4)
+M1 DONE (6/6); S1/S2 DONE; T01–T09 DONE; M2 IN_PROGRESS (3/7); S3 IN_PROGRESS (3/4)
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T09 — Implement Scoring Engine (READY)
+T10 — Implement Progress Repository (READY)
 ```
 
-T08 deduction evaluation is verified. Do not start T09 automatically.
+T09 deterministic scoring is verified. Do not start T10 automatically.
 
 ---
 
@@ -585,8 +600,8 @@ T08 deduction evaluation is verified. Do not start T09 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M2 — Core Game Engine
 
-**Sprint:** S3 — Core Domain (IN_PROGRESS, 2/4)
+**Sprint:** S3 — Core Domain (IN_PROGRESS, 3/4)
 
-**T01–T34 Complete:** 8 / 34
+**T01–T34 Complete:** 9 / 34
 
-**Next Implementation Task:** T09 after explicit authorization
+**Next Implementation Task:** T10 after explicit authorization

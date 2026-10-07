@@ -12,7 +12,7 @@ export interface HintPenalty {
   readonly penalty: number;
 }
 
-// Shapes only: values, bonus/accuracy formulas, and threshold policy belong to T09.
+// Authored values are consumed by the domain score calculation.
 export interface ScoringConfiguration {
   readonly baseCompletionScore: number;
   readonly correctChangeScore: number;
@@ -37,6 +37,7 @@ export interface ScoreBreakdown {
 }
 
 export interface ScoreResult {
+  readonly rawTotal: number;
   readonly total: number;
   readonly breakdown: ScoreBreakdown;
   readonly accuracy: number | null;
