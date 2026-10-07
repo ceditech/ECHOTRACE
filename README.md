@@ -177,7 +177,9 @@ Core domain logic must remain independent of React, Next.js, Phaser, browser sto
 
 The T11 shell uses the approved Phaser 4.2.1 baseline (MIT), superseding provisional Phaser 3.90.0 before T11 completion, behind an after-mount dynamic import. Visit `/renderer` through the home page's scene-preview link. React owns one runtime per host; resize refreshes the existing runtime, and navigation cancels pending initialization and cleans the canvas/observer/runtime. The asset-free scene uses a temporary 960×540 logical rectangle with FIT scaling, centering and letterboxing.
 
-T12 adds an instance-local typed bridge: application-owned readonly projections update existing renderer objects; Phaser emits semantic ObjectId selection intents. Attempt identity, strictly increasing projection revisions and mount disposal reject obsolete updates/input. Dispatch reads current application state; no solution, scoring or persistence data is projected. The preview's synthetic reducer and controls demonstrate both directions without a production case. T13 case loading remains unimplemented; see ARCHITECTURE.md for the contract and queued-action responsibility.
+T12 adds an instance-local typed bridge: application-owned readonly projections update existing renderer objects; Phaser emits semantic ObjectId selection intents. Attempt identity, strictly increasing projection revisions and mount disposal reject obsolete updates/input. Dispatch reads current application state; no solution, scoring or persistence data is projected. The preview's synthetic reducer and controls demonstrate both directions without a production case. See ARCHITECTURE.md for the bridge contract and queued-action responsibility.
+
+T13 loading uses `loadCase(caseId, source)` outside the domain and renderer. The explicit bundled registry supplies unknown content to the existing T04/T05 validators; only success exposes CaseDefinition. Typed failures retain structured validation issues, preserve schemaVersion/caseVersion and reject missing source-declared assets. The production registry awaits approved T15 JSON content; synthetic verification fixtures are not published cases. Asset declaration checks do not verify files or resolve assets. See ARCHITECTURE.md for the trust boundary.
 
 ---
 
@@ -1272,11 +1274,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T12 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, and the typed instance-local projection/intent bridge. M1/S2/S3 are complete; M2 is in progress (6/7) and S4 is in progress (2/3).
+M0/S0 architecture planning is approved. T01–T13 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, and the trusted case-loading boundary. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3).
 
 The next task is:
 
-> **T13 — Implement Case Loader — READY, awaiting explicit authorization**
+> **T14 — Finalize Case 001 Authoring — READY, awaiting explicit authorization**
 
 ---
 

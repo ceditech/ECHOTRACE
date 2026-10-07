@@ -70,18 +70,18 @@ CANCELLED
 | Field | Current Value |
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
-| Current Milestone | M2 — Core Game Engine |
-| Current Sprint | S4 — Renderer Integration (IN_PROGRESS, 2/3) |
-| Implementation Status | T01–T12 complete; M1 6/6; M2 6/7; S3 4/4; S4 2/3 |
-| Current Engineering Task | T12 — Implement typed React–Phaser bridge (DONE) |
-| Next Implementation Task | T13 after explicit authorization |
+| Current Milestone | M3 — Case 001 Content & Core Loop (READY) |
+| Current Sprint | S4 — Renderer Integration (DONE, 3/3) |
+| Implementation Status | T01–T13 complete; M1 6/6; M2 7/7; S3 4/4; S4 3/3 |
+| Current Engineering Task | T13 — Implement case loader (DONE) |
+| Next Implementation Task | T14 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 12 / 34 |
+| Overall T01–T34 Completion | 13 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-07 |
 
-**Important:** T01–T12 are DONE. S3 is DONE; S4 is IN_PROGRESS (2/3). T13 is READY but has not started and requires explicit authorization.
+**Important:** T01–T13, M2 and S4 are DONE. T14 is READY because the documentation baseline is complete; it has not started and requires explicit authorization.
 
 ---
 
@@ -91,8 +91,8 @@ CANCELLED
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
-| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 6/7 | Reusable engine foundations operational |
-| M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
+| M2 | Core Game Engine | S3–S4 | T07–T13 | DONE | 7/7 | Reusable engine foundations operational |
+| M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | READY | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
 | M6 | Quality & Validation | S9–S10 | T31–T34 | NOT_STARTED | 0/4 | Vertical Slice Exit Gate satisfied |
@@ -107,8 +107,8 @@ CANCELLED
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
 | S3 | M2 | T07–T10 | DONE | 4/4 complete; deterministic rules and local progress verified |
-| S4 | M2 | T11–T13 | IN_PROGRESS | 2/3 complete; Phaser shell and typed bridge verified; case loader pending |
-| S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
+| S4 | M2 | T11–T13 | DONE | 3/3 complete; Phaser shell, typed bridge and trusted case loader verified |
+| S5 | M3 | T14–T18 | READY | Case 001 definition + observation |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
 | S7 | M4 | T24–T26 | NOT_STARTED | Decision + resolution + results |
 | S8 | M5 | T27–T30 | NOT_STARTED | Replay + app shell + accessibility + polish |
@@ -133,8 +133,8 @@ CANCELLED
 | T10 | Implement progress repository | M2 | S3 | DONE | HIGH | T03 |
 | T11 | Integrate Phaser shell | M2 | S4 | DONE | HIGH | T01–T02 |
 | T12 | Implement typed React–Phaser bridge | M2 | S4 | DONE | HIGH | T06,T11 |
-| T13 | Implement case loader | M2 | S4 | READY | HIGH | T04,T05 |
-| T14 | Finalize Case 001 authoring | M3 | S5 | NOT_STARTED | CRITICAL | Documentation baseline |
+| T13 | Implement case loader | M2 | S4 | DONE | HIGH | T04,T05 |
+| T14 | Finalize Case 001 authoring | M3 | S5 | READY | CRITICAL | Documentation baseline |
 | T15 | Add Case 001 structured data | M3 | S5 | NOT_STARTED | HIGH | T13,T14 |
 | T16 | Build briefing | M3 | S5 | NOT_STARTED | HIGH | T06,T15 |
 | T17 | Build observation scene | M3 | S5 | NOT_STARTED | HIGH | T11–T12,T15 |
@@ -423,6 +423,23 @@ Human review only.
 
 ---
 
+## T13 Completion Record
+
+- Status: DONE; M2/S4; 2026-10-07. Canonical loader scope and T04/T05 dependencies confirmed.
+- Added application CaseSource port, explicit bundled-source registry and loadCase trust boundary. Authored data remains unknown until the unchanged T04/T05 validator succeeds; source identity and asset declarations are checked before success.
+- Failures are typed: unknown_case, source_unavailable, malformed_source, invalid_case, unsupported_schema, case_id_mismatch and missing_asset_declaration. Existing structured validation issues and authored schemaVersion/caseVersion are preserved.
+- Registry entries are explicit, copied and read/validated on each load. No caller-derived path, URL, executable authored callback, cache or fallback. The production registry is empty until approved T15 JSON content; synthetic fixtures remain test-only.
+- Asset coverage checks scene backgrounds and visual references against source-entry declaredAssetIds. Physical file existence, decoding and renderer resolution are deferred; no asset resolver or application case schema was added.
+- Tests: 13 new unit tests and one integration test; all 180 tests across 14 files passed, including all prior 166. Integration proves approved source → parse → existing validation → trusted definition → initial application session.
+- Verification: npm ci, format:check, lint, typecheck, typecheck:domain, test:run, aggregate check, build and git diff --check passed. Node 22.18.0/npm 11.5.2 reconfirmed; clean install preserved package-lock.json. No dependencies or CI changes; unchanged CI YAML parsed successfully, hosted CI not run.
+- Production browser regression: bridge update/selection worked; one centered contained canvas and no horizontal overflow at 390×844, 768×1024 and 1280×900. Navigation removed the canvas; remount created one canvas. No browser warnings/errors. Temporary server/tab closed.
+- Security: production audit zero vulnerabilities. Full audit retains five accepted high development-tool findings in braces → micromatch → fast-glob → @next/eslint-plugin-next → eslint-config-next. ESLint 9 support warning retained; no force fix, suppression or downgrade.
+- M2 exit review: session/state, selection/evidence, deduction, scoring, local progress, Phaser shell, typed bridge and trusted loader foundations operate generically, without Case 001-specific hacks. Canonical reusable-engine exit gate satisfied; M2 DONE 7/7 and S4 DONE 3/3.
+- Domain, T04/T05 validator, T06–T10 engine, T11/T12 renderer/bridge, package files and ROADMAP unchanged. ARCHITECTURE, README and TRACKER updated. No commit made; T14 not started.
+- Progress: overall 13/34. T14 READY because its documentation baseline dependency is complete; explicit authorization required.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -478,10 +495,10 @@ Notes:
 | Format | PASS | 2026-10-07 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-07 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-07 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-07 | 166 tests across 12 files: 157 prior tests plus nine T12 tests |
-| Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
+| Unit tests | PASS | 2026-10-07 | 179 unit tests across 13 files; 180 total including one integration test |
+| Integration tests | PASS | 2026-10-07 | One approved source → loader → validator → application session test |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-07 | T12 typed bridge preview prerender/build passed; T01 shell retained |
+| Production build | PASS | 2026-10-07 | T13 production build passed; renderer preview and shell retained |
 | Case validation | PASS | 2026-10-07 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
@@ -639,13 +656,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1/S2/S3 DONE; T01–T12 DONE; M2 IN_PROGRESS (6/7); S4 IN_PROGRESS (2/3)
+M1 DONE (6/6); S1/S2/S3/S4 DONE; T01–T13 DONE; M2 DONE (7/7)
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T13 — Implement Case Loader (READY)
+T14 — Finalize Case 001 Authoring (READY)
 ```
 
-T12 typed bridge is verified. Do not start T13 automatically.
+T13 trusted loading is verified. Do not start T14 automatically.
 
 ---
 
@@ -653,10 +670,10 @@ T12 typed bridge is verified. Do not start T13 automatically.
 
 **Tracker Version:** 1.0  
 **Stage:** Stage 1 — Vertical Slice  
-**Milestone:** M2 — Core Game Engine
+**Milestone:** M3 — Case 001 Content & Core Loop (READY)
 
-**Sprint:** S4 — Renderer Integration (IN_PROGRESS, 2/3)
+**Sprint:** S4 — Renderer Integration (DONE, 3/3)
 
-**T01–T34 Complete:** 12 / 34
+**T01–T34 Complete:** 13 / 34
 
-**Next Implementation Task:** T13 after explicit authorization
+**Next Implementation Task:** T14 after explicit authorization

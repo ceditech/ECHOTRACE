@@ -650,6 +650,18 @@ loadCase(caseId): Result<CaseDefinition, CaseLoadError>
 
 Avoid throwing opaque errors from deep inside the rendering layer.
 
+## T13 Loading Boundary
+
+`src/cases/load-case.ts` orchestrates `CaseSource.read(caseId)` → JSON parsing when the source supplies text → the unchanged T04/T05 `validateCaseDefinition` pipeline → trusted CaseDefinition. Raw source values remain unknown; no raw-to-domain assertion or alternate schema exists. The successful definition can be consumed by application/domain session creation, never passed directly to Phaser.
+
+The application owns the small CaseSource interface; BundledCaseSource implements it with an explicit Map of stable CaseId to repository-controlled read/import thunk and declared asset IDs. Caller IDs are used only for exact lookup, never interpolated into paths, URLs or imports. The production registry is intentionally empty until approved content is added in T15; synthetic fixtures remain test-only. Registry entries/declarations are copied at construction. Every load reads and validates again; there is no loader cache.
+
+Failures are typed: unknown_case, source_unavailable, malformed_source, invalid_case, unsupported_schema, case_id_mismatch and missing_asset_declaration. Validation failures retain T04/T05 category/code/path/message issues without exposing source exception stacks or local paths. The loader checks requested/authored ID agreement and preserves schemaVersion and caseVersion without migration or inference.
+
+Asset references already have identifier syntax validated by T04. Because the current case format has no authored asset catalog, the source entry's declaredAssetIds is the authoritative declaration catalog. The loader checks every scene background/visual reference against it and reports missing declarations with structured paths. This proves declarations only: file existence, URL/path resolution, decoding and production asset loading remain future renderer/content work. No case metadata or solution is duplicated in the registry.
+
+T12 continues to expose only application-derived display projections and semantic intents. T13 does not change renderer contracts, load a production case into the preview, or start T14 authoring.
+
 ---
 
 # 15. Cross-Reference Validation
