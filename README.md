@@ -776,6 +776,10 @@ Persist initially:
 
 Do not scatter direct browser-storage calls throughout components.
 
+T10 implements historical progress through `ProgressRepository` and an injected `LocalProgressRepository`. Call `createCompletedAttempt(validatedCase, session)` at completed Results to obtain a minimal summary using T09, then save it through `saveCompletedAttempt`; read aggregates with `getCaseProgress(caseId, caseVersion)`. Live sessions are never stored or resumed. Distinct completed attempt IDs determine attemptCount and bestScore; duplicate saves retain the first result. Completion does not infer solved correctness, and ratings remain null.
+
+Storage keys use `echotrace:progress:v1:<encoded-caseId>:<caseVersion>`. Reads validate versioned records and return an explicit recovered flag for malformed/partially salvageable data. Unsupported versions, invalid inputs and storage read/write failures return typed error codes. Browser callers inject localStorage behind the adapter; no UI integration or settings persistence is added. Separate concurrent tabs are not transactionally coordinated, and storage quota errors must be handled by future orchestration.
+
 ---
 
 # 20. MVP Boundaries
@@ -1264,11 +1268,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T09 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, and deterministic scoring. M1/S2 are complete; M2/S3 are in progress.
+M0/S0 architecture planning is approved. T01–T10 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, and local completed-attempt progress. M1/S2/S3 are complete; M2 is in progress and S4 is ready.
 
 The next task is:
 
-> **T10 — Implement Progress Repository — READY, awaiting explicit authorization**
+> **T11 — Integrate Phaser Shell — READY, awaiting explicit authorization**
 
 ---
 

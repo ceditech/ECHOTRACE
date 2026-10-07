@@ -71,17 +71,17 @@ CANCELLED
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M2 — Core Game Engine |
-| Current Sprint | S3 — Core Domain (IN_PROGRESS, 3/4) |
-| Implementation Status | T01–T09 complete; M1 6/6; M2 3/7; S3 3/4 |
-| Current Engineering Task | T09 — Implement scoring engine (DONE) |
-| Next Implementation Task | T10 after explicit authorization |
+| Current Sprint | S3 — Core Domain (DONE, 4/4); S4 READY |
+| Implementation Status | T01–T10 complete; M1 6/6; M2 4/7; S3 4/4 |
+| Current Engineering Task | T10 — Implement progress repository (DONE) |
+| Next Implementation Task | T11 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 9 / 34 |
+| Overall T01–T34 Completion | 10 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-07 |
 
-**Important:** T01–T09 are DONE. M1/S2 remain DONE; T10 is READY but has not started.
+**Important:** T01–T10 are DONE. S3 is DONE; T11 is READY but has not started.
 
 ---
 
@@ -91,7 +91,7 @@ CANCELLED
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
-| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 3/7 | Reusable engine foundations operational |
+| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 4/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
@@ -106,8 +106,8 @@ CANCELLED
 | S0 | M0 | Architecture planning | DONE | Approved implementation plan |
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
-| S3 | M2 | T07–T10 | IN_PROGRESS | 3/4 complete; evidence, deduction and scoring verified |
-| S4 | M2 | T11–T13 | NOT_STARTED | Phaser integration + case loader |
+| S3 | M2 | T07–T10 | DONE | 4/4 complete; deterministic rules and local progress verified |
+| S4 | M2 | T11–T13 | READY | Phaser integration + case loader |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
 | S7 | M4 | T24–T26 | NOT_STARTED | Decision + resolution + results |
@@ -130,8 +130,8 @@ CANCELLED
 | T07 | Implement evidence domain | M2 | S3 | DONE | HIGH | T03,T06 |
 | T08 | Implement deduction domain | M2 | S3 | DONE | HIGH | T03,T07 |
 | T09 | Implement scoring engine | M2 | S3 | DONE | HIGH | T03,T07,T08 |
-| T10 | Implement progress repository | M2 | S3 | READY | HIGH | T03 |
-| T11 | Integrate Phaser shell | M2 | S4 | NOT_STARTED | HIGH | T01–T02 |
+| T10 | Implement progress repository | M2 | S3 | DONE | HIGH | T03 |
+| T11 | Integrate Phaser shell | M2 | S4 | READY | HIGH | T01–T02 |
 | T12 | Implement typed React–Phaser bridge | M2 | S4 | NOT_STARTED | HIGH | T06,T11 |
 | T13 | Implement case loader | M2 | S4 | NOT_STARTED | HIGH | T04,T05 |
 | T14 | Finalize Case 001 authoring | M3 | S5 | NOT_STARTED | CRITICAL | Documentation baseline |
@@ -372,6 +372,21 @@ Human review only.
 
 ---
 
+## T10 — Local Progress and Attempt Semantics — Completion Record
+
+- Status: DONE; M2/S3; 2026-10-07. Canonical progress repository task and completed T03 dependency confirmed. T11 not started.
+- Added CompletedAttempt creation restricted to canonical completed Results. Injected attempt identity and completion timestamp are preserved; final score delegates to T09. No solved inference: existing CaseProgress contains completion, not solved correctness; bestRating remains null.
+- Pure aggregation derives attemptCount from distinct completed identities and bestScore from their highest final total. First saved identity wins even if retry payload differs. caseId + authored caseVersion isolate histories; interrupted/abandoned sessions restart with new injected IDs and do not count.
+- Added replaceable ProgressRepository and storage-injected LocalProgressRepository. Namespaced per-case/version keys store schemaVersion-1 minimal completed summaries, never live gameplay. Reads validate, report recovery, salvage valid entries and preserve unsupported versions. Quota/access failures return typed codes; unrelated keys are untouched.
+- Tests: 17 focused tests; all 149 tests across nine files passed. Terminal boundary, T09 delegation, first/distinct/duplicate attempts, higher/lower/equal scores, identity/version isolation, frozen inputs, injected timestamps, save/read recreation, malformed/partial data, unsupported formats and storage failures covered.
+- Verification: npm ci, aggregate check including format:check/lint/project and isolated-domain typechecks/test:run, production build, CI parse (nine steps), final diff review and git diff --check passed. Production rendering and Tailwind/responsive smoke passed at 390/768/1280px without horizontal overflow or console warnings/errors.
+- Audit: production zero vulnerabilities; full audit retains five accepted high development-only braces-chain findings and exit 1. ESLint 9 deprecation retained. npm ci exited 0 with an EPERM cleanup warning within node_modules; subsequent gates passed. No dependencies or lockfile changes.
+- Limits: localStorage read/modify/write is synchronous within one call but not transactional between separate tabs. The minimal completed-attempt ledger grows with completed playthroughs; quota failure is explicit. Settings, live resume, cloud sync, authoritative solved evaluation, ratings and UI integration remain deferred.
+- Files: progress.ts, progress-repository.ts, local-progress-repository.ts and two test files added; ARCHITECTURE/GAME_SPEC/README/TRACKER documented. T06–T09 implementations and previous tests unchanged; no ROADMAP sequencing change, generated tracked artifacts or commit.
+- Progress: M2 4/7 IN_PROGRESS; S3 DONE 4/4; overall 10/34. S4/T11 READY because T01/T02 are DONE; explicit authorization required.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -427,10 +442,10 @@ Notes:
 | Format | PASS | 2026-10-07 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-07 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-07 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-07 | 132 tests: 112 prior tests plus 20 T09 tests |
+| Unit tests | PASS | 2026-10-07 | 149 tests: 132 prior tests plus 17 T10 tests |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-07 | T09 build passed; T01 shell retained |
+| Production build | PASS | 2026-10-07 | T10 build passed; T01 shell retained |
 | Case validation | PASS | 2026-10-07 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
@@ -464,6 +479,7 @@ Track execution decisions that affect tasks but do not yet justify a separate AD
 | D005 | Approve source-triggered evidence, separate discovery/collection, idempotency and ambiguity rejection | T07 | APPROVED | 2026-10-06 | Exact discovered ChangeId unlocks change evidence; supportingInformation is not an unlock rule; other triggers remain unsupported |
 | D006 | Approve one valid deduction submission per attempt, including incorrect answers | T08 | APPROVED | 2026-10-06 | Canonical solution determines correctness; first answer locks; no retry, scoring or progression; replay later |
 | D007 | Approve derived scoring and existing-field eligibility | T09 | APPROVED | 2026-10-07 | Primary change = meaningful AND required; important evidence = primary AND required; authored values, unique awards, first-answer truth, incorrect-attempt penalties, rawTotal/zero floor; final/time/hint/accuracy/rating deferred |
+| D008 | Approve local completed-attempt progress semantics | T10 | APPROVED | 2026-10-07 | Unique injected attempt identity; completed Results only; first save wins; T09 best score; caseVersion isolation; completion is not solved; interrupted sessions restart; local-only versioned persistence |
 
 Major architectural decisions should still be reflected in `ARCHITECTURE.md` and, where useful later, ADRs.
 
@@ -584,13 +600,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1/S2 DONE; T01–T09 DONE; M2 IN_PROGRESS (3/7); S3 IN_PROGRESS (3/4)
+M1 DONE (6/6); S1/S2/S3 DONE; T01–T10 DONE; M2 IN_PROGRESS (4/7); S4 READY
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T10 — Implement Progress Repository (READY)
+T11 — Integrate Phaser Shell (READY)
 ```
 
-T09 deterministic scoring is verified. Do not start T10 automatically.
+T10 local progress is verified. Do not start T11 automatically.
 
 ---
 
@@ -600,8 +616,8 @@ T09 deterministic scoring is verified. Do not start T10 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M2 — Core Game Engine
 
-**Sprint:** S3 — Core Domain (IN_PROGRESS, 3/4)
+**Sprint:** S3 — Core Domain (DONE, 4/4); S4 READY
 
-**T01–T34 Complete:** 9 / 34
+**T01–T34 Complete:** 10 / 34
 
-**Next Implementation Task:** T10 after explicit authorization
+**Next Implementation Task:** T11 after explicit authorization

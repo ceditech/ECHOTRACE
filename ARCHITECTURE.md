@@ -885,6 +885,18 @@ CloudProgressRepository
 
 Application code should depend on the interface rather than direct storage APIs.
 
+## Approved T10 Contract
+
+The Stage-1 ProgressRepository lives in `src/game/application/progress-repository.ts`. Its operations are `getCaseProgress(caseId, caseVersion)` and `saveCompletedAttempt(attempt)`, returning typed results rather than permitting arbitrary aggregate overwrites. The settings methods above remain conceptual; settings persistence is outside this historical-progress task.
+
+`createCompletedAttempt` accepts only the canonical completed Results state and obtains the final score through the existing T09 calculation. Pure domain functions append unique completed-attempt summaries and derive the existing CaseProgress. Completion is independent of solved correctness: CaseProgress has no solved field, and T10 adds no inference or solved transition. bestRating remains null while ratings are deferred.
+
+LocalProgressRepository receives a getItem/setItem storage interface; browser orchestration can inject localStorage without domain access or a browser global at module initialization. Each `echotrace:progress:v1:<encoded-caseId>:<caseVersion>` key contains a schemaVersion-1 envelope and minimal completed-attempt summaries (case identity/version, injected attemptId, injected completedAt, T09 score). Distinct case versions have independent histories. The first persisted result for an attempt identity wins, including retries with different payloads.
+
+Reads report recovery explicitly, retain valid entries from partially malformed ledgers and never modify storage. A later successful save repairs recoverable data. Unsupported envelope versions and storage failures return typed errors; unsupported data is not overwritten. No unrelated keys are cleared. The adapter performs each read/modify/write synchronously, but localStorage does not provide transactions between separate tabs: concurrent independent writers are not coordinated in Stage 1. Minimal completed-attempt history grows with completed playthroughs; quota failures remain explicit.
+
+Interrupted sessions restart with a new externally injected attemptId and are not counted. This ledger cannot reconstruct live gameplay. There is no autosave, cloud sync, settings implementation or new dependency in T10.
+
 ---
 
 # 26. Local Persistence

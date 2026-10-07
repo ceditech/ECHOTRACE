@@ -643,6 +643,14 @@ An interrupted in-progress case may initially restart rather than support exact 
 
 Persistent data must be versionable so future schema changes can be handled safely.
 
+### 22.1 Approved Stage-1 Attempt and Progress Semantics (T10)
+
+A playthrough has an externally injected unique attemptId for one caseId + caseVersion. Only completed Results attempts enter historical progress. attemptCount counts distinct completed identities; repeated persistence of the same identity is idempotent and preserves its first saved result. Initialized, abandoned and interrupted attempts do not count.
+
+bestScore is the highest T09 final total among saved completed attempts for that case/version. Lower or equal later results cannot reduce it. Completion does not imply solved correctness; the current CaseProgress has no solved field and T10 does not infer one from scores, discoveries, deductions or final choices. Ratings remain null until approved.
+
+Completed summaries preserve injected completedAt timestamps without adding a new last-played chronology policy. Stage-1 progress is browser-local, namespaced, validated and format-versioned. Authored caseVersion is independent of storage schemaVersion. Interrupted gameplay starts a new attempt rather than resuming transient state. Settings persistence remains later work outside T10's historical-progress scope.
+
 ---
 
 ## 23. Progression Rules
