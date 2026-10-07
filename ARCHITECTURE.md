@@ -168,7 +168,7 @@ Optionally use **shadcn/ui** for standard application UI primitives when it redu
 
 ## 3.5 Game Runtime
 
-**Phaser 3**
+**Phaser 4.2.1**
 
 Primary responsibilities:
 
@@ -740,6 +740,26 @@ Phaser scenes must clean up:
 - audio handles where applicable.
 
 React mounting/unmounting must not accidentally create duplicate Phaser game instances.
+
+## T11 Runtime Shell
+
+The approved renderer baseline is Phaser 4.2.1 (MIT), superseding provisional Phaser 3.90.0 before T11 completion. The shell uses an asset-free Canvas base scene. `PhaserHost` owns a mount-local lifecycle in `src/game/renderer`; its effect lazily imports the runtime module only after mounting. Server rendering produces a stable container and loading caption. The runtime is retained outside React render state, so readiness rerenders do not reconstruct it.
+
+The neutral logical rectangle is 960×540, with uniform FIT scaling and centering in a responsive host. This is infrastructure sizing, not a Case 001 art requirement. One ResizeObserver per active mount refreshes parent bounds and scale without recreating the runtime. Cleanup cancels delayed creation/callbacks, disconnects the observer, detaches the owned canvas immediately and requests Phaser destruction on its next frame with remount support retained.
+
+The T11 lifecycle interface exposes readiness and typed load/initialization failures. The `/renderer` preview route exercises mounting/navigation; no case data, audio, timer, scoring or persistence is connected. T12 adds the instance-local projection/intent boundary below; T13 retains case/asset loading.
+
+## T12 Projection and Intent Bridge
+
+`src/game/application/renderer-bridge.ts` defines the framework-independent application boundary. React/application/domain remains authoritative. The renderer receives a disposable readonly projection containing attempt identity, a revision, display phase, scene identity, interaction enablement and an optional neutral target (ObjectId, display label, derived highlight). This intentionally small contract proves communication; authored visuals, regions, assets and production scene rendering remain later tasks. No CaseDefinition, CaseSession, solution, scoring configuration or progress envelope crosses into Phaser.
+
+The bridge explicitly copies and freezes display fields, retains only the latest projection and pushes it into the existing runtime once attached. Application-controlled revisions are nonnegative safe integers, strictly increasing within an attempt. Older/equal revisions are rejected; a new authoritative attempt may begin at revision zero. There is no history or event log.
+
+Phaser emits only `object_selected` with ObjectId, attempt identity and the displayed projection revision. Before dispatch the bridge reads current application state, checks attempt/revision/target and interaction enablement, and returns typed rejection reasons for stale or invalid delivery. Acceptance means delivered, not correct. The injected application handler may call T07; Phaser never evaluates selection truth. An application reducer must also validate queued actions against current state before committing changes.
+
+Each mounted host creates its own connection. Cleanup disposes it before destroying the runtime, so previous-runtime callbacks remain rejected even when a remount reuses an attempt ID. React Effect Events read current projection/callback props without capturing old values or restarting the runtime. Projection effects update existing Phaser rectangle/text objects; they do not create another Game. No global event bus or second authoritative session exists.
+
+The `/renderer` route uses reducer-owned synthetic presentation state and neutral controls to exercise projection updates, selection feedback and interaction enablement, with an HTML selection alternative. It does not load a case or assert discovery correctness. T13 owns real case loading; later gameplay tasks derive projections from authoritative sessions and integrate semantic selection with T07.
 
 ---
 

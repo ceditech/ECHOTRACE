@@ -115,7 +115,7 @@ Next.js
 React
 TypeScript
 Tailwind CSS
-Phaser 3
+Phaser 4.2.1
 Runtime schema validation
 Automated testing
 Browser-local persistence for the vertical slice
@@ -174,6 +174,10 @@ Infrastructure implements domain/application interfaces.
 - future payments
 
 Core domain logic must remain independent of React, Next.js, Phaser, browser storage, and vendor SDKs.
+
+The T11 shell uses the approved Phaser 4.2.1 baseline (MIT), superseding provisional Phaser 3.90.0 before T11 completion, behind an after-mount dynamic import. Visit `/renderer` through the home page's scene-preview link. React owns one runtime per host; resize refreshes the existing runtime, and navigation cancels pending initialization and cleans the canvas/observer/runtime. The asset-free scene uses a temporary 960×540 logical rectangle with FIT scaling, centering and letterboxing.
+
+T12 adds an instance-local typed bridge: application-owned readonly projections update existing renderer objects; Phaser emits semantic ObjectId selection intents. Attempt identity, strictly increasing projection revisions and mount disposal reject obsolete updates/input. Dispatch reads current application state; no solution, scoring or persistence data is projected. The preview's synthetic reducer and controls demonstrate both directions without a production case. T13 case loading remains unimplemented; see ARCHITECTURE.md for the contract and queued-action responsibility.
 
 ---
 
@@ -1268,11 +1272,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T10 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, and local completed-attempt progress. M1/S2/S3 are complete; M2 is in progress and S4 is ready.
+M0/S0 architecture planning is approved. T01–T12 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, and the typed instance-local projection/intent bridge. M1/S2/S3 are complete; M2 is in progress (6/7) and S4 is in progress (2/3).
 
 The next task is:
 
-> **T11 — Integrate Phaser Shell — READY, awaiting explicit authorization**
+> **T13 — Implement Case Loader — READY, awaiting explicit authorization**
 
 ---
 

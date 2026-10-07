@@ -71,17 +71,17 @@ CANCELLED
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
 | Current Milestone | M2 — Core Game Engine |
-| Current Sprint | S3 — Core Domain (DONE, 4/4); S4 READY |
-| Implementation Status | T01–T10 complete; M1 6/6; M2 4/7; S3 4/4 |
-| Current Engineering Task | T10 — Implement progress repository (DONE) |
-| Next Implementation Task | T11 after explicit authorization |
+| Current Sprint | S4 — Renderer Integration (IN_PROGRESS, 2/3) |
+| Implementation Status | T01–T12 complete; M1 6/6; M2 6/7; S3 4/4; S4 2/3 |
+| Current Engineering Task | T12 — Implement typed React–Phaser bridge (DONE) |
+| Next Implementation Task | T13 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 10 / 34 |
+| Overall T01–T34 Completion | 12 / 34 |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-07 |
 
-**Important:** T01–T10 are DONE. S3 is DONE; T11 is READY but has not started.
+**Important:** T01–T12 are DONE. S3 is DONE; S4 is IN_PROGRESS (2/3). T13 is READY but has not started and requires explicit authorization.
 
 ---
 
@@ -91,7 +91,7 @@ CANCELLED
 |---|---|---|---|---|---:|---|
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
-| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 4/7 | Reusable engine foundations operational |
+| M2 | Core Game Engine | S3–S4 | T07–T13 | IN_PROGRESS | 6/7 | Reusable engine foundations operational |
 | M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | NOT_STARTED | 0/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
@@ -107,7 +107,7 @@ CANCELLED
 | S1 | M1 | T01–T03 | DONE | 3/3 complete; scaffold, quality baseline, and domain contracts verified |
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
 | S3 | M2 | T07–T10 | DONE | 4/4 complete; deterministic rules and local progress verified |
-| S4 | M2 | T11–T13 | READY | Phaser integration + case loader |
+| S4 | M2 | T11–T13 | IN_PROGRESS | 2/3 complete; Phaser shell and typed bridge verified; case loader pending |
 | S5 | M3 | T14–T18 | NOT_STARTED | Case 001 definition + observation |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
 | S7 | M4 | T24–T26 | NOT_STARTED | Decision + resolution + results |
@@ -131,9 +131,9 @@ CANCELLED
 | T08 | Implement deduction domain | M2 | S3 | DONE | HIGH | T03,T07 |
 | T09 | Implement scoring engine | M2 | S3 | DONE | HIGH | T03,T07,T08 |
 | T10 | Implement progress repository | M2 | S3 | DONE | HIGH | T03 |
-| T11 | Integrate Phaser shell | M2 | S4 | READY | HIGH | T01–T02 |
-| T12 | Implement typed React–Phaser bridge | M2 | S4 | NOT_STARTED | HIGH | T06,T11 |
-| T13 | Implement case loader | M2 | S4 | NOT_STARTED | HIGH | T04,T05 |
+| T11 | Integrate Phaser shell | M2 | S4 | DONE | HIGH | T01–T02 |
+| T12 | Implement typed React–Phaser bridge | M2 | S4 | DONE | HIGH | T06,T11 |
+| T13 | Implement case loader | M2 | S4 | READY | HIGH | T04,T05 |
 | T14 | Finalize Case 001 authoring | M3 | S5 | NOT_STARTED | CRITICAL | Documentation baseline |
 | T15 | Add Case 001 structured data | M3 | S5 | NOT_STARTED | HIGH | T13,T14 |
 | T16 | Build briefing | M3 | S5 | NOT_STARTED | HIGH | T06,T15 |
@@ -387,6 +387,42 @@ Human review only.
 
 ---
 
+## T11 — Integrate Phaser Shell — Completion Record
+
+- Status: DONE; M2/S4; 2026-10-07. Canonical shell scope confirmed; T12 not started.
+- Baseline: approved Phaser 4.2.1 (MIT), superseding provisional Phaser 3.90.0 before completion. Phaser 3 removed; only one Phaser package installed. New direct runtime dependency is Phaser; EventEmitter3 5.0.4 is its required transitive dependency. No other direct dependency/version changes, npm manifest entry, native-binding declaration or global event bus.
+- Architecture: React-owned host loads the runtime after mount. One mount-local Game/neutral Canvas Scene, temporary 960×540 logical rectangle, FIT scaling and centering. Readiness rerenders retain the runtime; ResizeObserver refreshes parent bounds without reconstruction. Cleanup disconnects the observer, invalidates delayed imports/callbacks, detaches the owned canvas and requests Phaser destruction with remount support retained.
+- Phaser 4 compatibility: existing namespace import, Game constructor, Scene inheritance, Canvas renderer, scale and destruction APIs required no source adaptation. Strict TypeScript 5.9.3 and Next.js 16.3.8 production prerender passed; stable server placeholder has no browser-global access.
+- Tests: eight new tests (six lifecycle/failure/cancellation tests and two server-safe host/route tests). All 157 tests across 11 files passed, including all 149 previous tests. No existing tests weakened or modified.
+- npm blocker resolved: npm 11.5.2 initially pruned 27 existing optional lockfile entries; clean install exited 0 but Vitest could not start. Owner-authorized temporary npm 11.6.4 was used only for package-lock-only repair. It restored all entries without changing any existing locked version. Returned to NVM Node 22.18.0/npm 11.5.2; fresh npm ci left the lockfile hash unchanged and all tests executed. Windows/Linux Rolldown binding entries retained; no permanent PATH, Node or npm change.
+- Verification: npm ci, format:check, lint, typecheck, typecheck:domain, test:run, aggregate check, production build and git diff --check passed. Unchanged CI YAML parsed with nine steps; hosted CI execution not claimed. Production audit zero vulnerabilities; full audit exit 1 retains five accepted high development-only braces → micromatch → fast-glob → Next ESLint plugin/config findings. ESLint 9 support warning retained.
+- Browser automation: production /renderer initialized after loading placeholder with one canvas inside its host; 390×844, 768×1024, 1280×900 and 844×390 viewports preserved the full scene, uniform fit, centering and no horizontal overflow. Three navigation cycles gave zero canvases on home and one on remount. Development Strict Mode startup/unmount/remount gave one/zero/one canvas. No captured warning/error logs. Mobile screenshot visually inspected; home Tailwind/responsive checks passed at 390/768/1280. Temporary tabs/servers closed and viewport reset.
+- Boundaries/regression: T06–T10 source, authored data, prior tests and CI unchanged. Domain remains framework/browser-free and passes isolated typechecking. No gameplay bridge, case loader, Case 001, production assets, gameplay input, timer, scoring, persistence, audio or backend added. Typed failures expose import/construction errors with a minimal user-facing failure caption.
+- Documentation: ARCHITECTURE/README record Phaser 4, browser-only loading, lifecycle ownership, infrastructure sizing and unchanged T11/T12 boundary. ROADMAP sequencing unchanged. Final diff reviewed; no generated tracked output, unrelated changes or commit/PR.
+- Limits: shell verification is not full gameplay E2E, accessibility certification or memory profiling. Native bindings are reproducible via npm ci; future npm 11.5.2 lockfile mutations should be checked for renewed pruning.
+- Progress: M2 5/7 IN_PROGRESS; S4 1/3 IN_PROGRESS; overall 11/34. T12 READY because T06/T11 are DONE; explicit authorization still required.
+
+---
+
+## T12 — Typed React–Phaser Bridge — Completion Record
+
+- Status: DONE; M2/S4; 2026-10-07. Canonical typed-bridge scope and completed T06/T11 dependencies confirmed; T13 not started.
+- Added a framework-independent application bridge with readonly display projection and semantic object_selected intent. Projection includes attemptId, revision, displayPhase, sceneId, interactionEnabled and one optional neutral target. Explicit copies/freeze exclude hidden extra fields; no CaseDefinition/CaseSession, solution, scoring or progress data is sent to Phaser.
+- Synchronization: nonnegative safe-integer revisions strictly increase per attempt; old/equal updates and stale attempt updates are rejected. Latest projection is retained during lazy loading and applied when the renderer attaches. A new authoritative attempt may begin at zero; no history/event sourcing/global bus.
+- Dispatch: each intent carries ObjectId, attempt identity and displayed revision. The bridge reads current injected application state before delivery and returns typed stale/disposed/invalid/disabled/unknown-target rejections. Acceptance means delivery, not correctness. One synthetic integration test invokes unchanged T07 through an injected application handler; production gameplay wiring remains deferred.
+- Host/adapter: mount-local bridge is disposed before runtime cleanup. React Effect Events read current props/callbacks; a separate projection effect updates existing rectangle/text objects. T11 browser-only loading, cancellation, resize and teardown retained. Minimal typed onRuntime lifecycle callback attaches the existing adapter. Pointer/touch emits intent only; no game rules or persistence inside Phaser.
+- Preview: reducer-owned synthetic presentation state demonstrates updates, semantic selection feedback, interaction enablement and HTML keyboard selection. The reducer rechecks queued attempt/revision/target against current state. No Case 001, loader, authored assets, observation/investigation gameplay, time, score, evidence/deduction UI or persistence integration.
+- Tests: nine new runtime tests plus compile-time readonly/solution/pointer-contract checks. All 166 tests across 12 files passed, including the prior 157 and all eight T11 tests. Tests cover ordering, frozen display-only copying, latest-state dispatch, attempt replacement, disposed/remounted connections, invalid revisions, disabled/unknown targets, lazy-load projection buffering and injected T07 dispatch. Existing tests unchanged.
+- Verification: npm ci, format:check, lint, typecheck including typecheck:domain, test:run, aggregate check, build and git diff --check passed. Final clean install under NVM Node 22.18.0/npm 11.5.2 preserved the repaired lockfile hash; all 166 tests passed afterward. Phaser remains 4.2.1; no dependency/lockfile changes during T12. Unchanged CI YAML parsed (nine steps); hosted CI not run.
+- Browser: production projection update visibly changed canvas text; canvas click delivered selection and returned highlight feedback. Disabled click did not change revision; HTML Enter selection worked. One canvas remained through updates; 390/768/1280 and landscape preserved fit/centering/containment without horizontal overflow. Three navigation cycles gave zero canvases after unmount and one after remount. Development Strict Mode update/selection/unmount/remount passed; no captured warn/error logs. Mobile screenshot inspected and saved. Home Tailwind/responsive checks passed; tabs/servers closed and viewport reset.
+- Audit: production zero vulnerabilities (exit 0); full audit retains the same five accepted high development-only braces-chain findings (exit 1). ESLint 9 support warning retained. No secrets, arbitrary URLs, executable authored messages, unsafe HTML, global bus or duplicate authoritative session added.
+- Regression/preservation: T06–T10 source, domain contracts, case validation/content, prior tests, CI, package.json/package-lock and ROADMAP sequencing unchanged by T12. Existing uncommitted T11 work preserved. No generated tracked output or commit/PR.
+- Documentation: ARCHITECTURE and README describe projection direction, authority, revision policy, latest-state/queued-action dispatch, stale mount protection and the T12/T13 boundary.
+- Limits: the contract deliberately renders one neutral target; production scenes/assets/regions and game-phase policy remain future tasks. Browser verification covers synthetic bridge behavior, not Case 001 gameplay or memory profiling. Application reducers must retain current-state validation when committing queued intents.
+- Progress: M2 6/7 IN_PROGRESS; S4 2/3 IN_PROGRESS; overall 12/34. T13 READY because T04/T05 are DONE; explicit authorization required.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -442,10 +478,10 @@ Notes:
 | Format | PASS | 2026-10-07 | T02 Prettier baseline |
 | Lint | PASS | 2026-10-07 | Next.js lint plus test-import protection |
 | Type-check | PASS | 2026-10-07 | Strict project + isolated domain + compile-time contracts |
-| Unit tests | PASS | 2026-10-07 | 149 tests: 132 prior tests plus 17 T10 tests |
+| Unit tests | PASS | 2026-10-07 | 166 tests across 12 files: 157 prior tests plus nine T12 tests |
 | Integration tests | CONFIGURED | — | Runner supports tests/integration; no integration suite yet |
 | E2E | NOT_CONFIGURED | — | Planned before vertical-slice release |
-| Production build | PASS | 2026-10-07 | T10 build passed; T01 shell retained |
+| Production build | PASS | 2026-10-07 | T12 typed bridge preview prerender/build passed; T01 shell retained |
 | Case validation | PASS | 2026-10-07 | T04 pipeline plus T05 relationship integrity |
 | Responsive QA | NOT_STARTED | — | T29 |
 | Accessibility QA | NOT_STARTED | — | T29 |
@@ -456,6 +492,8 @@ Notes:
 # 11. Blocker Log
 
 No active blockers. The T01 transitive-Zod scope conflict was resolved by explicit owner approval. The braces advisory and ESLint 9 support warning remain accepted development-tooling risks, documented in the T01 completion record.
+
+T11's optional-native-binding blocker was resolved with owner-authorized temporary npm 11.6.4 lockfile repair. Final npm 11.5.2 clean installation reproduced the repaired graph without changing the lockfile; all 157 tests passed. Future lockfile updates under npm 11.5.2 require checking optional-binding retention.
 
 When a blocker occurs, record:
 
@@ -480,6 +518,7 @@ Track execution decisions that affect tasks but do not yet justify a separate AD
 | D006 | Approve one valid deduction submission per attempt, including incorrect answers | T08 | APPROVED | 2026-10-06 | Canonical solution determines correctness; first answer locks; no retry, scoring or progression; replay later |
 | D007 | Approve derived scoring and existing-field eligibility | T09 | APPROVED | 2026-10-07 | Primary change = meaningful AND required; important evidence = primary AND required; authored values, unique awards, first-answer truth, incorrect-attempt penalties, rawTotal/zero floor; final/time/hint/accuracy/rating deferred |
 | D008 | Approve local completed-attempt progress semantics | T10 | APPROVED | 2026-10-07 | Unique injected attempt identity; completed Results only; first save wins; T09 best score; caseVersion isolation; completion is not solved; interrupted sessions restart; local-only versioned persistence |
+| D009 | Approve Phaser 4.2.1 renderer baseline and narrow temporary npm lockfile repair | T11 | APPROVED | 2026-10-07 | Supersedes provisional Phaser 3.90.0 before completion; temporary npm 11.6.4 repairs lockfile only; final environment remains Node 22.18.0/npm 11.5.2; T12 remains unauthorized |
 
 Major architectural decisions should still be reflected in `ARCHITECTURE.md` and, where useful later, ADRs.
 
@@ -600,13 +639,13 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1/S2/S3 DONE; T01–T10 DONE; M2 IN_PROGRESS (4/7); S4 READY
+M1 DONE (6/6); S1/S2/S3 DONE; T01–T12 DONE; M2 IN_PROGRESS (6/7); S4 IN_PROGRESS (2/3)
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T11 — Integrate Phaser Shell (READY)
+T13 — Implement Case Loader (READY)
 ```
 
-T10 local progress is verified. Do not start T11 automatically.
+T12 typed bridge is verified. Do not start T13 automatically.
 
 ---
 
@@ -616,8 +655,8 @@ T10 local progress is verified. Do not start T11 automatically.
 **Stage:** Stage 1 — Vertical Slice  
 **Milestone:** M2 — Core Game Engine
 
-**Sprint:** S3 — Core Domain (DONE, 4/4); S4 READY
+**Sprint:** S4 — Renderer Integration (IN_PROGRESS, 2/3)
 
-**T01–T34 Complete:** 10 / 34
+**T01–T34 Complete:** 12 / 34
 
-**Next Implementation Task:** T11 after explicit authorization
+**Next Implementation Task:** T13 after explicit authorization
