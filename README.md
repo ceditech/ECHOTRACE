@@ -183,6 +183,8 @@ T13 loading uses `loadCase(caseId, source)` outside the domain and renderer. The
 
 Case 001 content lives in `src/cases/content/case-001/case.json` (schemaVersion 1, caseVersion 1); `en.json` contains every referenced English string, including the exact approved request, statements, choices and resolution. Logical asset IDs are declared in the bundled source without paths or artwork. The data uses a 240-second estimated duration, a 25-second observation and a 2-second transition, with a theoretical score maximum of 2,650. Visual sizes are declarative layout values pending rendered QA. Artwork, runtime text presentation, full playability, accessibility QA and incorrect-final-decision behavior remain deferred. No runtime text resolver or production scene is implemented by T15.
 
+T16 adds the fixed `/case` briefing route, linked from home alongside the existing renderer preview. The trusted loader feeds a bounded application adapter that resolves only briefing fields from the approved English catalog. A reducer owns one CaseSession, initialized after loading outside rendering; Start advances it from `case_briefing` to `observation_intro` exactly once. The handoff explicitly states that the observation scene is unavailable and no countdown runs. Loading has a 15-second deadline with retry; unmount cancels the deadline and ignores stale import results. Case content and the frozen dossier remain unchanged. Observation rendering/timing, broader text presentation and the remaining gameplay are deferred.
+
 ---
 
 # 6. Data-Driven Case Principle
@@ -1276,11 +1278,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T15 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, the trusted case-loading boundary, owner-approved Case 001 mystery design, and validated declarative Case 001 content. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3). Overall progress is 15/34 (44.1%); M3 is IN_PROGRESS (2/7) and S5 is IN_PROGRESS (2/5).
+M0/S0 architecture planning is approved. T01–T16 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, the trusted case-loading boundary, owner-approved Case 001 mystery design, validated declarative Case 001 content, and the briefing with an observation-intro handoff. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3). Overall progress is 16/34 (47.1%); M3 is IN_PROGRESS (3/7) and S5 is IN_PROGRESS (3/5).
 
 The next task is:
 
-> **T16 — Build Briefing — NOT STARTED, awaiting explicit authorization**
+> **T17 — Build Observation Scene — NOT STARTED, awaiting explicit authorization**
 
 ---
 

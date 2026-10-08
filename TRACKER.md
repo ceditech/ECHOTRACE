@@ -70,18 +70,18 @@ CANCELLED
 | Field | Current Value |
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
-| Current Milestone | M3 — Case 001 Content & Core Loop (IN_PROGRESS, 2/7) |
-| Current Sprint | S5 — Case 001 Definition & Observation (IN_PROGRESS, 2/5) |
-| Implementation Status | T01–T15 complete; M1 6/6; M2 7/7; M3 2/7; S3 4/4; S4 3/3; S5 2/5 |
-| Current Engineering Task | T15 — Add Case 001 structured data (DONE) |
-| Next Implementation Task | T16 after explicit authorization |
+| Current Milestone | M3 — Case 001 Content & Core Loop (IN_PROGRESS, 3/7) |
+| Current Sprint | S5 — Case 001 Definition & Observation (IN_PROGRESS, 3/5) |
+| Implementation Status | T01–T16 complete; M1 6/6; M2 7/7; M3 3/7; S3 4/4; S4 3/3; S5 3/5 |
+| Current Engineering Task | T16 — Build briefing (DONE) |
+| Next Implementation Task | T17 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 15 / 34 (approximately 44.1%) |
+| Overall T01–T34 Completion | 16 / 34 (approximately 47.1%) |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-07 |
 
-**Important:** T01–T15, M2 and S4 are DONE. T14's canonical dossier remains frozen. T15 provides validated content, not playable gameplay. M3 and S5 remain IN_PROGRESS. T16 is not started or authorized.
+**Important:** T01–T16, M2 and S4 are DONE. T14's canonical dossier remains frozen. T16 provides a briefing and observation-intro handoff, not playable observation. M3 and S5 remain IN_PROGRESS. T17 is not started or authorized.
 
 ---
 
@@ -92,7 +92,7 @@ CANCELLED
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
 | M2 | Core Game Engine | S3–S4 | T07–T13 | DONE | 7/7 | Reusable engine foundations operational |
-| M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | IN_PROGRESS | 2/7 | Briefing → observation → investigation works |
+| M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | IN_PROGRESS | 3/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
 | M6 | Quality & Validation | S9–S10 | T31–T34 | NOT_STARTED | 0/4 | Vertical Slice Exit Gate satisfied |
@@ -108,7 +108,7 @@ CANCELLED
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
 | S3 | M2 | T07–T10 | DONE | 4/4 complete; deterministic rules and local progress verified |
 | S4 | M2 | T11–T13 | DONE | 3/3 complete; Phaser shell, typed bridge and trusted case loader verified |
-| S5 | M3 | T14–T18 | IN_PROGRESS | 2/5 complete; approved design and validated content; observation deferred |
+| S5 | M3 | T14–T18 | IN_PROGRESS | 3/5 complete; approved design, validated content and briefing; observation deferred |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
 | S7 | M4 | T24–T26 | NOT_STARTED | Decision + resolution + results |
 | S8 | M5 | T27–T30 | NOT_STARTED | Replay + app shell + accessibility + polish |
@@ -136,7 +136,7 @@ CANCELLED
 | T13 | Implement case loader | M2 | S4 | DONE | HIGH | T04,T05 |
 | T14 | Finalize Case 001 authoring | M3 | S5 | DONE | CRITICAL | Documentation baseline |
 | T15 | Add Case 001 structured data | M3 | S5 | DONE | HIGH | T13,T14 |
-| T16 | Build briefing | M3 | S5 | NOT_STARTED | HIGH | T06,T15 |
+| T16 | Build briefing | M3 | S5 | DONE | HIGH | T06,T15 |
 | T17 | Build observation scene | M3 | S5 | NOT_STARTED | HIGH | T11–T12,T15 |
 | T18 | Build observation timer | M3 | S5 | NOT_STARTED | HIGH | T06,T17 |
 | T19 | Build transition | M3 | S6 | NOT_STARTED | MEDIUM | T17,T18 |
@@ -466,6 +466,21 @@ Human review only.
 
 ---
 
+## T16 — Build Briefing
+
+- Status: DONE under owner T16 Controlled Implementation Authorization. Frozen dossier, case.json and en.json unchanged.
+- Added the fixed /case route, application briefing adapter/reducer and presentational components. Home links to the briefing while preserving the renderer preview. Only approved briefing text fields reach the view; wording and paragraph breaks are preserved.
+- Lifecycle: trusted case loading and required text resolution precede injected session initialization outside rendering. One authoritative CaseSession starts at case_briefing. Native Start uses the existing domain transition to observation_intro once; observationStartedAt remains null. The handoff explicitly states that the scene is unavailable and no countdown runs.
+- Failure handling: bounded source/text/initialization failures, 15-second load deadline, explicit retry, stale request and attempt guards, duplicate Start rejection, unmount cancellation and deadline cleanup. Dynamic imports themselves are not abortable; obsolete results are ignored.
+- Verification: npm run check passed formatting, zero-warning lint, application and isolated-domain type checks, and 224 tests across 19 files (28 new tests). npm run build passed, including /case. Diff, whitespace, new-file and protected-scope inspection passed.
+- Browser verification: pointer, Enter and Space Start activation; repeated clicks; navigation/remount; handoff focus; visible keyboard focus; no horizontal overflow at 390, 768 and 1280 CSS pixels; usable Start target; preserved paragraphs; no canvas; no captured browser warnings/errors. Temporary development server and browser tab closed.
+- Warnings: Git reports LF-to-CRLF conversion and inaccessible user-level ignore configuration; inventory and diff checks completed. No lint/build warnings or failures.
+- Deferred: observation rendering/countdown, artwork, broader runtime text presentation, evidence/testimony/deduction/decision/results UI, replay, full accessibility QA and human playtesting. Error/retry branches verified in automated application tests; no screen-reader audit or full playable-case claim.
+- Scope: seven authorized additions and home/README/TRACKER changes only. No dependencies, contract changes, new mechanics, unrelated refactoring, commit or push. T17 and later tasks remain unstarted and unauthorized.
+- Progress: 16/34 (47.1%); M3 IN_PROGRESS 3/7; S5 IN_PROGRESS 3/5.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -682,14 +697,14 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1/S2/S3/S4 DONE; T01–T15 DONE; M2 DONE (7/7)
-M3 IN_PROGRESS (2/7); S5 IN_PROGRESS (2/5); overall 15/34
+M1 DONE (6/6); S1/S2/S3/S4 DONE; T01–T16 DONE; M2 DONE (7/7)
+M3 IN_PROGRESS (3/7); S5 IN_PROGRESS (3/5); overall 16/34
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T16 — Build Briefing (NOT_STARTED — NOT AUTHORIZED)
+T17 — Build Observation Scene (NOT_STARTED — NOT AUTHORIZED)
 ```
 
-T15 approved structured content is verified. Do not start T16 without separate owner authorization.
+T16 briefing is verified. Do not start T17 without separate owner authorization.
 
 ---
 
@@ -697,10 +712,10 @@ T15 approved structured content is verified. Do not start T16 without separate o
 
 **Tracker Version:** 1.0  
 **Stage:** Stage 1 — Vertical Slice  
-**Milestone:** M3 — Case 001 Content & Core Loop (IN_PROGRESS, 2/7)
+**Milestone:** M3 — Case 001 Content & Core Loop (IN_PROGRESS, 3/7)
 
-**Sprint:** S5 — Case 001 Definition & Observation (IN_PROGRESS, 2/5)
+**Sprint:** S5 — Case 001 Definition & Observation (IN_PROGRESS, 3/5)
 
-**T01–T34 Complete:** 15 / 34 (approximately 44.1%)
+**T01–T34 Complete:** 16 / 34 (approximately 47.1%)
 
-**Next Implementation Task:** T16 after explicit authorization
+**Next Implementation Task:** T17 after explicit authorization

@@ -14,8 +14,14 @@ export default function HomePage() {
         Visual detective mysteries where every detail leaves a trace.
       </p>
       <Link
+        href="/case"
+        className="mt-8 self-start rounded-lg bg-amber-300 px-5 py-3 font-semibold text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300"
+      >
+        Open Case 001 briefing
+      </Link>
+      <Link
         href="/renderer"
-        className="mt-8 self-start rounded-lg border border-slate-600 px-4 py-3 focus-visible:outline-2 focus-visible:outline-offset-4"
+        className="mt-4 self-start rounded-lg border border-slate-600 px-4 py-3 focus-visible:outline-2 focus-visible:outline-offset-4"
       >
         View scene preview
       </Link>
