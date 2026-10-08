@@ -357,6 +357,12 @@ The interface should not overwhelm players with unnecessary controls. During inv
 
 ---
 
+### 19.1 Optional Case Cinematic Introduction — CIN-01
+
+Optional cinematic introductions are approved for planning, not implementation. They establish atmosphere without revealing the solution or changing canonical events, share the approved T17 character/environment identity, and lead into the existing briefing. The complete player behavior is specified in GAME_SPEC.md §6.1; creative approval and implementation are separate gates in ROADMAP.md. CIN-01 is tracked separately from the unchanged T01–T34 baseline. Video is never required to reach the briefing; Higgsfield and Stitch are candidate production tools, not verified integrations.
+
+---
+
 ## 20. Visual Direction
 
 The initial direction should evoke:

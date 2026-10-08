@@ -160,6 +160,22 @@ Dependencies are the initial planning baseline and may be refined during the app
 
 ---
 
+## Separate Approved Feature Track — CIN-01
+
+Approved for planning by the owner on 2026-10-08. Feature and both gates remain NOT_STARTED and NOT_AUTHORIZED for implementation. Documentation integration is not creative approval or implementation completion.
+
+| ID | Gate | Status | Authorization | Planned coordination / prerequisites |
+|---|---|---|---|---|
+| CIN-01 | Case Cinematic Introduction | NOT_STARTED | Planning approved; implementation NOT_AUTHORIZED | Separate track; see ROADMAP.md CIN-01 and GAME_SPEC.md §6.1 |
+| CIN-01A | Creative and Asset Approval | NOT_STARTED | Creative production NOT_AUTHORIZED | Coordinate with T17 visual design; owner approval of storyboard, 20–30-second shots, dialogue/subtitles, continuity, canonical consistency, assets and provenance |
+| CIN-01B | Player Experience Implementation | NOT_STARTED | Implementation NOT_AUTHORIZED | After CIN-01A approval and accepted media; reuse T16; before final vertical-slice QA in the T31–T34 window |
+
+Accounting unchanged: T01–T34 retain all identifiers, dependencies, membership and completion history; 16/34 (47.1%), M3 3/7 and S5 3/5. CIN-01 is excluded from these counts pending an owner-approved rebaseline. T17 remains NOT_STARTED and NOT_AUTHORIZED.
+
+Open scheduling decisions: exact CIN-01B sprint, first-entry recognition/persistence semantics and optional future auto-skip preference. Autoplay, immediate Skip, failure fallback, replay, captions/mute, reduced motion and untimed briefing handoff are required future acceptance checks; none is implemented or verified here. No artwork/video generation is authorized.
+
+---
+
 # 8. M0 — Planning & Approval
 
 ## Current Task — Architecture Planning

@@ -170,6 +170,20 @@ The player explicitly starts the case after reading the briefing.
 
 ---
 
+### 6.1 Optional Cinematic Entry — CIN-01 (Planning Approved Only)
+
+CIN-01 is NOT_STARTED and NOT_AUTHORIZED for implementation. For cases with an approved cinematic, automatically present it on a player's first case entry, subject to browser autoplay policies, before the existing T16 briefing. Case 001 targets an owner-approved 20–30-second sequence under CIN-01A; exact storyboard, shots, dialogue, subtitles and assets require creative approval and must preserve the frozen dossier.
+
+- Skip is immediately available, including while media loads. Never require playback or loading completion to reach the briefing.
+- Blocked autoplay has a clear manual-play fallback and an immediate route to the briefing. Failed, stalled or unsupported media must not block that route; completion and Skip both lead seamlessly to the same briefing.
+- Provide replay, captions/subtitles, mute controls and accessible keyboard/touch controls. Honor reduced-motion preferences with a nonanimated route to the briefing without requiring playback. An optional future auto-skip preference is planned separately.
+- No solution reveal, exchanged-stand sequence, document-packing/delivery explanation or other decisive reconstruction is shown. Story events and approved T17 character/environment identity must remain consistent. The cinematic must not be the sole source of a required clue.
+- Playback belongs to React/web media infrastructure, not Phaser. It introduces no authoritative gameplay phase, scoring effect or observation countdown. The existing explicit Start and session behavior at the briefing remain unchanged.
+
+First-entry recognition, persistence and future auto-skip policy require decisions before CIN-01B implementation. Playback failure must not mark gameplay completed or alter progress semantics. See ROADMAP.md CIN-01 for separate gates and scheduling; this requirement authorizes no media generation, schema/domain changes or UI implementation.
+
+---
+
 ## 7. Observation Phase
 
 ### 7.1 Purpose

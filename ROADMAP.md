@@ -1745,6 +1745,23 @@ Sprint composition may change after real velocity is observed. Stable task IDs s
 
 ---
 
+## CIN-01 — Case Cinematic Introduction (Separate Planning Track)
+
+Owner approval, 2026-10-08: optional cinematic introductions are APPROVED FOR PLANNING. CIN-01, CIN-01A and CIN-01B are NOT_STARTED and NOT_AUTHORIZED for implementation. This track does not renumber T01–T34, change their dependencies or milestone/sprint membership, or enter their completion denominator. The baseline remains 16/34 (47.1%), M3 3/7 and S5 3/5; a formal rebaseline requires separate owner approval.
+
+| Gate | Scope and acceptance | Scheduling and prerequisites |
+|---|---|---|
+| CIN-01A — Creative and Asset Approval | Owner-approved Case 001 storyboard, 20–30-second shot sequence, dialogue and subtitle script; character continuity, environmental/scene consistency, approved assets and recorded provenance; canonical and spoiler review | Coordinate with T17 visual design and its approved character/environment identity; neither gate authorizes T17. Frozen Case 001 dossier governs story facts. Creative production requires separate authorization. |
+| CIN-01B — Player Experience Implementation | Implement the optional entry experience defined in GAME_SPEC.md §6.1; verify immediate Skip, autoplay fallback, replay, captions/mute, reduced motion, media failures, cleanup and seamless briefing handoff without observation timing | After CIN-01A approval and accepted media, reuse completed T16 briefing; schedule before final vertical-slice QA in the T31–T34 window. Separate implementation authorization required. |
+
+Higgsfield and Stitch are candidate production tools, not verified integrations. CIN-01A must confirm sourcing/export workflow and asset provenance before approval; this record does not authorize artwork or video generation or define canonical dialogue.
+
+CIN-01B keeps playback in React/web media infrastructure, outside Phaser and authoritative gameplay phases. Its acceptance includes blocked autoplay, stalled loading, failed/unsupported media, skip/end races, replay, navigation/unmount, keyboard/touch controls, captions and reduced-motion behavior. Video failure must never block T16 briefing or start observation timing. An optional future auto-skip preference is planned but is not required for the initial gate; its persistence policy remains to be approved.
+
+Exact sprint placement and the first-entry recognition/persistence policy are unresolved planning decisions. If CIN-01B misses the final QA window, the owner must explicitly approve deferral or revised scheduling; do not silently change T-task dependencies, accounting or claim cinematic QA complete.
+
+---
+
 # 65. Progress Calculation
 
 A future tracker may display progress at task, sprint, milestone, and stage level.
