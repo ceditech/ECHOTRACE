@@ -1,0 +1,134 @@
+{
+  "inventory": [
+    {
+      "file": "table-candidate.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 1769535,
+      "transparent_percent": 30.303125,
+      "partial_alpha_percent": 69.56753472222222,
+      "alpha_bbox": [
+        0,
+        56,
+        1280,
+        885
+      ]
+    },
+    {
+      "file": "document-mat-candidate.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        800,
+        630
+      ],
+      "bytes": 579490,
+      "transparent_percent": 51.770833333333336,
+      "partial_alpha_percent": 48.16765873015873,
+      "alpha_bbox": [
+        0,
+        21,
+        800,
+        597
+      ]
+    },
+    {
+      "file": "passport-candidate.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        640,
+        540
+      ],
+      "bytes": 496550,
+      "transparent_percent": 46.45659722222222,
+      "partial_alpha_percent": 53.256076388888886,
+      "alpha_bbox": [
+        29,
+        22,
+        625,
+        529
+      ]
+    },
+    {
+      "file": "star-wallet-candidate.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        800,
+        540
+      ],
+      "bytes": 727493,
+      "transparent_percent": 38.31342592592593,
+      "partial_alpha_percent": 61.43032407407407,
+      "alpha_bbox": [
+        21,
+        9,
+        784,
+        540
+      ]
+    },
+    {
+      "file": "stand-12-candidate.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        648
+      ],
+      "bytes": 409137,
+      "transparent_percent": 38.63590695730453,
+      "partial_alpha_percent": 56.52809927983539,
+      "alpha_bbox": [
+        0,
+        7,
+        757,
+        648
+      ]
+    },
+    {
+      "file": "stand-21-candidate.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        648
+      ],
+      "bytes": 408756,
+      "transparent_percent": 38.63590695730453,
+      "partial_alpha_percent": 56.52629083076132,
+      "alpha_bbox": [
+        0,
+        7,
+        757,
+        648
+      ]
+    }
+  ],
+  "stand_non_numeral_pixels_identical": true,
+  "regions_in_bounds_nonoverlapping": true,
+  "protected_hashes": {
+    "public\\assets\\cases\\case-001\\document-mat.png": "4b8c7a1656cf6e607c8fd0566b579e0fcfa2e462e44436537f2646406cb7e616",
+    "public\\assets\\cases\\case-001\\lounge-background.webp": "394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d",
+    "public\\assets\\cases\\case-001\\owen-backpack.png": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651",
+    "public\\assets\\cases\\case-001\\passport.png": "83920d74c1c3b12d5c36ddc64e73a302f7bf6165d3f51fd27aadfa32f1a118a4",
+    "public\\assets\\cases\\case-001\\stand-12.png": "f70bc518dda3bb73baccb7b56ebe783ee4cc732b93cfabfb973766d6fe3a7b22",
+    "public\\assets\\cases\\case-001\\stand-21.png": "6c82b1ad5d7cf7eb7ef2263d19d42f0516f0e0eb21e2bae46da808743e62b1eb",
+    "public\\assets\\cases\\case-001\\star-wallet.png": "2c1c197917ae4e152444cf824b87a815b5d3388516b301ea6a196675a31bb338",
+    "public\\assets\\cases\\case-001\\table.png": "a9a4373fc8db98fee1c286f288502507c4cbeb4479ace128278ed9550670219b",
+    "src\\cases\\content\\case-001\\case.json": "0c6a1387d3c619ac03cdba9df97a4efdd2823de26d2f83367b19dbf36b8fe976",
+    "docs\\cases\\CASE_001_THE_MISSING_PASSPORT.md": "295452c3d2cd411057e979560528c6b07d4c135b51b739f00717bcfb9c929626",
+    "artifacts\\asset-validation\\case-001\\layout-alternatives\\B\\proposed-scenes.json": "bcc6205ebd853c003e5a0869542c7b8a2365f23c6fae1da074d7acd272e71886"
+  },
+  "protected_inputs_unchanged": true,
+  "canonical_visual_changes_only": true,
+  "geometry_source": "layout-alternatives/B/proposed-scenes.json",
+  "touch_region_at_full_320": [
+    51.2,
+    44.1
+  ]
+}
