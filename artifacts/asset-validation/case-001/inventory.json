@@ -1,0 +1,170 @@
+[
+  {
+    "file": "lounge-background.webp",
+    "asset_id": "asset-lounge-background",
+    "format": "WEBP",
+    "mode": "RGB",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 566826,
+    "alpha_channel": false,
+    "transparent_percent": 0.0,
+    "nonopaque_percent": 0.0,
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "sha256": "394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d"
+  },
+  {
+    "file": "table.png",
+    "asset_id": "asset-table",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      1496,
+      1051
+    ],
+    "bytes": 1503740,
+    "alpha_channel": true,
+    "transparent_percent": 53.8603,
+    "nonopaque_percent": 99.9398,
+    "alpha_bbox": [
+      0,
+      9,
+      1456,
+      1051
+    ],
+    "sha256": "a9a4373fc8db98fee1c286f288502507c4cbeb4479ace128278ed9550670219b"
+  },
+  {
+    "file": "document-mat.png",
+    "asset_id": "asset-document-mat",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      640,
+      540
+    ],
+    "bytes": 319546,
+    "alpha_channel": true,
+    "transparent_percent": 60.1765,
+    "nonopaque_percent": 99.8235,
+    "alpha_bbox": [
+      10,
+      145,
+      630,
+      394
+    ],
+    "sha256": "4b8c7a1656cf6e607c8fd0566b579e0fcfa2e462e44436537f2646406cb7e616"
+  },
+  {
+    "file": "owen-backpack.png",
+    "asset_id": "asset-owen-backpack",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      1278,
+      1230
+    ],
+    "bytes": 2509210,
+    "alpha_channel": true,
+    "transparent_percent": 37.7529,
+    "nonopaque_percent": 99.9513,
+    "alpha_bbox": [
+      58,
+      14,
+      1244,
+      1230
+    ],
+    "sha256": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651"
+  },
+  {
+    "file": "passport.png",
+    "asset_id": "asset-passport",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      1359,
+      1158
+    ],
+    "bytes": 2200563,
+    "alpha_channel": true,
+    "transparent_percent": 44.2036,
+    "nonopaque_percent": 99.9771,
+    "alpha_bbox": [
+      0,
+      0,
+      1321,
+      1158
+    ],
+    "sha256": "83920d74c1c3b12d5c36ddc64e73a302f7bf6165d3f51fd27aadfa32f1a118a4"
+  },
+  {
+    "file": "star-wallet.png",
+    "asset_id": "asset-star-wallet",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      1424,
+      1105
+    ],
+    "bytes": 2487978,
+    "alpha_channel": true,
+    "transparent_percent": 36.7722,
+    "nonopaque_percent": 99.991,
+    "alpha_bbox": [
+      0,
+      27,
+      1406,
+      1105
+    ],
+    "sha256": "2c1c197917ae4e152444cf824b87a815b5d3388516b301ea6a196675a31bb338"
+  },
+  {
+    "file": "stand-12.png",
+    "asset_id": "asset-stand-12",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      1261,
+      1247
+    ],
+    "bytes": 1806723,
+    "alpha_channel": true,
+    "transparent_percent": 36.2723,
+    "nonopaque_percent": 99.9494,
+    "alpha_bbox": [
+      0,
+      23,
+      1260,
+      1247
+    ],
+    "sha256": "f70bc518dda3bb73baccb7b56ebe783ee4cc732b93cfabfb973766d6fe3a7b22"
+  },
+  {
+    "file": "stand-21.png",
+    "asset_id": "asset-stand-21",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensions": [
+      1321,
+      1191
+    ],
+    "bytes": 1972311,
+    "alpha_channel": true,
+    "transparent_percent": 33.0154,
+    "nonopaque_percent": 99.9393,
+    "alpha_bbox": [
+      0,
+      28,
+      1309,
+      1191
+    ],
+    "sha256": "6c82b1ad5d7cf7eb7ef2263d19d42f0516f0e0eb21e2bae46da808743e62b1eb"
+  }
+]

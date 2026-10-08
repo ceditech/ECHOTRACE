@@ -1,0 +1,201 @@
+{
+  "scene-lounge-before": [
+    {
+      "object": "object-table-window",
+      "asset": "asset-table",
+      "center": [
+        288.0,
+        297.0
+      ],
+      "size": [
+        384,
+        270
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-table-plant",
+      "asset": "asset-table",
+      "center": [
+        720.0,
+        297.0
+      ],
+      "size": [
+        384,
+        270
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-document-mat",
+      "asset": "asset-document-mat",
+      "center": [
+        172.79999999999998,
+        351.0
+      ],
+      "size": [
+        192,
+        162
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-owen-backpack",
+      "asset": "asset-owen-backpack",
+      "center": [
+        883.2,
+        432.0
+      ],
+      "size": [
+        96,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-passport",
+      "asset": "asset-passport",
+      "center": [
+        172.79999999999998,
+        351.0
+      ],
+      "size": [
+        96,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-star-wallet",
+      "asset": "asset-star-wallet",
+      "center": [
+        364.8,
+        351.0
+      ],
+      "size": [
+        115,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-stand-12",
+      "asset": "asset-stand-12",
+      "center": [
+        336.0,
+        135.0
+      ],
+      "size": [
+        115,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-stand-21",
+      "asset": "asset-stand-21",
+      "center": [
+        720.0,
+        135.0
+      ],
+      "size": [
+        115,
+        97
+      ],
+      "rotation": 0
+    }
+  ],
+  "scene-lounge-after": [
+    {
+      "object": "object-table-window",
+      "asset": "asset-table",
+      "center": [
+        288.0,
+        297.0
+      ],
+      "size": [
+        384,
+        270
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-table-plant",
+      "asset": "asset-table",
+      "center": [
+        720.0,
+        297.0
+      ],
+      "size": [
+        384,
+        270
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-document-mat",
+      "asset": "asset-document-mat",
+      "center": [
+        172.79999999999998,
+        351.0
+      ],
+      "size": [
+        192,
+        162
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-owen-backpack",
+      "asset": "asset-owen-backpack",
+      "center": [
+        883.2,
+        432.0
+      ],
+      "size": [
+        96,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-star-wallet",
+      "asset": "asset-star-wallet",
+      "center": [
+        720.0,
+        351.0
+      ],
+      "size": [
+        115,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-stand-12",
+      "asset": "asset-stand-12",
+      "center": [
+        720.0,
+        135.0
+      ],
+      "size": [
+        115,
+        97
+      ],
+      "rotation": 0
+    },
+    {
+      "object": "object-stand-21",
+      "asset": "asset-stand-21",
+      "center": [
+        336.0,
+        135.0
+      ],
+      "size": [
+        115,
+        97
+      ],
+      "rotation": 0
+    }
+  ]
+}

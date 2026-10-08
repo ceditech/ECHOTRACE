@@ -1,0 +1,26 @@
+{
+  "format": "PNG",
+  "mode": "RGBA",
+  "generated_dimensions": [
+    1496,
+    1051
+  ],
+  "export_dimensions": [
+    1280,
+    900
+  ],
+  "transparent_percent": 30.122309027777778,
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    0,
+    13,
+    1280,
+    900
+  ],
+  "source_hashes_unchanged": true,
+  "generation_count": 1,
+  "export_note": "Single generation normalized to exact 64:45 ratio; no object or coordinate offsets."
+}
