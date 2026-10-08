@@ -102,7 +102,7 @@ The case must include:
 - deterministic score;
 - replay.
 
-The exact canonical mystery must be finalized through the Case 001 authoring process before implementation hardcodes any assumptions.
+The owner-approved [canonical Case 001 dossier](docs/cases/CASE_001_THE_MISSING_PASSPORT.md) defines **The Wrong Table** mystery. Design approval does not establish playable implementation; T15 is NOT AUTHORIZED.
 
 ---
 
@@ -947,7 +947,7 @@ DOM/React Testing Library support is deferred until UI behavior warrants compone
 
 `src/game/domain/` contains plain readonly TypeScript contracts: `identity.ts`, `scene.ts`, `reasoning.ts`, `scoring.ts`, `case.ts`, and `session.ts`. ID aliases communicate meaning but are not runtime validation or nominal brands. Text/asset references separate authored content from presentation. Logical objects, scene visuals, and interaction regions are independent, allowing a disappeared object to retain a selectable region. Person changes use objects linked to character IDs. Schema compatibility (`schemaVersion`) and authored revision (`caseVersion`) remain distinct.
 
-`npm run typecheck` checks both the application and the isolated domain; `typecheck:domain` runs the isolated check alone. Compile-time contracts in `tests/types/` check the domain vocabulary and bidirectional schema/type compatibility. Scoring formulas, retry/progression/timing policy, hint penalties, and Case 001 truth remain later decisions. Ordered reconstruction references describe authored events rather than an executable timeline engine.
+`npm run typecheck` checks both the application and the isolated domain; `typecheck:domain` runs the isolated check alone. Compile-time contracts in `tests/types/` check the domain vocabulary and bidirectional schema/type compatibility. T09 defines current scoring; the canonical Case 001 dossier records approved truth. Deferred retry/progression/timing and hint policies remain governed by their respective tasks. Ordered reconstruction references describe authored events rather than an executable timeline engine.
 
 Case definitions are untrusted until `validateCaseDefinition(input: unknown)` in `src/cases/validation/validate-case-definition.ts` succeeds. The pipeline checks declarative JSON data, strict Zod structures, supported schema version (currently 1), namespace uniqueness, entity references, and deterministic semantic consistency. It returns `{ ok: true, value: CaseDefinition }` or `{ ok: false, issues }`; issues have category, code, path segments, and an actionable message. Ordinary content errors do not throw. The structural schema alone does not establish trust. Successful parsing returns a copy; readonly domain types are compile-time contracts rather than a runtime freeze.
 
@@ -1274,11 +1274,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T13 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, and the trusted case-loading boundary. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3).
+M0/S0 architecture planning is approved. T01–T14 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, the trusted case-loading boundary, and owner-approved Case 001 mystery design. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3). Overall progress is 14/34; M3 is IN_PROGRESS (1/7) and S5 is IN_PROGRESS (1/5).
 
 The next task is:
 
-> **T14 — Finalize Case 001 Authoring — READY, awaiting explicit authorization**
+> **T15 — Add Case 001 Structured Data — READY by dependency, NOT STARTED, NOT AUTHORIZED**
 
 ---
 

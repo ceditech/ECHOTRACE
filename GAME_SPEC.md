@@ -885,19 +885,19 @@ Candidate objects include:
 - table;
 - lounge signage.
 
-Final object placement belongs in the authored Case 001 data.
+These are historical brainstorming candidates. The canonical dossier defines the approved objects; final encoding belongs in the authored Case 001 data.
 
 ## 34.5 Primary Changes
 
 The vertical slice should initially target **three meaningful changes**.
 
-Working examples:
+Owner-approved changes:
 
 1. Passport disappears.
-2. Red suitcase changes position.
-3. Coffee cup moves or changes relationship to another object.
+2. Table-number stands are exchanged.
+3. Star wallet moves to the plant-side table.
 
-These are provisional until the complete mystery logic is authored.
+The [canonical Case 001 dossier](docs/cases/CASE_001_THE_MISSING_PASSPORT.md) defines the approved mystery and evidence relationships.
 
 ## 34.6 Evidence
 
@@ -927,7 +927,7 @@ The game reconstructs what happened and identifies the clues that supported the 
 
 ## 34.12 Important Constraint
 
-The exact culprit and narrative explanation should be finalized in `CASE_AUTHORING_GUIDE.md` / Case 001 authoring work before implementation hardcodes assumptions.
+The owner-approved [canonical Case 001 dossier](docs/cases/CASE_001_THE_MISSING_PASSPORT.md) defines the truth and narrative explanation. T14 closes design only; production content and implementation require separate authorization. T15 is NOT AUTHORIZED.
 
 ---
 

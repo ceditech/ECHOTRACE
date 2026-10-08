@@ -1126,9 +1126,9 @@ This pattern keeps AI focused on mystery logic before implementation.
 
 ## 46.1 Status
 
-**Working Draft / Vertical Slice**
+**Owner-approved canonical design / Vertical Slice**
 
-The detailed final narrative remains subject to logic review and playtesting.
+The [canonical Case 001 dossier](docs/cases/CASE_001_THE_MISSING_PASSPORT.md) records the approved final design. Implementation, visual QA and human playtesting remain deferred. T15 is NOT AUTHORIZED.
 
 ## 46.2 Setting
 
@@ -1177,19 +1177,19 @@ Observe
 - chairs;
 - lounge signage.
 
-These remain provisional until the canonical truth is finalized.
+These are historical brainstorming candidates. The canonical dossier defines the approved objects and changes.
 
 ## 46.7 Important Authoring Rule
 
 Do **not** implement a culprit or final explanation merely because an early brainstorming example mentioned one.
 
-The final truth must be intentionally authored and approved.
+The final truth must be intentionally authored and approved. Case 001 owner approval is recorded in the canonical dossier.
 
 ---
 
 ## 47. Recommended Case 001 Design Workshop
 
-Before implementation, complete this worksheet:
+Case 001's approved design is recorded in the canonical dossier. The worksheet below remains an authoring template:
 
 ```text
 CASE ID:
