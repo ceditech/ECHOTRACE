@@ -38,5 +38,25 @@ export class BundledCaseSource implements CaseSource {
   }
 }
 
-// T15 will register approved JSON imports. No synthetic fixture is production content.
-export const bundledCaseSource = new BundledCaseSource(new Map());
+// Logical declarations only: artwork and physical asset resolution remain deferred.
+export const bundledCaseSource = new BundledCaseSource(
+  new Map([
+    [
+      "case-001",
+      {
+        read: async () =>
+          (await import("@/cases/content/case-001/case.json")).default,
+        declaredAssetIds: [
+          "asset-lounge-background",
+          "asset-table",
+          "asset-document-mat",
+          "asset-owen-backpack",
+          "asset-passport",
+          "asset-star-wallet",
+          "asset-stand-12",
+          "asset-stand-21",
+        ],
+      },
+    ],
+  ]),
+);

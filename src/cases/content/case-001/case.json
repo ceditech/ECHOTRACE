@@ -1,0 +1,1324 @@
+{
+  "id": "case-001",
+  "schemaVersion": 1,
+  "caseVersion": 1,
+  "metadata": {
+    "slug": "the-missing-passport",
+    "title": {
+      "key": "case001.title"
+    },
+    "difficulty": "easy",
+    "estimatedDurationSeconds": 240,
+    "supportedLanguages": ["en"]
+  },
+  "briefing": {
+    "setting": {
+      "key": "case001.briefing.setting"
+    },
+    "incident": {
+      "key": "case001.briefing.incident"
+    },
+    "objective": {
+      "key": "case001.briefing.objective"
+    },
+    "instructions": {
+      "key": "case001.briefing.instructions"
+    }
+  },
+  "settings": {
+    "observationDurationSeconds": 25,
+    "transitionDurationSeconds": 2
+  },
+  "observationSceneId": "scene-lounge-before",
+  "investigationSceneId": "scene-lounge-after",
+  "scenes": [
+    {
+      "id": "scene-lounge-before",
+      "background": {
+        "id": "asset-lounge-background"
+      },
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.3,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-table-plant",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-document-mat",
+          "asset": {
+            "id": "asset-document-mat"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.2,
+            "height": 0.3
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "asset": {
+            "id": "asset-owen-backpack"
+          },
+          "position": {
+            "x": 0.92,
+            "y": 0.8
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-passport",
+          "asset": {
+            "id": "asset-passport"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "asset": {
+            "id": "asset-star-wallet"
+          },
+          "position": {
+            "x": 0.38,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "asset": {
+            "id": "asset-stand-12"
+          },
+          "position": {
+            "x": 0.35,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "asset": {
+            "id": "asset-stand-21"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        }
+      ],
+      "interactionRegions": []
+    },
+    {
+      "id": "scene-lounge-after",
+      "background": {
+        "id": "asset-lounge-background"
+      },
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.3,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-table-plant",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-document-mat",
+          "asset": {
+            "id": "asset-document-mat"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.2,
+            "height": 0.3
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "asset": {
+            "id": "asset-owen-backpack"
+          },
+          "position": {
+            "x": 0.92,
+            "y": 0.8
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "asset": {
+            "id": "asset-star-wallet"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "asset": {
+            "id": "asset-stand-12"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "asset": {
+            "id": "asset-stand-21"
+          },
+          "position": {
+            "x": 0.35,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        }
+      ],
+      "interactionRegions": [
+        {
+          "objectId": "object-passport",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.09,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-21",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.26,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "object-table-window",
+      "description": {
+        "key": "case001.object.table-window"
+      }
+    },
+    {
+      "id": "object-table-plant",
+      "description": {
+        "key": "case001.object.table-plant"
+      }
+    },
+    {
+      "id": "object-passport",
+      "description": {
+        "key": "case001.object.passport"
+      },
+      "characterId": "character-mara"
+    },
+    {
+      "id": "object-star-wallet",
+      "description": {
+        "key": "case001.object.star-wallet"
+      },
+      "characterId": "character-mara"
+    },
+    {
+      "id": "object-stand-12",
+      "description": {
+        "key": "case001.object.stand-12"
+      }
+    },
+    {
+      "id": "object-stand-21",
+      "description": {
+        "key": "case001.object.stand-21"
+      }
+    },
+    {
+      "id": "object-document-mat",
+      "description": {
+        "key": "case001.object.document-mat"
+      }
+    },
+    {
+      "id": "object-owen-backpack",
+      "description": {
+        "key": "case001.object.owen-backpack"
+      },
+      "characterId": "character-owen"
+    }
+  ],
+  "changes": [
+    {
+      "observationSceneId": "scene-lounge-before",
+      "investigationSceneId": "scene-lounge-after",
+      "significance": "meaningful",
+      "isRequired": true,
+      "id": "change-passport-removed",
+      "kind": "object_removed",
+      "objectId": "object-passport"
+    },
+    {
+      "observationSceneId": "scene-lounge-before",
+      "investigationSceneId": "scene-lounge-after",
+      "significance": "meaningful",
+      "isRequired": true,
+      "id": "change-stands-exchanged",
+      "kind": "object_exchanged",
+      "objectIds": ["object-stand-12", "object-stand-21"]
+    },
+    {
+      "observationSceneId": "scene-lounge-before",
+      "investigationSceneId": "scene-lounge-after",
+      "significance": "meaningful",
+      "isRequired": true,
+      "id": "change-wallet-moved",
+      "kind": "object_moved",
+      "objectId": "object-star-wallet",
+      "from": {
+        "x": 0.38,
+        "y": 0.65
+      },
+      "to": {
+        "x": 0.75,
+        "y": 0.65
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence-passport-absence",
+      "title": {
+        "key": "case001.evidence.evidence-passport-absence.title"
+      },
+      "description": {
+        "key": "case001.evidence.evidence-passport-absence.description"
+      },
+      "source": {
+        "kind": "change",
+        "changeId": "change-passport-removed"
+      },
+      "category": "primary",
+      "isRequired": true,
+      "relatedObjectIds": ["object-passport"],
+      "relatedCharacterIds": [
+        "character-mara",
+        "character-ellis",
+        "character-owen"
+      ],
+      "relatedStatementIds": [
+        "statement-mara-request",
+        "statement-mara-identity",
+        "statement-ellis-collection",
+        "statement-ellis-delivery",
+        "statement-owen-handoff",
+        "statement-owen-contents"
+      ],
+      "supportingInformation": [
+        {
+          "kind": "change",
+          "id": "change-passport-removed"
+        }
+      ]
+    },
+    {
+      "id": "evidence-stands-exchanged",
+      "title": {
+        "key": "case001.evidence.evidence-stands-exchanged.title"
+      },
+      "description": {
+        "key": "case001.evidence.evidence-stands-exchanged.description"
+      },
+      "source": {
+        "kind": "change",
+        "changeId": "change-stands-exchanged"
+      },
+      "category": "primary",
+      "isRequired": true,
+      "relatedObjectIds": ["object-stand-12", "object-stand-21"],
+      "relatedCharacterIds": ["character-nia"],
+      "relatedStatementIds": [
+        "statement-nia-handling",
+        "statement-nia-restoration"
+      ],
+      "supportingInformation": [
+        {
+          "kind": "change",
+          "id": "change-stands-exchanged"
+        }
+      ]
+    },
+    {
+      "id": "evidence-wallet-destination",
+      "title": {
+        "key": "case001.evidence.evidence-wallet-destination.title"
+      },
+      "description": {
+        "key": "case001.evidence.evidence-wallet-destination.description"
+      },
+      "source": {
+        "kind": "change",
+        "changeId": "change-wallet-moved"
+      },
+      "category": "primary",
+      "isRequired": true,
+      "relatedObjectIds": ["object-star-wallet"],
+      "relatedCharacterIds": [
+        "character-mara",
+        "character-ellis",
+        "character-owen"
+      ],
+      "relatedStatementIds": [
+        "statement-mara-request",
+        "statement-mara-identity",
+        "statement-ellis-collection",
+        "statement-ellis-delivery",
+        "statement-owen-handoff",
+        "statement-owen-contents"
+      ],
+      "supportingInformation": [
+        {
+          "kind": "change",
+          "id": "change-wallet-moved"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "character-mara",
+      "name": {
+        "key": "case001.character.mara.name"
+      },
+      "role": {
+        "key": "case001.character.mara.role"
+      },
+      "publicDescription": {
+        "key": "case001.character.mara.description"
+      },
+      "relationshipToIncident": {
+        "key": "case001.character.mara.relationship"
+      }
+    },
+    {
+      "id": "character-owen",
+      "name": {
+        "key": "case001.character.owen.name"
+      },
+      "role": {
+        "key": "case001.character.owen.role"
+      },
+      "publicDescription": {
+        "key": "case001.character.owen.description"
+      },
+      "relationshipToIncident": {
+        "key": "case001.character.owen.relationship"
+      }
+    },
+    {
+      "id": "character-nia",
+      "name": {
+        "key": "case001.character.nia.name"
+      },
+      "role": {
+        "key": "case001.character.nia.role"
+      },
+      "publicDescription": {
+        "key": "case001.character.nia.description"
+      },
+      "relationshipToIncident": {
+        "key": "case001.character.nia.relationship"
+      }
+    },
+    {
+      "id": "character-ellis",
+      "name": {
+        "key": "case001.character.ellis.name"
+      },
+      "role": {
+        "key": "case001.character.ellis.role"
+      },
+      "publicDescription": {
+        "key": "case001.character.ellis.description"
+      },
+      "relationshipToIncident": {
+        "key": "case001.character.ellis.relationship"
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "witness-mara",
+      "characterId": "character-mara",
+      "statementIds": ["statement-mara-request", "statement-mara-identity"],
+      "relatedEvidenceIds": [
+        "evidence-passport-absence",
+        "evidence-wallet-destination"
+      ]
+    },
+    {
+      "id": "witness-owen",
+      "characterId": "character-owen",
+      "statementIds": ["statement-owen-handoff", "statement-owen-contents"],
+      "relatedEvidenceIds": [
+        "evidence-passport-absence",
+        "evidence-wallet-destination"
+      ]
+    },
+    {
+      "id": "witness-nia",
+      "characterId": "character-nia",
+      "statementIds": ["statement-nia-handling", "statement-nia-restoration"],
+      "relatedEvidenceIds": ["evidence-stands-exchanged"]
+    },
+    {
+      "id": "witness-ellis",
+      "characterId": "character-ellis",
+      "statementIds": [
+        "statement-ellis-collection",
+        "statement-ellis-delivery"
+      ],
+      "relatedEvidenceIds": [
+        "evidence-passport-absence",
+        "evidence-wallet-destination"
+      ]
+    }
+  ],
+  "statements": [
+    {
+      "id": "statement-mara-request",
+      "witnessId": "witness-mara",
+      "text": {
+        "key": "case001.statement.statement-mara-request"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-return-instruction"
+        }
+      ]
+    },
+    {
+      "id": "statement-mara-identity",
+      "witnessId": "witness-mara",
+      "text": {
+        "key": "case001.statement.statement-mara-identity"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-return-instruction"
+        }
+      ]
+    },
+    {
+      "id": "statement-nia-handling",
+      "witnessId": "witness-nia",
+      "text": {
+        "key": "case001.statement.statement-nia-handling"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-current-labels"
+        }
+      ]
+    },
+    {
+      "id": "statement-nia-restoration",
+      "witnessId": "witness-nia",
+      "text": {
+        "key": "case001.statement.statement-nia-restoration"
+      },
+      "truthStatus": "mistaken",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-current-labels"
+        }
+      ]
+    },
+    {
+      "id": "statement-ellis-collection",
+      "witnessId": "witness-ellis",
+      "text": {
+        "key": "case001.statement.statement-ellis-collection"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-wallet-custody"
+        }
+      ]
+    },
+    {
+      "id": "statement-ellis-delivery",
+      "witnessId": "witness-ellis",
+      "text": {
+        "key": "case001.statement.statement-ellis-delivery"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-wallet-custody"
+        }
+      ]
+    },
+    {
+      "id": "statement-owen-handoff",
+      "witnessId": "witness-owen",
+      "text": {
+        "key": "case001.statement.statement-owen-handoff"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-wallet-custody"
+        }
+      ]
+    },
+    {
+      "id": "statement-owen-contents",
+      "witnessId": "witness-owen",
+      "text": {
+        "key": "case001.statement.statement-owen-contents"
+      },
+      "truthStatus": "truthful",
+      "relatedInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-wallet-custody"
+        }
+      ]
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "contradiction-stand-restoration",
+      "kind": "visual_testimony",
+      "conflictingInformation": [
+        {
+          "kind": "statement",
+          "id": "statement-nia-restoration"
+        },
+        {
+          "kind": "evidence",
+          "id": "evidence-stands-exchanged"
+        }
+      ],
+      "explanation": {
+        "key": "case001.contradiction.stand-restoration"
+      }
+    }
+  ],
+  "deductions": [
+    {
+      "id": "deduction-delivery-route",
+      "kind": "single_choice",
+      "question": {
+        "key": "case001.deduction.question"
+      },
+      "choices": [
+        {
+          "id": "choice-route-swapped-labels",
+          "text": {
+            "key": "case001.deduction.choice-route-swapped-labels"
+          },
+          "supportingInformation": [
+            {
+              "kind": "evidence",
+              "id": "evidence-stands-exchanged"
+            },
+            {
+              "kind": "evidence",
+              "id": "evidence-wallet-destination"
+            }
+          ]
+        },
+        {
+          "id": "choice-route-owner-request",
+          "text": {
+            "key": "case001.deduction.choice-route-owner-request"
+          },
+          "supportingInformation": [
+            {
+              "kind": "evidence",
+              "id": "evidence-stands-exchanged"
+            },
+            {
+              "kind": "evidence",
+              "id": "evidence-wallet-destination"
+            }
+          ]
+        },
+        {
+          "id": "choice-route-wrong-pickup",
+          "text": {
+            "key": "case001.deduction.choice-route-wrong-pickup"
+          },
+          "supportingInformation": [
+            {
+              "kind": "evidence",
+              "id": "evidence-stands-exchanged"
+            },
+            {
+              "kind": "evidence",
+              "id": "evidence-wallet-destination"
+            }
+          ]
+        },
+        {
+          "id": "choice-route-owen-moved-wallet",
+          "text": {
+            "key": "case001.deduction.choice-route-owen-moved-wallet"
+          },
+          "supportingInformation": [
+            {
+              "kind": "evidence",
+              "id": "evidence-stands-exchanged"
+            },
+            {
+              "kind": "evidence",
+              "id": "evidence-wallet-destination"
+            }
+          ]
+        }
+      ],
+      "supportingInformation": [
+        {
+          "kind": "fact",
+          "id": "fact-return-instruction"
+        },
+        {
+          "kind": "evidence",
+          "id": "evidence-stands-exchanged"
+        },
+        {
+          "kind": "evidence",
+          "id": "evidence-wallet-destination"
+        },
+        {
+          "kind": "statement",
+          "id": "statement-ellis-delivery"
+        }
+      ]
+    }
+  ],
+  "finalDecision": {
+    "question": {
+      "key": "case001.decision.question"
+    },
+    "choices": [
+      {
+        "id": "decision-accidental-misdelivery",
+        "text": {
+          "key": "case001.decision.decision-accidental-misdelivery"
+        }
+      },
+      {
+        "id": "decision-owen-theft",
+        "text": {
+          "key": "case001.decision.decision-owen-theft"
+        }
+      },
+      {
+        "id": "decision-mara-packed-it",
+        "text": {
+          "key": "case001.decision.decision-mara-packed-it"
+        }
+      },
+      {
+        "id": "decision-ellis-kept-it",
+        "text": {
+          "key": "case001.decision.decision-ellis-kept-it"
+        }
+      }
+    ]
+  },
+  "hints": [],
+  "solution": {
+    "correctDecisionId": "decision-accidental-misdelivery",
+    "deductionAnswers": [
+      {
+        "kind": "single_choice",
+        "deductionId": "deduction-delivery-route",
+        "choiceId": "choice-route-swapped-labels"
+      }
+    ],
+    "facts": [
+      {
+        "id": "fact-original-labels",
+        "description": {
+          "key": "case001.fact.original-labels"
+        }
+      },
+      {
+        "id": "fact-current-labels",
+        "description": {
+          "key": "case001.fact.current-labels"
+        }
+      },
+      {
+        "id": "fact-return-instruction",
+        "description": {
+          "key": "case001.fact.return-instruction"
+        }
+      },
+      {
+        "id": "fact-wallet-custody",
+        "description": {
+          "key": "case001.fact.wallet-custody"
+        }
+      },
+      {
+        "id": "fact-passport-identity",
+        "description": {
+          "key": "case001.fact.passport-identity"
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "event-setup",
+        "description": {
+          "key": "case001.event.event-setup"
+        },
+        "relatedCharacterIds": ["character-mara"],
+        "relatedObjectIds": [
+          "object-passport",
+          "object-star-wallet",
+          "object-stand-12"
+        ]
+      },
+      {
+        "id": "event-request",
+        "description": {
+          "key": "case001.event.event-request"
+        },
+        "relatedCharacterIds": ["character-mara"],
+        "relatedObjectIds": ["object-table-window", "object-stand-12"]
+      },
+      {
+        "id": "event-observation",
+        "description": {
+          "key": "case001.event.event-observation"
+        },
+        "relatedCharacterIds": [],
+        "relatedObjectIds": ["object-stand-12", "object-stand-21"]
+      },
+      {
+        "id": "event-away",
+        "description": {
+          "key": "case001.event.event-away"
+        },
+        "relatedCharacterIds": ["character-mara"],
+        "relatedObjectIds": []
+      },
+      {
+        "id": "event-swap",
+        "description": {
+          "key": "case001.event.event-swap"
+        },
+        "relatedCharacterIds": ["character-nia"],
+        "relatedObjectIds": ["object-stand-12", "object-stand-21"]
+      },
+      {
+        "id": "event-collect",
+        "description": {
+          "key": "case001.event.event-collect"
+        },
+        "relatedCharacterIds": ["character-ellis"],
+        "relatedObjectIds": ["object-passport", "object-star-wallet"]
+      },
+      {
+        "id": "event-enclose",
+        "description": {
+          "key": "case001.event.event-enclose"
+        },
+        "relatedCharacterIds": ["character-ellis"],
+        "relatedObjectIds": ["object-passport", "object-star-wallet"]
+      },
+      {
+        "id": "event-handoff",
+        "description": {
+          "key": "case001.event.event-handoff"
+        },
+        "relatedCharacterIds": ["character-ellis", "character-owen"],
+        "relatedObjectIds": ["object-star-wallet", "object-stand-12"]
+      },
+      {
+        "id": "event-recipient-check",
+        "description": {
+          "key": "case001.event.event-recipient-check"
+        },
+        "relatedCharacterIds": ["character-owen"],
+        "relatedObjectIds": ["object-passport", "object-star-wallet"]
+      },
+      {
+        "id": "event-disappearance",
+        "description": {
+          "key": "case001.event.event-disappearance"
+        },
+        "relatedCharacterIds": ["character-mara"],
+        "relatedObjectIds": ["object-passport", "object-star-wallet"]
+      },
+      {
+        "id": "event-investigation",
+        "description": {
+          "key": "case001.event.event-investigation"
+        },
+        "relatedCharacterIds": [],
+        "relatedObjectIds": [
+          "object-passport",
+          "object-star-wallet",
+          "object-stand-12",
+          "object-stand-21"
+        ]
+      },
+      {
+        "id": "event-testimony",
+        "description": {
+          "key": "case001.event.event-testimony"
+        },
+        "relatedCharacterIds": [
+          "character-mara",
+          "character-owen",
+          "character-nia",
+          "character-ellis"
+        ],
+        "relatedObjectIds": ["object-passport", "object-star-wallet"]
+      },
+      {
+        "id": "event-deduction",
+        "description": {
+          "key": "case001.event.event-deduction"
+        },
+        "relatedCharacterIds": [],
+        "relatedObjectIds": []
+      },
+      {
+        "id": "event-decision",
+        "description": {
+          "key": "case001.event.event-decision"
+        },
+        "relatedCharacterIds": [],
+        "relatedObjectIds": []
+      },
+      {
+        "id": "event-resolution",
+        "description": {
+          "key": "case001.event.event-resolution"
+        },
+        "relatedCharacterIds": [
+          "character-mara",
+          "character-owen",
+          "character-nia",
+          "character-ellis"
+        ],
+        "relatedObjectIds": ["object-passport", "object-star-wallet"]
+      }
+    ],
+    "explanation": {
+      "key": "case001.resolution.complete"
+    },
+    "reconstruction": [
+      {
+        "eventId": "event-setup",
+        "explanation": {
+          "key": "case001.event.event-setup"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-original-labels"
+          }
+        ]
+      },
+      {
+        "eventId": "event-request",
+        "explanation": {
+          "key": "case001.event.event-request"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-original-labels"
+          }
+        ]
+      },
+      {
+        "eventId": "event-observation",
+        "explanation": {
+          "key": "case001.event.event-observation"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-original-labels"
+          }
+        ]
+      },
+      {
+        "eventId": "event-away",
+        "explanation": {
+          "key": "case001.event.event-away"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-original-labels"
+          }
+        ]
+      },
+      {
+        "eventId": "event-swap",
+        "explanation": {
+          "key": "case001.event.event-swap"
+        },
+        "supportingInformation": [
+          {
+            "kind": "evidence",
+            "id": "evidence-stands-exchanged"
+          },
+          {
+            "kind": "statement",
+            "id": "statement-nia-handling"
+          }
+        ]
+      },
+      {
+        "eventId": "event-collect",
+        "explanation": {
+          "key": "case001.event.event-collect"
+        },
+        "supportingInformation": [
+          {
+            "kind": "statement",
+            "id": "statement-ellis-collection"
+          }
+        ]
+      },
+      {
+        "eventId": "event-enclose",
+        "explanation": {
+          "key": "case001.event.event-enclose"
+        },
+        "supportingInformation": [
+          {
+            "kind": "statement",
+            "id": "statement-ellis-collection"
+          }
+        ]
+      },
+      {
+        "eventId": "event-handoff",
+        "explanation": {
+          "key": "case001.event.event-handoff"
+        },
+        "supportingInformation": [
+          {
+            "kind": "statement",
+            "id": "statement-ellis-delivery"
+          },
+          {
+            "kind": "statement",
+            "id": "statement-owen-handoff"
+          }
+        ]
+      },
+      {
+        "eventId": "event-recipient-check",
+        "explanation": {
+          "key": "case001.event.event-recipient-check"
+        },
+        "supportingInformation": [
+          {
+            "kind": "statement",
+            "id": "statement-owen-contents"
+          },
+          {
+            "kind": "statement",
+            "id": "statement-mara-identity"
+          }
+        ]
+      },
+      {
+        "eventId": "event-disappearance",
+        "explanation": {
+          "key": "case001.event.event-disappearance"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-wallet-custody"
+          }
+        ]
+      },
+      {
+        "eventId": "event-investigation",
+        "explanation": {
+          "key": "case001.event.event-investigation"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-wallet-custody"
+          }
+        ]
+      },
+      {
+        "eventId": "event-testimony",
+        "explanation": {
+          "key": "case001.event.event-testimony"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-wallet-custody"
+          }
+        ]
+      },
+      {
+        "eventId": "event-deduction",
+        "explanation": {
+          "key": "case001.event.event-deduction"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-wallet-custody"
+          }
+        ]
+      },
+      {
+        "eventId": "event-decision",
+        "explanation": {
+          "key": "case001.event.event-decision"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-wallet-custody"
+          }
+        ]
+      },
+      {
+        "eventId": "event-resolution",
+        "explanation": {
+          "key": "case001.event.event-resolution"
+        },
+        "supportingInformation": [
+          {
+            "kind": "fact",
+            "id": "fact-wallet-custody"
+          }
+        ]
+      }
+    ],
+    "supportingInformation": [
+      {
+        "kind": "evidence",
+        "id": "evidence-passport-absence"
+      },
+      {
+        "kind": "evidence",
+        "id": "evidence-stands-exchanged"
+      },
+      {
+        "kind": "evidence",
+        "id": "evidence-wallet-destination"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-mara-request"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-mara-identity"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-nia-handling"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-nia-restoration"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-ellis-collection"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-ellis-delivery"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-owen-handoff"
+      },
+      {
+        "kind": "statement",
+        "id": "statement-owen-contents"
+      },
+      {
+        "kind": "deduction",
+        "id": "deduction-delivery-route"
+      }
+    ]
+  },
+  "scoring": {
+    "baseCompletionScore": 1000,
+    "correctChangeScore": 200,
+    "importantEvidenceScore": 250,
+    "deductionScore": 300,
+    "finalDecisionScore": 0,
+    "incorrectSelectionPenalty": 100,
+    "hintPenalties": [],
+    "timeBonusMaximum": 0,
+    "starThresholds": []
+  }
+}

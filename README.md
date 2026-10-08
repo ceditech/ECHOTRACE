@@ -102,7 +102,7 @@ The case must include:
 - deterministic score;
 - replay.
 
-The owner-approved [canonical Case 001 dossier](docs/cases/CASE_001_THE_MISSING_PASSPORT.md) defines **The Wrong Table** mystery. Design approval does not establish playable implementation; T15 is NOT AUTHORIZED.
+The frozen [canonical Case 001 dossier](docs/cases/CASE_001_THE_MISSING_PASSPORT.md) defines **The Wrong Table** mystery. T15 encodes this approved design as declarative content; player-facing gameplay remains deferred.
 
 ---
 
@@ -179,7 +179,9 @@ The T11 shell uses the approved Phaser 4.2.1 baseline (MIT), superseding provisi
 
 T12 adds an instance-local typed bridge: application-owned readonly projections update existing renderer objects; Phaser emits semantic ObjectId selection intents. Attempt identity, strictly increasing projection revisions and mount disposal reject obsolete updates/input. Dispatch reads current application state; no solution, scoring or persistence data is projected. The preview's synthetic reducer and controls demonstrate both directions without a production case. See ARCHITECTURE.md for the bridge contract and queued-action responsibility.
 
-T13 loading uses `loadCase(caseId, source)` outside the domain and renderer. The explicit bundled registry supplies unknown content to the existing T04/T05 validators; only success exposes CaseDefinition. Typed failures retain structured validation issues, preserve schemaVersion/caseVersion and reject missing source-declared assets. The production registry awaits approved T15 JSON content; synthetic verification fixtures are not published cases. Asset declaration checks do not verify files or resolve assets. See ARCHITECTURE.md for the trust boundary.
+T13 loading uses `loadCase(caseId, source)` outside the domain and renderer. The explicit bundled registry supplies unknown content to the existing T04/T05 validators; only success exposes CaseDefinition. Typed failures retain structured validation issues, preserve schemaVersion/caseVersion and reject missing source-declared assets. T15 registers `case-001` through a repository-controlled lazy JSON import; synthetic verification fixtures are not published cases. Asset declaration checks do not verify files or resolve assets. See ARCHITECTURE.md for the trust boundary.
+
+Case 001 content lives in `src/cases/content/case-001/case.json` (schemaVersion 1, caseVersion 1); `en.json` contains every referenced English string, including the exact approved request, statements, choices and resolution. Logical asset IDs are declared in the bundled source without paths or artwork. The data uses a 240-second estimated duration, a 25-second observation and a 2-second transition, with a theoretical score maximum of 2,650. Visual sizes are declarative layout values pending rendered QA. Artwork, runtime text presentation, full playability, accessibility QA and incorrect-final-decision behavior remain deferred. No runtime text resolver or production scene is implemented by T15.
 
 ---
 
@@ -1274,11 +1276,11 @@ ECHOTRACE/
 
 The product-definition phase is complete.
 
-M0/S0 architecture planning is approved. T01–T14 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, the trusted case-loading boundary, and owner-approved Case 001 mystery design. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3). Overall progress is 14/34; M3 is IN_PROGRESS (1/7) and S5 is IN_PROGRESS (1/5).
+M0/S0 architecture planning is approved. T01–T15 are complete, including the scaffold, quality tooling, framework-independent domain contracts, runtime case validation, relationship integrity, session state machine foundation, selection/evidence evaluation, deduction evaluation, deterministic scoring, local completed-attempt progress, the Phaser 4.2.1 renderer shell, the typed instance-local projection/intent bridge, the trusted case-loading boundary, owner-approved Case 001 mystery design, and validated declarative Case 001 content. M1/S2/S3 are complete; M2 is DONE (7/7) and S4 is DONE (3/3). Overall progress is 15/34 (44.1%); M3 is IN_PROGRESS (2/7) and S5 is IN_PROGRESS (2/5).
 
 The next task is:
 
-> **T15 — Add Case 001 Structured Data — READY by dependency, NOT STARTED, NOT AUTHORIZED**
+> **T16 — Build Briefing — NOT STARTED, awaiting explicit authorization**
 
 ---
 

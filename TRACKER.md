@@ -70,18 +70,18 @@ CANCELLED
 | Field | Current Value |
 |---|---|
 | Product Stage | Stage 1 — Vertical Slice |
-| Current Milestone | M3 — Case 001 Content & Core Loop (IN_PROGRESS, 1/7) |
-| Current Sprint | S5 — Case 001 Definition & Observation (IN_PROGRESS, 1/5) |
-| Implementation Status | T01–T14 complete; M1 6/6; M2 7/7; M3 1/7; S3 4/4; S4 3/3; S5 1/5 |
-| Current Engineering Task | T14 — Finalize Case 001 authoring (DONE) |
-| Next Implementation Task | T15 READY — NOT AUTHORIZED |
+| Current Milestone | M3 — Case 001 Content & Core Loop (IN_PROGRESS, 2/7) |
+| Current Sprint | S5 — Case 001 Definition & Observation (IN_PROGRESS, 2/5) |
+| Implementation Status | T01–T15 complete; M1 6/6; M2 7/7; M3 2/7; S3 4/4; S4 3/3; S5 2/5 |
+| Current Engineering Task | T15 — Add Case 001 structured data (DONE) |
+| Next Implementation Task | T16 after explicit authorization |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
-| Overall T01–T34 Completion | 14 / 34 (approximately 41.2%) |
+| Overall T01–T34 Completion | 15 / 34 (approximately 44.1%) |
 | Blockers | None; accepted development-tooling risks recorded below |
 | Last Tracker Update | 2026-10-07 |
 
-**Important:** T01–T14, M2 and S4 are DONE. T14 closes owner-approved mystery design only. T15 is READY by dependency, has not started and is explicitly NOT AUTHORIZED. M3 and S5 remain IN_PROGRESS.
+**Important:** T01–T15, M2 and S4 are DONE. T14's canonical dossier remains frozen. T15 provides validated content, not playable gameplay. M3 and S5 remain IN_PROGRESS. T16 is not started or authorized.
 
 ---
 
@@ -92,7 +92,7 @@ CANCELLED
 | M0 | Planning & Approval | S0 | Planning gate | DONE | — | Architecture plan approved |
 | M1 | Foundation | S1–S2 | T01–T06 | DONE | 6/6 | Build + domain + validation + state model healthy |
 | M2 | Core Game Engine | S3–S4 | T07–T13 | DONE | 7/7 | Reusable engine foundations operational |
-| M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | IN_PROGRESS | 1/7 | Briefing → observation → investigation works |
+| M3 | Case 001 Content & Core Loop | S5–S6 | T14–T20 | IN_PROGRESS | 2/7 | Briefing → observation → investigation works |
 | M4 | Detective Reasoning Loop | S6–S7 | T21–T26 | NOT_STARTED | 0/6 | Mystery reasoning loop complete |
 | M5 | Product Shell & Replay | S8 | T27–T30 | NOT_STARTED | 0/4 | Coherent player-facing vertical slice |
 | M6 | Quality & Validation | S9–S10 | T31–T34 | NOT_STARTED | 0/4 | Vertical Slice Exit Gate satisfied |
@@ -108,7 +108,7 @@ CANCELLED
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
 | S3 | M2 | T07–T10 | DONE | 4/4 complete; deterministic rules and local progress verified |
 | S4 | M2 | T11–T13 | DONE | 3/3 complete; Phaser shell, typed bridge and trusted case loader verified |
-| S5 | M3 | T14–T18 | IN_PROGRESS | 1/5 complete; approved Case 001 design; production content and observation deferred |
+| S5 | M3 | T14–T18 | IN_PROGRESS | 2/5 complete; approved design and validated content; observation deferred |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
 | S7 | M4 | T24–T26 | NOT_STARTED | Decision + resolution + results |
 | S8 | M5 | T27–T30 | NOT_STARTED | Replay + app shell + accessibility + polish |
@@ -135,7 +135,7 @@ CANCELLED
 | T12 | Implement typed React–Phaser bridge | M2 | S4 | DONE | HIGH | T06,T11 |
 | T13 | Implement case loader | M2 | S4 | DONE | HIGH | T04,T05 |
 | T14 | Finalize Case 001 authoring | M3 | S5 | DONE | CRITICAL | Documentation baseline |
-| T15 | Add Case 001 structured data | M3 | S5 | READY | HIGH | T13,T14 |
+| T15 | Add Case 001 structured data | M3 | S5 | DONE | HIGH | T13,T14 |
 | T16 | Build briefing | M3 | S5 | NOT_STARTED | HIGH | T06,T15 |
 | T17 | Build observation scene | M3 | S5 | NOT_STARTED | HIGH | T11–T12,T15 |
 | T18 | Build observation timer | M3 | S5 | NOT_STARTED | HIGH | T06,T17 |
@@ -452,6 +452,20 @@ Human review only.
 
 ---
 
+## T15 — Add Case 001 Structured Data
+
+- Status: DONE under owner T15 Controlled Implementation Authorization; T14 remains DONE and its canonical dossier unchanged.
+- Added declarative case.json and complete en.json in src/cases/content/case-001, plus two focused test files. Registered an explicit lazy JSON import with eight logical asset IDs in the existing bundled source; no artwork paths or resolver.
+- Content: schemaVersion 1/caseVersion 1, two scenes, stable objects and stand identities, three meaningful required changes, three required primary change-sourced evidence items, four witnesses/eight exact classified statements, S-N2/E2 contradiction, ordered deduction/final choices, 15 events/reconstruction, exact six-paragraph resolution and existing 2,650 scoring ceiling.
+- Encoding details: estimatedDurationSeconds 240, observationDurationSeconds 25, transitionDurationSeconds 2; visual sizes are provisional declarative layout values pending rendered QA. No hint, rating, final/time award or final-decision retry/reveal policy added.
+- Verification: npm run check passed formatting, lint, application and isolated-domain TypeScript checks, and 196 tests across 16 files (16 new tests). npm run build passed. Canonical-text tests compare against the frozen dossier; trusted loader, absent-passport selection, both exchange participants, evidence unlocks/idempotency, first-answer policy, scoring and renderer truth isolation passed. Final diff, whitespace and scope inspection passed.
+- Warnings: Git reports LF-to-CRLF conversion and inaccessible user-level ignore configuration; checks and file inventory completed. Vitest printed an informational transform-cache suggestion. No lint/build warnings or failures.
+- Deferred: artwork/file resolution, runtime text presentation, full playability/readiness gates, accessibility/responsive QA, human playtesting and incorrect-final-decision behavior.
+- Scope: only authorized content, registry, tests, README and TRACKER. Schemas/domain/loader contracts, React/Phaser, frozen dossier, dependencies, generic fixtures and CI unchanged. No commit or push; T16 not started.
+- Progress: 15/34 (44.1%); M3 IN_PROGRESS 2/7; S5 IN_PROGRESS 2/5.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -668,14 +682,14 @@ At the end of every implementation task:
 
 ```text
 CURRENT:
-M1 DONE (6/6); S1/S2/S3/S4 DONE; T01–T14 DONE; M2 DONE (7/7)
-M3 IN_PROGRESS (1/7); S5 IN_PROGRESS (1/5); overall 14/34
+M1 DONE (6/6); S1/S2/S3/S4 DONE; T01–T15 DONE; M2 DONE (7/7)
+M3 IN_PROGRESS (2/7); S5 IN_PROGRESS (2/5); overall 15/34
 
 NEXT AFTER EXPLICIT AUTHORIZATION:
-T15 — Add Case 001 Structured Data (READY — NOT AUTHORIZED)
+T16 — Build Briefing (NOT_STARTED — NOT AUTHORIZED)
 ```
 
-T14 approved design closeout is verified. Do not start T15 without separate owner authorization.
+T15 approved structured content is verified. Do not start T16 without separate owner authorization.
 
 ---
 
@@ -683,10 +697,10 @@ T14 approved design closeout is verified. Do not start T15 without separate owne
 
 **Tracker Version:** 1.0  
 **Stage:** Stage 1 — Vertical Slice  
-**Milestone:** M3 — Case 001 Content & Core Loop (IN_PROGRESS, 1/7)
+**Milestone:** M3 — Case 001 Content & Core Loop (IN_PROGRESS, 2/7)
 
-**Sprint:** S5 — Case 001 Definition & Observation (IN_PROGRESS, 1/5)
+**Sprint:** S5 — Case 001 Definition & Observation (IN_PROGRESS, 2/5)
 
-**T01–T34 Complete:** 14 / 34 (approximately 41.2%)
+**T01–T34 Complete:** 15 / 34 (approximately 44.1%)
 
-**Next Implementation Task:** T15 READY — NOT AUTHORIZED
+**Next Implementation Task:** T16 after explicit authorization
