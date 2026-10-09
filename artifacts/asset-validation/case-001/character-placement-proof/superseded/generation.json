@@ -1,0 +1,25 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "mode": "identity-preserve with reference inputs; transparent_background=true",
+  "proposedIdentity": "Original paired portrait sheet; not owner-approved",
+  "generations": [
+    {
+      "name": "Mara",
+      "prompt": "Use case: identity-preserve / compositing. Asset: OFFLINE character-placement proof cutout, not a production game sprite. Reference image 1 is the four-panel Mara/Owen identity sheet: Mara is the woman on LEFT; preserve her natural cinematic facial identity, tied-back dark wavy hair, teal blazer and cream ribbed shirt, apparent adult early-to-mid thirties. Reference image 2 is lounge CAMERA/LIGHTING only, not output background. Generate ONE seated Mara, whole figure, alone, on genuine transparent alpha. Natural human adult proportions, calm neutral expression, face visible in a right-facing three-quarter view, turned toward a table on her right; seated with torso upright, hips on an imagined low armchair seat, bent knees and feet supported, hands relaxed together on lap. Cream trousers and understated shoes; no handbag, phone, documents, wallet, jewelry emphasis or other props, NO chair or table in output. A subtly elevated camera sees head, shoulders, lap and bent legs, matching the lounge. Premium natural cinematic realism matching the original identity sheet rather than cartoon big eyes; gentle golden-hour light from upper LEFT with cool subtle fill, low-contrast shadows. Full head and feet included with generous transparent margins; hair/body clean antialiased edges, opaque interiors, no baked room, no labels, no watermark, no shadow rectangle. This is a proposed static neutral endpoint pose, no new narrative action.",
+      "sourcePath": "C:/Users/CedricYovodevi/.codex/generated_images/01a12167-665e-7612-9821-6139c2a83e9d/exec-acc8ee0a-ca79-4bc9-8699-3596c9a90e6b.png",
+      "localFile": "mara-generated-cutout.png"
+    },
+    {
+      "name": "Owen",
+      "prompt": "Use case: identity-preserve / compositing. Asset: OFFLINE Owen seated character-placement proof, not production. Reference image 1: four-panel identity sheet, Owen is the adult man on the RIGHT. Preserve his face, short wavy dark hair, light stubble, navy bomber jacket and light gray crewneck shirt; adult early-to-mid thirties, natural cinematic proportions. Reference image 2 is camera and lighting reference only: golden-hour airport lounge. Create ONE full-body seated Owen on genuine transparent alpha, seen three-quarter from his left, facing and looking subtly to the RIGHT, neutral relaxed expression. Seated upright on an imagined lounge chair with hips supported, knees bent naturally, feet grounded; arms relaxed close to body, hands together on lap. Dark plain trousers and understated dark shoes. Subtly elevated lounge camera, golden-hour key light upper LEFT, restrained cool fill; cinematic natural realism same as original paired portraits. No chair, table, luggage, phones, papers, wallets, passports, drinks, bags or accessories in output. No new props or narrative action, no expressive suspicion. Entire head/feet visible with transparent padding, opaque skin and clothing interiors, clean hair/silhouette antialiasing, no baked lounge background, no shadow rectangle, no labels or watermark. This figure will sit behind the near left corner of the RIGHT table, with the existing table occluding some lower body.",
+      "sourcePath": "C:/Users/CedricYovodevi/.codex/generated_images/01a12167-665e-7612-9821-6139c2a83e9d/exec-e494041a-5ba5-4c44-ab21-7ce444a5a4ae.png",
+      "localFile": "owen-generated-cutout.png"
+    }
+  ],
+  "references": [
+    "artifacts/asset-validation/case-001/B-art-refinement/character-concept-reference.png (identity)",
+    "public/assets/cases/case-001/lounge-background.webp (camera/light only)"
+  ],
+  "rights": "Generated proposals; no independent rights, likeness or source clearance claimed.",
+  "manualEditing": "None of the generated artwork recolored, repainted or retouched. Uniform scaling and furniture occlusion in offline compositions only."
+}

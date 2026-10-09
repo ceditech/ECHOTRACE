@@ -1,0 +1,131 @@
+{
+  "status": "OFFLINE_PROPOSED_ONLY",
+  "canvas": [
+    960,
+    540
+  ],
+  "placements": {
+    "Mara": {
+      "file": "mara-generated-cutout.png",
+      "top_left": [
+        5,
+        292
+      ],
+      "fit_envelope": [
+        128,
+        230
+      ],
+      "previous_zone": [
+        12,
+        375,
+        105,
+        515
+      ],
+      "reason": "Expand upward to reveal head/upper torso; existing foreground chair occludes lower figure.",
+      "crop_source_px": [
+        149,
+        2,
+        1012,
+        1503
+      ],
+      "resized_size": [
+        128,
+        223
+      ],
+      "art_top_left": [
+        5,
+        292
+      ],
+      "envelope_xyxy": [
+        5,
+        292,
+        133,
+        522
+      ],
+      "normalized_top_left": [
+        0.005208333333333333,
+        0.5407407407407407
+      ],
+      "normalized_size": [
+        0.13333333333333333,
+        0.42592592592592593
+      ],
+      "raw_sha256": "c74abdc18b74a786a98b54a74467696dfc46d3fbd6bf6ac9053aa01a04fd0115",
+      "existing_chair_occluder_polygon": [
+        [
+          0,
+          451
+        ],
+        [
+          247,
+          377
+        ],
+        [
+          260,
+          436
+        ],
+        [
+          294,
+          466
+        ],
+        [
+          295,
+          540
+        ],
+        [
+          0,
+          540
+        ]
+      ]
+    },
+    "Owen": {
+      "file": "owen-generated-cutout.png",
+      "top_left": [
+        470,
+        116
+      ],
+      "fit_envelope": [
+        100,
+        205
+      ],
+      "previous_zone": [
+        810,
+        265,
+        856,
+        375
+      ],
+      "reason": "Relocate to existing middle chair beside the left edge of plant-side table; avoid narrow right zone, plant, backpack, wallet and stand region.",
+      "crop_source_px": [
+        157,
+        13,
+        921,
+        1505
+      ],
+      "resized_size": [
+        100,
+        195
+      ],
+      "art_top_left": [
+        470,
+        116
+      ],
+      "envelope_xyxy": [
+        470,
+        116,
+        570,
+        321
+      ],
+      "normalized_top_left": [
+        0.4895833333333333,
+        0.21481481481481482
+      ],
+      "normalized_size": [
+        0.10416666666666667,
+        0.37962962962962965
+      ],
+      "raw_sha256": "42c312d33720d24b4b9ed58cc8c15f396843a191593f346975ddaa3d0d5996c0"
+    }
+  },
+  "canonical_geometry_changes": [],
+  "method": "uniform source-crop scaling; immutable character placement; existing chair mask and authored objects render in front"
+}

@@ -1,0 +1,439 @@
+{
+  "method": "visible pixel comparison and authored alpha masks, not bounding boxes alone",
+  "generated_inventory": [
+    {
+      "name": "Mara",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_zero_pixels": 1024268,
+      "solid_bbox": [
+        157,
+        10,
+        1004,
+        1495
+      ],
+      "alpha_252_253_pixels": 472172,
+      "exterior_samples": {
+        "(0, 0)": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "(50, 300)": [
+          19,
+          14,
+          8,
+          0
+        ],
+        "(900, 100)": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Owen",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_zero_pixels": 961910,
+      "solid_bbox": [
+        165,
+        21,
+        913,
+        1497
+      ],
+      "alpha_252_253_pixels": 556440,
+      "exterior_samples": {
+        "(0, 0)": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "(50, 300)": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "(900, 100)": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "scene": "scene-lounge-before",
+      "clue_pixel_changes": [
+        {
+          "objectId": "object-document-mat",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-passport",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-star-wallet",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-stand-12",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-stand-21",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        }
+      ],
+      "mobile_clue_pixel_checks": [
+        {
+          "width": 390,
+          "height": 219,
+          "mask_method": "resized authored alpha>=128; shared full-scene resampling",
+          "clues": [
+            {
+              "objectId": "object-document-mat",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-owen-backpack",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-passport",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-star-wallet",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-12",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-21",
+              "solid_clue_pixels_changed": 0
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "height": 180,
+          "mask_method": "resized authored alpha>=128; shared full-scene resampling",
+          "clues": [
+            {
+              "objectId": "object-document-mat",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-owen-backpack",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-passport",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-star-wallet",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-12",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-21",
+              "solid_clue_pixels_changed": 0
+            }
+          ]
+        }
+      ],
+      "landmark_pixel_changes": {
+        "window": {
+          "reviewed_roi": [
+            0,
+            0,
+            280,
+            220
+          ],
+          "changed_pixels": 0
+        },
+        "plant": {
+          "reviewed_roi": [
+            820,
+            30,
+            960,
+            340
+          ],
+          "changed_pixels": 0
+        },
+        "window_glazing_polygon": {
+          "reviewed_polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              280,
+              0
+            ],
+            [
+              280,
+              218
+            ],
+            [
+              0,
+              300
+            ]
+          ],
+          "changed_pixels": 0
+        }
+      },
+      "region_character_changes": [
+        {
+          "objectId": "object-passport",
+          "changed_character_pixels_inside_region": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "changed_character_pixels_inside_region": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "changed_character_pixels_inside_region": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "changed_character_pixels_inside_region": 0
+        }
+      ],
+      "character_visibility": {
+        "Mara": {
+          "effective_alpha_bbox_gt_8": [
+            6,
+            293,
+            95,
+            434
+          ],
+          "visible_pixels_alpha_gt_8": 8526
+        },
+        "Owen": {
+          "effective_alpha_bbox_gt_8": [
+            471,
+            116,
+            559,
+            298
+          ],
+          "visible_pixels_alpha_gt_8": 9131
+        }
+      }
+    },
+    {
+      "scene": "scene-lounge-after",
+      "clue_pixel_changes": [
+        {
+          "objectId": "object-document-mat",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-star-wallet",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-stand-12",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        },
+        {
+          "objectId": "object-stand-21",
+          "alpha_gt_zero_pixels_changed": 0,
+          "changed_bbox": null
+        }
+      ],
+      "mobile_clue_pixel_checks": [
+        {
+          "width": 390,
+          "height": 219,
+          "mask_method": "resized authored alpha>=128; shared full-scene resampling",
+          "clues": [
+            {
+              "objectId": "object-document-mat",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-owen-backpack",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-star-wallet",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-12",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-21",
+              "solid_clue_pixels_changed": 0
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "height": 180,
+          "mask_method": "resized authored alpha>=128; shared full-scene resampling",
+          "clues": [
+            {
+              "objectId": "object-document-mat",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-owen-backpack",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-star-wallet",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-12",
+              "solid_clue_pixels_changed": 0
+            },
+            {
+              "objectId": "object-stand-21",
+              "solid_clue_pixels_changed": 0
+            }
+          ]
+        }
+      ],
+      "landmark_pixel_changes": {
+        "window": {
+          "reviewed_roi": [
+            0,
+            0,
+            280,
+            220
+          ],
+          "changed_pixels": 0
+        },
+        "plant": {
+          "reviewed_roi": [
+            820,
+            30,
+            960,
+            340
+          ],
+          "changed_pixels": 0
+        },
+        "window_glazing_polygon": {
+          "reviewed_polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              280,
+              0
+            ],
+            [
+              280,
+              218
+            ],
+            [
+              0,
+              300
+            ]
+          ],
+          "changed_pixels": 0
+        }
+      },
+      "region_character_changes": [
+        {
+          "objectId": "object-passport",
+          "changed_character_pixels_inside_region": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "changed_character_pixels_inside_region": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "changed_character_pixels_inside_region": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "changed_character_pixels_inside_region": 0
+        }
+      ],
+      "character_visibility": {
+        "Mara": {
+          "effective_alpha_bbox_gt_8": [
+            6,
+            293,
+            95,
+            434
+          ],
+          "visible_pixels_alpha_gt_8": 8526
+        },
+        "Owen": {
+          "effective_alpha_bbox_gt_8": [
+            471,
+            116,
+            559,
+            298
+          ],
+          "visible_pixels_alpha_gt_8": 9131
+        }
+      }
+    }
+  ],
+  "new_before_after_difference_pixels": 0,
+  "before_after_difference_masks_identical": true,
+  "character_visibility_identical": true,
+  "character_artwork_and_placement_identical": true,
+  "option_A_and_B_pixel_equivalent": true,
+  "protected_inputs_unchanged": true,
+  "protected_input_count": 203,
+  "geometry_sha256": "bcc6205ebd853c003e5a0869542c7b8a2365f23c6fae1da074d7acd272e71886",
+  "canonical_case_sha256": "0c6a1387d3c619ac03cdba9df97a4efdd2823de26d2f83367b19dbf36b8fe976"
+}

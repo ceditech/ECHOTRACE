@@ -1,0 +1,28 @@
+{
+  "protected_inputs_unchanged": true,
+  "protected_file_count": 203,
+  "mobile_preview_sizes": {
+    "changed-mobile-320.png": [
+      320,
+      180
+    ],
+    "changed-mobile-390.png": [
+      390,
+      219
+    ],
+    "original-mobile-320.png": [
+      320,
+      180
+    ],
+    "original-mobile-390.png": [
+      390,
+      219
+    ]
+  },
+  "isolated_files": 30,
+  "new_endpoint_difference_pixels": 0,
+  "participant_tests_performed": false,
+  "runtime_touch_tests_performed": false,
+  "continuity_reference": "owner-mara-reference.png",
+  "active_outputs_rebuilt": true
+}
