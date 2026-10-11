@@ -1,0 +1,1281 @@
+{
+  "unit": "CSS px under full-width 16:9 fit; alpha bounds measured on 960 render then scaled analytically",
+  "scales": {
+    "960": {
+      "scene_height": 540.0,
+      "objects": [
+        {
+          "objectId": "object-table-window",
+          "envelope": [
+            384.0,
+            270.0
+          ],
+          "solid_alpha_ge128_size": [
+            384.0,
+            236.0
+          ],
+          "solid_source_render_bbox": [
+            0,
+            26,
+            384,
+            262
+          ]
+        },
+        {
+          "objectId": "object-table-plant",
+          "envelope": [
+            384.0,
+            270.0
+          ],
+          "solid_alpha_ge128_size": [
+            384.0,
+            236.0
+          ],
+          "solid_source_render_bbox": [
+            0,
+            26,
+            384,
+            262
+          ]
+        },
+        {
+          "objectId": "object-document-mat",
+          "envelope": [
+            192.0,
+            151.2
+          ],
+          "solid_alpha_ge128_size": [
+            189.0,
+            79.0
+          ],
+          "solid_source_render_bbox": [
+            2,
+            35,
+            191,
+            114
+          ]
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "envelope": [
+            96.0,
+            97.2
+          ],
+          "solid_alpha_ge128_size": [
+            80.0,
+            92.0
+          ],
+          "solid_source_render_bbox": [
+            8,
+            2,
+            88,
+            94
+          ]
+        },
+        {
+          "objectId": "object-passport",
+          "envelope": [
+            67.2,
+            56.7
+          ],
+          "solid_alpha_ge128_size": [
+            62.0,
+            53.0
+          ],
+          "solid_source_render_bbox": [
+            3,
+            3,
+            65,
+            56
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "envelope": [
+            96.0,
+            64.8
+          ],
+          "solid_alpha_ge128_size": [
+            91.0,
+            63.0
+          ],
+          "solid_source_render_bbox": [
+            3,
+            1,
+            94,
+            64
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "envelope": [
+            115.2,
+            97.2
+          ],
+          "solid_alpha_ge128_size": [
+            91.0,
+            86.0
+          ],
+          "solid_source_render_bbox": [
+            12,
+            5,
+            103,
+            91
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "envelope": [
+            115.2,
+            97.2
+          ],
+          "solid_alpha_ge128_size": [
+            91.0,
+            86.0
+          ],
+          "solid_source_render_bbox": [
+            12,
+            5,
+            103,
+            91
+          ]
+        }
+      ],
+      "regions": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            134.4,
+            222.75000000000003,
+            288.0,
+            355.05
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            259.2,
+            86.4,
+            412.79999999999995,
+            218.7
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            643.2,
+            86.4,
+            796.8000000000001,
+            218.7
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            643.2,
+            222.75000000000003,
+            796.8000000000001,
+            355.05
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        }
+      ],
+      "region_pair_distances": [
+        {
+          "pair": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "edge_distance": 4.05,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "edge_distance": 355.223,
+          "overlap_area": 0
+        },
+        {
+          "pair": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "edge_distance": 355.2,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "edge_distance": 230.4,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "edge_distance": 230.436,
+          "overlap_area": 0
+        },
+        {
+          "pair": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "edge_distance": 4.05,
+          "overlap_area": 0.0
+        }
+      ],
+      "characters": {
+        "Mara": {
+          "visible_size": [
+            89.0,
+            141.0
+          ]
+        },
+        "Owen": {
+          "visible_size": [
+            88.0,
+            182.0
+          ]
+        }
+      }
+    },
+    "390": {
+      "scene_height": 219.375,
+      "objects": [
+        {
+          "objectId": "object-table-window",
+          "envelope": [
+            156.0,
+            109.688
+          ],
+          "solid_alpha_ge128_size": [
+            156.0,
+            95.875
+          ],
+          "solid_source_render_bbox": [
+            0,
+            26,
+            384,
+            262
+          ]
+        },
+        {
+          "objectId": "object-table-plant",
+          "envelope": [
+            156.0,
+            109.688
+          ],
+          "solid_alpha_ge128_size": [
+            156.0,
+            95.875
+          ],
+          "solid_source_render_bbox": [
+            0,
+            26,
+            384,
+            262
+          ]
+        },
+        {
+          "objectId": "object-document-mat",
+          "envelope": [
+            78.0,
+            61.425
+          ],
+          "solid_alpha_ge128_size": [
+            76.781,
+            32.094
+          ],
+          "solid_source_render_bbox": [
+            2,
+            35,
+            191,
+            114
+          ]
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "envelope": [
+            39.0,
+            39.488
+          ],
+          "solid_alpha_ge128_size": [
+            32.5,
+            37.375
+          ],
+          "solid_source_render_bbox": [
+            8,
+            2,
+            88,
+            94
+          ]
+        },
+        {
+          "objectId": "object-passport",
+          "envelope": [
+            27.3,
+            23.034
+          ],
+          "solid_alpha_ge128_size": [
+            25.188,
+            21.531
+          ],
+          "solid_source_render_bbox": [
+            3,
+            3,
+            65,
+            56
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "envelope": [
+            39.0,
+            26.325
+          ],
+          "solid_alpha_ge128_size": [
+            36.969,
+            25.594
+          ],
+          "solid_source_render_bbox": [
+            3,
+            1,
+            94,
+            64
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "envelope": [
+            46.8,
+            39.488
+          ],
+          "solid_alpha_ge128_size": [
+            36.969,
+            34.938
+          ],
+          "solid_source_render_bbox": [
+            12,
+            5,
+            103,
+            91
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "envelope": [
+            46.8,
+            39.488
+          ],
+          "solid_alpha_ge128_size": [
+            36.969,
+            34.938
+          ],
+          "solid_source_render_bbox": [
+            12,
+            5,
+            103,
+            91
+          ]
+        }
+      ],
+      "regions": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            54.60000000000001,
+            90.4921875,
+            117.0,
+            144.2390625
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            105.29999999999998,
+            35.10000000000001,
+            167.7,
+            88.84687500000001
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            261.3,
+            35.10000000000001,
+            323.7,
+            88.84687500000001
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            261.3,
+            90.4921875,
+            323.7,
+            144.2390625
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        }
+      ],
+      "region_pair_distances": [
+        {
+          "pair": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "edge_distance": 1.645,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "edge_distance": 144.309,
+          "overlap_area": 0
+        },
+        {
+          "pair": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "edge_distance": 144.3,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "edge_distance": 93.6,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "edge_distance": 93.614,
+          "overlap_area": 0
+        },
+        {
+          "pair": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "edge_distance": 1.645,
+          "overlap_area": 0.0
+        }
+      ],
+      "characters": {
+        "Mara": {
+          "visible_size": [
+            36.156,
+            57.281
+          ]
+        },
+        "Owen": {
+          "visible_size": [
+            35.75,
+            73.938
+          ]
+        }
+      }
+    },
+    "320": {
+      "scene_height": 180.0,
+      "objects": [
+        {
+          "objectId": "object-table-window",
+          "envelope": [
+            128.0,
+            90.0
+          ],
+          "solid_alpha_ge128_size": [
+            128.0,
+            78.667
+          ],
+          "solid_source_render_bbox": [
+            0,
+            26,
+            384,
+            262
+          ]
+        },
+        {
+          "objectId": "object-table-plant",
+          "envelope": [
+            128.0,
+            90.0
+          ],
+          "solid_alpha_ge128_size": [
+            128.0,
+            78.667
+          ],
+          "solid_source_render_bbox": [
+            0,
+            26,
+            384,
+            262
+          ]
+        },
+        {
+          "objectId": "object-document-mat",
+          "envelope": [
+            64.0,
+            50.4
+          ],
+          "solid_alpha_ge128_size": [
+            63.0,
+            26.333
+          ],
+          "solid_source_render_bbox": [
+            2,
+            35,
+            191,
+            114
+          ]
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "envelope": [
+            32.0,
+            32.4
+          ],
+          "solid_alpha_ge128_size": [
+            26.667,
+            30.667
+          ],
+          "solid_source_render_bbox": [
+            8,
+            2,
+            88,
+            94
+          ]
+        },
+        {
+          "objectId": "object-passport",
+          "envelope": [
+            22.4,
+            18.9
+          ],
+          "solid_alpha_ge128_size": [
+            20.667,
+            17.667
+          ],
+          "solid_source_render_bbox": [
+            3,
+            3,
+            65,
+            56
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "envelope": [
+            32.0,
+            21.6
+          ],
+          "solid_alpha_ge128_size": [
+            30.333,
+            21.0
+          ],
+          "solid_source_render_bbox": [
+            3,
+            1,
+            94,
+            64
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "envelope": [
+            38.4,
+            32.4
+          ],
+          "solid_alpha_ge128_size": [
+            30.333,
+            28.667
+          ],
+          "solid_source_render_bbox": [
+            12,
+            5,
+            103,
+            91
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "envelope": [
+            38.4,
+            32.4
+          ],
+          "solid_alpha_ge128_size": [
+            30.333,
+            28.667
+          ],
+          "solid_source_render_bbox": [
+            12,
+            5,
+            103,
+            91
+          ]
+        }
+      ],
+      "regions": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            44.800000000000004,
+            74.25,
+            96.0,
+            118.35
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            86.39999999999999,
+            28.800000000000004,
+            137.6,
+            72.9
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            214.4,
+            28.800000000000004,
+            265.6,
+            72.9
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            214.4,
+            74.25,
+            265.6,
+            118.35
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        }
+      ],
+      "region_pair_distances": [
+        {
+          "pair": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "edge_distance": 1.35,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "edge_distance": 118.408,
+          "overlap_area": 0
+        },
+        {
+          "pair": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "edge_distance": 118.4,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "edge_distance": 76.8,
+          "overlap_area": 0.0
+        },
+        {
+          "pair": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "edge_distance": 76.812,
+          "overlap_area": 0
+        },
+        {
+          "pair": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "edge_distance": 1.35,
+          "overlap_area": 0.0
+        }
+      ],
+      "characters": {
+        "Mara": {
+          "visible_size": [
+            29.667,
+            47.0
+          ]
+        },
+        "Owen": {
+          "visible_size": [
+            29.333,
+            60.667
+          ]
+        }
+      }
+    }
+  },
+  "canonical_vs_B": {
+    "object-document-mat": {
+      "canonical": {
+        "objectId": "object-document-mat",
+        "asset": {
+          "id": "asset-document-mat"
+        },
+        "position": {
+          "x": 0.18,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.2,
+          "height": 0.3
+        },
+        "rotationDegrees": 0
+      },
+      "offline_B": {
+        "objectId": "object-document-mat",
+        "asset": {
+          "id": "asset-document-mat"
+        },
+        "position": {
+          "x": 0.22,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.2,
+          "height": 0.28
+        },
+        "rotationDegrees": 0
+      }
+    },
+    "object-passport": {
+      "canonical": {
+        "objectId": "object-passport",
+        "asset": {
+          "id": "asset-passport"
+        },
+        "position": {
+          "x": 0.18,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "offline_B": {
+        "objectId": "object-passport",
+        "asset": {
+          "id": "asset-passport"
+        },
+        "position": {
+          "x": 0.22,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.07,
+          "height": 0.105
+        },
+        "rotationDegrees": 0
+      }
+    },
+    "object-star-wallet": {
+      "canonical": {
+        "objectId": "object-star-wallet",
+        "asset": {
+          "id": "asset-star-wallet"
+        },
+        "position": {
+          "x": 0.38,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "offline_B": {
+        "objectId": "object-star-wallet",
+        "asset": {
+          "id": "asset-star-wallet"
+        },
+        "position": {
+          "x": 0.38,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.12
+        },
+        "rotationDegrees": 0
+      }
+    },
+    "object-stand-12": {
+      "canonical": {
+        "objectId": "object-stand-12",
+        "asset": {
+          "id": "asset-stand-12"
+        },
+        "position": {
+          "x": 0.35,
+          "y": 0.25
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "offline_B": {
+        "objectId": "object-stand-12",
+        "asset": {
+          "id": "asset-stand-12"
+        },
+        "position": {
+          "x": 0.35,
+          "y": 0.335
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      }
+    },
+    "object-stand-21": {
+      "canonical": {
+        "objectId": "object-stand-21",
+        "asset": {
+          "id": "asset-stand-21"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.25
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "offline_B": {
+        "objectId": "object-stand-21",
+        "asset": {
+          "id": "asset-stand-21"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.335
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      }
+    }
+  },
+  "feature_rois": {
+    "stand_numeral_union": {
+      "asset": "stand-12",
+      "box": [
+        243,
+        203,
+        518,
+        394
+      ],
+      "asset_size": [
+        768,
+        648
+      ],
+      "envelope": [
+        0.12,
+        0.18
+      ],
+      "method": "Manually identified axis-aligned diagnostic feature ROI; includes nearby material",
+      "sizes": {
+        "960": [
+          41.25,
+          28.65
+        ],
+        "390": [
+          16.76,
+          11.64
+        ],
+        "320": [
+          13.75,
+          9.55
+        ]
+      }
+    },
+    "wallet_star": {
+      "asset": "star-wallet",
+      "box": [
+        201,
+        109,
+        444,
+        348
+      ],
+      "asset_size": [
+        800,
+        540
+      ],
+      "envelope": [
+        0.1,
+        0.12
+      ],
+      "method": "Manually identified axis-aligned diagnostic feature ROI; includes nearby material",
+      "sizes": {
+        "960": [
+          29.16,
+          28.68
+        ],
+        "390": [
+          11.85,
+          11.65
+        ],
+        "320": [
+          9.72,
+          9.56
+        ]
+      }
+    },
+    "wallet_strap_band": {
+      "asset": "star-wallet",
+      "box": [
+        409,
+        83,
+        718,
+        528
+      ],
+      "asset_size": [
+        800,
+        540
+      ],
+      "envelope": [
+        0.1,
+        0.12
+      ],
+      "method": "Manually identified axis-aligned diagnostic feature ROI; includes nearby material",
+      "sizes": {
+        "960": [
+          37.08,
+          53.4
+        ],
+        "390": [
+          15.06,
+          21.69
+        ],
+        "320": [
+          12.36,
+          17.8
+        ]
+      }
+    }
+  },
+  "canonical_region_comparison": {
+    "960": {
+      "each_target_size": [
+        172.79999999999998,
+        162.0
+      ],
+      "row_gap": 54.0,
+      "regions": [
+        {
+          "objectId": "object-passport",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.09,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-21",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.26,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        }
+      ]
+    },
+    "390": {
+      "each_target_size": [
+        70.2,
+        65.8125
+      ],
+      "row_gap": 21.9375,
+      "regions": [
+        {
+          "objectId": "object-passport",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.09,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-21",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.26,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        }
+      ]
+    },
+    "320": {
+      "each_target_size": [
+        57.599999999999994,
+        54.0
+      ],
+      "row_gap": 18.0,
+      "regions": [
+        {
+          "objectId": "object-passport",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.09,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-21",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.26,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        }
+      ]
+    }
+  },
+  "contrast_samples": {
+    "method": "Manual small rendered ROI median luminance; proxy, not whole-object contrast or WCAG certification",
+    "samples": {
+      "passport_cover": {
+        "box": [
+          196,
+          280,
+          203,
+          285
+        ],
+        "median_relative_luminance": 0.006759075384609741
+      },
+      "adjacent_mat": {
+        "box": [
+          183,
+          279,
+          190,
+          284
+        ],
+        "median_relative_luminance": 0.036567201510534185
+      },
+      "stand_face": {
+        "box": [
+          319,
+          186,
+          326,
+          193
+        ],
+        "median_relative_luminance": 0.019581439256114632
+      },
+      "stand_gold_numeral": {
+        "box": [
+          324,
+          166,
+          328,
+          171
+        ],
+        "median_relative_luminance": 0.663694717411922
+      }
+    },
+    "passport_mat_ratio": 1.5251693394217434
+  }
+}

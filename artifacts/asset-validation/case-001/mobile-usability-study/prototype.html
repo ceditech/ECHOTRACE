@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline mobile study</title><link rel="stylesheet" href="prototype.css"></head>
+<body><main><h1>Offline camera study</h1><p>Research controls only — no observation timer, evidence collection or production gameplay.</p>
+<label>Width <select id="width"><option>320</option><option>390</option><option>960</option></select></label>
+<label>Approach <select id="approach"><option value="fit">Full composition</option><option value="tall">Taller camera (clipping tradeoff)</option><option value="zoom">Optional 2× zoom and pan</option></select></label>
+<label>Snapshot <select id="snapshot"><option value="a">Original</option><option value="b">Changed</option></select></label>
+<button id="zoom" disabled>Zoom 2×</button><button id="overview">Return to overview</button>
+<p id="status" role="status"></p>
+<div id="viewport" tabindex="0" aria-label="Scene viewport; use arrow keys or scrollbars to pan when enlarged"><img id="scene" src="images/a.png" alt="Lounge scene" draggable="false"></div>
+<p>Arrow keys, scrollbars or one-finger native scrolling pan an enlarged image. Controls are outside the scene. Snapshot switches preserve the same view. “Return to overview” restores full composition.</p>
+</main><script src="prototype.js"></script></body></html>

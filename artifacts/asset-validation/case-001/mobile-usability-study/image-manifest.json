@@ -1,0 +1,12 @@
+[
+  {
+    "copy": "images/a.png",
+    "source": "artifacts/asset-validation/case-001/character-placement-proof/original-with-characters.png",
+    "sha256": "131289a2c4327a3d3c2bfb93671b9d28b8df8f6f77c21aab94e7040974d58082"
+  },
+  {
+    "copy": "images/b.png",
+    "source": "artifacts/asset-validation/case-001/character-placement-proof/changed-with-characters.png",
+    "sha256": "035cba7e97b8839a13974b6d6369c4f1f37675d4349063733ea47bda29e18cc5"
+  }
+]
