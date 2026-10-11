@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "protected_file_count": 232,
+  "protected_files_changed": [],
+  "exact_latest_composites": true,
+  "dimensions": [
+    960,
+    540
+  ],
+  "approved_endpoint_difference_mask_matches": true,
+  "character_pixels_identical": true,
+  "references_timing_dependencies": "PASS",
+  "node_sequence_tests": "PASS: boundaries, forward-only start, reset cancellation, facilitator end, invalidation",
+  "automated_browser_test": "NOT PERFORMED: Playwright unavailable",
+  "human_tests": "NOT PERFORMED",
+  "real_device_tests": "NOT PERFORMED",
+  "runtime_touch_tests": "NOT PERFORMED"
+}

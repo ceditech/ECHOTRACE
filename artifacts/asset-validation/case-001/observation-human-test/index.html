@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Observation session</title>
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<main id="facilitator" hidden>
+<h1>Facilitator console</h1>
+<p>Keep this window off the participant's display. Read TEST_SCRIPT.md before starting.</p>
+<label>Scene width <select id="mode"><option value="960">Desktop (960 CSS px)</option><option value="390">390 CSS px</option><option value="320">320 CSS px</option></select></label>
+<p><button id="open">Open participant screen</button> <button id="start" disabled>Start</button> <button id="end" disabled>End recall</button> <button id="reset" disabled>Reset</button></p>
+<p id="status" role="status">Open the participant screen and confirm its device/display setup.</p>
+<pre id="metrics"></pre>
+</main>
+<main id="participant" hidden><img id="scene" alt="" hidden draggable="false"></main>
+<script src="viewer.js"></script>
+</body></html>
