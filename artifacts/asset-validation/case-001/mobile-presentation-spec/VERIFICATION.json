@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "task": "MPS-001 documentation only",
+  "branch": "feature/echotrace",
+  "protected_input_count": 284,
+  "changed_existing_files": [],
+  "existing_nonignored_inventory_unchanged": true,
+  "document_count": 8,
+  "local_document_links": "PASS",
+  "owner_decision_references": "PASS O01-O12, all pending",
+  "internal_consistency_review": "PASS: timing, three canonical changes, canonical/B distinction, recommended vs implemented status",
+  "canonical_changes": {
+    "change-passport-removed": "object_removed",
+    "change-stands-exchanged": "object_exchanged",
+    "change-wallet-moved": "object_moved"
+  },
+  "canonical_timing_seconds": [
+    25,
+    2
+  ],
+  "current_pair_difference_mask_matches_existing_evidence": true,
+  "stable_character_pixels_identical": true,
+  "documents": {
+    "MPS_001.md": "787e2dbd3797795dabafc13950798dedad516d5ab38b9fda4da33151f4f4e098",
+    "INTERACTION_CONTRACT.md": "b363959e9e9d26807f0263afa3f038e7d1f7319d63d7b69973c782ee9b81c4ed",
+    "OBSERVATION_FAIRNESS.md": "a3df360a83858615e6f218db7dfb5072d467115e1bd715f5752919e9c0fa3bb4",
+    "CHARACTER_STAGING_REVIEW.md": "069c1e38c61028d503e32a2add896f265a36c9dda31ec47b418b59f199d333f0",
+    "MOBILE_QA_MATRIX.md": "c17a6771434ce79d7278eb2448734d38cbcf974ccc677bb6b75dae9c6d7e38a9",
+    "OWNER_DECISIONS.md": "3262e423c83b2fe4119ad6784fbb9ac288c2a8eb1d32fbc4883ac2fec42ad1c3",
+    "IMPLEMENTATION_SEQUENCE.md": "1dc170700a1c024d24168bf0b2ac1b065c9c9b8f877ddd4b9a194c4bd264422d",
+    "README.md": "ee29fd8f2039e7240496095ce3d5537c493cb39b9e6fb83a54f360cc548eadde"
+  },
+  "hash_scope": "rg nonignored existing files, excluding .git/node_modules/.next and this new folder; no protected existing files changed",
+  "application_tests": "NOT RUN: documentation only",
+  "human_tests_this_task": "NOT PERFORMED",
+  "physical_device_qa": "NOT PERFORMED",
+  "browser_runtime_qa": "NOT PERFORMED",
+  "production_changes": false,
+  "artwork_changes": false,
+  "canonical_geometry_changes": false,
+  "T17_T18_implementation": false,
+  "commit_push": false
+}
