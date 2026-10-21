@@ -69,6 +69,8 @@ export default defineConfig([
     },
   },
   globalIgnores([
+    // Standalone QA packages use their own tests; keep hashed evidence immutable.
+    "artifacts/asset-validation/**",
     ".next/**",
     ".kilo/**",
     "out/**",

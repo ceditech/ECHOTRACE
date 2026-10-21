@@ -18,8 +18,9 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "test:run": "vitest run",
+    "test:artifacts": "node scripts/check-asset-artifacts.mjs && node artifacts/asset-validation/case-001/observation-human-test/test-sequence.cjs && node artifacts/asset-validation/case-001/mobile-usability-study/test-prototype.cjs && node --test artifacts/asset-validation/case-001/mobile-verification-prototype/test-core.cjs",
     "test:watch": "vitest",
-    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:run"
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:run && npm run test:artifacts"
   },
   "dependencies": {
     "next": "16.3.8",

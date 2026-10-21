@@ -10,3 +10,5 @@ package-lock.json
 # Product documents are maintained intentionally; avoid formatting churn.
 *.md
 .env*
+# Historical QA evidence has recorded hashes; validate it with test:artifacts.
+artifacts/asset-validation/
