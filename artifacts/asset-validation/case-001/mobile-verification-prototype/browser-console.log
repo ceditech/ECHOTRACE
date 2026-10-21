@@ -1,0 +1,7 @@
+
+DevTools listening on ws://127.0.0.1:56305/devtools/browser/7dd60b6c-87f2-4bd9-a894-bb7699b29353
+[32972:30412:1021/124503.383:ERROR:components\device_event_log\device_event_log_impl.cc:211] [12:45:03.383] USB: usb_service_win.cc:346 Failed to parse device interface GUID:
+[32972:30412:1021/124503.384:ERROR:services\device\usb\usb_descriptors.cc:145] Failed to read length for configuration 1.
+[32972:30412:1021/124503.384:ERROR:services\device\usb\usb_descriptors.cc:104] Failed to read all configuration descriptors. Expected 2, got 1.
+[32972:30412:1021/124503.384:ERROR:components\device_event_log\device_event_log_impl.cc:211] [12:45:03.385] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_17ef&pid_a359#30100000c#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+[32972:41780:1021/124503.517:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

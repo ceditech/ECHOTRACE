@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>EchoTrace mobile verification — research only</title><link rel="stylesheet" href="style.css"></head>
+<body><main><h1>Mobile verification prototype</h1><p><strong>Research only.</strong> Candidate artwork rendered at canonical geometry. No timer, scoring, evidence or gameplay phases.</p>
+<section aria-label="Research controls" class="controls">
+<label>Viewport width <select id="width"><option>320</option><option>390</option><option>430</option><option>768</option><option>960</option></select></label>
+<label>Snapshot <select id="snapshot"><option value="original">Original inspection</option><option value="changed">Changed / investigation inspection</option></select></label>
+<label><input type="checkbox" id="tall"> Taller viewport / letterbox check</label>
+<label>Simulated safe inset <select id="safe"><option value="0">0 CSS px</option><option value="16">16 CSS px each side</option><option value="32">32 CSS px each side</option></select></label>
+<label><input type="checkbox" id="regions"> Research target overlay</label>
+<label><input type="checkbox" id="clues"> Research visual-envelope overlay</label>
+</section>
+<section aria-label="Camera controls" class="controls"><button id="zoom" disabled>Zoom 2×</button><button id="overview">Overview</button><button id="left" disabled>Pan left</button><button id="right" disabled>Pan right</button><button id="up" disabled>Pan up</button><button id="down" disabled>Pan down</button></section>
+<div id="safe-frame"><div id="viewport" tabindex="0" role="application" aria-label="Research scene cursor. Arrow keys move; Enter selects. Shift plus arrow pans in investigation. Escape cancels."><img id="art" alt="Candidate lounge scene" draggable="false"><svg id="overlay" aria-hidden="true"></svg><span id="cursor" hidden></span></div></div>
+<p id="selection" role="status">Loading both candidate images…</p><pre id="diagnostics" aria-label="Research measurements"></pre>
+<details><summary>Controls and limits</summary><p>Original inspection stays at Overview and does not select. Changed inspection permits exact canonical hit testing and optional zoom/pan. Research overlays are separate SVG layers. Pointer movement above 8 CSS px cancels a tap. Drag to pan at 2×; no custom pinch is implemented. Use buttons for one-pointer panning. Browser zoom remains available. No tests here prove mobile-device readiness or original-scene fairness.</p></details>
+</main><script src="data.js"></script><script src="core.js"></script><script src="viewer.js"></script></body></html>

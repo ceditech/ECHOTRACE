@@ -1,0 +1,139 @@
+{
+  "files": [
+    {
+      "path": "asset-manifest.json",
+      "sha256": "2f7b08de01de3fe4ceead266f9e4593520d3bb92bc94051d64200771bcb4acc5"
+    },
+    {
+      "path": "browser-390-original.png",
+      "sha256": "db8225026e8ae053495b0a24b95b3d4c21141b7922ba852dffd4d1cf49ba93c4"
+    },
+    {
+      "path": "browser-390-targets.png",
+      "sha256": "315f64bad5be644614f76428840b260099b8e523dde549eb7cf76fd9b50e4061"
+    },
+    {
+      "path": "browser-console.log",
+      "sha256": "c5537bb93eac2e240abdaa3f3f9a858f1ca82aafb0c307c14e626aba40f7ff1f"
+    },
+    {
+      "path": "browser-results-initial.json",
+      "sha256": "160c5d95601ef72f2b6acb7b6c9db932f81e272678e8c422d27dd19c24a74219"
+    },
+    {
+      "path": "browser-results-layout-failure.json",
+      "sha256": "b4a4db8522bb6110196c0634b6457d4d389ff9d7716bcd7602eed84ea963cbb7"
+    },
+    {
+      "path": "browser-results.json",
+      "sha256": "99d2eb2d1ca4fe4c855de0ec97862189201c3515f3d4da3f1961578f541e381d"
+    },
+    {
+      "path": "core-test-results.txt",
+      "sha256": "f25f2ed4bfbf0d01393272ef7f3db2ffd33cdeb94bdff7d0744826d360d2991a"
+    },
+    {
+      "path": "core.js",
+      "sha256": "f7a3d878398c426c063c64214d81a7186d706592a52fd2df8fe103f0e6cab854"
+    },
+    {
+      "path": "data.js",
+      "sha256": "db15cd26ebcd75fc70ebf2dd400245096e5279b99d9f5c8960aadeebe8dffb54"
+    },
+    {
+      "path": "images/changed-320.png",
+      "sha256": "47709609671922d11e954ff0708f5039ebd46edcc6ea7f3cad35501248e56edd"
+    },
+    {
+      "path": "images/changed-390.png",
+      "sha256": "bc4daf45681cdd64604507c19844e99487b6592a7422993af2fa8ade9b56ad25"
+    },
+    {
+      "path": "images/changed.png",
+      "sha256": "6320131dab1acc96b3c13d90c7fddca70e7116495945c1d678f1758254a47b15"
+    },
+    {
+      "path": "images/difference-mask.png",
+      "sha256": "c2b70c254f8cae2ee9b1d3857c3b3c810081d1bbaabd370d4ad2a3243ab0fd7e"
+    },
+    {
+      "path": "images/original-320.png",
+      "sha256": "682a1f5232b605e17183363bd74f5068e15edfc51faaf4bea2cc62ec6a5873d6"
+    },
+    {
+      "path": "images/original-390.png",
+      "sha256": "b21717e4487d22daa69d880bf020ee2bbe6fbadd5dbb4cfb45566ab5026917f0"
+    },
+    {
+      "path": "images/original.png",
+      "sha256": "1222e20fc5ae7b6b4ba0c54279c01500b29912c4c066159c7373945a45ba7798"
+    },
+    {
+      "path": "index.html",
+      "sha256": "4aa9973f7e3b4e4a5fe9e23477c9917da9997ef2c5747901052e40d279af6ca9"
+    },
+    {
+      "path": "measurements.json",
+      "sha256": "2928c9158273b3a2afbeee0681fd3b07b5f3cfb12f1caed99f87650d1072123f"
+    },
+    {
+      "path": "MOBILE_READABILITY_REPORT.md",
+      "sha256": "89ff9dde15a9a6bfdd0af8c2aa9d9d2ef474bd1a810b57e3338a3f6861015a5b"
+    },
+    {
+      "path": "OPEN_ISSUES.md",
+      "sha256": "b7adde190de2ce8865d304eea62c797cb695d12238c1a695da880ed5a5b03996"
+    },
+    {
+      "path": "OWNER_APPROVAL_RECORD.md",
+      "sha256": "df7e9152436e9d7e084ded2e60325dea9740dd158dee1ab5e4a04484fa8a486e"
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "c31efe2ed29605764a8cb3c6cd1a76010cd2be9d2c63ef366f2dbb94e9ef1413"
+    },
+    {
+      "path": "protected-before.json",
+      "sha256": "c61de18fba6a08cfb960fe9210e551b47421c90304383ea044245853943cc832"
+    },
+    {
+      "path": "README.md",
+      "sha256": "867106433cb5951adbabcaa73ee35cccac5e3a30dba6c5336e7d51cc47cc4171"
+    },
+    {
+      "path": "style.css",
+      "sha256": "2e64acbb8a283dc3513073ec54283e9bf017507dba44ff21fb45f69ccf90af24"
+    },
+    {
+      "path": "test-browser.cjs",
+      "sha256": "ccf262da0557e5cb051e60cb869a0da01e2467e62a3f9d9893c90b095fc74624"
+    },
+    {
+      "path": "test-core.cjs",
+      "sha256": "9ddfdd094b6d07097db2fe74368d9ce6c29f7392feac7e7a8a1c8c2dc271d12e"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "sha256": "a6efad62b05489454c396804c5ebaa813419f24d0d3c1b24ab7173e14f1d3ca6"
+    },
+    {
+      "path": "verification.json",
+      "sha256": "e97215610a528bfd2475ad2bf4cdbf2cebca218e44f0aa4f4fbe47aa56685549"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "ac8d21aff8cdea77f6863cc37621f1e717915242af3e2edae90690f183429a5f"
+    },
+    {
+      "path": "viewer.js",
+      "sha256": "e637bd6c73d5e4f7d5ee361f5e7ad691b6b8866a400f211f550604b8fee5a234"
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "note": "Self hash omitted"
+    }
+  ],
+  "file_count_including_inventory": 33,
+  "transient_browser_profile_included": false
+}

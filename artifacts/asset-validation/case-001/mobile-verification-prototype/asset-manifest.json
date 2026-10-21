@@ -1,0 +1,26 @@
+{
+  "source_files": {
+    "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png": "2417c34daa3cdaf8ee5b3c8b6418b5ce123cf0eb1a657ca148de9bb4c0da85a8",
+    "artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png": "655f0f2f8df1f580f5b8e511636910c583a5831a2cfafb27ba054e77fbe33fa9",
+    "public/assets/cases/case-001/owen-backpack.png": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651",
+    "artifacts/asset-validation/case-001/B-art-refinement/passport-candidate.png": "6d53912426aa5a3f1eae2de4a4ab48826c3d8f3e242783083602d96a01429a06",
+    "artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png": "20d9d42b798adf1bc2ba4efee1edba1220df4b21fa9ff03a66702c295d69add6",
+    "artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png": "691442aeacbfd0f677b3665ea3e4399cc54fbd596e93344aab680b4fc8fe72ee",
+    "artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png": "4016cb44452c0876671f3938e7f9a519162c819b54971044d0fdee95464733fc",
+    "public/assets/cases/case-001/lounge-background.webp": "394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d",
+    "artifacts/asset-validation/case-001/character-placement-proof/static-character-layer.png": "9a2adff0ad0e35b7cfa16e891936ffe66c44e55e6e739e1ab4185fdf581244d4",
+    "src/cases/content/case-001/case.json": "0c6a1387d3c619ac03cdba9df97a4efdd2823de26d2f83367b19dbf36b8fe976"
+  },
+  "outputs": {
+    "images/changed-320.png": "47709609671922d11e954ff0708f5039ebd46edcc6ea7f3cad35501248e56edd",
+    "images/changed-390.png": "bc4daf45681cdd64604507c19844e99487b6592a7422993af2fa8ade9b56ad25",
+    "images/changed.png": "6320131dab1acc96b3c13d90c7fddca70e7116495945c1d678f1758254a47b15",
+    "images/difference-mask.png": "c2b70c254f8cae2ee9b1d3857c3b3c810081d1bbaabd370d4ad2a3243ab0fd7e",
+    "images/original-320.png": "682a1f5232b605e17183363bd74f5068e15edfc51faaf4bea2cc62ec6a5873d6",
+    "images/original-390.png": "b21717e4487d22daa69d880bf020ee2bbe6fbadd5dbb4cfb45566ab5026917f0",
+    "images/original.png": "1222e20fc5ae7b6b4ba0c54279c01500b29912c4c066159c7373945a45ba7798"
+  },
+  "candidate_render_method": "Exact canonical envelopes; same static character layer and shared asset bytes at both endpoints",
+  "additional_endpoint_pixels_outside_changed_object_layers": 0,
+  "character_pixels_changed": 0
+}
