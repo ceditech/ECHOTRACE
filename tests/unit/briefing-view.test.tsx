@@ -59,5 +59,6 @@ describe("T16 briefing semantics", () => {
     expect(html).toContain('href="/case"');
     expect(html).toContain('href="/renderer"');
     expect(html).toContain("EchoTrace</h1>");
+    console.log(html);
   });
 });
