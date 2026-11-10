@@ -1,0 +1,296 @@
+{
+  "status": "FAIL",
+  "checks": [
+    "file:// pair preload and native dimensions",
+    "tall viewport coordinate/letterbox invariance at 3 zooms",
+    "short viewport coordinate/letterbox invariance at 3 zooms",
+    "letterbox tap rejected",
+    "288px effective width is reported and fails comfort height honestly",
+    "256px effective width is reported and fails comfort height honestly",
+    "scrollbar-induced available width measured",
+    "landscape desktop window and viewport resize mapping",
+    "capture and no commit until primary pointer-up"
+  ],
+  "errors": [],
+  "dimensions": [
+    {
+      "frameWidth": 320,
+      "simulatedInset": 16,
+      "effectiveFitWidth": 288,
+      "targetSize": [
+        51.839999999999996,
+        43.74
+      ],
+      "gap": 8.1,
+      "comfortHeight": false
+    },
+    {
+      "frameWidth": 320,
+      "simulatedInset": 32,
+      "effectiveFitWidth": 256,
+      "targetSize": [
+        46.08,
+        38.88
+      ],
+      "gap": 7.2,
+      "comfortHeight": false
+    },
+    {
+      "browserWidth": 320,
+      "sceneWidth": 305,
+      "reason": "desktop classic scrollbar space"
+    }
+  ],
+  "physicalDevice": false,
+  "focusedDiagnostic": true,
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.38",
+    "revision": "@a733b5afbb3ba618844ff8876b89ad1a774b2f18",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.23"
+  },
+  "executable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n26 !== 27\n\n    at C:\\Users\\CedricYovodevi\\sources\\repo\\Games\\ECHOTRACE\\artifacts\\asset-validation\\case-001\\B-mobile-interaction-validation\\test-browser.cjs:53:255",
+  "failureState": {
+    "diagnostics": {
+      "researchOnly": true,
+      "geometry": "REFINED B, NOT CANONICAL",
+      "snapshot": "changed",
+      "requestedFrameWidth": 320,
+      "viewport": [
+        320,
+        180
+      ],
+      "effectiveFitWidth": 320,
+      "zoom": 1,
+      "pan": [
+        0,
+        0
+      ],
+      "letterbox": [
+        0,
+        0
+      ],
+      "targetSizeAtOverview": [
+        57.599999999999994,
+        48.6
+      ],
+      "minimumGapAtOverview": 9,
+      "comfortHeightAtOverview": true,
+      "clues": [
+        {
+          "objectId": "object-document-mat",
+          "solidAtOverview": [
+            63,
+            26.333333333333332
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "solidAtOverview": [
+            33.666666666666664,
+            22.666666666666664
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "solidAtOverview": [
+            30.333333333333332,
+            28.666666666666664
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "solidAtOverview": [
+            30.333333333333332,
+            28.666666666666664
+          ]
+        }
+      ],
+      "epoch": 46,
+      "dpr": 2,
+      "visualViewportScale": 1,
+      "reducedMotion": false,
+      "loaded": true,
+      "lastGesture": "unrelated-pointer"
+    },
+    "camera": {
+      "width": 320,
+      "height": 180,
+      "s": 0.3333333333333333,
+      "z": 1,
+      "ox": 0,
+      "oy": 0,
+      "tx": 0,
+      "ty": 0
+    },
+    "cursor": {
+      "x": 160,
+      "y": 90
+    },
+    "lastSelection": {
+      "status": "hit",
+      "objectId": "object-stand-12",
+      "source": {
+        "x": 720,
+        "y": 153.89996337890625
+      }
+    },
+    "selectionCount": 26,
+    "gestures": {
+      "activeId": null,
+      "count": 0,
+      "blocked": false,
+      "panning": false
+    },
+    "recentEvents": [
+      {
+        "reason": "tap",
+        "commit": true,
+        "objectId": "object-star-wallet",
+        "maxDisplacement": 0,
+        "startingEpoch": 21,
+        "endingEpoch": 21
+      },
+      {
+        "reason": "unrelated-cancel"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "overview"
+      },
+      {
+        "reason": "pending",
+        "capture": true
+      },
+      {
+        "reason": "cancelled-up",
+        "commit": false,
+        "objectId": null,
+        "maxDisplacement": 0,
+        "startingEpoch": 24,
+        "endingEpoch": 24
+      },
+      {
+        "reason": "unrelated-cancel"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "page-scroll"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "page-scroll"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "page-scroll"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "page-scroll"
+      },
+      {
+        "reason": "pending",
+        "capture": true
+      },
+      {
+        "reason": "tap",
+        "commit": true,
+        "objectId": "object-stand-12",
+        "maxDisplacement": 0,
+        "startingEpoch": 41,
+        "endingEpoch": 41
+      },
+      {
+        "reason": "unrelated-cancel"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "page-scroll"
+      },
+      {
+        "reason": "layout-control"
+      },
+      {
+        "reason": "layout-change"
+      },
+      {
+        "reason": "page-scroll"
+      },
+      {
+        "reason": "pending",
+        "capture": true
+      },
+      {
+        "reason": "tap",
+        "commit": true,
+        "objectId": "object-stand-12",
+        "maxDisplacement": 0,
+        "startingEpoch": 46,
+        "endingEpoch": 46
+      },
+      {
+        "reason": "unrelated-cancel"
+      },
+      {
+        "reason": "pending",
+        "capture": true
+      },
+      {
+        "reason": "pending",
+        "maxDisplacement": 8
+      },
+      {
+        "reason": "capture-lost-before-up"
+      },
+      {
+        "reason": "unrelated-pointer",
+        "commit": false
+      }
+    ]
+  }
+}

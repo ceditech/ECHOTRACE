@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>MIV-001 — refined B research inspection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>MIV-001 · Approach B interaction inspection</h1>
+      <p>
+        <strong
+          >Research only: refined candidate, not canonical or production
+          adopted.</strong
+        >
+        Manual snapshot inspection; no game timer, scoring, evidence or
+        observation study.
+      </p>
+      <section class="controls" aria-label="Research layout controls">
+        <label
+          >Frame width
+          <select id="width">
+            <option>320</option>
+            <option>390</option>
+            <option>430</option>
+            <option>768</option>
+            <option>960</option>
+          </select></label
+        >
+        <label
+          >Snapshot
+          <select id="snapshot">
+            <option value="original">Original inspection</option>
+            <option value="changed">Changed / investigation inspection</option>
+          </select></label
+        >
+        <label
+          >Container
+          <select id="arrangement">
+            <option value="fit">16:9 fit</option>
+            <option value="tall">Tall / letterbox</option>
+            <option value="short">Height constrained (120px)</option>
+          </select></label
+        >
+        <label
+          >Simulated inset per side
+          <select id="safe">
+            <option value="0">0px</option>
+            <option value="16">16px</option>
+            <option value="32">32px</option>
+          </select></label
+        >
+        <label
+          ><input type="checkbox" id="regions" /> Research-only target
+          outlines</label
+        ><label
+          ><input type="checkbox" id="clues" /> Research-only visual
+          envelopes</label
+        >
+      </section>
+      <section class="controls" aria-label="Camera controls">
+        <label
+          >Investigation zoom
+          <select id="zoom" disabled>
+            <option value="1">1×</option>
+            <option value="1.5">1.5×</option>
+            <option value="2">2×</option>
+          </select></label
+        ><button id="overview">Overview</button
+        ><button id="left" disabled>Pan left</button
+        ><button id="right" disabled>Pan right</button
+        ><button id="up" disabled>Pan up</button
+        ><button id="down" disabled>Pan down</button>
+      </section>
+      <p id="legend">
+        Cyan: exact candidate target, Changed only. Magenta: visual envelope,
+        not hit area. Overlays are separate diagnostics.
+      </p>
+      <div id="safe-frame">
+        <div
+          id="viewport"
+          tabindex="0"
+          role="application"
+          aria-label="Research scene cursor. Arrow keys move, Enter selects during Changed. Shift and arrow pans. Escape cancels."
+        >
+          <img
+            id="art"
+            alt="Refined B candidate lounge scene"
+            hidden
+            draggable="false"
+          /><svg id="overlay" aria-hidden="true"></svg
+          ><span id="cursor" hidden></span>
+        </div>
+      </div>
+      <p id="selection" role="status">Loading verified candidate pair…</p>
+      <pre
+        id="diagnostics"
+        aria-label="Research dimensions and gesture diagnostics"
+      ></pre>
+      <details>
+        <summary>Instructions and limitations</summary>
+        <p>
+          Use Changed for exact candidate hit diagnostics. Original permits
+          neither target selection nor application zoom. Drag to pan after
+          movement exceeds the research 8px threshold; never select on
+          pointer-down. Two-pointer activity cancels selection; no custom pinch
+          camera is implemented. Browser pinch is not disabled. Buttons provide
+          one-pointer pan alternatives. No physical touch or accessibility
+          compliance is certified.
+        </p>
+      </details>
+    </main>
+    <script src="data.js"></script>
+    <script src="core.js"></script>
+    <script src="viewer.js"></script>
+  </body>
+</html>

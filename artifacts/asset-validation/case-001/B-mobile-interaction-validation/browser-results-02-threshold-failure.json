@@ -1,0 +1,594 @@
+{
+  "status": "FAIL",
+  "checks": [
+    "file:// pair preload and native dimensions",
+    "fit, four IDs, zoom 1, 320px, DPR 1",
+    "fit, four IDs, zoom 1.5, 320px, DPR 1",
+    "fit, four IDs, zoom 2, 320px, DPR 1",
+    "fit, four IDs, zoom 1, 390px, DPR 1",
+    "fit, four IDs, zoom 1.5, 390px, DPR 1",
+    "fit, four IDs, zoom 2, 390px, DPR 1",
+    "fit, four IDs, zoom 1, 430px, DPR 1",
+    "fit, four IDs, zoom 1.5, 430px, DPR 1",
+    "fit, four IDs, zoom 2, 430px, DPR 1",
+    "fit, four IDs, zoom 1, 768px, DPR 1",
+    "fit, four IDs, zoom 1.5, 768px, DPR 1",
+    "fit, four IDs, zoom 2, 768px, DPR 1",
+    "fit, four IDs, zoom 1, 960px, DPR 1",
+    "fit, four IDs, zoom 1.5, 960px, DPR 1",
+    "fit, four IDs, zoom 2, 960px, DPR 1",
+    "fit, four IDs, zoom 1, 320px, DPR 2",
+    "fit, four IDs, zoom 1.5, 320px, DPR 2",
+    "fit, four IDs, zoom 2, 320px, DPR 2",
+    "fit, four IDs, zoom 1, 390px, DPR 2",
+    "fit, four IDs, zoom 1.5, 390px, DPR 2",
+    "fit, four IDs, zoom 2, 390px, DPR 2",
+    "fit, four IDs, zoom 1, 430px, DPR 2",
+    "fit, four IDs, zoom 1.5, 430px, DPR 2",
+    "fit, four IDs, zoom 2, 430px, DPR 2",
+    "fit, four IDs, zoom 1, 768px, DPR 2",
+    "fit, four IDs, zoom 1.5, 768px, DPR 2",
+    "fit, four IDs, zoom 2, 768px, DPR 2",
+    "fit, four IDs, zoom 1, 960px, DPR 2",
+    "fit, four IDs, zoom 1.5, 960px, DPR 2",
+    "fit, four IDs, zoom 2, 960px, DPR 2",
+    "fit, four IDs, zoom 1, 320px, DPR 3",
+    "fit, four IDs, zoom 1.5, 320px, DPR 3",
+    "fit, four IDs, zoom 2, 320px, DPR 3",
+    "fit, four IDs, zoom 1, 390px, DPR 3",
+    "fit, four IDs, zoom 1.5, 390px, DPR 3",
+    "fit, four IDs, zoom 2, 390px, DPR 3",
+    "fit, four IDs, zoom 1, 430px, DPR 3",
+    "fit, four IDs, zoom 1.5, 430px, DPR 3",
+    "fit, four IDs, zoom 2, 430px, DPR 3",
+    "fit, four IDs, zoom 1, 768px, DPR 3",
+    "fit, four IDs, zoom 1.5, 768px, DPR 3",
+    "fit, four IDs, zoom 2, 768px, DPR 3",
+    "fit, four IDs, zoom 1, 960px, DPR 3",
+    "fit, four IDs, zoom 1.5, 960px, DPR 3",
+    "fit, four IDs, zoom 2, 960px, DPR 3",
+    "tall viewport coordinate/letterbox invariance at 3 zooms",
+    "short viewport coordinate/letterbox invariance at 3 zooms",
+    "letterbox tap rejected",
+    "288px effective width is reported and fails comfort height honestly",
+    "256px effective width is reported and fails comfort height honestly",
+    "scrollbar-induced available width measured",
+    "landscape desktop window and viewport resize mapping",
+    "capture and no commit until primary pointer-up"
+  ],
+  "errors": [],
+  "dimensions": [
+    {
+      "frameWidth": 320,
+      "dpr": 1,
+      "zoom": 1,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 1,
+      "zoom": 1.5,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 1,
+      "zoom": 2,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 1,
+      "zoom": 1,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 1,
+      "zoom": 1.5,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 1,
+      "zoom": 2,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 1,
+      "zoom": 1,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 1,
+      "zoom": 1.5,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 1,
+      "zoom": 2,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 1,
+      "zoom": 1,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 1,
+      "zoom": 1.5,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 1,
+      "zoom": 2,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 1,
+      "zoom": 1,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 1,
+      "zoom": 1.5,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 1,
+      "zoom": 2,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 2,
+      "zoom": 1,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 2,
+      "zoom": 1.5,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 2,
+      "zoom": 2,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 2,
+      "zoom": 1,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 2,
+      "zoom": 1.5,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 2,
+      "zoom": 2,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 2,
+      "zoom": 1,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 2,
+      "zoom": 1.5,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 2,
+      "zoom": 2,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 2,
+      "zoom": 1,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 2,
+      "zoom": 1.5,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 2,
+      "zoom": 2,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 2,
+      "zoom": 1,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 2,
+      "zoom": 1.5,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 2,
+      "zoom": 2,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 3,
+      "zoom": 1,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 3,
+      "zoom": 1.5,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 320,
+      "dpr": 3,
+      "zoom": 2,
+      "effectiveFitWidth": 320,
+      "targetSize": [
+        57.599999999999994,
+        48.6
+      ],
+      "gap": 9
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 3,
+      "zoom": 1,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 3,
+      "zoom": 1.5,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 390,
+      "dpr": 3,
+      "zoom": 2,
+      "effectiveFitWidth": 390,
+      "targetSize": [
+        70.2,
+        59.23125
+      ],
+      "gap": 10.96875
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 3,
+      "zoom": 1,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 3,
+      "zoom": 1.5,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 430,
+      "dpr": 3,
+      "zoom": 2,
+      "effectiveFitWidth": 430,
+      "targetSize": [
+        77.39999999999999,
+        65.30625
+      ],
+      "gap": 12.09375
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 3,
+      "zoom": 1,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 3,
+      "zoom": 1.5,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 768,
+      "dpr": 3,
+      "zoom": 2,
+      "effectiveFitWidth": 768,
+      "targetSize": [
+        138.24,
+        116.64000000000001
+      ],
+      "gap": 21.6
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 3,
+      "zoom": 1,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 3,
+      "zoom": 1.5,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 960,
+      "dpr": 3,
+      "zoom": 2,
+      "effectiveFitWidth": 960,
+      "targetSize": [
+        172.79999999999998,
+        145.8
+      ],
+      "gap": 27
+    },
+    {
+      "frameWidth": 320,
+      "simulatedInset": 16,
+      "effectiveFitWidth": 288,
+      "targetSize": [
+        51.839999999999996,
+        43.74
+      ],
+      "gap": 8.1,
+      "comfortHeight": false
+    },
+    {
+      "frameWidth": 320,
+      "simulatedInset": 32,
+      "effectiveFitWidth": 256,
+      "targetSize": [
+        46.08,
+        38.88
+      ],
+      "gap": 7.2,
+      "comfortHeight": false
+    },
+    {
+      "browserWidth": 320,
+      "sceneWidth": 305,
+      "reason": "desktop classic scrollbar space"
+    }
+  ],
+  "physicalDevice": false,
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.38",
+    "revision": "@a733b5afbb3ba618844ff8876b89ad1a774b2f18",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.23"
+  },
+  "executable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n206 !== 207\n\n    at C:\\Users\\CedricYovodevi\\sources\\repo\\Games\\ECHOTRACE\\artifacts\\asset-validation\\case-001\\B-mobile-interaction-validation\\test-browser.cjs:53:255"
+}

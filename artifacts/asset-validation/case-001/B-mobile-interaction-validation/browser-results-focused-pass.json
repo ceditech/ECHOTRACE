@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "checks": [
+    "file:// pair preload and native dimensions",
+    "tall viewport coordinate/letterbox invariance at 3 zooms",
+    "short viewport coordinate/letterbox invariance at 3 zooms",
+    "letterbox tap rejected",
+    "288px effective width is reported and fails comfort height honestly",
+    "256px effective width is reported and fails comfort height honestly",
+    "scrollbar-induced available width measured",
+    "landscape desktop window and viewport resize mapping",
+    "capture and no commit until primary pointer-up",
+    "actual mouse 8px inclusive and 9px cancelled",
+    "unrelated pointer ID cannot commit or consume active pointer",
+    "real pointer capture release/lost capture cancels",
+    "width change cancels in-flight pointer",
+    "snapshot change cancels in-flight pointer",
+    "zoom change cancels in-flight pointer",
+    "external pan cancels pending pointer",
+    "continuous drag pan moves camera without selecting",
+    "upper/lower gap tap has no target",
+    "browser top boundary inclusive, one CSS pixel above excluded",
+    "outside viewport tap cannot select an offscreen source",
+    "five rapid independent taps yield five diagnostics, no duplicate commits",
+    "CDP pen pointer routes identically",
+    "CDP simulated single touch routes identically",
+    "CDP touchCancel has no selection",
+    "CDP two-touch sequence cancels selection (not physical pinch evidence)",
+    "Original disables selection and application zoom",
+    "snapshot reset returns to complete overview",
+    "separate research-only SVG visual versus target overlays",
+    "reduced-motion media with no scene animation",
+    "external button keyboard focus/activation",
+    "neutral keyboard spatial selection matches pointer ID",
+    "real browser screenshot evidence"
+  ],
+  "errors": [],
+  "dimensions": [
+    {
+      "frameWidth": 320,
+      "simulatedInset": 16,
+      "effectiveFitWidth": 288,
+      "targetSize": [
+        51.839999999999996,
+        43.74
+      ],
+      "gap": 8.1,
+      "comfortHeight": false
+    },
+    {
+      "frameWidth": 320,
+      "simulatedInset": 32,
+      "effectiveFitWidth": 256,
+      "targetSize": [
+        46.08,
+        38.88
+      ],
+      "gap": 7.2,
+      "comfortHeight": false
+    },
+    {
+      "browserWidth": 320,
+      "sceneWidth": 305,
+      "reason": "desktop classic scrollbar space"
+    }
+  ],
+  "physicalDevice": false,
+  "focusedDiagnostic": true,
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.38",
+    "revision": "@a733b5afbb3ba618844ff8876b89ad1a774b2f18",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.23"
+  },
+  "executable": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+}

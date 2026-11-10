@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "exact_expected_targets": true,
+  "records": [
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B-proposed-case.json",
+      "raw_sha256": "b6284efcfa6925ae6e37eb854b2647b53720643839c040c8c79f6e0427ef9306",
+      "recorded_sha256": "b6284efcfa6925ae6e37eb854b2647b53720643839c040c8c79f6e0427ef9306",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B-geometry-diff.json",
+      "raw_sha256": "bda9a307fc0bf10b3d7fece03e97602a3be4cd974a1a9ad2aef0236bd043dd19",
+      "recorded_sha256": "bda9a307fc0bf10b3d7fece03e97602a3be4cd974a1a9ad2aef0236bd043dd19",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/measurements.json",
+      "raw_sha256": "e0ec48f9dc6a1a88a5902d955f960c67f7d9776a3256882aad2add2efc79b3e4",
+      "recorded_sha256": "e0ec48f9dc6a1a88a5902d955f960c67f7d9776a3256882aad2add2efc79b3e4",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/target-measurements.json",
+      "raw_sha256": "122ca1b8f67f4c84f833fbcd56a0f7acfed86801821e333b9ef8e4539e1a3cc3",
+      "recorded_sha256": "122ca1b8f67f4c84f833fbcd56a0f7acfed86801821e333b9ef8e4539e1a3cc3",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/verification.json",
+      "raw_sha256": "8a8ec0d2adc2e6a00769ca10f7bb7ce93001c635ba30b4ad5d18a2edc35eb6fc",
+      "recorded_sha256": "8a8ec0d2adc2e6a00769ca10f7bb7ce93001c635ba30b4ad5d18a2edc35eb6fc",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/source-manifest.json",
+      "raw_sha256": "6cd5f836f3223dc677d494745b76a8d79f3b817e92a3516b4f848c98a9b04d89",
+      "recorded_sha256": "6cd5f836f3223dc677d494745b76a8d79f3b817e92a3516b4f848c98a9b04d89",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png",
+      "raw_sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e",
+      "recorded_sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png",
+      "raw_sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+      "recorded_sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+      "status": "EXACT"
+    },
+    {
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/difference-mask.png",
+      "raw_sha256": "7e6c8d8d7daf12326468f138847ac5b6a6e3de421c0246fd31a72ee2409b7422",
+      "recorded_sha256": "7e6c8d8d7daf12326468f138847ac5b6a6e3de421c0246fd31a72ee2409b7422",
+      "status": "EXACT"
+    }
+  ],
+  "note": "Raw hashes recorded exactly; any explicit EOL-only translation was checked against historical record, never hidden."
+}

@@ -1,0 +1,136 @@
+TAP version 13
+# Subtest: isolated copy is exact refined B, never historical B or canonical substitution
+ok 1 - isolated copy is exact refined B, never historical B or canonical substitution
+  ---
+  duration_ms: 3.9032
+  type: 'test'
+  ...
+# Subtest: exactly three events, stable environment, shared closed wallet and stand exchange
+ok 2 - exactly three events, stable environment, shared closed wallet and stand exchange
+  ---
+  duration_ms: 0.3571
+  type: 'test'
+  ...
+# Subtest: scoring/evidence/deduction and all nonvisual candidate truth match canonical
+ok 3 - scoring/evidence/deduction and all nonvisual candidate truth match canonical
+  ---
+  duration_ms: 1.7793
+  type: 'test'
+  ...
+# Subtest: target nonoverlap, known full fit and narrower comfort-height failures
+ok 4 - target nonoverlap, known full fit and narrower comfort-height failures
+  ---
+  duration_ms: 0.2103
+  type: 'test'
+  ...
+# Subtest: paired images are byte-exact study outputs
+ok 5 - paired images are byte-exact study outputs
+  ---
+  duration_ms: 4.1921
+  type: 'test'
+  ...
+# Subtest: fit/inverse matrix: all widths, 3 zooms, portrait/landscape/letterbox, multiple pans
+ok 6 - fit/inverse matrix: all widths, 3 zooms, portrait/landscape/letterbox, multiple pans
+  ---
+  duration_ms: 3.1219
+  type: 'test'
+  ...
+# Subtest: target IDs invariant across valid transformed visible centers
+ok 7 - target IDs invariant across valid transformed visible centers
+  ---
+  duration_ms: 2.665
+  type: 'test'
+  ...
+# Subtest: half-open exact transformed edges, no tolerance/slop
+ok 8 - half-open exact transformed edges, no tolerance/slop
+  ---
+  duration_ms: 3.7735
+  type: 'test'
+  ...
+# Subtest: adjacent gap is empty, overlapping targets reject ambiguity
+ok 9 - adjacent gap is empty, overlapping targets reject ambiguity
+  ---
+  duration_ms: 0.2668
+  type: 'test'
+  ...
+# Subtest: viewport clipping wins even if inverse point belongs to offscreen object
+ok 10 - viewport clipping wins even if inverse point belongs to offscreen object
+  ---
+  duration_ms: 0.1494
+  type: 'test'
+  ...
+# Subtest: zoom bounds, pan clamps, invalid camera and resize center mapping
+ok 11 - zoom bounds, pan clamps, invalid camera and resize center mapping
+  ---
+  duration_ms: 0.3318
+  type: 'test'
+  ...
+# Subtest: single tap commits only on matching pointer-up, at most once
+ok 12 - single tap commits only on matching pointer-up, at most once
+  ---
+  duration_ms: 0.3116
+  type: 'test'
+  ...
+# Subtest: 8px threshold: inclusive, >8 rejects, return to start cannot resurrect
+ok 13 - 8px threshold: inclusive, >8 rejects, return to start cannot resurrect
+  ---
+  duration_ms: 0.2926
+  type: 'test'
+  ...
+# Subtest: pointer-up displacement alone and changed down/up targets reject
+ok 14 - pointer-up displacement alone and changed down/up targets reject
+  ---
+  duration_ms: 0.3309
+  type: 'test'
+  ...
+# Subtest: unknown pointer IDs neither commit nor destroy another pending tap
+ok 15 - unknown pointer IDs neither commit nor destroy another pending tap
+  ---
+  duration_ms: 0.376
+  type: 'test'
+  ...
+# Subtest: pointercancel and lost capture cancel only tracked gestures
+ok 16 - pointercancel and lost capture cancel only tracked gestures
+  ---
+  duration_ms: 0.2183
+  type: 'test'
+  ...
+# Subtest: multi-pointer activity blocks until every pointer releases
+ok 17 - multi-pointer activity blocks until every pointer releases
+  ---
+  duration_ms: 0.1381
+  type: 'test'
+  ...
+# Subtest: resize/snapshot/camera epochs and explicit invalidation reject stale ups
+ok 18 - resize/snapshot/camera epochs and explicit invalidation reject stale ups
+  ---
+  duration_ms: 0.1257
+  type: 'test'
+  ...
+# Subtest: pan emits CSS deltas, survives its own camera epoch, never commits tap
+ok 19 - pan emits CSS deltas, survives its own camera epoch, never commits tap
+  ---
+  duration_ms: 0.1013
+  type: 'test'
+  ...
+# Subtest: mouse/touch/pen fresh taps; nonprimary/disabled never select
+ok 20 - mouse/touch/pen fresh taps; nonprimary/disabled never select
+  ---
+  duration_ms: 0.1443
+  type: 'test'
+  ...
+# Subtest: rapid independent taps are reported once each without score/evidence semantics
+ok 21 - rapid independent taps are reported once each without score/evidence semantics
+  ---
+  duration_ms: 0.2429
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 115.338

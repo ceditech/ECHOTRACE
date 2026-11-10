@@ -1,0 +1,7 @@
+
+DevTools listening on ws://127.0.0.1:61499/devtools/browser/0bb63b3b-bd53-4305-be23-022cb811a53d
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[20208:40336:1109/184651.425:ERROR:components\device_event_log\device_event_log_impl.cc:211] [18:46:51.426] USB: usb_service_win.cc:346 Failed to parse device interface GUID:
+[20208:40336:1109/184651.426:ERROR:services\device\usb\usb_descriptors.cc:145] Failed to read length for configuration 1.
+[20208:40336:1109/184651.426:ERROR:services\device\usb\usb_descriptors.cc:104] Failed to read all configuration descriptors. Expected 2, got 1.
+[20208:40336:1109/184651.426:ERROR:components\device_event_log\device_event_log_impl.cc:211] [18:46:51.427] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_17ef&pid_a359#30100000c#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
