@@ -1,0 +1,126 @@
+{
+  "overall_visual_assessment": "CONDITIONAL",
+  "production_artwork_adoption": "BLOCKED",
+  "criteria": [
+    {
+      "id": "V1",
+      "criterion": "Original passport",
+      "status": "CONDITIONAL",
+      "evidence": "Fresh masks/previews; MIV readability; frozen \u00a78",
+      "context": "320/390/430/960 Original",
+      "finding": "Booklet distinct to informed reviewer; dark-on-dark; crest9.83\u00d77.50 at320; first-time identity not established",
+      "confidence": "High size confidence; moderate visual inference",
+      "required_action": "Explicit uncertainty acceptance or separately scoped minimal contrast correction",
+      "blocks_visual_acceptance": "Yes pending explicit acceptance",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V2",
+      "criterion": "Original stand numerals",
+      "status": "CONDITIONAL",
+      "evidence": "Fresh previews; numeral ROI; matched source stands",
+      "context": "320/390 Original",
+      "finding": "Upright/distinguishable to informed review; numeral box only9.55/11.64px high",
+      "confidence": "High size/body confidence; recognition unproven",
+      "required_action": "Accept small-symbol limitation or scope matching source glyph adjustment",
+      "blocks_visual_acceptance": "Yes pending explicit acceptance",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V3",
+      "criterion": "Original wallet/star",
+      "status": "CONDITIONAL",
+      "evidence": "Fresh previews/masks; source star/strap ROIs",
+      "context": "320/390 Original",
+      "finding": "Closed silhouette and star technically visible; fine details small; left tabletop clear",
+      "confidence": "High measurement; moderate recognition inference",
+      "required_action": "Accept uncertainty or smallest controlled local detail correction if owner requires",
+      "blocks_visual_acceptance": "Yes pending explicit acceptance",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V4",
+      "criterion": "Mara staging",
+      "status": "CONDITIONAL",
+      "evidence": "Static layer + fresh effective mask + staging reports",
+      "context": "Both endpoints/all widths",
+      "finding": "Window-side lower-left association plausible; foreground chair masks lower body; visually small",
+      "confidence": "Moderate staging judgment; high stability",
+      "required_action": "Explicit owner seating/style acceptance",
+      "blocks_visual_acceptance": "Yes pending owner decision",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V5",
+      "criterion": "Owen staging",
+      "status": "CONDITIONAL",
+      "evidence": "Static layer/previews/staging report",
+      "context": "Both endpoints/all widths",
+      "finding": "Central seat beside plant-table left edge can have ambiguous table affiliation",
+      "confidence": "Moderate inference; no human table-association result",
+      "required_action": "Accept or separately scope seat-anchored association alternative",
+      "blocks_visual_acceptance": "Yes pending owner decision",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V6",
+      "criterion": "Character/furniture proportions",
+      "status": "CONDITIONAL",
+      "evidence": "Fresh89/88px visible widths vs384px table; 2D staging analysis",
+      "context": "960 and scaled widths",
+      "finding": "Projected ratio\u2248.232/.229; broad steep tables create scale tension; no calibrated3D defect proven",
+      "confidence": "High2D measurement; physical stature not established",
+      "required_action": "Owner accept stylization; no arbitrary resize",
+      "blocks_visual_acceptance": "Yes pending owner decision",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V7",
+      "criterion": "Exactly three meaningful changes",
+      "status": "PASS",
+      "evidence": "Fresh exact reconstruction/alpha masks; canonical IDs/kinds",
+      "context": "Aligned960 pair",
+      "finding": "15,391 differing pixels in five regions explain exactly three events; no unexplained region",
+      "confidence": "High for exact candidate pair",
+      "required_action": "Preserve same integrity if any later authorized revision",
+      "blocks_visual_acceptance": "No for this pair",
+      "blocks_adoption": "No by itself; other gates apply"
+    },
+    {
+      "id": "V8",
+      "criterion": "Stable background/characters",
+      "status": "PASS",
+      "evidence": "Fresh stable-layer/character visibility comparison",
+      "context": "Aligned960 pair",
+      "finding": "Zero character-overlap difference; stable background/table/mat/backpack and character masks",
+      "confidence": "High for source/pixel identity",
+      "required_action": "Preserve stability in any separately authorized change",
+      "blocks_visual_acceptance": "No for this pair",
+      "blocks_adoption": "No by itself; other gates apply"
+    },
+    {
+      "id": "V9",
+      "criterion": "Mobile fit/minimum width",
+      "status": "CONDITIONAL",
+      "evidence": "Native pair/previews/fresh target formula; archived MIV fit",
+      "context": "256/288/320/390/430/960 effective",
+      "finding": "Full frame retained;320 meets proposed target goals, not proven readability; smaller widths fail goals",
+      "confidence": "High geometry; physical accessibility not verified",
+      "required_action": "Approve supported effective-width/fallback policy without certifying readability",
+      "blocks_visual_acceptance": "Yes pending policy",
+      "blocks_adoption": "Yes"
+    },
+    {
+      "id": "V10",
+      "criterion": "Provenance/rights",
+      "status": "NOT VERIFIED",
+      "evidence": "Generation/refinement/character reports, asset audit and source hashes",
+      "context": "All upstream components and composites",
+      "finding": "Sources identified; required production rights chain/clearance absent",
+      "confidence": "High evidence-gap confidence; no legal conclusion",
+      "required_action": "Document source/reference/font permissions; explicit clearance",
+      "blocks_visual_acceptance": "Yes for final acceptance",
+      "blocks_adoption": "Yes; adoption blocked"
+    }
+  ]
+}

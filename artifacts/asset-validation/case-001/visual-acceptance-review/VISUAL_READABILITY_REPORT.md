@@ -1,0 +1,24 @@
+# Original-scene visual readability
+
+Statuses: V1 CONDITIONAL; V2 CONDITIONAL; V3 CONDITIONAL. Full Original fit only, no investigation application zoom. Dimensions below are effective CSS units derived from source masks;960 column context is native pixels. Values rounded for display; raw values/method in [measurements.json](measurements.json).
+
+| Width | Scene | Passport solid | Crest ROI | Numeral union ROI | Wallet solid | Star ROI | Mara visible | Owen visible |
+|---|---|---|---|---|---|---|---|---|
+| 320 | 320.00×180.00 | 23.67×20.00 | 9.83×7.50 | 13.75×9.55 | 33.67×22.67 | 10.69×10.52 | 29.67×47.00 | 29.33×60.67 |
+| 390 | 390.00×219.38 | 28.84×24.38 | 11.97×9.14 | 16.76×11.64 | 41.03×27.62 | 13.03×12.82 | 36.16×57.28 | 35.75×73.94 |
+| 430 | 430.00×241.88 | 31.80×26.88 | 13.20×10.08 | 18.48×12.83 | 45.24×30.46 | 14.37×14.13 | 39.86×63.16 | 39.42×81.52 |
+| 960 | 960.00×540.00 | 71.00×60.00 | 29.48×22.51 | 41.25×28.65 | 101.00×68.00 | 32.08×31.55 | 89.00×141.00 | 88.00×182.00 |
+
+Passport: the angled closed booklet, gold edge and gold emblem distinguish it from the broader flat mat during informed inspection. Both cover and mat are dark navy; much of the distinction depends on small gold strokes/outline and orientation. At320 the crest diagnostic is only9.83×7.50px, and at39011.97×9.14px. Technically visible; passport-like identity likely difficult at small widths and not established for first-time players. Fine PASSPORT text is not required and must not carry identification. No character/furniture occludes its solid footprint; the mat behind it is intentionally covered. Avoid claiming that the gold crest's enclosing ROI is its readable stroke area. The manually selected source crest ROI [205,155,450,342] includes adjacent cover; source640×540 mapped to rounded77×65 native tile. No semantic segmentation or human recognition guarantee.
+
+Stands: upright gold12/21 on navy are the clearest small symbols in the pair on static inspection. At320 numeral union13.75×9.55px;39016.76×11.64px. Numerals are distinguishable to the informed reviewer in the normal previews, but small enough for foreseeable effort/reversal-reading difficulty. They are not a proven first-time mobile reading pass. Body/base/silhouette match; orientation/scale remain stable; only the printed numbers exchange at fixed positions. No clue-bearing numeral is obscured or clipped.960 source inspection shows clear glyph shapes;430 improves sampling but does not establish a validated threshold.
+
+Wallet: closed brown silhouette, bright gold star and broad navy/ivory striped strap are technically visible. Original rests on window tabletop near its right edge, separate from the mat. At320 wallet33.67×22.67px, star ROI10.69×10.52px;39041.03×27.63px, star13.03×12.82px. Strap ROI13.60×19.58 at320 and16.57×23.86 at390; individual stripe/stitch detail is smaller. Star/strap ROIs include adjacent material. Movement across tables is stronger than fine-feature identification. Warm reflections and dense marble veining compete with gold details. Left-table physical placement is clear to informed inspection, but name/star recognition is not guaranteed.
+
+All widths: no canvas clipping of clue tiles; no higher-layer solid-pixel loss for passport, wallet or stands in the reconstruction. Layer analysis is not a complete perceptual occlusion certificate: alpha edges/interior transparency and lighting remain inherited artwork characteristics. Mat has intentional passport overlap in Original, empty in Changed. Contact appears plausible in this corrected composition; shadows remain subtle and table viewpoint/gloss differ from room furniture. No new major edge defect or required wholesale regeneration is established by this review.
+
+Contrast: gold-on-navy stands are strong relative to passport-cover/navy-mat separation. Bright tabletop reflections and patterned floor add visual competition. Existing contrast-proxies.json uses manually sampled material patches, sometimes one mobile pixel; it is neither whole-object contrast nor WCAG certification. No single ratio is used here as a legibility threshold.
+
+Observation fairness: canonical Original lasts25 seconds. These small features create foreseeable search/encoding effort; later Changed zoom cannot improve what was available during Original. We did not simulate a participant, time recognition or invent success rates. Earlier five desktop participants and P5's familiarized390 retest do not validate this physical mobile presentation. Human confirmation remains unavailable under the closed-study constraint; owner must explicitly accept uncertainty or authorize a bounded visual correction without reopening that study. No defensible universal minimum width can be proven from pixels alone.
+
+Sources and provenance limits: [SOURCE_AND_SCOPE_REGISTER.md](SOURCE_AND_SCOPE_REGISTER.md).

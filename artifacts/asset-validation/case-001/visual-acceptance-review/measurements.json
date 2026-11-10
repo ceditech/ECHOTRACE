@@ -1,0 +1,1065 @@
+{
+  "method": "In-memory exact reconstruction; alpha>=128 props, effective alpha>8 characters; CSS sizes scale native960 raster; no source write",
+  "visuals": [
+    [
+      {
+        "objectId": "object-table-window",
+        "origin": [
+          96,
+          162
+        ],
+        "tile": [
+          384,
+          270
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png",
+        "source_dimensions": [
+          1280,
+          900
+        ],
+        "solid_bbox": [
+          96,
+          188,
+          480,
+          424
+        ],
+        "solid_sizes": {
+          "320": [
+            128.0,
+            78.66666666666667
+          ],
+          "390": [
+            156.0,
+            95.875
+          ],
+          "430": [
+            172.0,
+            105.70833333333333
+          ],
+          "960": [
+            384.0,
+            236.0
+          ]
+        }
+      },
+      {
+        "objectId": "object-table-plant",
+        "origin": [
+          528,
+          162
+        ],
+        "tile": [
+          384,
+          270
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png",
+        "source_dimensions": [
+          1280,
+          900
+        ],
+        "solid_bbox": [
+          528,
+          188,
+          912,
+          424
+        ],
+        "solid_sizes": {
+          "320": [
+            128.0,
+            78.66666666666667
+          ],
+          "390": [
+            156.0,
+            95.875
+          ],
+          "430": [
+            172.0,
+            105.70833333333333
+          ],
+          "960": [
+            384.0,
+            236.0
+          ]
+        }
+      },
+      {
+        "objectId": "object-document-mat",
+        "origin": [
+          115,
+          213
+        ],
+        "tile": [
+          192,
+          151
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png",
+        "source_dimensions": [
+          800,
+          630
+        ],
+        "solid_bbox": [
+          117,
+          248,
+          306,
+          327
+        ],
+        "solid_sizes": {
+          "320": [
+            63.0,
+            26.333333333333332
+          ],
+          "390": [
+            76.78125,
+            32.09375
+          ],
+          "430": [
+            84.65625,
+            35.385416666666664
+          ],
+          "960": [
+            189.0,
+            79.0
+          ]
+        },
+        "solid_pixels": 13207,
+        "fully_hidden_solid_pixels": 134,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-owen-backpack",
+        "origin": [
+          835,
+          384
+        ],
+        "tile": [
+          96,
+          97
+        ],
+        "source": "public/assets/cases/case-001/owen-backpack.png",
+        "source_dimensions": [
+          1278,
+          1230
+        ],
+        "solid_bbox": [
+          843,
+          386,
+          923,
+          478
+        ],
+        "solid_sizes": {
+          "320": [
+            26.666666666666668,
+            30.666666666666668
+          ],
+          "390": [
+            32.5,
+            37.375
+          ],
+          "430": [
+            35.833333333333336,
+            41.208333333333336
+          ],
+          "960": [
+            80.0,
+            92.0
+          ]
+        }
+      },
+      {
+        "objectId": "object-passport",
+        "origin": [
+          173,
+          256
+        ],
+        "tile": [
+          77,
+          65
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/passport-candidate.png",
+        "source_dimensions": [
+          640,
+          540
+        ],
+        "solid_bbox": [
+          177,
+          259,
+          248,
+          319
+        ],
+        "solid_sizes": {
+          "320": [
+            23.666666666666668,
+            20.0
+          ],
+          "390": [
+            28.84375,
+            24.375
+          ],
+          "430": [
+            31.802083333333332,
+            26.875
+          ],
+          "960": [
+            71.0,
+            60.0
+          ]
+        },
+        "solid_pixels": 2630,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-star-wallet",
+        "origin": [
+          312,
+          253
+        ],
+        "tile": [
+          106,
+          71
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png",
+        "source_dimensions": [
+          800,
+          540
+        ],
+        "solid_bbox": [
+          315,
+          255,
+          416,
+          323
+        ],
+        "solid_sizes": {
+          "320": [
+            33.666666666666664,
+            22.666666666666668
+          ],
+          "390": [
+            41.03125,
+            27.625
+          ],
+          "430": [
+            45.239583333333336,
+            30.458333333333332
+          ],
+          "960": [
+            101.0,
+            68.0
+          ]
+        },
+        "solid_pixels": 4553,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-stand-12",
+        "origin": [
+          278,
+          132
+        ],
+        "tile": [
+          115,
+          97
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png",
+        "source_dimensions": [
+          768,
+          648
+        ],
+        "solid_bbox": [
+          290,
+          137,
+          381,
+          223
+        ],
+        "solid_sizes": {
+          "320": [
+            30.333333333333332,
+            28.666666666666668
+          ],
+          "390": [
+            36.96875,
+            34.9375
+          ],
+          "430": [
+            40.760416666666664,
+            38.520833333333336
+          ],
+          "960": [
+            91.0,
+            86.0
+          ]
+        },
+        "solid_pixels": 6673,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-stand-21",
+        "origin": [
+          662,
+          132
+        ],
+        "tile": [
+          115,
+          97
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png",
+        "source_dimensions": [
+          768,
+          648
+        ],
+        "solid_bbox": [
+          674,
+          137,
+          765,
+          223
+        ],
+        "solid_sizes": {
+          "320": [
+            30.333333333333332,
+            28.666666666666668
+          ],
+          "390": [
+            36.96875,
+            34.9375
+          ],
+          "430": [
+            40.760416666666664,
+            38.520833333333336
+          ],
+          "960": [
+            91.0,
+            86.0
+          ]
+        },
+        "solid_pixels": 6673,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      }
+    ],
+    [
+      {
+        "objectId": "object-table-window",
+        "origin": [
+          96,
+          162
+        ],
+        "tile": [
+          384,
+          270
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png",
+        "source_dimensions": [
+          1280,
+          900
+        ],
+        "solid_bbox": [
+          96,
+          188,
+          480,
+          424
+        ],
+        "solid_sizes": {
+          "320": [
+            128.0,
+            78.66666666666667
+          ],
+          "390": [
+            156.0,
+            95.875
+          ],
+          "430": [
+            172.0,
+            105.70833333333333
+          ],
+          "960": [
+            384.0,
+            236.0
+          ]
+        }
+      },
+      {
+        "objectId": "object-table-plant",
+        "origin": [
+          528,
+          162
+        ],
+        "tile": [
+          384,
+          270
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png",
+        "source_dimensions": [
+          1280,
+          900
+        ],
+        "solid_bbox": [
+          528,
+          188,
+          912,
+          424
+        ],
+        "solid_sizes": {
+          "320": [
+            128.0,
+            78.66666666666667
+          ],
+          "390": [
+            156.0,
+            95.875
+          ],
+          "430": [
+            172.0,
+            105.70833333333333
+          ],
+          "960": [
+            384.0,
+            236.0
+          ]
+        }
+      },
+      {
+        "objectId": "object-document-mat",
+        "origin": [
+          115,
+          213
+        ],
+        "tile": [
+          192,
+          151
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png",
+        "source_dimensions": [
+          800,
+          630
+        ],
+        "solid_bbox": [
+          117,
+          248,
+          306,
+          327
+        ],
+        "solid_sizes": {
+          "320": [
+            63.0,
+            26.333333333333332
+          ],
+          "390": [
+            76.78125,
+            32.09375
+          ],
+          "430": [
+            84.65625,
+            35.385416666666664
+          ],
+          "960": [
+            189.0,
+            79.0
+          ]
+        },
+        "solid_pixels": 13207,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-owen-backpack",
+        "origin": [
+          835,
+          384
+        ],
+        "tile": [
+          96,
+          97
+        ],
+        "source": "public/assets/cases/case-001/owen-backpack.png",
+        "source_dimensions": [
+          1278,
+          1230
+        ],
+        "solid_bbox": [
+          843,
+          386,
+          923,
+          478
+        ],
+        "solid_sizes": {
+          "320": [
+            26.666666666666668,
+            30.666666666666668
+          ],
+          "390": [
+            32.5,
+            37.375
+          ],
+          "430": [
+            35.833333333333336,
+            41.208333333333336
+          ],
+          "960": [
+            80.0,
+            92.0
+          ]
+        }
+      },
+      {
+        "objectId": "object-star-wallet",
+        "origin": [
+          667,
+          253
+        ],
+        "tile": [
+          106,
+          71
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png",
+        "source_dimensions": [
+          800,
+          540
+        ],
+        "solid_bbox": [
+          670,
+          255,
+          771,
+          323
+        ],
+        "solid_sizes": {
+          "320": [
+            33.666666666666664,
+            22.666666666666668
+          ],
+          "390": [
+            41.03125,
+            27.625
+          ],
+          "430": [
+            45.239583333333336,
+            30.458333333333332
+          ],
+          "960": [
+            101.0,
+            68.0
+          ]
+        },
+        "solid_pixels": 4553,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-stand-12",
+        "origin": [
+          662,
+          132
+        ],
+        "tile": [
+          115,
+          97
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png",
+        "source_dimensions": [
+          768,
+          648
+        ],
+        "solid_bbox": [
+          674,
+          137,
+          765,
+          223
+        ],
+        "solid_sizes": {
+          "320": [
+            30.333333333333332,
+            28.666666666666668
+          ],
+          "390": [
+            36.96875,
+            34.9375
+          ],
+          "430": [
+            40.760416666666664,
+            38.520833333333336
+          ],
+          "960": [
+            91.0,
+            86.0
+          ]
+        },
+        "solid_pixels": 6673,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      },
+      {
+        "objectId": "object-stand-21",
+        "origin": [
+          278,
+          132
+        ],
+        "tile": [
+          115,
+          97
+        ],
+        "source": "artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png",
+        "source_dimensions": [
+          768,
+          648
+        ],
+        "solid_bbox": [
+          290,
+          137,
+          381,
+          223
+        ],
+        "solid_sizes": {
+          "320": [
+            30.333333333333332,
+            28.666666666666668
+          ],
+          "390": [
+            36.96875,
+            34.9375
+          ],
+          "430": [
+            40.760416666666664,
+            38.520833333333336
+          ],
+          "960": [
+            91.0,
+            86.0
+          ]
+        },
+        "solid_pixels": 6673,
+        "fully_hidden_solid_pixels": 0,
+        "off_canvas_solid_pixels": 0
+      }
+    ]
+  ],
+  "features": {
+    "numeral_union": {
+      "source_roi": [
+        243,
+        203,
+        518,
+        394
+      ],
+      "method": "Archived manual feature ROI including neighboring material; not semantic segmentation",
+      "sizes": {
+        "320": [
+          13.75,
+          9.549999999999997
+        ],
+        "390": [
+          16.7578125,
+          11.639062499999998
+        ],
+        "430": [
+          18.4765625,
+          12.832812499999998
+        ],
+        "960": [
+          41.25,
+          28.649999999999988
+        ]
+      }
+    },
+    "wallet_star": {
+      "source_roi": [
+        201,
+        109,
+        444,
+        348
+      ],
+      "method": "Archived manual feature ROI including neighboring material; not semantic segmentation",
+      "sizes": {
+        "320": [
+          10.692000000000002,
+          10.516
+        ],
+        "390": [
+          13.030875000000004,
+          12.816374999999999
+        ],
+        "430": [
+          14.367375000000001,
+          14.130875
+        ],
+        "960": [
+          32.07600000000001,
+          31.548000000000002
+        ]
+      }
+    },
+    "striped_strap": {
+      "source_roi": [
+        409,
+        83,
+        718,
+        528
+      ],
+      "method": "Archived manual feature ROI including neighboring material; not semantic segmentation",
+      "sizes": {
+        "320": [
+          13.596,
+          19.58
+        ],
+        "390": [
+          16.570124999999997,
+          23.863124999999997
+        ],
+        "430": [
+          18.269624999999998,
+          26.310624999999998
+        ],
+        "960": [
+          40.788,
+          58.739999999999995
+        ]
+      }
+    },
+    "passport_crest": {
+      "source_roi": [
+        205,
+        155,
+        450,
+        342
+      ],
+      "method": "Manual diagnostic ROI on640\u00d7540 passport; includes cover and crest, not isolated strokes or legibility",
+      "sizes": {
+        "320": [
+          9.825520833333334,
+          7.503086419753087
+        ],
+        "390": [
+          11.974853515625,
+          9.144386574074074
+        ],
+        "430": [
+          13.203043619791666,
+          10.08227237654321
+        ],
+        "960": [
+          29.4765625,
+          22.50925925925926
+        ]
+      }
+    }
+  },
+  "characters": {
+    "Mara": {
+      "bbox": [
+        6,
+        293,
+        95,
+        434
+      ],
+      "sizes": {
+        "320": [
+          29.666666666666668,
+          47.0
+        ],
+        "390": [
+          36.15625,
+          57.28125
+        ],
+        "430": [
+          39.864583333333336,
+          63.15625
+        ],
+        "960": [
+          89.0,
+          141.0
+        ]
+      }
+    },
+    "Owen": {
+      "bbox": [
+        471,
+        116,
+        559,
+        298
+      ],
+      "sizes": {
+        "320": [
+          29.333333333333332,
+          60.666666666666664
+        ],
+        "390": [
+          35.75,
+          73.9375
+        ],
+        "430": [
+          39.416666666666664,
+          81.52083333333333
+        ],
+        "960": [
+          88.0,
+          182.0
+        ]
+      }
+    }
+  },
+  "widths": {
+    "256": {
+      "css_scene": [
+        256,
+        144.0
+      ],
+      "target": [
+        46.08,
+        38.88
+      ],
+      "minimum_gap": 7.2
+    },
+    "288": {
+      "css_scene": [
+        288,
+        162.0
+      ],
+      "target": [
+        51.839999999999996,
+        43.74
+      ],
+      "minimum_gap": 8.1
+    },
+    "320": {
+      "css_scene": [
+        320,
+        180.0
+      ],
+      "target": [
+        57.599999999999994,
+        48.6
+      ],
+      "minimum_gap": 9.0
+    },
+    "390": {
+      "css_scene": [
+        390,
+        219.375
+      ],
+      "target": [
+        70.2,
+        59.23125
+      ],
+      "minimum_gap": 10.96875
+    },
+    "430": {
+      "css_scene": [
+        430,
+        241.875
+      ],
+      "target": [
+        77.39999999999999,
+        65.30625
+      ],
+      "minimum_gap": 12.09375
+    },
+    "960": {
+      "css_scene": [
+        960,
+        540.0
+      ],
+      "target": [
+        172.79999999999998,
+        145.8
+      ],
+      "minimum_gap": 27.0
+    }
+  },
+  "geometry_reported_values_verified": true,
+  "canonical_changes": [
+    [
+      "change-passport-removed",
+      "object_removed"
+    ],
+    [
+      "change-stands-exchanged",
+      "object_exchanged"
+    ],
+    [
+      "change-wallet-moved",
+      "object_moved"
+    ]
+  ],
+  "pair_reconstructs_exactly": true,
+  "changed_pixels": 15391,
+  "difference_regions": [
+    {
+      "region": "left_stand_exchange",
+      "review_roi": [
+        290,
+        130,
+        382,
+        225
+      ],
+      "difference_pixels": 1268,
+      "actual_difference_bbox": [
+        312,
+        160,
+        358,
+        194
+      ]
+    },
+    {
+      "region": "right_stand_exchange",
+      "review_roi": [
+        674,
+        130,
+        766,
+        225
+      ],
+      "difference_pixels": 1267,
+      "actual_difference_bbox": [
+        696,
+        160,
+        742,
+        194
+      ]
+    },
+    {
+      "region": "passport_removal",
+      "review_roi": [
+        160,
+        240,
+        270,
+        335
+      ],
+      "difference_pixels": 2891,
+      "actual_difference_bbox": [
+        174,
+        257,
+        250,
+        321
+      ]
+    },
+    {
+      "region": "wallet_departure",
+      "review_roi": [
+        310,
+        245,
+        425,
+        330
+      ],
+      "difference_pixels": 4985,
+      "actual_difference_bbox": [
+        313,
+        253,
+        418,
+        324
+      ]
+    },
+    {
+      "region": "wallet_arrival",
+      "review_roi": [
+        665,
+        245,
+        780,
+        330
+      ],
+      "difference_pixels": 4980,
+      "actual_difference_bbox": [
+        668,
+        253,
+        773,
+        324
+      ]
+    }
+  ],
+  "outside_review_regions_difference_pixels": 0,
+  "outside_changed_prop_alpha_difference_pixels": 0,
+  "character_difference_pixels": 0,
+  "effective_character_visibility_identical": true,
+  "stable_layers_identical": true,
+  "initial_diagnostic_failure": "Initial manually selected passport ROI missed2 pixels at y320. Expanded diagnostic ROI only; source pair/geometry/masks unchanged; final outside count0.",
+  "previews": [
+    {
+      "path": "previews/original-320.png",
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png",
+      "source_sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e",
+      "raster_dimensions": [
+        320,
+        180
+      ],
+      "css_dimensions": [
+        320,
+        180.0
+      ],
+      "method": "Pillow LANCZOS full-frame resize, nearest integer output height; no crop/sharpen/retouch",
+      "sha256": "ab69ae68d261bac1b4fc2cc6c1778a3a1beb8f4fd5cb0771086f167aebda826f"
+    },
+    {
+      "path": "previews/original-390.png",
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png",
+      "source_sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e",
+      "raster_dimensions": [
+        390,
+        219
+      ],
+      "css_dimensions": [
+        390,
+        219.375
+      ],
+      "method": "Pillow LANCZOS full-frame resize, nearest integer output height; no crop/sharpen/retouch",
+      "sha256": "e841bd282931524242364f55b31b5acd71a968c230d6483f1866e6eba5d4b64c"
+    },
+    {
+      "path": "previews/original-430.png",
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png",
+      "source_sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e",
+      "raster_dimensions": [
+        430,
+        242
+      ],
+      "css_dimensions": [
+        430,
+        241.875
+      ],
+      "method": "Pillow LANCZOS full-frame resize, nearest integer output height; no crop/sharpen/retouch",
+      "sha256": "009532e4782280aff8b5d2a1af0b8c2cf8047a222e4b54d237d27710ecb11a4b"
+    },
+    {
+      "path": "previews/changed-320.png",
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png",
+      "source_sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+      "raster_dimensions": [
+        320,
+        180
+      ],
+      "css_dimensions": [
+        320,
+        180.0
+      ],
+      "method": "Pillow LANCZOS full-frame resize, nearest integer output height; no crop/sharpen/retouch",
+      "sha256": "e9452bdacd5df2d52c96ee96bb9a9371ccea7cc54e1787b02ed58d2ee61a5a48"
+    },
+    {
+      "path": "previews/changed-390.png",
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png",
+      "source_sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+      "raster_dimensions": [
+        390,
+        219
+      ],
+      "css_dimensions": [
+        390,
+        219.375
+      ],
+      "method": "Pillow LANCZOS full-frame resize, nearest integer output height; no crop/sharpen/retouch",
+      "sha256": "171d0e1b0d8cfaef0aa8b09f1430b51a894d388911d1521dfd486f2310b8165d"
+    },
+    {
+      "path": "previews/changed-430.png",
+      "source": "artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png",
+      "source_sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+      "raster_dimensions": [
+        430,
+        242
+      ],
+      "css_dimensions": [
+        430,
+        241.875
+      ],
+      "method": "Pillow LANCZOS full-frame resize, nearest integer output height; no crop/sharpen/retouch",
+      "sha256": "1c074bd80e75e9c51b65bd7f759f39b1a09b27f2814d7c902f4642d6c28fcb68"
+    }
+  ]
+}
