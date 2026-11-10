@@ -1,0 +1,52 @@
+{
+  "review_status": "EXECUTED",
+  "review_date_utc": "2026-11-10",
+  "historical_applicability_verified": false,
+  "documents": [
+    {
+      "url": "https://openai.com/policies/terms-of-use/",
+      "title": "Terms of Use",
+      "published": "2026-01-01",
+      "effective": "2026-01-01"
+    },
+    {
+      "url": "https://openai.com/policies/service-terms/",
+      "title": "Service terms",
+      "updated": "2026-11-10"
+    }
+  ],
+  "provisions": [
+    {
+      "id": "T1",
+      "url": "https://openai.com/policies/terms-of-use/",
+      "section": "Content · Ownership of content",
+      "finding": "As between the individual user and OpenAI and to the extent permitted by applicable law, the user retains ownership of input and owns output. OpenAI assigns its rights in output, if any."
+    },
+    {
+      "id": "T2",
+      "url": "https://openai.com/policies/terms-of-use/",
+      "section": "Content · Your content, Similarity of content, Third party Services; Using our Services; Disclaimer of warranties",
+      "finding": "Users are responsible for content and represent they have the rights, licenses and permissions needed to provide input. Similar outputs are possible. The assignment excludes other users’ output and Third Party Output. Third-party services have separate terms. The disclaimer includes noninfringement."
+    },
+    {
+      "id": "T3",
+      "url": "https://openai.com/policies/service-terms/",
+      "section": "Introduction; §4 Codex and Code Generation",
+      "finding": "The applicable agreement matters, and Service Terms control a conflict. Code-generation output can carry third-party licenses, including open-source licenses. This code provision gives no basis to infer rights in image inputs or fonts."
+    },
+    {
+      "id": "T4",
+      "url": "https://openai.com/policies/service-terms/",
+      "section": "§6 Image and Video Capabilities",
+      "finding": "Reproducing a person’s likeness requires express consent and all necessary rights. Public sharing can allow specified reuse or remix within the service, without granting other users off-service rights. The candidate record establishes neither a real-person likeness use nor public sharing."
+    },
+    {
+      "id": "T5",
+      "url": "https://openai.com/policies/service-terms/",
+      "section": "§7 Apps and Actions",
+      "finding": "Third-party app output is subject to applicable third-party terms if that service was used. No named third-party app is tied to the exact pair in the reviewed records."
+    }
+  ],
+  "per_output_purchase_receipt_requirement_identified": false,
+  "production_approval": false
+}

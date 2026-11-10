@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "asset_count": 18,
+  "p0_count": 7,
+  "deliverable_count": 17,
+  "json_count": 6,
+  "local_and_official_links_checked": 152,
+  "protected_file_count": 760,
+  "protected_files_byte_identical": true,
+  "candidate_sha256": {
+    "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Original-960.png": "d7a4bbb6c141b1c2b9d15c38591f16ff6bc4d80629cad0877ce05a43a2993945",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Changed-960.png": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba"
+  },
+  "candidates_unchanged": true,
+  "head": "7335e349a2b3a3ff2a4c9a7ba2afaba0f3803172",
+  "branch": "feature/echotrace",
+  "git_metadata_unchanged": true,
+  "prior_package_inventories_verified": {
+    "final-artwork-governance": 24,
+    "owner-decision-ratification": 16,
+    "artwork-rights-evidence-verification": 19,
+    "rights-evidence-collection-plan": 19,
+    "owner-held-rights-review-preparation": 18,
+    "controlled-combination-validation": 46,
+    "visual-correction-study": 132
+  },
+  "governance_unchanged": true,
+  "decisions": {
+    "D01": "CONFIRMED preferred research candidate",
+    "D02": "F3 — final visual acceptance held",
+    "D03": "S1 — B0 staging provisional",
+    "D04": "W3 — responsive fallback study not authorized",
+    "D05-B": "Owner direction confirmed",
+    "D05": "Rights resolution PENDING",
+    "D06": "PENDING",
+    "D07": "PENDING",
+    "D08": "PENDING",
+    "D09": "PENDING",
+    "D10": "PENDING",
+    "D11": "PENDING"
+  },
+  "gates": {
+    "G17": "CONDITIONAL",
+    "G18": "BLOCKED",
+    "G19": "BLOCKED",
+    "G20": "NOT AUTHORIZED",
+    "G21": "NOT AUTHORIZED",
+    "G22": "NOT AUTHORIZED"
+  },
+  "terms_review": "EXECUTED",
+  "historical_chat_access": false,
+  "legal_clearance": false,
+  "production_approval": false,
+  "commit": false,
+  "push": false
+}

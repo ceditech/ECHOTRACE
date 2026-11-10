@@ -1,0 +1,1098 @@
+{
+  "candidate_label": "PREFERRED RESEARCH CANDIDATE — NOT PRODUCTION APPROVED",
+  "owner_statement": "The owner confirms that Case 001 artwork was created primarily through ChatGPT image-generation tools, other AI-assisted image-generation workflows, Codex-assisted creation, composition and refinement, and prior EchoTrace sessions. The owner has identified no purchased stock-image collection or acquisition receipts for these assets.",
+  "owner_statement_scope": "project-level",
+  "assets": [
+    {
+      "id": "A01",
+      "name": "Background",
+      "classifications": [
+        "ORIGIN UNRESOLVED"
+      ],
+      "files": [
+        {
+          "path": "public/assets/cases/case-001/lounge-background.webp",
+          "sha256": "394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/inventory.json",
+          "sha256": "85604fa088aeb907d9b8e62b31e050894a3f2f8f453f7252e411c923053ed47f",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/REPORT.md",
+          "sha256": "68c0643f3866104414a965a3808409d872ba5485eaaa71a7c216b1f3f4c82e66",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+          "sha256": "f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md",
+          "sha256": "3eeca642749ef09d8852a8cea633fc4597ae2522eab340132affe2b0f5d19c85",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Unknown",
+      "transformation_chain": "Existing1920x1080 repository background → unchanged source resized to960x540 → B0/CCV. No distinct regenerated refined-background asset is established.",
+      "upstream_dependencies": [],
+      "terms_ids": [],
+      "output_rights": "No asset-specific service agreement can be assigned to the unresolved origin.",
+      "input_reference_rights": "Scene background also appears as a lighting reference in earlier character work.",
+      "downstream_composition_rights": "Use in a downstream artifact requires coverage for the identified role. The repository fingerprint establishes file identity.",
+      "confidence": "Exact identity and use verified. Origin unresolved. Owner statement supplies project-level context only.",
+      "unresolved_dependencies": "Original creator/provider, acquisition/license and commercial/derivative/embedding permission",
+      "next_action": "Identify the source and creation context of this exact file and any material input.",
+      "production_approval": false
+    },
+    {
+      "id": "A02",
+      "name": "Furniture",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png",
+          "sha256": "2417c34daa3cdaf8ee5b3c8b6418b5ce123cf0eb1a657ca148de9bb4c0da85a8"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/table-proof/table-candidate.png",
+          "sha256": "20454fbf9d270ad62076df5993574ca44e23b56b5996bf9bb7cfaadc40e0ce5c"
+        },
+        {
+          "path": "public/assets/cases/case-001/table.png",
+          "sha256": "a9a4373fc8db98fee1c286f288502507c4cbeb4479ace128278ed9550670219b"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/table-proof/REPORT.md",
+          "sha256": "529d28893e4cd3aa6e13e6fd4f18090df735f510f169ec9e38641daed958fc60",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for the refined output",
+      "transformation_chain": "Public table reference → table-proof generated candidate → refined generated table → normalization/composition. External generated master path recorded, not read or byte-verified.",
+      "upstream_dependencies": [
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Table proof and its earlier public table reference. Original public asset origin unresolved.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Public reference origin, generation-service/output terms, master mapping and use permissions",
+      "next_action": "Tie the refined output to its account and agreement, and trace the material table reference through the proof.",
+      "production_approval": false
+    },
+    {
+      "id": "A03",
+      "name": "Document mat",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png",
+          "sha256": "655f0f2f8df1f580f5b8e511636910c583a5831a2cfafb27ba054e77fbe33fa9"
+        },
+        {
+          "path": "public/assets/cases/case-001/document-mat.png",
+          "sha256": "4b8c7a1656cf6e607c8fd0566b579e0fcfa2e462e44436537f2646406cb7e616"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for the refined output",
+      "transformation_chain": "Public source used as recorded reference → generated refined mat → normalization → unchanged B0/CCV mat",
+      "upstream_dependencies": [
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Recorded public mat input. Upstream origin unresolved.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Reference/source acquisition and applicable output/production terms",
+      "next_action": "Verify source and applicable input authority for the public mat.",
+      "production_approval": false
+    },
+    {
+      "id": "A04",
+      "name": "Passport",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/passport-candidate.png",
+          "sha256": "6d53912426aa5a3f1eae2de4a4ab48826c3d8f3e242783083602d96a01429a06"
+        },
+        {
+          "path": "public/assets/cases/case-001/passport.png",
+          "sha256": "83920d74c1c3b12d5c36ddc64e73a302f7bf6165d3f51fd27aadfa32f1a118a4"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for the refined output",
+      "transformation_chain": "Public passport reference → generated refined booklet → normalized640x540 parent of C1a",
+      "upstream_dependencies": [
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Recorded public passport input. Upstream origin unresolved.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Source/reference rights and generation/output-use terms",
+      "next_action": "Verify source and applicable input authority for the public passport.",
+      "production_approval": false
+    },
+    {
+      "id": "A05",
+      "name": "Wallet",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png",
+          "sha256": "20d9d42b798adf1bc2ba4efee1edba1220df4b21fa9ff03a66702c295d69add6"
+        },
+        {
+          "path": "public/assets/cases/case-001/star-wallet.png",
+          "sha256": "2c1c197917ae4e152444cf824b87a815b5d3388516b301ea6a196675a31bb338"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md",
+          "sha256": "3eeca642749ef09d8852a8cea633fc4597ae2522eab340132affe2b0f5d19c85",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for the refined output",
+      "transformation_chain": "Public wallet reference → generated refined closed star/stripe wallet → normalized shared source → B0/CCV endpoints",
+      "upstream_dependencies": [
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Recorded public wallet input. Upstream origin unresolved.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Original reference origin, provider/output permission and derivative/commercial/embedding scope",
+      "next_action": "Verify source and applicable input authority for the public wallet.",
+      "production_approval": false
+    },
+    {
+      "id": "A06",
+      "name": "Table stand12",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png",
+          "sha256": "691442aeacbfd0f677b3665ea3e4399cc54fbd596e93344aab680b4fc8fe72ee"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/stand-master-candidate.png",
+          "sha256": "9ca1b88820af33ad5b5e85c1f306e8edbfac029fc64bfc6b09c8963477f0bb89"
+        },
+        {
+          "path": "public/assets/cases/case-001/stand-12.png",
+          "sha256": "f70bc518dda3bb73baccb7b56ebe783ee4cc732b93cfabfb973766d6fe3a7b22"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for the shared blank master",
+      "transformation_chain": "Recorded stand references → generated blank master → Arial Bold260 centered12 plus2px stroke → refined stand12",
+      "upstream_dependencies": [
+        "A10",
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Recorded stand references and Arial Bold raster input. The exact per-reference generation linkage is incomplete.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Reference/master/output/font permission evidence",
+      "next_action": "Resolve the shared master cohort, material stand references and one common raster-use question.",
+      "production_approval": false
+    },
+    {
+      "id": "A07",
+      "name": "Table stand21",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png",
+          "sha256": "4016cb44452c0876671f3938e7f9a519162c819b54971044d0fdee95464733fc"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/stand-master-candidate.png",
+          "sha256": "9ca1b88820af33ad5b5e85c1f306e8edbfac029fc64bfc6b09c8963477f0bb89"
+        },
+        {
+          "path": "public/assets/cases/case-001/stand-21.png",
+          "sha256": "6c82b1ad5d7cf7eb7ef2263d19d42f0516f0e0eb21e2bae46da808743e62b1eb"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for the shared blank master",
+      "transformation_chain": "Same blank master/font/alignment as12; numeral21 → refined stand21",
+      "upstream_dependencies": [
+        "A10",
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Recorded stand references and Arial Bold raster input. The exact per-reference generation linkage is incomplete.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Reference/master/output/font permission evidence",
+      "next_action": "Use the same master and raster evidence as A06.",
+      "production_approval": false
+    },
+    {
+      "id": "A08",
+      "name": "Mara character",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/mara-generated-cutout.png",
+          "sha256": "c74abdc18b74a786a98b54a74467696dfc46d3fbd6bf6ac9053aa01a04fd0115"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/generation.json",
+          "sha256": "519bd6f1cabb777d98c30396da888887d6a30cebf97f653f5f3b3f91dcd19caa",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/superseded/generation.json",
+          "sha256": "869514624398161295d1374ae6950000a9f072346aece20ba224ecae2c7a2f20",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/REPORT.md",
+          "sha256": "1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/PREFLIGHT.md",
+          "sha256": "0f8a304fe1d13e8379ca2341eef3fc37801739d2e2bbcf47252412bec6d6e36d",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/placement-zones.json",
+          "sha256": "b9f5648f58cddfb12d41e8c85ee70e9a3627d3dceee42f67fe4f70786524c652",
+          "tier": 2,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation recorded in character placement history",
+      "transformation_chain": "Earlier concept/pose cutout → owner revised sheet authority → two correction passes, mara_selected record retained → cropped/scaled cutout in B0",
+      "upstream_dependencies": [
+        "A11",
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Active owner-supplied revised sheet and earlier concept/pose lineage.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Owner-sheet origin/permission, prior-pose/source chain, generation-service terms; no real-person identity finding",
+      "next_action": "Confirm creation and permitted use of the exact active sheet and material earlier pose inputs.",
+      "production_approval": false
+    },
+    {
+      "id": "A09",
+      "name": "Owen character",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/owen-generated-cutout.png",
+          "sha256": "42c312d33720d24b4b9ed58cc8c15f396843a191593f346975ddaa3d0d5996c0"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/generation.json",
+          "sha256": "519bd6f1cabb777d98c30396da888887d6a30cebf97f653f5f3b3f91dcd19caa",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/superseded/generation.json",
+          "sha256": "869514624398161295d1374ae6950000a9f072346aece20ba224ecae2c7a2f20",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/REPORT.md",
+          "sha256": "1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/PREFLIGHT.md",
+          "sha256": "0f8a304fe1d13e8379ca2341eef3fc37801739d2e2bbcf47252412bec6d6e36d",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/placement-zones.json",
+          "sha256": "b9f5648f58cddfb12d41e8c85ee70e9a3627d3dceee42f67fe4f70786524c652",
+          "tier": 2,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation recorded in character placement history",
+      "transformation_chain": "Generated paired concept/earlier Owen cutout → style harmonization using owner Mara sheet and existing Owen pose → current Owen; no separate owner-supplied Owen sheet established",
+      "upstream_dependencies": [
+        "A11",
+        "A12"
+      ],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Generated paired concept, earlier Owen pose and style influence from the active Mara sheet. No separate owner-supplied Owen sheet established.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Concept/pose/reference permissions and service/output-use terms; no identity inference",
+      "next_action": "Trace material concept and pose inputs and confirm whether the applicable Mara authority covers this reuse.",
+      "production_approval": false
+    },
+    {
+      "id": "A10",
+      "name": "Font input record",
+      "classifications": [
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/source-manifest.json",
+          "sha256": "97b42696e88111b23d293db5476f889a495e6548061742455f2d8bb569a6f6d3"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/refine.py",
+          "sha256": "80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/scripts/study.py",
+          "sha256": "c1d07c02736272b71d2f64441b203cb79a2073be8a509278bbb40e9517b4220f",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/source-manifest.json",
+          "sha256": "97b42696e88111b23d293db5476f889a495e6548061742455f2d8bb569a6f6d3",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "No generation service evidenced for the font",
+      "transformation_chain": "Repository records identify C:/Windows/Fonts/arialbd.ttf and its historical fingerprint; refined/VCS scripts record raster text rendering. External font not opened/copied/rehashed.",
+      "upstream_dependencies": [],
+      "terms_ids": [],
+      "output_rights": "No independent AI generation shown for this category. Any output-rights basis comes from its inputs.",
+      "input_reference_rights": "Arial Bold used to rasterize stand numerals. Repository metadata records the historical font fingerprint.",
+      "downstream_composition_rights": "Use in a downstream artifact requires coverage for the identified role. The repository fingerprint establishes file identity.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "Applicable font identity/license evidence and qualified review of raster output versus font embedding/distribution",
+      "next_action": "Confirm the terms applicable to raster numeral output in this workflow.",
+      "production_approval": false,
+      "historical_font_fingerprint": "4d59199834e7439c67ea4949407639961060b21b173833f566eb60ac6fd8f5af"
+    },
+    {
+      "id": "A11",
+      "name": "Owner-provided reference",
+      "classifications": [
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED",
+        "ORIGIN UNRESOLVED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/owner-mara-reference.png",
+          "sha256": "780dcca0ef04eab3312bcde77cb069d0b7a83c2896f0690eca4b230589b2c8ec"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/PREFLIGHT.md",
+          "sha256": "0f8a304fe1d13e8379ca2341eef3fc37801739d2e2bbcf47252412bec6d6e36d",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/REPORT.md",
+          "sha256": "1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/generation.json",
+          "sha256": "519bd6f1cabb777d98c30396da888887d6a30cebf97f653f5f3b3f91dcd19caa",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Unknown for the exact active sheet",
+      "transformation_chain": "Owner reference asserted by PREFLIGHT/REPORT/generation record; retained hash780d... matches current file. Owner-supplied does not establish owner-owned.",
+      "upstream_dependencies": [],
+      "terms_ids": [
+        "T2"
+      ],
+      "output_rights": "No asset-specific service agreement can be assigned to the unresolved origin.",
+      "input_reference_rights": "Exact owner-supplied Mara sheet. Custody and usage are documented. Its upstream origin and permissions remain unverified.",
+      "downstream_composition_rights": "Use in a downstream artifact requires coverage for the identified role. The repository fingerprint establishes file identity.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "Original creator/source ownership/permission and derivative/commercial rights",
+      "next_action": "Ask for the sheet’s creation record or a focused owner account with evidence of use authority.",
+      "production_approval": false
+    },
+    {
+      "id": "A12",
+      "name": "Other upstream visual references",
+      "classifications": [
+        "AI-GENERATED — DIRECT EVIDENCE",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED",
+        "ORIGIN UNRESOLVED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/character-concept-reference.png",
+          "sha256": "41a967df7344d06e3d4dde8e9fb4803ffd4fd4103caf3dcd1ecfafb281b11648"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/table-proof/table-candidate.png",
+          "sha256": "20454fbf9d270ad62076df5993574ca44e23b56b5996bf9bb7cfaadc40e0ce5c"
+        },
+        {
+          "path": "public/assets/cases/case-001/table.png",
+          "sha256": "a9a4373fc8db98fee1c286f288502507c4cbeb4479ace128278ed9550670219b"
+        },
+        {
+          "path": "public/assets/cases/case-001/document-mat.png",
+          "sha256": "4b8c7a1656cf6e607c8fd0566b579e0fcfa2e462e44436537f2646406cb7e616"
+        },
+        {
+          "path": "public/assets/cases/case-001/passport.png",
+          "sha256": "83920d74c1c3b12d5c36ddc64e73a302f7bf6165d3f51fd27aadfa32f1a118a4"
+        },
+        {
+          "path": "public/assets/cases/case-001/star-wallet.png",
+          "sha256": "2c1c197917ae4e152444cf824b87a815b5d3388516b301ea6a196675a31bb338"
+        },
+        {
+          "path": "public/assets/cases/case-001/stand-12.png",
+          "sha256": "f70bc518dda3bb73baccb7b56ebe783ee4cc732b93cfabfb973766d6fe3a7b22"
+        },
+        {
+          "path": "public/assets/cases/case-001/stand-21.png",
+          "sha256": "6c82b1ad5d7cf7eb7ef2263d19d42f0516f0e0eb21e2bae46da808743e62b1eb"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/superseded/mara-generated-cutout.png",
+          "sha256": "52e54b64f7e1a114ec5a71023253b620d7357105325e1e09d4c9dfad22ef0ec7"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/superseded/owen-generated-cutout.png",
+          "sha256": "f3fc36a298387646231f4c29b279fd79340cb0c07cb70c0a27981b03bba3e16d"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+          "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json",
+          "sha256": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/superseded/generation.json",
+          "sha256": "869514624398161295d1374ae6950000a9f072346aece20ba224ecae2c7a2f20",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/generation.json",
+          "sha256": "519bd6f1cabb777d98c30396da888887d6a30cebf97f653f5f3b3f91dcd19caa",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/table-proof/REPORT.md",
+          "sha256": "529d28893e4cd3aa6e13e6fd4f18090df735f510f169ec9e38641daed958fc60",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Built-in image generation for recorded concept, table proof and earlier cutouts only",
+      "transformation_chain": "Refinement references original public props/table proof; superseded generation references generated paired concept and public background for lighting. Earlier pose inputs are recorded; external original mapping remains partial.",
+      "upstream_dependencies": [],
+      "terms_ids": [
+        "T1",
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "output_rights": "Current individual terms support ownership conditionally for covered output. Original account, service and agreement still need linkage.",
+      "input_reference_rights": "Mixed reference group. Public originals lack reliable provider attribution. The public background also appears as a lighting reference. A related Mara v2 image is not linked to the exact active sheet.",
+      "downstream_composition_rights": "Use in a downstream artifact requires coverage for the identified role. The repository fingerprint establishes file identity.",
+      "confidence": "Direct repository evidence for recorded generated portions; underlying authority unverified.",
+      "unresolved_dependencies": "Original public-source origins, concept/output permissions and external-master/reference mapping",
+      "next_action": "Resolve the actual material inputs by path and cohort. Reuse evidence for repeated references.",
+      "production_approval": false
+    },
+    {
+      "id": "A13",
+      "name": "Derived static character layer",
+      "classifications": [
+        "CODEX-COMPOSED / TRANSFORMED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/static-character-layer.png",
+          "sha256": "9a2adff0ad0e35b7cfa16e891936ffe66c44e55e6e739e1ab4185fdf581244d4"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/compose.py",
+          "sha256": "c80b18e3156a68b7721e8d9045f539b30f1ca9bcf414f151c8a0d6ddd694f934",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/placement-zones.json",
+          "sha256": "b9f5648f58cddfb12d41e8c85ee70e9a3627d3dceee42f67fe4f70786524c652",
+          "tier": 2,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/occlusion-analysis.json",
+          "sha256": "24269813447ad6a2b0c20dad28b9c00c3c61f90c3f9ae3cbf0d94745f391d2ad",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/character-placement-proof/REPORT.md",
+          "sha256": "1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Local composition tooling",
+      "transformation_chain": "Existing cutout crops/uniform thumbnails/recorded positions plus existing chair occluder → combined static layer → B0/CCV",
+      "upstream_dependencies": [
+        "A08",
+        "A09"
+      ],
+      "terms_ids": [],
+      "output_rights": "No independent AI generation shown for this category. Any output-rights basis comes from its inputs.",
+      "input_reference_rights": "Mara and Owen cutouts.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "Upstream character/reference/output rights; final use permission",
+      "next_action": "Carry forward character input and use evidence.",
+      "production_approval": false
+    },
+    {
+      "id": "A14",
+      "name": "B0 control composites",
+      "classifications": [
+        "CODEX-COMPOSED / TRANSFORMED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidates/B0/original-960.png",
+          "sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidates/B0/changed-960.png",
+          "sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png",
+          "sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png",
+          "sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+          "sha256": "f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidate-manifest.json",
+          "sha256": "0a58951b8e28624712fa2177cea2e5300859f85a3c34402ae5b07c84132c7bc5",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/VERIFICATION_REPORT.md",
+          "sha256": "3dc2a669220a07fdfabae2a2ffde4ac0d0c549b9a0cd6afaaeafc3b45daa6186",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md",
+          "sha256": "3eeca642749ef09d8852a8cea633fc4597ae2522eab340132affe2b0f5d19c85",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Local composition tooling",
+      "transformation_chain": "Documented source-layer compositor with research geometry → refined B pair → byte-exact VCS B0 copies",
+      "upstream_dependencies": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A13",
+        "A18"
+      ],
+      "terms_ids": [],
+      "output_rights": "No independent AI generation shown for this category. Any output-rights basis comes from its inputs.",
+      "input_reference_rights": "Background, props, static character layer and backpack.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "All upstream permissions and final scene production-use authority",
+      "next_action": "Carry forward source rights into the B0 control and intended downstream distribution.",
+      "production_approval": false
+    },
+    {
+      "id": "A15",
+      "name": "C1a passport derivative",
+      "classifications": [
+        "CODEX-COMPOSED / TRANSFORMED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidates/C1a/assets/object-passport.png",
+          "sha256": "f2f992d0a463a8643aab1ccaa2023452cad0cb900e94e14cac89e7dc677c83c7"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/scripts/study.py",
+          "sha256": "c1d07c02736272b71d2f64441b203cb79a2073be8a509278bbb40e9517b4220f",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidate-manifest.json",
+          "sha256": "0a58951b8e28624712fa2177cea2e5300859f85a3c34402ae5b07c84132c7bc5",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/PASSPORT_CONTRAST_STUDY.md",
+          "sha256": "38a4c21665a0df101fe9bb70dc364aa144cdcbc77cdaadc27214f8103cf54365",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/source-manifest.json",
+          "sha256": "973e9259e8f8d49f059da595b56b89c6d482acf361c5b4fa90c57accb70d849e",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Local pixel-processing tooling",
+      "transformation_chain": "Recorded deterministic smooth navy-cover tone increments10/14/18, unchanged alpha/size → C1a source → CCV Original",
+      "upstream_dependencies": [
+        "A04"
+      ],
+      "terms_ids": [],
+      "output_rights": "No independent AI generation shown for this category. Any output-rights basis comes from its inputs.",
+      "input_reference_rights": "Refined passport.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "Parent source/reference/output commercial/derivative permission",
+      "next_action": "Carry forward A04 coverage for contrast retouch and raster embedding.",
+      "production_approval": false
+    },
+    {
+      "id": "A16",
+      "name": "C2a stand derivatives",
+      "classifications": [
+        "CODEX-COMPOSED / TRANSFORMED",
+        "EXTERNAL REFERENCE — SOURCE REVIEW REQUIRED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidates/C2a/assets/object-stand-12.png",
+          "sha256": "af29d5e023f01db8247a0087ff3ffc20fb5fad50ca464e5fc3b8170ff81fa284"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidates/C2a/assets/object-stand-21.png",
+          "sha256": "a5800bba6e6460b9accd2106365239988a81f57ecc0209c7c5536fa2614da41f"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/scripts/study.py",
+          "sha256": "c1d07c02736272b71d2f64441b203cb79a2073be8a509278bbb40e9517b4220f",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/candidate-manifest.json",
+          "sha256": "0a58951b8e28624712fa2177cea2e5300859f85a3c34402ae5b07c84132c7bc5",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/visual-correction-study/NUMERAL_TREATMENT_STUDY.md",
+          "sha256": "a85d7686908260c3441cf57e7f569d8713a83a7bac7f06a6bd07e8b6d7f5060e",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/source-manifest.json",
+          "sha256": "973e9259e8f8d49f059da595b56b89c6d482acf361c5b4fa90c57accb70d849e",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "tool_or_provider": "Local raster and pixel-processing tooling",
+      "transformation_chain": "Same existing blank master/font260/alignment/stroke; lighter fill255/232/160 within original numeral ROI → exact C2a12/21 rasters",
+      "upstream_dependencies": [
+        "A06",
+        "A07",
+        "A10"
+      ],
+      "terms_ids": [],
+      "output_rights": "No independent AI generation shown for this category. Any output-rights basis comes from its inputs.",
+      "input_reference_rights": "Refined stands plus font raster use.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "Font raster-use evidence plus master/reference/output rights",
+      "next_action": "Carry forward A06–A07 and confirm A10 raster scope once.",
+      "production_approval": false
+    },
+    {
+      "id": "A17",
+      "name": "Exact CCV combined pair",
+      "classifications": [
+        "CODEX-COMPOSED / TRANSFORMED"
+      ],
+      "files": [
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Original-960.png",
+          "sha256": "d7a4bbb6c141b1c2b9d15c38591f16ff6bc4d80629cad0877ce05a43a2993945"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Changed-960.png",
+          "sha256": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md",
+          "sha256": "3eeca642749ef09d8852a8cea633fc4597ae2522eab340132affe2b0f5d19c85",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/source-manifest.json",
+          "sha256": "973e9259e8f8d49f059da595b56b89c6d482acf361c5b4fa90c57accb70d849e",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/measurements.json",
+          "sha256": "c2225dfb62e191e58b8621f6e7837491ac7ac613e3deabcac8d07c62ac854738",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/verification.json",
+          "sha256": "3440c9a8f2744feb6e0d8302f09a8266c8511826c8eb36ecc198f4572ca11166",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/scripts/reproduce-combination.py",
+          "sha256": "d0a870bb595b495b873966c8444e791b6c1509d5ec5bce5667d90c3b517ab4d5",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Local composition tooling",
+      "transformation_chain": "Exact selected source assets and B0 staging → source recomposition; archived proof equals disjoint RGB-mask union; exact output hashes preserved",
+      "upstream_dependencies": [
+        "A14",
+        "A15",
+        "A16"
+      ],
+      "terms_ids": [],
+      "output_rights": "No independent AI generation shown for this category. Any output-rights basis comes from its inputs.",
+      "input_reference_rights": "B0 staging, C1a passport, and C2a stands. See transitive upstream inputs.",
+      "downstream_composition_rights": "Coverage follows the material inputs and their edit, embedding and distribution scope. Recorded deterministic work adds no separate stock acquisition basis.",
+      "confidence": "Repository evidence for custody, dependency or transformation; original authority unverified.",
+      "unresolved_dependencies": "All inherited upstream permissions and explicit future adoption authorization",
+      "next_action": "Record one coverage schedule for the exact pair, including edits and intended distribution.",
+      "production_approval": false
+    },
+    {
+      "id": "A18",
+      "name": "Owen backpack",
+      "classifications": [
+        "ORIGIN UNRESOLVED"
+      ],
+      "files": [
+        {
+          "path": "public/assets/cases/case-001/owen-backpack.png",
+          "sha256": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651"
+        }
+      ],
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/inventory.json",
+          "sha256": "85604fa088aeb907d9b8e62b31e050894a3f2f8f453f7252e411c923053ed47f",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/REPORT.md",
+          "sha256": "68c0643f3866104414a965a3808409d872ba5485eaaa71a7c216b1f3f4c82e66",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+          "sha256": "f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/scripts/reproduce-combination.py",
+          "sha256": "d0a870bb595b495b873966c8444e791b6c1509d5ec5bce5667d90c3b517ab4d5",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "tool_or_provider": "Unknown",
+      "transformation_chain": "Existing repository backpack source → unchanged scaled prop layer → both scene endpoints",
+      "upstream_dependencies": [],
+      "terms_ids": [],
+      "output_rights": "No asset-specific service agreement can be assigned to the unresolved origin.",
+      "input_reference_rights": "Backpack is a distinct rendered input. Repository custody and later placement do not establish creation origin.",
+      "downstream_composition_rights": "Use in a downstream artifact requires coverage for the identified role. The repository fingerprint establishes file identity.",
+      "confidence": "Exact identity and use verified. Origin unresolved. Owner statement supplies project-level context only.",
+      "unresolved_dependencies": "Original provider/source acquisition and applicable production-use permission",
+      "next_action": "Identify the source and creation context of this exact file and any material input.",
+      "production_approval": false
+    }
+  ]
+}

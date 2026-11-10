@@ -1,0 +1,91 @@
+{
+  "file_count": 17,
+  "files": [
+    {
+      "path": "ASSET_ORIGIN_RECONCILIATION.md",
+      "sha256": "7a8104095979d1ecc19cd7520e98f584fdb2d57d4593a13886dba00ca4f76b0c",
+      "bytes": 33750
+    },
+    {
+      "path": "AUTHORIZATION_AND_SCOPE.md",
+      "sha256": "9859b8a65e1eff382c5169427e7f8a1a265e5fafe8bb42d82fbe5e4080769269",
+      "bytes": 951
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self entry excluded from hashing"
+    },
+    {
+      "path": "G17_G18_REASSESSMENT_PROPOSAL.md",
+      "sha256": "38617b1e0cee35aa682b12f2b193e6d48779ec1bc80a809fd7de538b5bb72803",
+      "bytes": 1481
+    },
+    {
+      "path": "MINIMUM_REMAINING_RIGHTS_WORK.md",
+      "sha256": "34aa05b9b1e13ea1fcb2c17a3ed5b63fdd211ea4c662c56d887ca2496cd54b0f",
+      "bytes": 1399
+    },
+    {
+      "path": "NEXT_OWNER_DECISION.md",
+      "sha256": "194f5e742b2c1f5c836b04d4673e4c5a16e776db8ea8ee446a2f363f48e41eab",
+      "bytes": 924
+    },
+    {
+      "path": "OPENAI_TERMS_REVIEW.md",
+      "sha256": "63a5a49f1677896eac029a6b1562e5061ee760a8fd7bba3bc29518f1bfa82164",
+      "bytes": 2749
+    },
+    {
+      "path": "OWNER_CREATION_HISTORY_CLARIFICATION.md",
+      "sha256": "0bc3efe2496d578487ef910f670bd412a628a9b9c7df742c1b45d93dc8250bd6",
+      "bytes": 989
+    },
+    {
+      "path": "P0_GAP_REASSESSMENT.md",
+      "sha256": "576c826bd5669af80189df5cb10740bf48cb7d616d8a0e1161e8d001584a835b",
+      "bytes": 5675
+    },
+    {
+      "path": "README.md",
+      "sha256": "72928acb522905c59f978bbe27c5ac132c9800fe831f16731a4f74b40d235fdc",
+      "bytes": 1249
+    },
+    {
+      "path": "THIRD_PARTY_REFERENCE_DEPENDENCIES.md",
+      "sha256": "4c06d9d15e3ea0e8bb51a4fefa78f911298dbec9ddb0c6b560780d538c32b297",
+      "bytes": 1355
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "0f7d8012b5eacb3a50895b2b4f6b3a59e2c4431ace973503ffb1add65129bd54",
+      "bytes": 1516
+    },
+    {
+      "path": "asset-origin-reconciliation.json",
+      "sha256": "f17503f5e8785b74b3cced5bd99ed99009668ee4e95d79a4700f1ed112e024e7",
+      "bytes": 55517
+    },
+    {
+      "path": "gap-reassessment.json",
+      "sha256": "152fc566b2ae2f79b71a661b55f0aa65b9481c3123942b3e8132121e6ba178d9",
+      "bytes": 7035
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "15a4564915fd1069957561edd937ca42d27f32bd7128c51f041d6707b7afc900",
+      "bytes": 146180
+    },
+    {
+      "path": "terms-evidence.json",
+      "sha256": "9163a7ecbee21bb8bfd8ccbbb9d30e2178beb1fbff8cb919263bb575fa9e985d",
+      "bytes": 2628
+    },
+    {
+      "path": "verification.json",
+      "sha256": "66cf8c9e5bbcbc6d374233d06205475a0eac71d93a3186f4307ab004a4b0c68d",
+      "bytes": 1929
+    }
+  ]
+}
