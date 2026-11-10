@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "Documentation integrity only; no new runtime/browser/device/human testing",
+  "protected_files": 448,
+  "protected_raw_hashes_unchanged": true,
+  "outside_inventory_unchanged": true,
+  "git_head_branch_refs_and_recorded_metadata_unchanged": true,
+  "reviewed_sources": 31,
+  "source_hashes_unchanged": true,
+  "archived_source_hashes_exact": 9,
+  "archived_prototype_inventory_hashes_exact": 43,
+  "archived_tests_inspected_not_rerun": {
+    "isolated": 21,
+    "browser": 77,
+    "Chrome": "157.0.8103.38",
+    "historical_protected_files": 404
+  },
+  "canonical_candidate_event_ids_kinds_match": true,
+  "meaningful_changes": 3,
+  "numeric_checks": "PASS; rounded visual dimensions within 0.00501px of source; exact target formulas within floating precision",
+  "matrix_rows": 26,
+  "gates": 10,
+  "evidence_ids": 17,
+  "local_markdown_links_checked": 57,
+  "status_reference_checks": "PASS",
+  "video_evidence": "Owner-supplied summaries only; no local video analysis",
+  "show_taps": "USER-CONFIRMED",
+  "read_only_validator": {
+    "command": "node scripts/check-asset-artifacts.mjs",
+    "result": "PASS",
+    "json_files_at_execution": 65,
+    "evidence_hashes": 57
+  },
+  "git_diff_check": "PASS",
+  "new_files_only_authorized_directory": true,
+  "no_application_tests_assets_or_existing_files_modified": true,
+  "production_adoption": false,
+  "T17_T18": false,
+  "new_human_study": false,
+  "commit_push": false
+}

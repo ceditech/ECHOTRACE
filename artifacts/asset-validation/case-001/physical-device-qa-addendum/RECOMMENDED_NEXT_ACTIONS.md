@@ -1,0 +1,10 @@
+# Proposed next actions — not executed
+
+1. Owner review/accept this consolidation, including attributed provisional Android basics and USER-CONFIRMED Show taps (E02–E04). No need to repeat successful four-ID demonstrations or reopen Show taps. Acceptance grants no adoption/implementation.
+2. Separately authorize focused Android gap/boundary, deliberate drag-return, two-pointer, capture/lost-capture/stale-input and pan-limit cases (U01/R04). Reuse unchanged MIV and S21 procedure. Record actual effective width, orientation and nonprivate OS/browser versions if available. If owner later supplies local recordings, a separately authorized review may close specific cases; no transfer/copy is assumed now.
+3. Resolve Original readability/minimum effective width and character/table association (R01–R03). Accept limitations explicitly or separately authorize the smallest controlled art/presentation/staging correction. Investigation zoom does not fix Original memory visibility. Avoid unnecessary regeneration. Human observation testing remains closed; no new study is authorized.
+4. Record source/reference rights clearance and final art/staging acceptance before art adoption (R05/G8). Geometry adoption is separate: refined B differs from canonical and cannot be adopted silently.
+5. Separately decide iOS, accessibility, performance and installed-PWA scope (U02/U03). Authorize missing coverage or explicitly defer claims. Desktop simulation is not physical coverage; installed testing requires an actual separately authorized installable surface.
+6. Approve timing/interruption/recovery policy before relevant gameplay integration, then authorize a bounded T17 or T18 task and its tests (U04). Adoption, implementation, task completion, commit and push each remain separate permissions.
+
+Recommended immediate decision: accept this addendum and separately authorize only focused missing Android gesture/cancellation evidence. Art/staging/rights remain independent gates. No further device session, art correction, adoption, human study or implementation occurred here. Stop for owner review.

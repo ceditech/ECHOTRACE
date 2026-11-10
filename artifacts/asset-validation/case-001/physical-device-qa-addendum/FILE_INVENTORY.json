@@ -1,0 +1,75 @@
+{
+  "file_count_including_inventory": 14,
+  "files": [
+    {
+      "path": "ANDROID_QA_SUMMARY.md",
+      "bytes": 2544,
+      "sha256": "c04b785d9d69d675c175a50561e32e531315a76610ab94bff582ecfee796b700"
+    },
+    {
+      "path": "DEFECT_AND_RISK_REGISTER.md",
+      "bytes": 4149,
+      "sha256": "e31237bfb0340fde7e9ea66bcbf5a976f54a6d0139966cc2ebea0f325c6917fe"
+    },
+    {
+      "path": "DESKTOP_QA_SUMMARY.md",
+      "bytes": 1872,
+      "sha256": "c130c064de62b94d07dc319e873442092b8e5f0864bc353ab4465122574dac7d"
+    },
+    {
+      "path": "EVIDENCE_REGISTER.md",
+      "bytes": 11318,
+      "sha256": "d1f0904c5dc66648396fd42f8cfbd974fce76319e45a3322d1914ac254ab63c8"
+    },
+    {
+      "path": "OWNER_AUTHORIZATION_RECORD.md",
+      "bytes": 3121,
+      "sha256": "d25662facb85fa7013a33fc0cc895c8f0d87f46fe089705e20ef9cbfec1982b9"
+    },
+    {
+      "path": "PRODUCTION_READINESS_GATES.md",
+      "bytes": 3043,
+      "sha256": "fe1e54160605beeb86a5746b05f8e2b97d89977205a46dab600c2defd7d11415"
+    },
+    {
+      "path": "protected-before.json",
+      "bytes": 66295,
+      "sha256": "3a523e43b2c64a994f1415e585dadd63f219eb2ffa9ac6fb00936e2e848dce97"
+    },
+    {
+      "path": "QA_TEST_MATRIX.md",
+      "bytes": 3909,
+      "sha256": "fa8daa98142a067db7d8e212c4b57dd093a5de485e1a8ad6b546943485a35ac8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2141,
+      "sha256": "6d3aa9094a52049138631ccc48f2f759d644531c0d1f563cb1c0f2e28949f1b2"
+    },
+    {
+      "path": "RECOMMENDED_NEXT_ACTIONS.md",
+      "bytes": 2116,
+      "sha256": "ca3723389f7f92ad889d1b160ba1fbaef57e1e92ceb3960af59c12189e39ed60"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 6508,
+      "sha256": "98007d52c3d8c0a11dcc52d2fc5d8c1ab932279c16b1ca5fba531c2b8f48bb93"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1499,
+      "sha256": "39c324447e17c0207588aa0462415e6ca356f0acd722f0e0167127c8c536fa7d"
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "bytes": 5155,
+      "sha256": "243cce52872b1171f8cb4e344c769cdee4b8b1f0eeb7322f7aac9a030156727f"
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "note": "Self hash/size omitted to avoid recursion."
+    }
+  ]
+}

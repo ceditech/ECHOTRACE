@@ -1,0 +1,133 @@
+{
+  "sources": {
+    "S01": {
+      "path": "AGENTS.md",
+      "sha256": "988553f561698619d8269ad1996f8ccf9d653ef9f16d4abd473c97c15497cecf"
+    },
+    "S02": {
+      "path": "GAME_SPEC.md",
+      "sha256": "b1a76b1526b0534aa8db0ee12f5c3cb585fd9026e24293b28529bd7a4c9623eb"
+    },
+    "S03": {
+      "path": "ARCHITECTURE.md",
+      "sha256": "c154ebe5936e843e9bc2b83dea7e1afc839334540f1658b81d9b532283156699"
+    },
+    "S04": {
+      "path": "docs/cases/CASE_001_THE_MISSING_PASSPORT.md",
+      "sha256": "295452c3d2cd411057e979560528c6b07d4c135b51b739f00717bcfb9c929626"
+    },
+    "S05": {
+      "path": "src/cases/content/case-001/case.json",
+      "sha256": "0c6a1387d3c619ac03cdba9df97a4efdd2823de26d2f83367b19dbf36b8fe976"
+    },
+    "S06": {
+      "path": "artifacts/asset-validation/case-001/mobile-presentation-spec/MPS_001.md",
+      "sha256": "787e2dbd3797795dabafc13950798dedad516d5ab38b9fda4da33151f4f4e098"
+    },
+    "S07": {
+      "path": "artifacts/asset-validation/case-001/mobile-presentation-spec/OWNER_DECISIONS.md",
+      "sha256": "3262e423c83b2fe4119ad6784fbb9ac288c2a8eb1d32fbc4883ac2fec42ad1c3"
+    },
+    "S08": {
+      "path": "artifacts/asset-validation/case-001/mobile-presentation-spec/INTERACTION_CONTRACT.md",
+      "sha256": "b363959e9e9d26807f0263afa3f038e7d1f7319d63d7b69973c782ee9b81c4ed"
+    },
+    "S09": {
+      "path": "artifacts/asset-validation/case-001/mobile-presentation-spec/OBSERVATION_FAIRNESS.md",
+      "sha256": "a3df360a83858615e6f218db7dfb5072d467115e1bd715f5752919e9c0fa3bb4"
+    },
+    "S10": {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/README.md",
+      "sha256": "5bf2589eb73114982aaebb0b838059748518f50ea348254c35450bd3924964b2"
+    },
+    "S11": {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/APPROACH_B_REPORT.md",
+      "sha256": "a0bc8e85c1d4c3d510ebd8361d925c6d8feff63f82639b3b92d691ec956cf552"
+    },
+    "S12": {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/B-geometry-diff.json",
+      "sha256": "bda9a307fc0bf10b3d7fece03e97602a3be4cd974a1a9ad2aef0236bd043dd19"
+    },
+    "S13": {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/CHARACTER_STAGING_REPORT.md",
+      "sha256": "90c71aee85b77d3c4dc3fb9fa71b7234f26195adce3525befd6140c3f5f5ad94"
+    },
+    "S14": {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/VERIFICATION_REPORT.md",
+      "sha256": "d61af5fe684e3a5c3248aa2c8840b60aac39bfac84a85dbb14176bc652caa118"
+    },
+    "S15": {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/B-proposed-case.json",
+      "sha256": "b6284efcfa6925ae6e37eb854b2647b53720643839c040c8c79f6e0427ef9306"
+    },
+    "S16": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/README.md",
+      "sha256": "3f8e121021ce92aa4d9f4a753a792bafd78616e644a5a151dfdea84225a73a68"
+    },
+    "S17": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/OWNER_AUTHORIZATION_RECORD.md",
+      "sha256": "f0fa1ea7130ba91d1ee96a1799032cca1ab866d0500500ab9b55ae2a84ff909f"
+    },
+    "S18": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/INTERACTION_TEST_REPORT.md",
+      "sha256": "9776ea1d108514c28e01cb308bbc9a4b3c4718c5a22a3d63c1e2ea95aa3e104c"
+    },
+    "S19": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/BROWSER_VERIFICATION_REPORT.md",
+      "sha256": "da6686aa8b501ee96b10bdf3c5d7d4035d90ea27c8ec49a62820f56e1e16317e"
+    },
+    "S20": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/MOBILE_READABILITY_REPORT.md",
+      "sha256": "2f67924458885bfa87469ad9b56c1922a0620deded7d9de3bfe9b6ca4d654745"
+    },
+    "S21": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/DEVICE_QA_PROCEDURE.md",
+      "sha256": "beb748a9c2031c44fe3fdad49dcfdcd3cfbe763fbb1ec36f88469f93950f3f90"
+    },
+    "S22": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/OPEN_ISSUES.md",
+      "sha256": "f8b71b0f19719ac446de847ffa131ec609457babf33ed96d152087995603d890"
+    },
+    "S23": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/VERIFICATION_REPORT.md",
+      "sha256": "a7e593903bd1ce058cc75a299418d885c037b7220eb424c36f18b4bdc7eba774"
+    },
+    "S24": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/verification.json",
+      "sha256": "6700dc5d13bfa806788322d345095dab2dc8c07eb4a3bd1958d5011e90ebb7fe"
+    },
+    "S25": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/unit-results.json",
+      "sha256": "2e4ecde5bf92f11b7dd66e569faccf12d6350dbc142e181e0e324dae04ac107e"
+    },
+    "S26": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/browser-results.json",
+      "sha256": "fd38a97e6bbbe0f5b0a8685f5398173a21bfc5f129a61b2aa92af31cc3d12e77"
+    },
+    "S27": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/source-audit.json",
+      "sha256": "d3ebed451bf6eec080e744cc49d09b4483b466401748500ee5794319750a862d"
+    },
+    "S28": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/measurements.json",
+      "sha256": "69c6e6344505c38cef32c8509a6b9b73d5ba829e7e53e5067a3ba3cb084206ac"
+    },
+    "S29": {
+      "path": "artifacts/asset-validation/case-001/B-mobile-interaction-validation/FILE_INVENTORY.json",
+      "sha256": "e5e8ce6f8b47ff59b30b26fa17f52562e6ad1ff2492b35f231dc16f15fea9a3b"
+    },
+    "S30": {
+      "path": "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+      "sha256": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534"
+    },
+    "S31": {
+      "path": "artifacts/asset-validation/case-001/character-placement-proof/REPORT.md",
+      "sha256": "1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65"
+    }
+  },
+  "owner_request": {
+    "path": "C:\\Users\\CedricYovodevi\\.codex\\attachments\\b743b71f-b8c6-46c4-bbdd-e5a9a2c05e28\\Pasted text.txt",
+    "sha256": "c545cea3b5f99f4c96e2f3ecd73b4277a2d5e67dcaa6ed60147bdc86eda01c02",
+    "note": "Text request only; no recording hashes available."
+  }
+}
