@@ -1,0 +1,56 @@
+{
+  "execution_authorized": false,
+  "review_status": "NOT STARTED",
+  "initial_classification": "NOT SUPPLIED",
+  "future_authorization_fields": [
+    "Exact documents supplied",
+    "Approved access location",
+    "Authorized reviewer",
+    "Affected request bundles",
+    "Asset categories covered",
+    "Permitted read-only actions",
+    "Confidentiality and storage rules",
+    "Allowed report outputs",
+    "Review criteria",
+    "Stop conditions"
+  ],
+  "proposed_classifications": {
+    "NOT SUPPLIED": "Initial state. No record received.",
+    "SUPPLIED — NOT REVIEWED": "Actual authorized receipt logged.",
+    "INCOMPLETE": "Required context, linkage or coverage is missing.",
+    "UNDER REVIEW": "Designated reviewer is examining a supplied record.",
+    "EVIDENCE SUPPORTS SPECIFIED USE": "Reviewer records support tied to exact asset, use and applicable restrictions.",
+    "EVIDENCE DOES NOT ESTABLISH SPECIFIED USE": "Record fails to establish the reviewed use or remains silent on it.",
+    "CONFLICTING EVIDENCE": "Material sources disagree and require reconciliation.",
+    "NEEDS QUALIFIED REVIEW": "An authorized qualified reviewer must assess unresolved rights or applicability questions."
+  },
+  "criteria": [
+    "Exact covered asset and SHA-256/version",
+    "Issuer and authority",
+    "Authenticity, applicable source, effective date and context",
+    "Commercial game use",
+    "Modification and derivative use",
+    "Distribution and embedding, distinguishing raster and font-file use",
+    "Restrictions and attribution",
+    "Unresolved inherited composite dependencies",
+    "Need for qualified review and recorded scope of disposition"
+  ],
+  "stop_conditions": [
+    "Missing or ambiguous authorization, document or location",
+    "Unapproved copy, transfer, contact, external research or scope expansion needed",
+    "Confidentiality cannot be maintained",
+    "Mismatch, incomplete evidence or conflict blocks the proposed finding",
+    "Legal clearance or production adoption requested outside review authority"
+  ],
+  "proposed_first_batch": {
+    "selected_for_execution": false,
+    "preferred_if_available": [
+      "ER-P0-01 background and backpack linked acquisition and permission records"
+    ],
+    "conditional_alternatives": [
+      "ER-P0-06 dated applicable service terms matched to a relevant output",
+      "ER-P0-02 one exact material reference and applicable permission record"
+    ]
+  },
+  "disposition_boundary": "Any finding is limited to the specified use and supplied evidence. Legal clearance and production approval require distinct authority."
+}

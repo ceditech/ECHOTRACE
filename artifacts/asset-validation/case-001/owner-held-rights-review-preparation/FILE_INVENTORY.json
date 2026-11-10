@@ -1,0 +1,95 @@
+{
+  "file_count_including_inventory": 18,
+  "files": [
+    {
+      "path": "AUTHORIZATION_AND_SCOPE.md",
+      "bytes": 1081,
+      "sha256": "662af5dbec6207c5742d8a8c832b67c585f6d5f916777f531c9e978b8e57afce"
+    },
+    {
+      "path": "CONFIDENTIALITY_AND_REDACTION_PROPOSAL.md",
+      "bytes": 1515,
+      "sha256": "205109f1db5aa674a5e1b97238e2ff20cbf7ff2e396f7865fc811331e989be07"
+    },
+    {
+      "path": "D05_B_OWNER_DIRECTION_RATIFICATION.md",
+      "bytes": 1076,
+      "sha256": "be7ca36a83afee4e87492b524e8c028b04aa67175afdf8fae982969b7da17d7c"
+    },
+    {
+      "path": "FIRST_REVIEW_BATCH_PROPOSAL.md",
+      "bytes": 1444,
+      "sha256": "577cb985b132eeb64d8a17be14dac166a3575aec40a1a79640659e3a4c6a53cb"
+    },
+    {
+      "path": "future-review-protocol.json",
+      "bytes": 2666,
+      "sha256": "e00baab977e79edb32d538d0f2e94e1447f5fb15e045813a4d702045f24a48c7"
+    },
+    {
+      "path": "FUTURE_ISOLATED_REVIEW_PROTOCOL.md",
+      "bytes": 2661,
+      "sha256": "b0d3edf150d98d6e41c72331922da1a58e4d9e37c40b1fb6c25c29c5b0b3b132"
+    },
+    {
+      "path": "GOVERNANCE_IMPACT_ASSESSMENT.md",
+      "bytes": 924,
+      "sha256": "995b764bc0b8709c516ef9a9ea10db23e1614023582dc4419815da4079ef56e6"
+    },
+    {
+      "path": "NEXT_OWNER_ACTIONS.md",
+      "bytes": 868,
+      "sha256": "f719d6962380e8d09e3475a52c8abf74770776b24b254a32675900b30da08e14"
+    },
+    {
+      "path": "owner-direction.json",
+      "bytes": 754,
+      "sha256": "85243840410a27a7f6fff0d932d5b53d01a7d07dbe8e4eec58429032e216ed56"
+    },
+    {
+      "path": "OWNER_HELD_DOCUMENT_SUBMISSION_GUIDE.md",
+      "bytes": 1816,
+      "sha256": "8b9d2b008c3a8f53ce1387d827a3e425b6ab14e889a8f01b652c7da851ff4138"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1347,
+      "sha256": "07fe0fd373c78128ceb02d59281cec283bc7264c6482faeaed4ae0107265822d"
+    },
+    {
+      "path": "request-document-map.json",
+      "bytes": 25005,
+      "sha256": "b6ea1afd2619dbbea3cb0c3c0961ab177adc9d068adde2e90d25314f9f0fbcce"
+    },
+    {
+      "path": "REQUEST_TO_DOCUMENT_MAPPING.md",
+      "bytes": 21275,
+      "sha256": "74830ad457106008e7d4b13476d2150ecd6614fd1aa7ec55c41dc4911bbd2a03"
+    },
+    {
+      "path": "RIGHTS_DEPENDENCY_AND_REMAINING_GAPS.md",
+      "bytes": 1854,
+      "sha256": "74118e2b557a68330dce1c997808ac7f09ff987c12dcdcb4e27219be2f860707"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 132785,
+      "sha256": "ca2ec868188d156c224eeaf244093b60596e51b203884dbe4d5e7ff5c6c5cd47"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1239,
+      "sha256": "96dc0e9b65bbcc8b30f6f101ea10ee4386a22265f70fac49f7e49e91b99e1983"
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "bytes": 2140,
+      "sha256": "e837350840a3e8a5f3283f105c7e31c1361cec15912403b5026b79af4ad0eff2"
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "note": "Recursive self hash and size omitted."
+    }
+  ]
+}

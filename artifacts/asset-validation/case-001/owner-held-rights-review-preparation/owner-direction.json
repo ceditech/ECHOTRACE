@@ -1,0 +1,18 @@
+{
+  "decision_id": "D05",
+  "direction_selected": "D05-B",
+  "direction_status": "CONFIRMED",
+  "rights_resolution_status": "PENDING",
+  "evidence_submission_status": "NOT SUPPLIED",
+  "evidence_review_status": "NOT STARTED",
+  "production_approval": false,
+  "future_review_authorized": false,
+  "owner_direction_source": {
+    "path": "C:\\Users\\CedricYovodevi\\.codex\\attachments\\31e61349-70a7-4c25-86e0-08724a2fa67e\\Pasted text.txt",
+    "sha256": "fb3a6751030d2e1fb1abcb2142c36a73f76902ea0d93648d9a40564092d23b4d"
+  },
+  "meaning": "Owner prefers to supply existing owner-held records for a future separately authorized isolated review.",
+  "owner_documents_supplied": 0,
+  "receipt_date": null,
+  "approval_timestamp": null
+}

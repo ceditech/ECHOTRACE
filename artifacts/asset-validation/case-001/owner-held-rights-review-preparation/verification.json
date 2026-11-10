@@ -1,0 +1,37 @@
+{
+  "documentation_integrity": "PASS",
+  "CCV_expected_hashes_verified_before_after": true,
+  "protected_files": 742,
+  "protected_raw_hashes_unchanged": true,
+  "outside_inventory_and_status_unchanged": true,
+  "source_hashes_verified": 81,
+  "captured_HEAD_branch_refs_metadata_unchanged": true,
+  "request_bundles": 12,
+  "priority_counts": {
+    "P0": 7,
+    "P1": 4,
+    "P2": 1
+  },
+  "asset_categories": 18,
+  "request_statuses_preserved": true,
+  "direction": {
+    "direction_selected": "D05-B",
+    "direction_status": "CONFIRMED",
+    "rights_resolution_status": "PENDING",
+    "evidence_submission_status": "NOT SUPPLIED",
+    "evidence_review_status": "NOT STARTED",
+    "production_approval": false
+  },
+  "documents_supplied_or_reviewed": 0,
+  "future_review_authorized": false,
+  "batch_selected_for_execution": false,
+  "operative_decisions_and_gates_preserved": true,
+  "local_markdown_links_checked": 39,
+  "JSON_validation": "PASS",
+  "git_diff_check": "PASS",
+  "collection_contact_external_research_downloads": false,
+  "legal_clearance_production_adoption_or_changes": false,
+  "canonical_artwork_changes": false,
+  "RFS001_or_T17_T18_execution": false,
+  "commit_push": false
+}

@@ -1,0 +1,401 @@
+{
+  "review_authorized": false,
+  "document_ids_assigned": 0,
+  "source": "artifacts/asset-validation/case-001/rights-evidence-collection-plan/evidence-requests.json",
+  "mappings": [
+    {
+      "id": "ER-P0-01",
+      "gap_id": "P0-01",
+      "priority": "P0",
+      "asset_ids": [
+        "A01",
+        "A18"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Dated acquisition record, applicable license text, written permission or assignment",
+      "requested_evidence": "Creator/provider and acquisition record for each file. Applicable full terms, written permission or ownership/assignment record. Link any receipt to its terms and exact item.",
+      "review_questions": "Exact background and backpack acquisition and applicable grant",
+      "commercial_use": "Commercial game use for each exact file",
+      "derivative_use": "Adaptation and downstream composite use",
+      "distribution_embedding": "Distribution of the scene with each asset embedded",
+      "authenticity": "Match original item identifier and acquisition date to the supplied terms and audited file.",
+      "missing_evidence": "No sufficient applicable origin/license/permission grant found | Creator/provider and acquisition record for each file. Applicable full terms, written permission or ownership/assignment record. Link any receipt to its terms and exact item.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Can prepare both source identifications independently. P1-02 helps match provenance.",
+      "related_workstreams": [
+        "P1-02"
+      ],
+      "confidentiality": "Redact payment, address and account identifiers."
+    },
+    {
+      "id": "ER-P0-02",
+      "gap_id": "P0-02",
+      "priority": "P0",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Source record and applicable license, written permission or assignment",
+      "requested_evidence": "Source and authority records for the public table, mat, passport, wallet and both stands. Applicable permission for each material reference, including the recorded table-proof intermediate. Route character references in A12 through P0-03/P0-04 and generated-output terms through P0-06.",
+      "review_questions": "Exact public prop and material reference chains, including table proof",
+      "commercial_use": "Commercial game use of each resulting prop",
+      "derivative_use": "Use of material references in resulting adaptations",
+      "distribution_embedding": "Distribution of resulting props within the scene",
+      "authenticity": "Link every source file and reference step to the exact item covered. Repository/public accessibility establishes file availability.",
+      "missing_evidence": "Referenced public/source assets have technical identity but unknown permission scope | Source and authority records for the public table, mat, passport, wallet and both stands. Applicable permission for each material reference, including the recorded table-proof intermediate. Route character references in A12 through P0-03/P0-04 and generated-output terms through P0-06.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Prop chains can be prepared independently. Shared table/master documents can cover multiple assets if scope is supported.",
+      "related_workstreams": [
+        "P1-01",
+        "P1-02"
+      ],
+      "confidentiality": "Minimize personal identifiers and purchase details."
+    },
+    {
+      "id": "ER-P0-03",
+      "gap_id": "P0-03",
+      "priority": "P0",
+      "asset_ids": [
+        "A08",
+        "A11"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Original source record plus ownership evidence, assignment, applicable terms or written grant",
+      "requested_evidence": "Origin and authorship of the owner-supplied Mara sheet. Ownership/authority documentation or applicable written permission for that sheet and the earlier pose input where material.",
+      "review_questions": "Active Mara sheet and material pose input, with issuer authority",
+      "commercial_use": "Commercial use of the selected Mara result",
+      "derivative_use": "Derivative generation from the actual reference",
+      "distribution_embedding": "Distribution of the resulting character in the scene",
+      "authenticity": "Match the active owner sheet hash and pose lineage to the grant. Owner supply establishes custody/design direction.",
+      "missing_evidence": "Owner-supplied/design direction does not prove owner-owned | Origin and authorship of the owner-supplied Mara sheet. Ownership/authority documentation or applicable written permission for that sheet and the earlier pose input where material.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Prepare the reference record independently. Review service output terms alongside input authority.",
+      "related_workstreams": [
+        "P1-03",
+        "P0-06"
+      ],
+      "confidentiality": "Keep personal details and correspondence restricted. Supply a redacted applicability summary."
+    },
+    {
+      "id": "ER-P0-04",
+      "gap_id": "P0-04",
+      "priority": "P0",
+      "asset_ids": [
+        "A09",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Dated concept/source record, applicable terms, written permission or assignment",
+      "requested_evidence": "Source and authority documentation for the paired concept, prior Owen cutout/pose and any material style inputs. Cross-reference the Mara sheet record where used for style.",
+      "review_questions": "Exact Owen concept, pose and style inputs, with shared Mara reference coverage where applicable",
+      "commercial_use": "Commercial use of the selected Owen result",
+      "derivative_use": "Derivative generation from applicable concept and pose/style inputs",
+      "distribution_embedding": "Distribution of the resulting character in the scene",
+      "authenticity": "Map each document to the actual input and its role. A separate owner-supplied Owen sheet is NOT VERIFIED.",
+      "missing_evidence": "Recorded mixed generated/earlier reference chain lacks applicable grants | Source and authority documentation for the paired concept, prior Owen cutout/pose and any material style inputs. Cross-reference the Mara sheet record where used for style.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Prepare concept/pose records independently. Reuse the Mara style-input evidence.",
+      "related_workstreams": [
+        "P0-03",
+        "P0-06",
+        "P1-03"
+      ],
+      "confidentiality": "Redact personal identifiers and unrelated concept or correspondence material."
+    },
+    {
+      "id": "ER-P0-05",
+      "gap_id": "P0-05",
+      "priority": "P0",
+      "asset_ids": [
+        "A06",
+        "A07",
+        "A10",
+        "A16"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "License/entitlement record and applicable version of font terms, with written permission if needed",
+      "requested_evidence": "Dated font source/entitlement record and complete applicable terms for the recorded Arial Bold raster workflow. Obtain a qualified applicability assessment where required.",
+      "review_questions": "Applicable Arial Bold terms and record identifying acquisition context",
+      "commercial_use": "Commercial distribution of raster numerals",
+      "derivative_use": "Raster generation and any actual font software modification considered separately",
+      "distribution_embedding": "Raster glyph distribution assessed separately from font embedding or redistribution",
+      "authenticity": "Match terms to the recorded font and acquisition context. Treat fingerprint as historical.",
+      "missing_evidence": "Font path/hash and rasterization are not license terms; no repo font binary found | Dated font source/entitlement record and complete applicable terms for the recorded Arial Bold raster workflow. Obtain a qualified applicability assessment where required.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Can prepare independently. Font identity supports matching.",
+      "related_workstreams": [
+        "P1-04"
+      ],
+      "confidentiality": "Use entitlement excerpts and minimal account metadata. Exclude font binaries and credentials."
+    },
+    {
+      "id": "ER-P0-06",
+      "gap_id": "P0-06",
+      "priority": "P0",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Dated saved terms, service/account entitlement record, generation-to-output index or applicable written permission",
+      "requested_evidence": "Generation-to-output register keyed by each relevant creation record, service identity, applicable terms version/date and evidence of account/use context where material. Include complete applicable output-use provisions.",
+      "review_questions": "Service identity, generation context and applicable version of existing held terms",
+      "commercial_use": "Commercial use of each covered generation output",
+      "derivative_use": "Applicable derivative output provisions",
+      "distribution_embedding": "Distribution of each output in game composites, including conditions",
+      "authenticity": "Bind the terms to the generation context and each output. A shared terms document can be reused where applicability matches.",
+      "missing_evidence": "Tool/output logs document creation, not production permissions | Generation-to-output register keyed by each relevant creation record, service identity, applicable terms version/date and evidence of account/use context where material. Include complete applicable output-use provisions.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Can prepare service records independently of input grants. Generation linkage helps match each output.",
+      "related_workstreams": [
+        "P1-01"
+      ],
+      "confidentiality": "Redact credentials, account IDs, unrelated prompts and personal details. Preserve terms version and applicability context."
+    },
+    {
+      "id": "ER-P0-07",
+      "gap_id": "P0-07",
+      "priority": "P0",
+      "asset_ids": [
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Asset/hash-to-document schedule, applicable upstream grants and any required supplemental written permission",
+      "requested_evidence": "One coverage register for the static layer, B0 pair, C1a, C2a and exact CCV Original/Changed. Reference the applicable upstream grants and service/font records once. Add any separate derivative or distribution permission only where the applicable evidence requires it.",
+      "review_questions": "Coverage schedule for A13–A17 referencing applicable upstream grants",
+      "commercial_use": "Commercial use of both exact CCV files and covered derivatives",
+      "derivative_use": "Inherited permissions and supplemental grant where required",
+      "distribution_embedding": "Composite distribution and embedding, with attribution carried through",
+      "authenticity": "Compare the register to the REV dependency chain and both candidate hashes. Check whether each grant covers its downstream use.",
+      "missing_evidence": "Local derivation integrity does not establish inherited rights for intended commercial distribution | One coverage register for the static layer, B0 pair, C1a, C2a and exact CCV Original/Changed. Reference the applicable upstream grants and service/font records once. Add any separate derivative or distribution permission only where the applicable evidence requires it.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Coverage register can be prepared independently. Completeness depends on applicable upstream evidence.",
+      "related_workstreams": [
+        "P0-01",
+        "P0-02",
+        "P0-03",
+        "P0-04",
+        "P0-05",
+        "P0-06"
+      ],
+      "confidentiality": "Use restricted evidence IDs and redacted summaries. Keep contractual originals in approved private storage."
+    },
+    {
+      "id": "ER-P1-01",
+      "gap_id": "P1-01",
+      "priority": "P1",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Creation/export manifest or authenticated linkage record",
+      "requested_evidence": "Dated creation/export record with output identifier and verified hash or other documented linkage to each audited derivative.",
+      "review_questions": "Generated-master to repository output linkage",
+      "commercial_use": "Linkage supports P0 matching",
+      "derivative_use": "Trace the recorded transformations",
+      "distribution_embedding": "Refer to P0 scope findings for distribution",
+      "authenticity": "Match identifiers, dates and transformations to existing repository records.",
+      "missing_evidence": "External output paths recorded but originals not read/permitted here | Dated creation/export record with output identifier and verified hash or other documented linkage to each audited derivative.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Can index existing records independently. Resolving missing links may require records from the same custodian as P0-06.",
+      "related_workstreams": [
+        "P0-06"
+      ],
+      "confidentiality": "Use authorized metadata excerpts. Keep external master files out of this planning task."
+    },
+    {
+      "id": "ER-P1-02",
+      "gap_id": "P1-02",
+      "priority": "P1",
+      "asset_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A18"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Dated source/acquisition record, original asset index or receipt",
+      "requested_evidence": "Creator/provider and acquisition history keyed to the audited background, backpack and public prop files. Cross-reference any acquisition documents proposed under P0-01/P0-02.",
+      "review_questions": "Origin and acquisition record for public assets",
+      "commercial_use": "Acquisition context supports applicable grant matching",
+      "derivative_use": "Link later references to the identified original",
+      "distribution_embedding": "Refer to P0 scope findings for distribution",
+      "authenticity": "Match item ID, version, date and hash where possible.",
+      "missing_evidence": "Existing file/inventory does not explain initial source acquisition | Creator/provider and acquisition history keyed to the audited background, backpack and public prop files. Cross-reference any acquisition documents proposed under P0-01/P0-02.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Origin indexing can proceed independently under future authority. Actual documents may be shared with the permission workstreams.",
+      "related_workstreams": [
+        "P0-01",
+        "P0-02"
+      ],
+      "confidentiality": "Redact payment and personal details."
+    },
+    {
+      "id": "ER-P1-03",
+      "gap_id": "P1-03",
+      "priority": "P1",
+      "asset_ids": [
+        "A08",
+        "A09",
+        "A11",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Version manifest, source-linked generation log or contemporaneous design record",
+      "requested_evidence": "Dated mapping from exact active sheet, concept and pose inputs to the selected cutouts. Explain distinct variants and record any unknown edge.",
+      "review_questions": "Active Mara/Owen reference version and source linkage",
+      "commercial_use": "Linkage supports later character permission review",
+      "derivative_use": "Identify actual inputs to selected cutouts",
+      "distribution_embedding": "Refer to P0 character findings for distribution",
+      "authenticity": "Compare exact hashes and recorded input roles.",
+      "missing_evidence": "Owner sheet differs from related mara-character-reference-v2 file; no active-input link inferred; earlier concept/pose roles recorded but incomplete | Dated mapping from exact active sheet, concept and pose inputs to the selected cutouts. Explain distinct variants and record any unknown edge.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Existing records can be indexed independently. Missing links may require the same source records as the character rights workstreams.",
+      "related_workstreams": [
+        "P0-03",
+        "P0-04"
+      ],
+      "confidentiality": "Minimize identity-related details and restrict confidential references."
+    },
+    {
+      "id": "ER-P1-04",
+      "gap_id": "P1-04",
+      "priority": "P1",
+      "asset_ids": [
+        "A10",
+        "A16"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Version record, entitlement record or dated workflow manifest",
+      "requested_evidence": "Existing authoritative identity/version/entitlement documentation that links the recorded fingerprint to the raster workflow.",
+      "review_questions": "Historical font fingerprint, identity and entitlement linkage",
+      "commercial_use": "Identity supports the raster-use terms review",
+      "derivative_use": "Identify workflow and version",
+      "distribution_embedding": "Refer to P0-05 for raster versus font-file distribution",
+      "authenticity": "Reference the historical fingerprint and distinguish any later independently verified record.",
+      "missing_evidence": "External font not read; no local binary or terms to validate its current identity | Existing authoritative identity/version/entitlement documentation that links the recorded fingerprint to the raster workflow.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Record indexing is independent. Identity confirmation can share entitlement evidence with P0-05.",
+      "related_workstreams": [
+        "P0-05"
+      ],
+      "confidentiality": "Exclude font binaries, credentials and unnecessary account details."
+    },
+    {
+      "id": "ER-P2-01",
+      "gap_id": "P2-01",
+      "priority": "P2",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "proposed_owner_held_documents": "Documentation-only cross-reference",
+      "requested_evidence": "Optional path index keyed to the original escaped output strings and exact source record lines.",
+      "review_questions": "Index entries linked to original generation record lines",
+      "commercial_use": "Formatting workstream has no use coverage",
+      "derivative_use": "Preserve source records while indexing",
+      "distribution_embedding": "Formatting workstream has no distribution coverage",
+      "authenticity": "Preserve originals and distinguish recorded paths from verified files.",
+      "missing_evidence": "Tool messages contain mixed escaped paths/free-text output fields; readable existing records retained | Optional path index keyed to the original escaped output strings and exact source record lines.",
+      "review_prerequisites": "Separate owner authorization, exact supplied record, approved access and source/version match. Independent formatting improvement. It supplies no permission evidence.",
+      "related_workstreams": [],
+      "confidentiality": "Redact unnecessary private path segments in shared summaries. "
+    }
+  ]
+}
