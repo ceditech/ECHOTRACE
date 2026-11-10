@@ -1,0 +1,144 @@
+{
+  "candidate_integrity": "PASS",
+  "visual_acceptance": "CONDITIONAL",
+  "regressions": [
+    {
+      "id": "R01",
+      "criterion": "Exactly three meaningful changes",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "canonical/candidate event IDs/kinds + five explained RGB regions",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R02",
+      "criterion": "No unexplained fourth region",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "zero pixels outside event-alpha union and five ROIs",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R03",
+      "criterion": "Passport disappearance",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "C1a asset exact; passport absent Changed; Changed C1a mask empty",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R04",
+      "criterion": "Stand exchange",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "12/21 identity-position maps checked both endpoints",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R05",
+      "criterion": "Wallet movement",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "same closed-wallet layers equal B0 per endpoint; original left, Changed right",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R06",
+      "criterion": "Mara unchanged",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "exact B0 static layer + zero authorized-delta intersection with character alpha",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R07",
+      "criterion": "Owen unchanged at B0",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "exact static layer/order; no translated/redrawn/scaled C3 input",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R08",
+      "criterion": "Background/furniture unchanged",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "source reconstruction exact; deltas only passport/numeral masks; stable prop layers",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R09",
+      "criterion": "Interaction geometry unchanged",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "candidate source raw hash equals VCS source manifest; no target edits",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R10",
+      "criterion": "No new clue occlusion",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "source alpha/order/centers identical; combined exactly preserves C1a/C2a pixels, wallet unchanged",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R11",
+      "criterion": "Full16:9 scene",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "native960\u00c3\u0192\u00e2\u20ac\u201d540 RGB; full-frame previews; ideal CSS versus rounded raster documented",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R12",
+      "criterion": "No added narrative hints",
+      "status": "PASS",
+      "level": "B",
+      "evidence": "Direct native and320/390/430 static comparison: exact C1a+C2a local edits, B0 characters/pose/expression; no extra hint or custody cue evident",
+      "method": "Static informed image review",
+      "limitations": "Level B informed static review only; no Level C recognition or Level D device claim"
+    },
+    {
+      "id": "R13",
+      "criterion": "Exact C1a treatment",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "existing asset/source composition + exact delta reproduction; passport size/alpha unchanged",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R14",
+      "criterion": "Exact C2a treatment",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "both exact existing stand assets + glyph/contrast/continuity equality",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    },
+    {
+      "id": "R15",
+      "criterion": "No unapproved pixels",
+      "status": "PASS",
+      "level": "A",
+      "evidence": "edit masks disjoint; exact union equality; zero outside union",
+      "method": "Fresh deterministic assertions in scripts/reproduce-combination.py",
+      "limitations": "Not a recognition/device/rights determination"
+    }
+  ],
+  "human_recognition": "NOT VERIFIED; no new study",
+  "physical_device": "NOT VERIFIED; no new testing",
+  "static_review_completed": true
+}

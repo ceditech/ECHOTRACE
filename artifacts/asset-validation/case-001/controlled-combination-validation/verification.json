@@ -1,0 +1,31 @@
+{
+  "integrity_status": "PASS",
+  "candidate_integrity": "PASS",
+  "visual_acceptance": "CONDITIONAL",
+  "new_combined_pairs": 1,
+  "protected_files": 618,
+  "protected_raw_hashes_unchanged": true,
+  "outside_inventory_unchanged": true,
+  "captured_git_state_unchanged": true,
+  "sources_unchanged": true,
+  "source_count": 82,
+  "modification_mask_overlap_pixels": [
+    0,
+    0
+  ],
+  "unapproved_pixels": 0,
+  "unexplained_pair_pixels": 0,
+  "source_recomposition_equals_exact_pixel_union": true,
+  "candidate_reproduced_in_memory": true,
+  "preview_pixels_hashes_dimensions": "PASS",
+  "R01_R15": "PASS; R12 Level B static review, others Level A deterministic",
+  "local_markdown_links_checked": 128,
+  "JSON_Python_AST_and_git_diff_check": "PASS",
+  "human_recognition": "NOT VERIFIED; no new study",
+  "physical_device": "NOT VERIFIED; no new test",
+  "rights_clearance": "NOT VERIFIED",
+  "production_adoption": false,
+  "canonical_changes": false,
+  "T17_T18": false,
+  "commit_push": false
+}

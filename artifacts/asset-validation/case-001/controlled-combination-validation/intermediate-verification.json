@@ -1,0 +1,57 @@
+{
+  "phase": "Preflight; no combined pair written",
+  "failed_check": "Extra approximate projected numeral ROI with2px margin",
+  "native": [
+    {
+      "endpoint": "original",
+      "overlap": 0,
+      "C1a_outside_passport_alpha": 0,
+      "C2a_outside_approx_projected_ROI": 1,
+      "excess_bbox": [
+        729,
+        193,
+        730,
+        194
+      ],
+      "C2a_recomposes_exactly": true
+    },
+    {
+      "endpoint": "changed",
+      "overlap": 0,
+      "C1a_outside_passport_alpha": 0,
+      "C2a_outside_approx_projected_ROI": 1,
+      "excess_bbox": [
+        345,
+        193,
+        346,
+        194
+      ],
+      "C2a_recomposes_exactly": true
+    }
+  ],
+  "source": [
+    {
+      "id": "object-stand-12",
+      "source_change_bbox": [
+        259,
+        205,
+        516,
+        392
+      ],
+      "source_changes_outside_exact_numeral_ROI": 0
+    },
+    {
+      "id": "object-stand-21",
+      "source_change_bbox": [
+        245,
+        205,
+        487,
+        392
+      ],
+      "source_changes_outside_exact_numeral_ROI": 0
+    }
+  ],
+  "candidate_directory_exists": false,
+  "resolution": "Auxiliary projected ROI was not an exact resampling support mask. Retain exact source numeral-ROI containment, full C2a source recomposition equality, disjoint native input masks and exact union equality. No source/candidate/geometry changes; no mandatory structural failure established.",
+  "metadata_helper_note": "Default Windows text decoding initially failed before writes; explicit UTF-8 used on retry. No candidate image was changed."
+}

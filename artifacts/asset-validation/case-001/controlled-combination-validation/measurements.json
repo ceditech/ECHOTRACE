@@ -1,0 +1,1642 @@
+{
+  "combination_method": "Exact existing modified assets through unchanged refined B source compositor; independent disjoint native RGB pixel-union equality crosscheck",
+  "source_compatibility": "All three input pairs reproduce exactly from same B0 geometry/source chain",
+  "modification_masks": [
+    {
+      "endpoint": "original",
+      "C1a_mask_pixels": 2581,
+      "C2a_mask_pixels": 1774,
+      "overlap_pixels": 0,
+      "combined_union_pixels": 4355,
+      "outside_union_pixels": 0,
+      "C1a_mask_bbox": [
+        176,
+        257,
+        250,
+        320
+      ],
+      "C2a_mask_bbox": [
+        314,
+        160,
+        738,
+        194
+      ],
+      "B0_to_combined_pixels": 4355,
+      "C1a_to_combined_pixels": 1774,
+      "C2a_to_combined_pixels": 2581,
+      "pixel_delta_equals_source_recomposition": true,
+      "C1a_changed_pixel_identical_B0": null,
+      "C1a_changed_byte_identical_B0": null
+    },
+    {
+      "endpoint": "changed",
+      "C1a_mask_pixels": 0,
+      "C2a_mask_pixels": 1772,
+      "overlap_pixels": 0,
+      "combined_union_pixels": 1772,
+      "outside_union_pixels": 0,
+      "C1a_mask_bbox": null,
+      "C2a_mask_bbox": [
+        312,
+        160,
+        742,
+        194
+      ],
+      "B0_to_combined_pixels": 1772,
+      "C1a_to_combined_pixels": 1772,
+      "C2a_to_combined_pixels": 0,
+      "pixel_delta_equals_source_recomposition": true,
+      "C1a_changed_pixel_identical_B0": true,
+      "C1a_changed_byte_identical_B0": true
+    }
+  ],
+  "pair_changed_pixels": 15413,
+  "event_regions": [
+    {
+      "event_region": "passport_removal",
+      "ROI": [
+        160,
+        240,
+        270,
+        335
+      ],
+      "changed_pixels": 2893,
+      "difference_bbox": [
+        174,
+        257,
+        250,
+        321
+      ]
+    },
+    {
+      "event_region": "left_numeral_exchange",
+      "ROI": [
+        290,
+        130,
+        382,
+        225
+      ],
+      "changed_pixels": 1278,
+      "difference_bbox": [
+        312,
+        160,
+        358,
+        194
+      ]
+    },
+    {
+      "event_region": "right_numeral_exchange",
+      "ROI": [
+        674,
+        130,
+        766,
+        225
+      ],
+      "changed_pixels": 1277,
+      "difference_bbox": [
+        696,
+        160,
+        742,
+        194
+      ]
+    },
+    {
+      "event_region": "wallet_departure",
+      "ROI": [
+        310,
+        245,
+        425,
+        330
+      ],
+      "changed_pixels": 4985,
+      "difference_bbox": [
+        313,
+        253,
+        418,
+        324
+      ]
+    },
+    {
+      "event_region": "wallet_arrival",
+      "ROI": [
+        665,
+        245,
+        780,
+        330
+      ],
+      "changed_pixels": 4980,
+      "difference_bbox": [
+        668,
+        253,
+        773,
+        324
+      ]
+    }
+  ],
+  "unexplained_difference_pixels": 0,
+  "outside_event_alpha_pixels": 0,
+  "character_difference_pixels": 0,
+  "quantitative": [
+    {
+      "id": "B0",
+      "rows": [
+        {
+          "width": 960,
+          "ideal_CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_solid_CSS": [
+            71.0,
+            60.0
+          ],
+          "cover_sample": {
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ],
+            "samples": 35,
+            "median_luminance": 0.007306010953803637
+          },
+          "mat_sample": {
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ],
+            "samples": 168,
+            "median_luminance": 0.008778931632935704
+          },
+          "cover_mat_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                340,
+                237
+              ],
+              "contrast_proxy": 10.10326152924917,
+              "samples": 577,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                337,
+                216
+              ],
+              "contrast_proxy": 9.914694373427453,
+              "samples": 553,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "ideal_CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_solid_CSS": [
+            23.666666666666668,
+            20.0
+          ],
+          "cover_sample": {
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ],
+            "samples": 4,
+            "median_luminance": 0.007391234501940991
+          },
+          "mat_sample": {
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ],
+            "samples": 20,
+            "median_luminance": 0.008452873035147558
+          },
+          "cover_mat_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                31,
+                22
+              ],
+              "contrast_proxy": 8.536102827298715,
+              "samples": 53,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                33,
+                22
+              ],
+              "contrast_proxy": 8.752723639729556,
+              "samples": 55,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "ideal_CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_solid_CSS": [
+            28.84375,
+            24.375
+          ],
+          "cover_sample": {
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ],
+            "samples": 6,
+            "median_luminance": 0.007678550989509698
+          },
+          "mat_sample": {
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ],
+            "samples": 30,
+            "median_luminance": 0.008416619022786322
+          },
+          "cover_mat_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                58,
+                31
+              ],
+              "contrast_proxy": 7.819048042597899,
+              "samples": 89,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                60,
+                38
+              ],
+              "contrast_proxy": 6.52893746137409,
+              "samples": 98,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "ideal_CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_solid_CSS": [
+            31.802083333333332,
+            26.875
+          ],
+          "cover_sample": {
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ],
+            "samples": 9,
+            "median_luminance": 0.007666201305186793
+          },
+          "mat_sample": {
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ],
+            "samples": 42,
+            "median_luminance": 0.008522293054655532
+          },
+          "cover_mat_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                64,
+                38
+              ],
+              "contrast_proxy": 9.947351007545926,
+              "samples": 102,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                65,
+                46
+              ],
+              "contrast_proxy": 9.091322249353246,
+              "samples": 111,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        }
+      ],
+      "native_passport_boundary_bands": [
+        {
+          "samples": 507,
+          "median_luminance": 0.0263972828606333
+        },
+        {
+          "samples": 543,
+          "median_luminance": 0.01630487657826976
+        }
+      ],
+      "native_boundary_proxy": 1.1522121268177
+    },
+    {
+      "id": "C1a",
+      "rows": [
+        {
+          "width": 960,
+          "ideal_CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_solid_CSS": [
+            71.0,
+            60.0
+          ],
+          "cover_sample": {
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ],
+            "samples": 35,
+            "median_luminance": 0.016204499499998574
+          },
+          "mat_sample": {
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ],
+            "samples": 168,
+            "median_luminance": 0.008778931632935704
+          },
+          "cover_mat_proxy": 1.1263304327039194,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                340,
+                237
+              ],
+              "contrast_proxy": 10.10326152924917,
+              "samples": 577,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                337,
+                216
+              ],
+              "contrast_proxy": 9.914694373427453,
+              "samples": 553,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "ideal_CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_solid_CSS": [
+            23.666666666666668,
+            20.0
+          ],
+          "cover_sample": {
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ],
+            "samples": 4,
+            "median_luminance": 0.016111911420590118
+          },
+          "mat_sample": {
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ],
+            "samples": 20,
+            "median_luminance": 0.008452873035147558
+          },
+          "cover_mat_proxy": 1.131029288856977,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                31,
+                22
+              ],
+              "contrast_proxy": 8.536102827298715,
+              "samples": 53,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                33,
+                22
+              ],
+              "contrast_proxy": 8.752723639729556,
+              "samples": 55,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "ideal_CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_solid_CSS": [
+            28.84375,
+            24.375
+          ],
+          "cover_sample": {
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ],
+            "samples": 6,
+            "median_luminance": 0.016708715218244116
+          },
+          "mat_sample": {
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ],
+            "samples": 30,
+            "median_luminance": 0.008416619022786322
+          },
+          "cover_mat_proxy": 1.1419475542092454,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                58,
+                31
+              ],
+              "contrast_proxy": 7.819048042597899,
+              "samples": 89,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                60,
+                38
+              ],
+              "contrast_proxy": 6.52893746137409,
+              "samples": 98,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "ideal_CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_solid_CSS": [
+            31.802083333333332,
+            26.875
+          ],
+          "cover_sample": {
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ],
+            "samples": 9,
+            "median_luminance": 0.01625939944183237
+          },
+          "mat_sample": {
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ],
+            "samples": 42,
+            "median_luminance": 0.008522293054655532
+          },
+          "cover_mat_proxy": 1.1322078473574326,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                64,
+                38
+              ],
+              "contrast_proxy": 9.947351007545926,
+              "samples": 102,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                65,
+                46
+              ],
+              "contrast_proxy": 9.091322249353246,
+              "samples": 111,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        }
+      ],
+      "native_passport_boundary_bands": [
+        {
+          "samples": 507,
+          "median_luminance": 0.03955969201252455
+        },
+        {
+          "samples": 543,
+          "median_luminance": 0.016403970550469937
+        }
+      ],
+      "native_boundary_proxy": 1.348709892949176
+    },
+    {
+      "id": "C2a",
+      "rows": [
+        {
+          "width": 960,
+          "ideal_CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_solid_CSS": [
+            71.0,
+            60.0
+          ],
+          "cover_sample": {
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ],
+            "samples": 35,
+            "median_luminance": 0.007306010953803637
+          },
+          "mat_sample": {
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ],
+            "samples": 168,
+            "median_luminance": 0.008778931632935704
+          },
+          "cover_mat_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                340,
+                237
+              ],
+              "contrast_proxy": 12.230570105750731,
+              "samples": 577,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                337,
+                216
+              ],
+              "contrast_proxy": 12.029363152742038,
+              "samples": 553,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "ideal_CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_solid_CSS": [
+            23.666666666666668,
+            20.0
+          ],
+          "cover_sample": {
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ],
+            "samples": 4,
+            "median_luminance": 0.007391234501940991
+          },
+          "mat_sample": {
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ],
+            "samples": 20,
+            "median_luminance": 0.008452873035147558
+          },
+          "cover_mat_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                31,
+                22
+              ],
+              "contrast_proxy": 10.228169179036563,
+              "samples": 53,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                33,
+                22
+              ],
+              "contrast_proxy": 10.495840201069509,
+              "samples": 55,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "ideal_CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_solid_CSS": [
+            28.84375,
+            24.375
+          ],
+          "cover_sample": {
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ],
+            "samples": 6,
+            "median_luminance": 0.007678550989509698
+          },
+          "mat_sample": {
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ],
+            "samples": 30,
+            "median_luminance": 0.008416619022786322
+          },
+          "cover_mat_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                58,
+                31
+              ],
+              "contrast_proxy": 9.401136849616755,
+              "samples": 89,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                60,
+                38
+              ],
+              "contrast_proxy": 7.750963606830612,
+              "samples": 98,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "ideal_CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_solid_CSS": [
+            31.802083333333332,
+            26.875
+          ],
+          "cover_sample": {
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ],
+            "samples": 9,
+            "median_luminance": 0.007666201305186793
+          },
+          "mat_sample": {
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ],
+            "samples": 42,
+            "median_luminance": 0.008522293054655532
+          },
+          "cover_mat_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                64,
+                38
+              ],
+              "contrast_proxy": 11.992116575032197,
+              "samples": 102,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                65,
+                46
+              ],
+              "contrast_proxy": 10.872343543459873,
+              "samples": 111,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        }
+      ],
+      "native_passport_boundary_bands": [
+        {
+          "samples": 507,
+          "median_luminance": 0.0263972828606333
+        },
+        {
+          "samples": 543,
+          "median_luminance": 0.01630487657826976
+        }
+      ],
+      "native_boundary_proxy": 1.1522121268177
+    },
+    {
+      "id": "Combined",
+      "rows": [
+        {
+          "width": 960,
+          "ideal_CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_solid_CSS": [
+            71.0,
+            60.0
+          ],
+          "cover_sample": {
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ],
+            "samples": 35,
+            "median_luminance": 0.016204499499998574
+          },
+          "mat_sample": {
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ],
+            "samples": 168,
+            "median_luminance": 0.008778931632935704
+          },
+          "cover_mat_proxy": 1.1263304327039194,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                340,
+                237
+              ],
+              "contrast_proxy": 12.230570105750731,
+              "samples": 577,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "threshold128_components": [
+                337,
+                216
+              ],
+              "contrast_proxy": 12.029363152742038,
+              "samples": 553,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "ideal_CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_solid_CSS": [
+            23.666666666666668,
+            20.0
+          ],
+          "cover_sample": {
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ],
+            "samples": 4,
+            "median_luminance": 0.016111911420590118
+          },
+          "mat_sample": {
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ],
+            "samples": 20,
+            "median_luminance": 0.008452873035147558
+          },
+          "cover_mat_proxy": 1.131029288856977,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                31,
+                22
+              ],
+              "contrast_proxy": 10.228169179036563,
+              "samples": 53,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "threshold128_components": [
+                33,
+                22
+              ],
+              "contrast_proxy": 10.495840201069509,
+              "samples": 55,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "ideal_CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_solid_CSS": [
+            28.84375,
+            24.375
+          ],
+          "cover_sample": {
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ],
+            "samples": 6,
+            "median_luminance": 0.016708715218244116
+          },
+          "mat_sample": {
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ],
+            "samples": 30,
+            "median_luminance": 0.008416619022786322
+          },
+          "cover_mat_proxy": 1.1419475542092454,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                58,
+                31
+              ],
+              "contrast_proxy": 9.401136849616755,
+              "samples": 89,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "threshold128_components": [
+                60,
+                38
+              ],
+              "contrast_proxy": 7.750963606830612,
+              "samples": 98,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "ideal_CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_solid_CSS": [
+            31.802083333333332,
+            26.875
+          ],
+          "cover_sample": {
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ],
+            "samples": 9,
+            "median_luminance": 0.01625939944183237
+          },
+          "mat_sample": {
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ],
+            "samples": 42,
+            "median_luminance": 0.008522293054655532
+          },
+          "cover_mat_proxy": 1.1322078473574326,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                64,
+                38
+              ],
+              "contrast_proxy": 11.992116575032197,
+              "samples": 102,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "threshold128_components": [
+                65,
+                46
+              ],
+              "contrast_proxy": 10.872343543459873,
+              "samples": 111,
+              "contrast_method": "glyph support versus same-location blank over shared navy underlay; diagnostic only"
+            }
+          ]
+        }
+      ],
+      "native_passport_boundary_bands": [
+        {
+          "samples": 507,
+          "median_luminance": 0.03955969201252455
+        },
+        {
+          "samples": 543,
+          "median_luminance": 0.016403970550469937
+        }
+      ],
+      "native_boundary_proxy": 1.348709892949176
+    }
+  ],
+  "limitations": "Level A calculations, not Level C human recognition or Level D device validation; material/glyph samples are diagnostic proxies",
+  "Pillow_version": "11.3.0",
+  "candidate_outputs": [
+    {
+      "path": "candidate/CCV-C1a-C2a-B0-Original-960.png",
+      "sha256": "d7a4bbb6c141b1c2b9d15c38591f16ff6bc4d80629cad0877ce05a43a2993945",
+      "dimensions": [
+        960,
+        540
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "candidate/CCV-C1a-C2a-B0-Changed-960.png",
+      "sha256": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba",
+      "dimensions": [
+        960,
+        540
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "previews": [
+    {
+      "path": "previews/B0/original-320.png",
+      "sha256": "ab69ae68d261bac1b4fc2cc6c1778a3a1beb8f4fd5cb0771086f167aebda826f",
+      "raster_dimensions": [
+        320,
+        180
+      ],
+      "ideal_CSS_dimensions": [
+        320,
+        180.0
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/B0/original-390.png",
+      "sha256": "e841bd282931524242364f55b31b5acd71a968c230d6483f1866e6eba5d4b64c",
+      "raster_dimensions": [
+        390,
+        219
+      ],
+      "ideal_CSS_dimensions": [
+        390,
+        219.375
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/B0/original-430.png",
+      "sha256": "009532e4782280aff8b5d2a1af0b8c2cf8047a222e4b54d237d27710ecb11a4b",
+      "raster_dimensions": [
+        430,
+        242
+      ],
+      "ideal_CSS_dimensions": [
+        430,
+        241.875
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/B0/changed-320.png",
+      "sha256": "e9452bdacd5df2d52c96ee96bb9a9371ccea7cc54e1787b02ed58d2ee61a5a48",
+      "raster_dimensions": [
+        320,
+        180
+      ],
+      "ideal_CSS_dimensions": [
+        320,
+        180.0
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/B0/changed-390.png",
+      "sha256": "171d0e1b0d8cfaef0aa8b09f1430b51a894d388911d1521dfd486f2310b8165d",
+      "raster_dimensions": [
+        390,
+        219
+      ],
+      "ideal_CSS_dimensions": [
+        390,
+        219.375
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/B0/changed-430.png",
+      "sha256": "1c074bd80e75e9c51b65bd7f759f39b1a09b27f2814d7c902f4642d6c28fcb68",
+      "raster_dimensions": [
+        430,
+        242
+      ],
+      "ideal_CSS_dimensions": [
+        430,
+        241.875
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/Combined/original-320.png",
+      "sha256": "00d21094dc96f034cc00f4ff0d99194b1a8124c7e8e0f7ec7255f6cfce19b1ee",
+      "raster_dimensions": [
+        320,
+        180
+      ],
+      "ideal_CSS_dimensions": [
+        320,
+        180.0
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/Combined/original-390.png",
+      "sha256": "a3715253116db3f3f79e246d4029b3354c1117279bb04cbe6d4b1fa619ec5e4d",
+      "raster_dimensions": [
+        390,
+        219
+      ],
+      "ideal_CSS_dimensions": [
+        390,
+        219.375
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/Combined/original-430.png",
+      "sha256": "19b0e01dece00b8284b54f6d34d4860bcd4cd7ee79abeff7d8cc466f2596997b",
+      "raster_dimensions": [
+        430,
+        242
+      ],
+      "ideal_CSS_dimensions": [
+        430,
+        241.875
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/Combined/changed-320.png",
+      "sha256": "0bfeea180aa4a49d07e09d80a55c5d6799e82ba7fd0dd7d5f1a87c1855c4b0bd",
+      "raster_dimensions": [
+        320,
+        180
+      ],
+      "ideal_CSS_dimensions": [
+        320,
+        180.0
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/Combined/changed-390.png",
+      "sha256": "54ada3e92bb54385d4de44efe8aa925e37fb196002cd02becd9cf3fb6e3daa62",
+      "raster_dimensions": [
+        390,
+        219
+      ],
+      "ideal_CSS_dimensions": [
+        390,
+        219.375
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    },
+    {
+      "path": "previews/Combined/changed-430.png",
+      "sha256": "0e649f6995bec4d4e2bd31fb11d2a11969e732bfef07b9ff80ad1f81f6a3e8ed",
+      "raster_dimensions": [
+        430,
+        242
+      ],
+      "ideal_CSS_dimensions": [
+        430,
+        241.875
+      ],
+      "method": "Single full-frame LANCZOS reduction from native; nearest integer raster height; no crop/sharpen/enhancement"
+    }
+  ],
+  "visual_review": {
+    "completed": true,
+    "level": "B",
+    "status": "CONDITIONAL",
+    "inspected": "Both native combined snapshots, selected six native input snapshots, B0-vs-combined Original/Changed panels at320/390/430",
+    "finding": "Modest passport separation and brighter matched digits preserved; no new halo, label, handling, reaction, clipping or clue occlusion evident. B0 character/table ambiguity and small original details remain.",
+    "recognition_level_C": "NOT VERIFIED; no new human study",
+    "device_level_D": "NOT VERIFIED; no new device test"
+  }
+}
