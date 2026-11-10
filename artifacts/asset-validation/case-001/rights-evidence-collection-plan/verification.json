@@ -1,0 +1,33 @@
+{
+  "documentation_integrity": "PASS",
+  "candidate_expected_hashes_verified_before_after": true,
+  "REV001_audit_counts_reconciled": true,
+  "protected_files": 723,
+  "protected_raw_hashes_unchanged": true,
+  "outside_inventory_unchanged": true,
+  "source_hashes_verified": 119,
+  "captured_HEAD_branch_refs_metadata_unchanged": true,
+  "request_count": 12,
+  "priority_coverage": {
+    "P0": 7,
+    "P1": 4,
+    "P2": 1
+  },
+  "mapped_asset_categories": 18,
+  "request_and_review_states": "NOT REQUESTED / NOT SUPPLIED / NOT REVIEWED",
+  "all_P0_criteria_recorded": true,
+  "local_markdown_links_checked": 46,
+  "JSON_validation": "PASS",
+  "git_diff_check": "PASS",
+  "D01_D04_preserved": true,
+  "D05_D11": "PENDING",
+  "operative_gates_unchanged": true,
+  "collection_executed": false,
+  "provider_contact_external_research_downloads": false,
+  "legal_clearance_or_adoption": false,
+  "production_canonical_artwork_changes": false,
+  "new_human_device_testing": false,
+  "RFS001_execution": false,
+  "T17_T18": false,
+  "commit_push": false
+}

@@ -1,0 +1,729 @@
+{
+  "execution_authorized": false,
+  "requests": [
+    {
+      "id": "ER-P0-01",
+      "gap_id": "P0-01",
+      "priority": "P0",
+      "title": "Background and backpack",
+      "asset_ids": [
+        "A01",
+        "A18"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "No sufficient applicable origin/license/permission grant found",
+      "requested_evidence": "Creator/provider and acquisition record for each file. Applicable full terms, written permission or ownership/assignment record. Link any receipt to its terms and exact item.",
+      "purpose": "Required background/backpack production-use evidence absent",
+      "potential_holder_category": "Original creator, distributor or owner records custodian",
+      "proposed_responsible_role": "Project owner and records custodian",
+      "acceptable_documents": "Dated acquisition record, applicable license text, written permission or assignment",
+      "required_coverage": "Commercial game use, modifications, derivatives, distribution/embedding and conditions for both files.",
+      "source_authentication": "Match original item identifier and acquisition date to the supplied terms and audited file.",
+      "confidentiality": "Redact payment, address and account identifiers.",
+      "related_workstreams": [
+        "P1-02"
+      ],
+      "dependency_note": "Can prepare both source identifications independently. P1-02 helps match provenance.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P0-02",
+      "gap_id": "P0-02",
+      "priority": "P0",
+      "title": "Props and material references",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Referenced public/source assets have technical identity but unknown permission scope",
+      "requested_evidence": "Source and authority records for the public table, mat, passport, wallet and both stands. Applicable permission for each material reference, including the recorded table-proof intermediate. Route character references in A12 through P0-03/P0-04 and generated-output terms through P0-06.",
+      "purpose": "Mandatory public/material reference permissions unresolved",
+      "potential_holder_category": "Creator, distributor or reference records custodian",
+      "proposed_responsible_role": "Design lead and records custodian",
+      "acceptable_documents": "Source record and applicable license, written permission or assignment",
+      "required_coverage": "Each reference used for furniture/mat/booklet/wallet/stand derivation, commercial game use of resulting artwork, modifications, distribution/embedding and conditions.",
+      "source_authentication": "Link every source file and reference step to the exact item covered. Repository/public accessibility establishes file availability.",
+      "confidentiality": "Minimize personal identifiers and purchase details.",
+      "related_workstreams": [
+        "P1-01",
+        "P1-02"
+      ],
+      "dependency_note": "Prop chains can be prepared independently. Shared table/master documents can cover multiple assets if scope is supported.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P0-03",
+      "gap_id": "P0-03",
+      "priority": "P0",
+      "title": "Mara reference authority",
+      "asset_ids": [
+        "A08",
+        "A11"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Owner-supplied/design direction does not prove owner-owned",
+      "requested_evidence": "Origin and authorship of the owner-supplied Mara sheet. Ownership/authority documentation or applicable written permission for that sheet and the earlier pose input where material.",
+      "purpose": "Mara owner-supplied sheet ownership/use authority unresolved",
+      "potential_holder_category": "Reference creator, actual rights holder or owner records custodian",
+      "proposed_responsible_role": "Project owner and design lead",
+      "acceptable_documents": "Original source record plus ownership evidence, assignment, applicable terms or written grant",
+      "required_coverage": "Derivative generation and commercial game use of the selected Mara result, distribution/embedding, attribution and restrictions.",
+      "source_authentication": "Match the active owner sheet hash and pose lineage to the grant. Owner supply establishes custody/design direction.",
+      "confidentiality": "Keep personal details and correspondence restricted. Supply a redacted applicability summary.",
+      "related_workstreams": [
+        "P1-03",
+        "P0-06"
+      ],
+      "dependency_note": "Prepare the reference record independently. Review service output terms alongside input authority.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P0-04",
+      "gap_id": "P0-04",
+      "priority": "P0",
+      "title": "Owen concept, pose and style inputs",
+      "asset_ids": [
+        "A09",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Recorded mixed generated/earlier reference chain lacks applicable grants",
+      "requested_evidence": "Source and authority documentation for the paired concept, prior Owen cutout/pose and any material style inputs. Cross-reference the Mara sheet record where used for style.",
+      "purpose": "Owen concept/pose/style reference rights unresolved",
+      "potential_holder_category": "Concept/reference creator or authorized custodian",
+      "proposed_responsible_role": "Design lead and records custodian",
+      "acceptable_documents": "Dated concept/source record, applicable terms, written permission or assignment",
+      "required_coverage": "Reference use, derivative generation, commercial distribution of the selected Owen result and applicable restrictions.",
+      "source_authentication": "Map each document to the actual input and its role. A separate owner-supplied Owen sheet is NOT VERIFIED.",
+      "confidentiality": "Redact personal identifiers and unrelated concept or correspondence material.",
+      "related_workstreams": [
+        "P0-03",
+        "P0-06",
+        "P1-03"
+      ],
+      "dependency_note": "Prepare concept/pose records independently. Reuse the Mara style-input evidence.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P0-05",
+      "gap_id": "P0-05",
+      "priority": "P0",
+      "title": "Arial Bold raster numeral use",
+      "asset_ids": [
+        "A06",
+        "A07",
+        "A10",
+        "A16"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Font path/hash and rasterization are not license terms; no repo font binary found",
+      "requested_evidence": "Dated font source/entitlement record and complete applicable terms for the recorded Arial Bold raster workflow. Obtain a qualified applicability assessment where required.",
+      "purpose": "Applicable font raster-use evidence missing",
+      "potential_holder_category": "Owner license records custodian or font licensor records",
+      "proposed_responsible_role": "Records custodian and qualified rights reviewer",
+      "acceptable_documents": "License/entitlement record and applicable version of font terms, with written permission if needed",
+      "required_coverage": "Commercial raster glyph output for the stand numerals. Assess font-file embedding, redistribution and font software modification separately and only if relevant to the proposed use.",
+      "source_authentication": "Match terms to the recorded font and acquisition context. Treat fingerprint as historical.",
+      "confidentiality": "Use entitlement excerpts and minimal account metadata. Exclude font binaries and credentials.",
+      "related_workstreams": [
+        "P1-04"
+      ],
+      "dependency_note": "Can prepare independently. Font identity supports matching.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P0-06",
+      "gap_id": "P0-06",
+      "priority": "P0",
+      "title": "Generation-service output terms",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Tool/output logs document creation, not production permissions",
+      "requested_evidence": "Generation-to-output register keyed by each relevant creation record, service identity, applicable terms version/date and evidence of account/use context where material. Include complete applicable output-use provisions.",
+      "purpose": "Generation-service/output-use terms absent from repository evidence",
+      "potential_holder_category": "Owner generation records custodian or service terms records",
+      "proposed_responsible_role": "Project owner and records custodian",
+      "acceptable_documents": "Dated saved terms, service/account entitlement record, generation-to-output index or applicable written permission",
+      "required_coverage": "Output commercial use, derivative scope, restrictions and attribution for the relevant prop, stand master, concept and character outputs.",
+      "source_authentication": "Bind the terms to the generation context and each output. A shared terms document can be reused where applicability matches.",
+      "confidentiality": "Redact credentials, account IDs, unrelated prompts and personal details. Preserve terms version and applicability context.",
+      "related_workstreams": [
+        "P1-01"
+      ],
+      "dependency_note": "Can prepare service records independently of input grants. Generation linkage helps match each output.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P0-07",
+      "gap_id": "P0-07",
+      "priority": "P0",
+      "title": "Derivative and composite scope",
+      "asset_ids": [
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Local derivation integrity does not establish inherited rights for intended commercial distribution",
+      "requested_evidence": "One coverage register for the static layer, B0 pair, C1a, C2a and exact CCV Original/Changed. Reference the applicable upstream grants and service/font records once. Add any separate derivative or distribution permission only where the applicable evidence requires it.",
+      "purpose": "Required derivative/composite production permission scope unresolved",
+      "potential_holder_category": "Project owner, upstream records custodians and designated reviewer",
+      "proposed_responsible_role": "Records custodian and qualified rights reviewer",
+      "acceptable_documents": "Asset/hash-to-document schedule, applicable upstream grants and any required supplemental written permission",
+      "required_coverage": "Commercial distribution of each exact derivative/composite, modification, embedding and inherited conditions and attribution.",
+      "source_authentication": "Compare the register to the REV dependency chain and both candidate hashes. Check whether each grant covers its downstream use.",
+      "confidentiality": "Use restricted evidence IDs and redacted summaries. Keep contractual originals in approved private storage.",
+      "related_workstreams": [
+        "P0-01",
+        "P0-02",
+        "P0-03",
+        "P0-04",
+        "P0-05",
+        "P0-06"
+      ],
+      "dependency_note": "Coverage register can be prepared independently. Completeness depends on applicable upstream evidence.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": [
+        {
+          "criterion": "Every required asset is identified",
+          "current_status": "NOT ESTABLISHED",
+          "note": "Audited IDs and files are mapped. Completeness of upstream identification awaits evidence."
+        },
+        {
+          "criterion": "Source and rights-holder authority is supported",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable permission evidence is supplied",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Intended commercial game use is addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Modification and derivative use are addressed where relevant",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Distribution and embedding are addressed",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Restrictions and attribution are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Applicable upstream dependencies are covered",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Qualified-review questions are recorded",
+          "current_status": "NOT ESTABLISHED"
+        },
+        {
+          "criterion": "Authorized reviewer disposition is recorded",
+          "current_status": "NOT ESTABLISHED"
+        }
+      ]
+    },
+    {
+      "id": "ER-P1-01",
+      "gap_id": "P1-01",
+      "priority": "P1",
+      "title": "Generated-master linkage",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "External output paths recorded but originals not read/permitted here",
+      "requested_evidence": "Dated creation/export record with output identifier and verified hash or other documented linkage to each audited derivative.",
+      "purpose": "External generated-master byte linkage not independently repository-verifiable",
+      "potential_holder_category": "Generation records custodian",
+      "proposed_responsible_role": "Design lead",
+      "acceptable_documents": "Creation/export manifest or authenticated linkage record",
+      "required_coverage": "Master-to-repository linkage for the affected generated assets.",
+      "source_authentication": "Match identifiers, dates and transformations to existing repository records.",
+      "confidentiality": "Use authorized metadata excerpts. Keep external master files out of this planning task.",
+      "related_workstreams": [
+        "P0-06"
+      ],
+      "dependency_note": "Can index existing records independently. Resolving missing links may require records from the same custodian as P0-06.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": []
+    },
+    {
+      "id": "ER-P1-02",
+      "gap_id": "P1-02",
+      "priority": "P1",
+      "title": "Public asset origin and acquisition",
+      "asset_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A18"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Existing file/inventory does not explain initial source acquisition",
+      "requested_evidence": "Creator/provider and acquisition history keyed to the audited background, backpack and public prop files. Cross-reference any acquisition documents proposed under P0-01/P0-02.",
+      "purpose": "Public asset creator/acquisition history incomplete",
+      "potential_holder_category": "Owner acquisition records custodian",
+      "proposed_responsible_role": "Records custodian",
+      "acceptable_documents": "Dated source/acquisition record, original asset index or receipt",
+      "required_coverage": "Source identity and custody for each public asset.",
+      "source_authentication": "Match item ID, version, date and hash where possible.",
+      "confidentiality": "Redact payment and personal details.",
+      "related_workstreams": [
+        "P0-01",
+        "P0-02"
+      ],
+      "dependency_note": "Origin indexing can proceed independently under future authority. Actual documents may be shared with the permission workstreams.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": []
+    },
+    {
+      "id": "ER-P1-03",
+      "gap_id": "P1-03",
+      "priority": "P1",
+      "title": "Character reference version mapping",
+      "asset_ids": [
+        "A08",
+        "A09",
+        "A11",
+        "A12"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Owner sheet differs from related mara-character-reference-v2 file; no active-input link inferred; earlier concept/pose roles recorded but incomplete",
+      "requested_evidence": "Dated mapping from exact active sheet, concept and pose inputs to the selected cutouts. Explain distinct variants and record any unknown edge.",
+      "purpose": "Character reference/version linkage needs exact records",
+      "potential_holder_category": "Character design records custodian",
+      "proposed_responsible_role": "Design lead",
+      "acceptable_documents": "Version manifest, source-linked generation log or contemporaneous design record",
+      "required_coverage": "Selected Mara/Owen input and output linkage, with the separate Mara v2 file kept distinct unless evidence links it.",
+      "source_authentication": "Compare exact hashes and recorded input roles.",
+      "confidentiality": "Minimize identity-related details and restrict confidential references.",
+      "related_workstreams": [
+        "P0-03",
+        "P0-04"
+      ],
+      "dependency_note": "Existing records can be indexed independently. Missing links may require the same source records as the character rights workstreams.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": []
+    },
+    {
+      "id": "ER-P1-04",
+      "gap_id": "P1-04",
+      "priority": "P1",
+      "title": "Font identity and fingerprint",
+      "asset_ids": [
+        "A10",
+        "A16"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "External font not read; no local binary or terms to validate its current identity",
+      "requested_evidence": "Existing authoritative identity/version/entitlement documentation that links the recorded fingerprint to the raster workflow.",
+      "purpose": "Font fingerprint is historical record only",
+      "potential_holder_category": "Font acquisition records custodian",
+      "proposed_responsible_role": "Records custodian",
+      "acceptable_documents": "Version record, entitlement record or dated workflow manifest",
+      "required_coverage": "Identity/version of recorded Arial Bold input and association with numbered outputs.",
+      "source_authentication": "Reference the historical fingerprint and distinguish any later independently verified record.",
+      "confidentiality": "Exclude font binaries, credentials and unnecessary account details.",
+      "related_workstreams": [
+        "P0-05"
+      ],
+      "dependency_note": "Record indexing is independent. Identity confirmation can share entitlement evidence with P0-05.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": []
+    },
+    {
+      "id": "ER-P2-01",
+      "gap_id": "P2-01",
+      "priority": "P2",
+      "title": "Generation path formatting",
+      "asset_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "existing_sources": [
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json",
+        "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json"
+      ],
+      "existing_evidence": "Tool messages contain mixed escaped paths/free-text output fields; readable existing records retained",
+      "requested_evidence": "Optional path index keyed to the original escaped output strings and exact source record lines.",
+      "purpose": "Normalize free-text generation-path formatting for future evidence navigation",
+      "potential_holder_category": "Repository records custodian",
+      "proposed_responsible_role": "Records custodian",
+      "acceptable_documents": "Documentation-only cross-reference",
+      "required_coverage": "Navigation to generation records and known source paths.",
+      "source_authentication": "Preserve originals and distinguish recorded paths from verified files.",
+      "confidentiality": "Redact unnecessary private path segments in shared summaries. ",
+      "related_workstreams": [],
+      "dependency_note": "Independent formatting improvement. It supplies no permission evidence.",
+      "request_status": "NOT REQUESTED",
+      "submission_status": "NOT SUPPLIED",
+      "review_status": "NOT REVIEWED",
+      "acceptance_authority": "Project owner or explicitly designated reviewer under separate authority. Qualified rights reviewer assesses applicability where needed.",
+      "completeness_checklist": []
+    }
+  ]
+}

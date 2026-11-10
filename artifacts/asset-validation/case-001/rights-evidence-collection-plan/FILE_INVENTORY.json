@@ -1,0 +1,100 @@
+{
+  "file_count_including_inventory": 19,
+  "files": [
+    {
+      "path": "asset-evidence-map.json",
+      "bytes": 49705,
+      "sha256": "b7441e81be9fb3fd9511c5800cb4dce6844777dbc30bf71ea214972fc1521eb6"
+    },
+    {
+      "path": "ASSET_TO_EVIDENCE_MAPPING.md",
+      "bytes": 5965,
+      "sha256": "f9d12d84e2f84ac3ebeb55f1b113520df8c98ab033706be91516a32dadf60612"
+    },
+    {
+      "path": "AUTHORIZATION_AND_SCOPE.md",
+      "bytes": 1498,
+      "sha256": "ebf72cd877e4289dded42a90895b4013957d9b1d8e0be8907dce9933aa0644d9"
+    },
+    {
+      "path": "CONFIDENTIALITY_AND_STORAGE_POLICY_PROPOSAL.md",
+      "bytes": 1646,
+      "sha256": "14c0d2b3669a06becaf0614ce5d6f24ddedc6f4d8fcc033b3865d9a1b9ba7f84"
+    },
+    {
+      "path": "D05_OWNER_DECISION_BRIEF.md",
+      "bytes": 1667,
+      "sha256": "aec5285375935903fd917250a2b5b56b7fec70a6eac8f1389dd3cafa0d5c9418"
+    },
+    {
+      "path": "evidence-requests.json",
+      "bytes": 35796,
+      "sha256": "644b492bef02cb733a87dd611c7b14d570ad79071cdf74c99e49a4e7853c7e8a"
+    },
+    {
+      "path": "EVIDENCE_COLLECTION_MASTER_PLAN.md",
+      "bytes": 2365,
+      "sha256": "31f7aec75b9156c19c040b0cef5260b4cd1b0bf6a20e912306a8b28232beb725"
+    },
+    {
+      "path": "EVIDENCE_REVIEW_WORKFLOW.md",
+      "bytes": 2348,
+      "sha256": "e37be803be852cb92c9e956dabc86c94a45ab6b89d25ad4c6fe5b99858126aef"
+    },
+    {
+      "path": "EVIDENCE_SUBMISSION_CHECKLIST.md",
+      "bytes": 2569,
+      "sha256": "3935d00fae5404ded73f4bbf93286171418cec96d3b2e0f2cd9f94ae44f9d0d3"
+    },
+    {
+      "path": "P0_EVIDENCE_REQUEST_MATRIX.md",
+      "bytes": 16571,
+      "sha256": "227fd4be3cf562ef5613b6ba04d722fc1121a37a2ae483585f951405fd97ce39"
+    },
+    {
+      "path": "P1_P2_FOLLOWUP_PLAN.md",
+      "bytes": 6693,
+      "sha256": "3ddbdf683d26d7f2d7277d8c7e324a43918ebf5fbb99435eb304915baead0000"
+    },
+    {
+      "path": "PRODUCTION_ADOPTION_BLOCKERS.md",
+      "bytes": 1432,
+      "sha256": "c3e4d55bfe04a307ea99c76496e7f1eb8caf90afd594f2cc71467fe3e3152ff8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1566,
+      "sha256": "d2326eae3fc6335a33a2a594037842b89b8b04d6cc9c63e53b22f7e4fd055912"
+    },
+    {
+      "path": "review-workflow.json",
+      "bytes": 2248,
+      "sha256": "2d8e72ca49b75099cd6a6d115e2d32c3f17c4676a0eaa6b6f9f5e4e53da6a1d9"
+    },
+    {
+      "path": "RIGHTS_DEPENDENCY_MAP.md",
+      "bytes": 2682,
+      "sha256": "5d8aea9f016e3bd0dd7e79b66f3fa5278e2f4050affa717f692ba6d1a2e75082"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 134971,
+      "sha256": "782ea71494384e55b99312241d3bbbafa4e13f707b7cc9c257c73ab7b88b0dd0"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1081,
+      "sha256": "6040c11135c0d82f9d709d0d48e23df2adffa2aa84673123dff398187cae6cb0"
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "bytes": 1686,
+      "sha256": "bd8e4a41c614e91ebb7a2d5c9407b12255ff3eba2d6af9b314e547b60e025edf"
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "note": "Recursive self hash and size omitted."
+    }
+  ]
+}

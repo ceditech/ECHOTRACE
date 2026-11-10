@@ -1,0 +1,59 @@
+{
+  "active": false,
+  "initial": {
+    "request": "NOT REQUESTED",
+    "submission": "NOT SUPPLIED",
+    "review": "NOT REVIEWED"
+  },
+  "states": {
+    "NOT REQUESTED": "Initial planning state. No authorized request has been issued.",
+    "REQUESTED": "An authorized request was actually issued and logged.",
+    "SUPPLIED": "A specific evidence record was actually received and logged.",
+    "INCOMPLETE": "Material fields, pages, issuer or linkage are missing.",
+    "UNDER REVIEW": "A designated reviewer is assessing the actual submission.",
+    "NEEDS QUALIFIED REVIEW": "Applicability, authority or terms need qualified assessment.",
+    "ACCEPTED AS EVIDENCE": "Authorized reviewer recorded sufficient evidence for a specified purpose and scope.",
+    "REJECTED AS INSUFFICIENT": "Authorized reviewer recorded the unresolved deficiency and reason."
+  },
+  "proposed_steps": [
+    "Identify evidence and map it to request and asset IDs",
+    "Log supplied record and custody metadata",
+    "Match source and exact asset/version",
+    "Assess issuer authority and applicability",
+    "Check commercial game use",
+    "Check derivative and composite scope",
+    "Record restrictions and attribution",
+    "Route unresolved questions to qualified review where needed",
+    "Record authorized acceptance or rejection with scope and reasons",
+    "Seek separate authority for any governance update"
+  ],
+  "transitions": {
+    "NOT REQUESTED": [
+      "REQUESTED",
+      "SUPPLIED"
+    ],
+    "REQUESTED": [
+      "SUPPLIED"
+    ],
+    "SUPPLIED": [
+      "INCOMPLETE",
+      "UNDER REVIEW"
+    ],
+    "INCOMPLETE": [
+      "SUPPLIED"
+    ],
+    "UNDER REVIEW": [
+      "INCOMPLETE",
+      "NEEDS QUALIFIED REVIEW",
+      "ACCEPTED AS EVIDENCE",
+      "REJECTED AS INSUFFICIENT"
+    ],
+    "NEEDS QUALIFIED REVIEW": [
+      "UNDER REVIEW",
+      "INCOMPLETE"
+    ],
+    "ACCEPTED AS EVIDENCE": [],
+    "REJECTED AS INSUFFICIENT": []
+  },
+  "decision_boundary": "Evidence acceptance is scoped to the reviewed record. Legal clearance, governance changes and production approval require their own decisions. Preserve history and create a new review record for a superseding submission."
+}
