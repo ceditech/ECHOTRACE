@@ -1,0 +1,53 @@
+{
+  "documentation_integrity": "PASS",
+  "scope": "Repository-only rights/provenance documentation; no legal clearance",
+  "assets_reviewed": 18,
+  "provenance_counts": {
+    "PROVENANCE PARTIAL": 14,
+    "PROVENANCE VERIFIED": 4
+  },
+  "provenance_verified_scope": "Four repository-local derivation segments only; upstream origin/rights gaps inherited",
+  "rights_evidence_counts": {
+    "RIGHTS EVIDENCE NOT VERIFIED": 18
+  },
+  "applicable_primary_permission_documents_found": 0,
+  "reviewed_nonlicense_records": 7,
+  "gap_priority_counts": {
+    "P0": 7,
+    "P1": 4,
+    "P2": 1
+  },
+  "all_assets_covered_by_critical_P0_prerequisite": true,
+  "operative_G17": "CONDITIONAL",
+  "operative_G18": "BLOCKED",
+  "D05": "PENDING",
+  "D01_D04_ratifications_intact": true,
+  "G20_G22": "NOT AUTHORIZED",
+  "CCV_expected_hashes_verified_before_after": true,
+  "protected_files": 704,
+  "protected_raw_hashes_unchanged": true,
+  "outside_inventory_unchanged": true,
+  "sources_reviewed": 199,
+  "source_hashes_unchanged": true,
+  "FAG001_FAG002_inventory_hashes_unchanged": [
+    23,
+    15
+  ],
+  "captured_HEAD_branch_refs_metadata_unchanged": true,
+  "search_text_files": 359,
+  "search_hit_files": 63,
+  "font_binary_read_or_copied": false,
+  "font_record_fingerprint_only": true,
+  "internet_provider_contact_external_downloads": false,
+  "creation_scripts_or_tests_executed": false,
+  "new_images_code_scripts_tests_or_prototypes": false,
+  "new_human_or_device_tests": false,
+  "JSON_validation": "PASS",
+  "source_backed_classification_consistency": "PASS",
+  "local_markdown_links_checked": 239,
+  "git_diff_check": "PASS",
+  "production_adoption": false,
+  "canonical_modifications": false,
+  "T17_T18": false,
+  "commit_push_performed": false
+}

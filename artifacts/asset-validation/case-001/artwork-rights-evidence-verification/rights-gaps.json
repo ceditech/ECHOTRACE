@@ -1,0 +1,276 @@
+{
+  "priority_definition": "Review/evidence priorities, not legal findings or probability scores",
+  "P0": "Critical required production-use permission prerequisite",
+  "P1": "Important source/reference/derivation documentation dependency",
+  "P2": "Nonblocking record-format improvement only; never used to down-rank mandatory permission gaps",
+  "gaps": [
+    {
+      "id": "P0-01",
+      "priority": "P0",
+      "gap": "Required background/backpack production-use evidence absent",
+      "assets": [
+        "A01",
+        "A18"
+      ],
+      "existing_evidence": "No sufficient applicable origin/license/permission grant found",
+      "required_follow_up": "Supply creator/acquisition/applicable commercial, derivative and embedding permission evidence; qualified review where necessary",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P0-02",
+      "priority": "P0",
+      "gap": "Mandatory public/material reference permissions unresolved",
+      "assets": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A12"
+      ],
+      "existing_evidence": "Referenced public/source assets have technical identity but unknown permission scope",
+      "required_follow_up": "Supply actual reference/source license or written permission and authority chain",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P0-03",
+      "priority": "P0",
+      "gap": "Mara owner-supplied sheet ownership/use authority unresolved",
+      "assets": [
+        "A08",
+        "A11"
+      ],
+      "existing_evidence": "Owner-supplied/design direction does not prove owner-owned",
+      "required_follow_up": "Provide original reference origin/ownership/derivative/commercial permission; no likeness assumption",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P0-04",
+      "priority": "P0",
+      "gap": "Owen concept/pose/style reference rights unresolved",
+      "assets": [
+        "A09",
+        "A12"
+      ],
+      "existing_evidence": "Recorded mixed generated/earlier reference chain lacks applicable grants",
+      "required_follow_up": "Document original reference/process permissions and allowed output use",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P0-05",
+      "priority": "P0",
+      "gap": "Applicable font raster-use evidence missing",
+      "assets": [
+        "A06",
+        "A07",
+        "A10",
+        "A16"
+      ],
+      "existing_evidence": "Font path/hash and rasterization are not license terms; no repo font binary found",
+      "required_follow_up": "Provide applicable terms for proposed raster numeral use; distinguish this from font-file redistribution/embedding and obtain qualified review",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P0-06",
+      "priority": "P0",
+      "gap": "Generation-service/output-use terms absent from repository evidence",
+      "assets": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A12"
+      ],
+      "existing_evidence": "Tool/output logs document creation, not production permissions",
+      "required_follow_up": "Owner/designated reviewer supply applicable provider terms/version and account/use-context evidence under separate authorization",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P0-07",
+      "priority": "P0",
+      "gap": "Required derivative/composite production permission scope unresolved",
+      "assets": [
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17"
+      ],
+      "existing_evidence": "Local derivation integrity does not establish inherited rights for intended commercial distribution",
+      "required_follow_up": "Resolve all necessary upstream grants and derivative/embedding/distribution scope before adoption",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": true,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P1-01",
+      "priority": "P1",
+      "gap": "External generated-master byte linkage not independently repository-verifiable",
+      "assets": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "existing_evidence": "External output paths recorded but originals not read/permitted here",
+      "required_follow_up": "Supply repository-local permitted creation/source records or verified linkage documentation; no external access undertaken",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": false,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P1-02",
+      "priority": "P1",
+      "gap": "Public asset creator/acquisition history incomplete",
+      "assets": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A18"
+      ],
+      "existing_evidence": "Existing file/inventory does not explain initial source acquisition",
+      "required_follow_up": "Complete origin/custody records separately from P0 permission grants",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": false,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P1-03",
+      "priority": "P1",
+      "gap": "Character reference/version linkage needs exact records",
+      "assets": [
+        "A08",
+        "A09",
+        "A11",
+        "A12"
+      ],
+      "existing_evidence": "Owner sheet differs from related mara-character-reference-v2 file; no active-input link inferred; earlier concept/pose roles recorded but incomplete",
+      "required_follow_up": "Clarify version/input mapping from existing or owner-supplied documentation without changing images",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": false,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P1-04",
+      "priority": "P1",
+      "gap": "Font fingerprint is historical record only",
+      "assets": [
+        "A10",
+        "A16"
+      ],
+      "existing_evidence": "External font not read; no local binary or terms to validate its current identity",
+      "required_follow_up": "Owner may supply permitted repository-local identity/permission documentation; no binary acquisition or copying authorized here",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": false,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    },
+    {
+      "id": "P2-01",
+      "priority": "P2",
+      "gap": "Normalize free-text generation-path formatting for future evidence navigation",
+      "assets": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "existing_evidence": "Tool messages contain mixed escaped paths/free-text output fields; readable existing records retained",
+      "required_follow_up": "Optional documentation-only indexing if separately desired; never substitute formatting for missing P0/P1 evidence",
+      "status": "OPEN",
+      "legal_finding": false,
+      "blocks_production_adoption": false,
+      "evidence_sources": [
+        "asset-evidence.json",
+        "source-manifest.json"
+      ],
+      "authority": "Separate owner-approved follow-up only; no outreach, terms lookup, downloads or replacement initiated"
+    }
+  ],
+  "operative_G17": "CONDITIONAL",
+  "operative_G18": "BLOCKED",
+  "D05": "PENDING"
+}
