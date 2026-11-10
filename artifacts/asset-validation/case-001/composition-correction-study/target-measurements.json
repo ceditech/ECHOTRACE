@@ -1,0 +1,998 @@
+{
+  "canonical_A": [
+    {
+      "width": 320,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            28.799999999999997,
+            90.0,
+            86.39999999999999,
+            144.0
+          ],
+          "size": [
+            57.599999999999994,
+            54.0
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            83.2,
+            18.0,
+            140.8,
+            72.0
+          ],
+          "size": [
+            57.599999999999994,
+            54.0
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            211.20000000000002,
+            18.0,
+            268.8,
+            72.0
+          ],
+          "size": [
+            57.599999999999994,
+            54.0
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            211.20000000000002,
+            90.0,
+            268.8,
+            144.0
+          ],
+          "size": [
+            57.599999999999994,
+            54.0
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 18.0,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 126.09139542411293,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 124.80000000000003,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 70.4,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 72.66470945376443,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 18.0,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 18.0,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": true
+    },
+    {
+      "width": 390,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            35.1,
+            109.6875,
+            105.30000000000001,
+            175.5
+          ],
+          "size": [
+            70.2,
+            65.8125
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            101.4,
+            21.9375,
+            171.60000000000002,
+            87.75
+          ],
+          "size": [
+            70.2,
+            65.8125
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            257.40000000000003,
+            21.9375,
+            327.6,
+            87.75
+          ],
+          "size": [
+            70.2,
+            65.8125
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            257.40000000000003,
+            109.6875,
+            327.6,
+            175.5
+          ],
+          "size": [
+            70.2,
+            65.8125
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 21.9375,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 153.6738881731376,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 152.10000000000002,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 85.80000000000001,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 88.56011464677539,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 21.9375,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 21.9375,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": true
+    },
+    {
+      "width": 960,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            86.39999999999999,
+            270.0,
+            259.2,
+            432.0
+          ],
+          "size": [
+            172.79999999999998,
+            162.0
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            249.60000000000002,
+            54.0,
+            422.4,
+            216.0
+          ],
+          "size": [
+            172.79999999999998,
+            162.0
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            633.6,
+            54.0,
+            806.4,
+            216.0
+          ],
+          "size": [
+            172.79999999999998,
+            162.0
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            633.6,
+            270.0,
+            806.4,
+            432.0
+          ],
+          "size": [
+            172.79999999999998,
+            162.0
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 54.0,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 378.27418627233874,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 374.40000000000003,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 211.20000000000005,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 217.9941283612933,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 54.0,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 54.0,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": true
+    }
+  ],
+  "historical_B": [
+    {
+      "width": 320,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            44.800000000000004,
+            74.25,
+            96.0,
+            118.35
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            86.39999999999999,
+            28.800000000000004,
+            137.6,
+            72.9
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            214.4,
+            28.800000000000004,
+            265.6,
+            72.9
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            214.4,
+            74.25,
+            265.6,
+            118.35
+          ],
+          "size": [
+            51.2,
+            44.1
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 1.3499999999999943,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 118.40769611811557,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 118.4,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 76.80000000000001,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 76.81186431795548,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 1.3499999999999943,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 1.3499999999999943,
+      "comfort_size_pass": false,
+      "comfort_gap_pass": false
+    },
+    {
+      "width": 390,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            54.60000000000001,
+            90.4921875,
+            117.0,
+            144.2390625
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            105.29999999999998,
+            35.10000000000001,
+            167.7,
+            88.84687500000001
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            261.3,
+            35.10000000000001,
+            323.7,
+            88.84687500000001
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            261.3,
+            90.4921875,
+            323.7,
+            144.2390625
+          ],
+          "size": [
+            62.4,
+            53.746874999999996
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 1.6453124999999886,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 144.30937964395335,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 144.3,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 93.60000000000002,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 93.61445963750825,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 1.6453124999999886,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 1.6453124999999886,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": false
+    },
+    {
+      "width": 960,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            134.4,
+            222.75000000000003,
+            288.0,
+            355.05
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            259.2,
+            86.4,
+            412.79999999999995,
+            218.7
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            643.2,
+            86.4,
+            796.8000000000001,
+            218.7
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            643.2,
+            222.75000000000003,
+            796.8000000000001,
+            355.05
+          ],
+          "size": [
+            153.6,
+            132.29999999999998
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 4.05000000000004,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 355.22308835434677,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 355.20000000000005,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 230.4000000000001,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 230.4355929538665,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 4.05000000000004,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 4.05000000000004,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": false
+    }
+  ],
+  "proposed_B": [
+    {
+      "width": 320,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            41.6,
+            84.6,
+            99.19999999999999,
+            133.2
+          ],
+          "size": [
+            57.599999999999994,
+            48.6
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            83.2,
+            27.0,
+            140.8,
+            75.6
+          ],
+          "size": [
+            57.599999999999994,
+            48.6
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            211.20000000000002,
+            27.0,
+            268.8,
+            75.6
+          ],
+          "size": [
+            57.599999999999994,
+            48.6
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            211.20000000000002,
+            84.6,
+            268.8,
+            133.2
+          ],
+          "size": [
+            57.599999999999994,
+            48.6
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 9.0,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 112.3610252712212,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 112.00000000000003,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 70.4,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 70.97295259463284,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 9.0,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 9.0,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": true
+    },
+    {
+      "width": 390,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            50.7,
+            103.10624999999999,
+            120.9,
+            162.33749999999998
+          ],
+          "size": [
+            70.2,
+            59.23125
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            101.4,
+            32.90625,
+            171.60000000000002,
+            92.1375
+          ],
+          "size": [
+            70.2,
+            59.23125
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            257.40000000000003,
+            32.90625,
+            327.6,
+            92.1375
+          ],
+          "size": [
+            70.2,
+            59.23125
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            257.40000000000003,
+            103.10624999999999,
+            327.6,
+            162.33749999999998
+          ],
+          "size": [
+            70.2,
+            59.23125
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 10.968749999999986,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 136.9399995493008,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 136.50000000000003,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 85.80000000000001,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 86.49828597470878,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 10.968749999999986,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 10.968749999999986,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": true
+    },
+    {
+      "width": 960,
+      "rectangles": [
+        {
+          "objectId": "object-passport",
+          "xyxy": [
+            124.80000000000001,
+            253.79999999999998,
+            297.6,
+            399.6
+          ],
+          "size": [
+            172.79999999999998,
+            145.8
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "xyxy": [
+            249.60000000000002,
+            81.0,
+            422.4,
+            226.8
+          ],
+          "size": [
+            172.79999999999998,
+            145.8
+          ]
+        },
+        {
+          "objectId": "object-stand-12",
+          "xyxy": [
+            633.6,
+            81.0,
+            806.4,
+            226.8
+          ],
+          "size": [
+            172.79999999999998,
+            145.8
+          ]
+        },
+        {
+          "objectId": "object-star-wallet",
+          "xyxy": [
+            633.6,
+            253.79999999999998,
+            806.4,
+            399.6
+          ],
+          "size": [
+            172.79999999999998,
+            145.8
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-21"
+          ],
+          "gap": 26.99999999999997,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-stand-12"
+          ],
+          "gap": 337.08307581366347,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-passport",
+            "object-star-wallet"
+          ],
+          "gap": 336.0,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-stand-12"
+          ],
+          "gap": 211.20000000000005,
+          "overlap_area": 0.0
+        },
+        {
+          "objects": [
+            "object-stand-21",
+            "object-star-wallet"
+          ],
+          "gap": 212.91885778389855,
+          "overlap_area": 0
+        },
+        {
+          "objects": [
+            "object-stand-12",
+            "object-star-wallet"
+          ],
+          "gap": 26.99999999999997,
+          "overlap_area": 0.0
+        }
+      ],
+      "minimum_gap": 26.99999999999997,
+      "comfort_size_pass": true,
+      "comfort_gap_pass": true
+    }
+  ]
+}

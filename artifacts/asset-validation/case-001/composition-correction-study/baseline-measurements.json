@@ -1,0 +1,1889 @@
+{
+  "canonical_visuals": [
+    {
+      "id": "scene-lounge-before",
+      "background": {
+        "id": "asset-lounge-background"
+      },
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.3,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-table-plant",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-document-mat",
+          "asset": {
+            "id": "asset-document-mat"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.2,
+            "height": 0.3
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "asset": {
+            "id": "asset-owen-backpack"
+          },
+          "position": {
+            "x": 0.92,
+            "y": 0.8
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-passport",
+          "asset": {
+            "id": "asset-passport"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "asset": {
+            "id": "asset-star-wallet"
+          },
+          "position": {
+            "x": 0.38,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "asset": {
+            "id": "asset-stand-12"
+          },
+          "position": {
+            "x": 0.35,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "asset": {
+            "id": "asset-stand-21"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        }
+      ],
+      "interactionRegions": []
+    },
+    {
+      "id": "scene-lounge-after",
+      "background": {
+        "id": "asset-lounge-background"
+      },
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.3,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-table-plant",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-document-mat",
+          "asset": {
+            "id": "asset-document-mat"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.2,
+            "height": 0.3
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "asset": {
+            "id": "asset-owen-backpack"
+          },
+          "position": {
+            "x": 0.92,
+            "y": 0.8
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "asset": {
+            "id": "asset-star-wallet"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "asset": {
+            "id": "asset-stand-12"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "asset": {
+            "id": "asset-stand-21"
+          },
+          "position": {
+            "x": 0.35,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        }
+      ],
+      "interactionRegions": [
+        {
+          "objectId": "object-passport",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.09,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-21",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.26,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "canonical_changes": [
+    {
+      "observationSceneId": "scene-lounge-before",
+      "investigationSceneId": "scene-lounge-after",
+      "significance": "meaningful",
+      "isRequired": true,
+      "id": "change-passport-removed",
+      "kind": "object_removed",
+      "objectId": "object-passport"
+    },
+    {
+      "observationSceneId": "scene-lounge-before",
+      "investigationSceneId": "scene-lounge-after",
+      "significance": "meaningful",
+      "isRequired": true,
+      "id": "change-stands-exchanged",
+      "kind": "object_exchanged",
+      "objectIds": [
+        "object-stand-12",
+        "object-stand-21"
+      ]
+    },
+    {
+      "observationSceneId": "scene-lounge-before",
+      "investigationSceneId": "scene-lounge-after",
+      "significance": "meaningful",
+      "isRequired": true,
+      "id": "change-wallet-moved",
+      "kind": "object_moved",
+      "objectId": "object-star-wallet",
+      "from": {
+        "x": 0.38,
+        "y": 0.65
+      },
+      "to": {
+        "x": 0.75,
+        "y": 0.65
+      }
+    }
+  ],
+  "source_assets": {
+    "table": {
+      "file": "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "alpha_gt0_bbox": [
+        0,
+        56,
+        1280,
+        885
+      ],
+      "alpha_ge128_bbox": [
+        1,
+        87,
+        1279,
+        873
+      ],
+      "transparent_padding_to_solid": [
+        1,
+        87,
+        1,
+        27
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "2417c34daa3cdaf8ee5b3c8b6418b5ce123cf0eb1a657ca148de9bb4c0da85a8"
+    },
+    "document-mat": {
+      "file": "artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png",
+      "dimensions": [
+        800,
+        630
+      ],
+      "alpha_gt0_bbox": [
+        0,
+        21,
+        800,
+        597
+      ],
+      "alpha_ge128_bbox": [
+        6,
+        147,
+        794,
+        474
+      ],
+      "transparent_padding_to_solid": [
+        6,
+        147,
+        6,
+        156
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "655f0f2f8df1f580f5b8e511636910c583a5831a2cfafb27ba054e77fbe33fa9"
+    },
+    "owen-backpack": {
+      "file": "public/assets/cases/case-001/owen-backpack.png",
+      "dimensions": [
+        1278,
+        1230
+      ],
+      "alpha_gt0_bbox": [
+        58,
+        14,
+        1244,
+        1230
+      ],
+      "alpha_ge128_bbox": [
+        109,
+        21,
+        1177,
+        1197
+      ],
+      "transparent_padding_to_solid": [
+        109,
+        21,
+        101,
+        33
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651"
+    },
+    "passport": {
+      "file": "artifacts/asset-validation/case-001/B-art-refinement/passport-candidate.png",
+      "dimensions": [
+        640,
+        540
+      ],
+      "alpha_gt0_bbox": [
+        29,
+        22,
+        625,
+        529
+      ],
+      "alpha_ge128_bbox": [
+        32,
+        25,
+        622,
+        526
+      ],
+      "transparent_padding_to_solid": [
+        32,
+        25,
+        18,
+        14
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "6d53912426aa5a3f1eae2de4a4ab48826c3d8f3e242783083602d96a01429a06"
+    },
+    "star-wallet": {
+      "file": "artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png",
+      "dimensions": [
+        800,
+        540
+      ],
+      "alpha_gt0_bbox": [
+        21,
+        9,
+        784,
+        540
+      ],
+      "alpha_ge128_bbox": [
+        24,
+        12,
+        782,
+        533
+      ],
+      "transparent_padding_to_solid": [
+        24,
+        12,
+        18,
+        7
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "20d9d42b798adf1bc2ba4efee1edba1220df4b21fa9ff03a66702c295d69add6"
+    },
+    "stand-12": {
+      "file": "artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png",
+      "dimensions": [
+        768,
+        648
+      ],
+      "alpha_gt0_bbox": [
+        0,
+        7,
+        757,
+        648
+      ],
+      "alpha_ge128_bbox": [
+        80,
+        34,
+        688,
+        605
+      ],
+      "transparent_padding_to_solid": [
+        80,
+        34,
+        80,
+        43
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "691442aeacbfd0f677b3665ea3e4399cc54fbd596e93344aab680b4fc8fe72ee"
+    },
+    "stand-21": {
+      "file": "artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png",
+      "dimensions": [
+        768,
+        648
+      ],
+      "alpha_gt0_bbox": [
+        0,
+        7,
+        757,
+        648
+      ],
+      "alpha_ge128_bbox": [
+        80,
+        34,
+        688,
+        605
+      ],
+      "transparent_padding_to_solid": [
+        80,
+        34,
+        80,
+        43
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4016cb44452c0876671f3938e7f9a519162c819b54971044d0fdee95464733fc"
+    }
+  },
+  "table_source_surface": [
+    [
+      245,
+      100
+    ],
+    [
+      1040,
+      100
+    ],
+    [
+      1132,
+      123
+    ],
+    [
+      1180,
+      165
+    ],
+    [
+      1244,
+      449
+    ],
+    [
+      1254,
+      520
+    ],
+    [
+      1237,
+      568
+    ],
+    [
+      1200,
+      606
+    ],
+    [
+      1140,
+      636
+    ],
+    [
+      1030,
+      659
+    ],
+    [
+      251,
+      663
+    ],
+    [
+      147,
+      642
+    ],
+    [
+      70,
+      605
+    ],
+    [
+      32,
+      556
+    ],
+    [
+      26,
+      511
+    ],
+    [
+      93,
+      250
+    ],
+    [
+      131,
+      170
+    ],
+    [
+      173,
+      126
+    ]
+  ],
+  "canonical_baseline_rows": [
+    {
+      "scene": "scene-lounge-before",
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-table-window",
+            "asset": {
+              "id": "asset-table"
+            },
+            "position": {
+              "x": 0.3,
+              "y": 0.55
+            },
+            "size": {
+              "width": 0.4,
+              "height": 0.5
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            96,
+            162,
+            480,
+            432
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.3,
+            0.3
+          ],
+          "aspect_scale_ratio": 1.0,
+          "solid_bbox": [
+            96,
+            188,
+            480,
+            424
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                384.0,
+                270.0
+              ],
+              "solid": [
+                384.0,
+                236.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                156.0,
+                109.6875
+              ],
+              "solid": [
+                156.0,
+                95.875
+              ]
+            },
+            "320": {
+              "envelope": [
+                128.0,
+                90.0
+              ],
+              "solid": [
+                128.0,
+                78.66666666666667
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-table-plant",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-table-plant",
+            "asset": {
+              "id": "asset-table"
+            },
+            "position": {
+              "x": 0.75,
+              "y": 0.55
+            },
+            "size": {
+              "width": 0.4,
+              "height": 0.5
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            528,
+            162,
+            912,
+            432
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.3,
+            0.3
+          ],
+          "aspect_scale_ratio": 1.0,
+          "solid_bbox": [
+            528,
+            188,
+            912,
+            424
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                384.0,
+                270.0
+              ],
+              "solid": [
+                384.0,
+                236.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                156.0,
+                109.6875
+              ],
+              "solid": [
+                156.0,
+                95.875
+              ]
+            },
+            "320": {
+              "envelope": [
+                128.0,
+                90.0
+              ],
+              "solid": [
+                128.0,
+                78.66666666666667
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-document-mat",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-document-mat",
+            "asset": {
+              "id": "asset-document-mat"
+            },
+            "position": {
+              "x": 0.18,
+              "y": 0.65
+            },
+            "size": {
+              "width": 0.2,
+              "height": 0.3
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            77,
+            270,
+            269,
+            432
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.24,
+            0.2571428571428571
+          ],
+          "aspect_scale_ratio": 0.9333333333333333,
+          "solid_bbox": [
+            79,
+            308,
+            268,
+            392
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                192.0,
+                162.0
+              ],
+              "solid": [
+                189.0,
+                84.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                78.0,
+                65.8125
+              ],
+              "solid": [
+                76.78125,
+                34.125
+              ]
+            },
+            "320": {
+              "envelope": [
+                64.0,
+                54.0
+              ],
+              "solid": [
+                63.0,
+                28.0
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-owen-backpack",
+            "asset": {
+              "id": "asset-owen-backpack"
+            },
+            "position": {
+              "x": 0.92,
+              "y": 0.8
+            },
+            "size": {
+              "width": 0.1,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            835,
+            384,
+            931,
+            481
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.07511737089201878,
+            0.07886178861788617
+          ],
+          "aspect_scale_ratio": 0.9525192391462176,
+          "solid_bbox": [
+            843,
+            386,
+            923,
+            478
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                96.0,
+                97.19999999999999
+              ],
+              "solid": [
+                80.0,
+                92.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                39.0,
+                39.487500000000004
+              ],
+              "solid": [
+                32.5,
+                37.375
+              ]
+            },
+            "320": {
+              "envelope": [
+                32.0,
+                32.4
+              ],
+              "solid": [
+                26.666666666666668,
+                30.666666666666668
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-passport",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-passport",
+            "asset": {
+              "id": "asset-passport"
+            },
+            "position": {
+              "x": 0.18,
+              "y": 0.65
+            },
+            "size": {
+              "width": 0.1,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            125,
+            302,
+            221,
+            399
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.15,
+            0.17962962962962964
+          ],
+          "aspect_scale_ratio": 0.8350515463917525,
+          "solid_bbox": [
+            130,
+            306,
+            218,
+            397
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                96.0,
+                97.19999999999999
+              ],
+              "solid": [
+                88.0,
+                91.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                39.0,
+                39.487500000000004
+              ],
+              "solid": [
+                35.75,
+                36.96875
+              ]
+            },
+            "320": {
+              "envelope": [
+                32.0,
+                32.4
+              ],
+              "solid": [
+                29.333333333333332,
+                30.333333333333332
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-star-wallet",
+            "asset": {
+              "id": "asset-star-wallet"
+            },
+            "position": {
+              "x": 0.38,
+              "y": 0.65
+            },
+            "size": {
+              "width": 0.12,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            307,
+            302,
+            422,
+            399
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.14375,
+            0.17962962962962964
+          ],
+          "aspect_scale_ratio": 0.8002577319587628,
+          "solid_bbox": [
+            311,
+            304,
+            419,
+            398
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                115.19999999999999,
+                97.19999999999999
+              ],
+              "solid": [
+                108.0,
+                94.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                46.8,
+                39.487500000000004
+              ],
+              "solid": [
+                43.875,
+                38.1875
+              ]
+            },
+            "320": {
+              "envelope": [
+                38.4,
+                32.4
+              ],
+              "solid": [
+                36.0,
+                31.333333333333332
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-stand-12",
+            "asset": {
+              "id": "asset-stand-12"
+            },
+            "position": {
+              "x": 0.35,
+              "y": 0.25
+            },
+            "size": {
+              "width": 0.12,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            278,
+            86,
+            393,
+            183
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.14973958333333334,
+            0.14969135802469136
+          ],
+          "aspect_scale_ratio": 1.0003221649484537,
+          "solid_bbox": [
+            290,
+            91,
+            381,
+            177
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                115.19999999999999,
+                97.19999999999999
+              ],
+              "solid": [
+                91.0,
+                86.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                46.8,
+                39.487500000000004
+              ],
+              "solid": [
+                36.96875,
+                34.9375
+              ]
+            },
+            "320": {
+              "envelope": [
+                38.4,
+                32.4
+              ],
+              "solid": [
+                30.333333333333332,
+                28.666666666666668
+              ]
+            }
+          },
+          "base_contact_point": [
+            335.5,
+            175.06635802469134
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-stand-21",
+            "asset": {
+              "id": "asset-stand-21"
+            },
+            "position": {
+              "x": 0.75,
+              "y": 0.25
+            },
+            "size": {
+              "width": 0.12,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            662,
+            86,
+            777,
+            183
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.14973958333333334,
+            0.14969135802469136
+          ],
+          "aspect_scale_ratio": 1.0003221649484537,
+          "solid_bbox": [
+            674,
+            91,
+            765,
+            177
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                115.19999999999999,
+                97.19999999999999
+              ],
+              "solid": [
+                91.0,
+                86.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                46.8,
+                39.487500000000004
+              ],
+              "solid": [
+                36.96875,
+                34.9375
+              ]
+            },
+            "320": {
+              "envelope": [
+                38.4,
+                32.4
+              ],
+              "solid": [
+                30.333333333333332,
+                28.666666666666668
+              ]
+            }
+          },
+          "base_contact_point": [
+            719.5,
+            175.06635802469134
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "objectId": "object-document-mat",
+          "physical_table": "object-table-window",
+          "method": "flat solid alpha footprint",
+          "footprint_pixels": 14202,
+          "outside_surface_pixels": 6969,
+          "inside_surface_fraction": 0.5092944655682299,
+          "base_anchor_inside_surface": null,
+          "surface_profile_at_anchor": null,
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-passport",
+          "physical_table": "object-table-window",
+          "method": "flat solid alpha footprint",
+          "footprint_pixels": 4903,
+          "outside_surface_pixels": 1843,
+          "inside_surface_fraction": 0.624107689169896,
+          "base_anchor_inside_surface": null,
+          "surface_profile_at_anchor": null,
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-star-wallet",
+          "physical_table": "object-table-window",
+          "method": "flat solid alpha footprint",
+          "footprint_pixels": 6763,
+          "outside_surface_pixels": 2337,
+          "inside_surface_fraction": 0.6544432943959781,
+          "base_anchor_inside_surface": null,
+          "surface_profile_at_anchor": null,
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-stand-12",
+          "physical_table": "object-table-window",
+          "method": "stand lower-base ROI",
+          "footprint_pixels": 1028,
+          "outside_surface_pixels": 1028,
+          "inside_surface_fraction": 0.0,
+          "base_anchor_inside_surface": false,
+          "surface_profile_at_anchor": {
+            "x": 336,
+            "rear_inner_edge_y": 192,
+            "front_inner_edge_y": 360,
+            "anchor_minus_rear_y": -16.93364197530866
+          },
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-stand-21",
+          "physical_table": "object-table-plant",
+          "method": "stand lower-base ROI",
+          "footprint_pixels": 1028,
+          "outside_surface_pixels": 1028,
+          "inside_surface_fraction": 0.0,
+          "base_anchor_inside_surface": false,
+          "surface_profile_at_anchor": {
+            "x": 720,
+            "rear_inner_edge_y": 192,
+            "front_inner_edge_y": 360,
+            "anchor_minus_rear_y": -16.93364197530866
+          },
+          "proxy_pass": false
+        }
+      ],
+      "target_correspondence": [
+        {
+          "objectId": "object-passport",
+          "solid_pixels": 4903,
+          "solid_pixels_outside_target": 0
+        }
+      ],
+      "passport_mat_correspondence": {
+        "passport_solid_pixels": 4903,
+        "outside_mat_solid_pixels": 53
+      },
+      "effective_character_alpha_bbox": [
+        6,
+        116,
+        559,
+        434
+      ],
+      "character_visibility_digest": "a803ccb3294cfe1333268249872afb1e5e6de62f6dfa20e4a3732f18542f4d99"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-table-window",
+            "asset": {
+              "id": "asset-table"
+            },
+            "position": {
+              "x": 0.3,
+              "y": 0.55
+            },
+            "size": {
+              "width": 0.4,
+              "height": 0.5
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            96,
+            162,
+            480,
+            432
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.3,
+            0.3
+          ],
+          "aspect_scale_ratio": 1.0,
+          "solid_bbox": [
+            96,
+            188,
+            480,
+            424
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                384.0,
+                270.0
+              ],
+              "solid": [
+                384.0,
+                236.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                156.0,
+                109.6875
+              ],
+              "solid": [
+                156.0,
+                95.875
+              ]
+            },
+            "320": {
+              "envelope": [
+                128.0,
+                90.0
+              ],
+              "solid": [
+                128.0,
+                78.66666666666667
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-table-plant",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-table-plant",
+            "asset": {
+              "id": "asset-table"
+            },
+            "position": {
+              "x": 0.75,
+              "y": 0.55
+            },
+            "size": {
+              "width": 0.4,
+              "height": 0.5
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            528,
+            162,
+            912,
+            432
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.3,
+            0.3
+          ],
+          "aspect_scale_ratio": 1.0,
+          "solid_bbox": [
+            528,
+            188,
+            912,
+            424
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                384.0,
+                270.0
+              ],
+              "solid": [
+                384.0,
+                236.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                156.0,
+                109.6875
+              ],
+              "solid": [
+                156.0,
+                95.875
+              ]
+            },
+            "320": {
+              "envelope": [
+                128.0,
+                90.0
+              ],
+              "solid": [
+                128.0,
+                78.66666666666667
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-document-mat",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-document-mat",
+            "asset": {
+              "id": "asset-document-mat"
+            },
+            "position": {
+              "x": 0.18,
+              "y": 0.65
+            },
+            "size": {
+              "width": 0.2,
+              "height": 0.3
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            77,
+            270,
+            269,
+            432
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.24,
+            0.2571428571428571
+          ],
+          "aspect_scale_ratio": 0.9333333333333333,
+          "solid_bbox": [
+            79,
+            308,
+            268,
+            392
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                192.0,
+                162.0
+              ],
+              "solid": [
+                189.0,
+                84.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                78.0,
+                65.8125
+              ],
+              "solid": [
+                76.78125,
+                34.125
+              ]
+            },
+            "320": {
+              "envelope": [
+                64.0,
+                54.0
+              ],
+              "solid": [
+                63.0,
+                28.0
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-owen-backpack",
+            "asset": {
+              "id": "asset-owen-backpack"
+            },
+            "position": {
+              "x": 0.92,
+              "y": 0.8
+            },
+            "size": {
+              "width": 0.1,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            835,
+            384,
+            931,
+            481
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.07511737089201878,
+            0.07886178861788617
+          ],
+          "aspect_scale_ratio": 0.9525192391462176,
+          "solid_bbox": [
+            843,
+            386,
+            923,
+            478
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                96.0,
+                97.19999999999999
+              ],
+              "solid": [
+                80.0,
+                92.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                39.0,
+                39.487500000000004
+              ],
+              "solid": [
+                32.5,
+                37.375
+              ]
+            },
+            "320": {
+              "envelope": [
+                32.0,
+                32.4
+              ],
+              "solid": [
+                26.666666666666668,
+                30.666666666666668
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-star-wallet",
+            "asset": {
+              "id": "asset-star-wallet"
+            },
+            "position": {
+              "x": 0.75,
+              "y": 0.65
+            },
+            "size": {
+              "width": 0.12,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            662,
+            302,
+            777,
+            399
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.14375,
+            0.17962962962962964
+          ],
+          "aspect_scale_ratio": 0.8002577319587628,
+          "solid_bbox": [
+            666,
+            304,
+            774,
+            398
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                115.19999999999999,
+                97.19999999999999
+              ],
+              "solid": [
+                108.0,
+                94.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                46.8,
+                39.487500000000004
+              ],
+              "solid": [
+                43.875,
+                38.1875
+              ]
+            },
+            "320": {
+              "envelope": [
+                38.4,
+                32.4
+              ],
+              "solid": [
+                36.0,
+                31.333333333333332
+              ]
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-stand-12",
+            "asset": {
+              "id": "asset-stand-12"
+            },
+            "position": {
+              "x": 0.75,
+              "y": 0.25
+            },
+            "size": {
+              "width": 0.12,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            662,
+            86,
+            777,
+            183
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.14973958333333334,
+            0.14969135802469136
+          ],
+          "aspect_scale_ratio": 1.0003221649484537,
+          "solid_bbox": [
+            674,
+            91,
+            765,
+            177
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                115.19999999999999,
+                97.19999999999999
+              ],
+              "solid": [
+                91.0,
+                86.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                46.8,
+                39.487500000000004
+              ],
+              "solid": [
+                36.96875,
+                34.9375
+              ]
+            },
+            "320": {
+              "envelope": [
+                38.4,
+                32.4
+              ],
+              "solid": [
+                30.333333333333332,
+                28.666666666666668
+              ]
+            }
+          },
+          "base_contact_point": [
+            719.5,
+            175.06635802469134
+          ]
+        },
+        {
+          "objectId": "object-stand-21",
+          "canonical_or_proposed_visual": {
+            "objectId": "object-stand-21",
+            "asset": {
+              "id": "asset-stand-21"
+            },
+            "position": {
+              "x": 0.35,
+              "y": 0.25
+            },
+            "size": {
+              "width": 0.12,
+              "height": 0.18
+            },
+            "rotationDegrees": 0
+          },
+          "envelope_pixels": [
+            278,
+            86,
+            393,
+            183
+          ],
+          "internal_offset_pixels": [
+            0,
+            0
+          ],
+          "image_scale_xy": [
+            0.14973958333333334,
+            0.14969135802469136
+          ],
+          "aspect_scale_ratio": 1.0003221649484537,
+          "solid_bbox": [
+            290,
+            91,
+            381,
+            177
+          ],
+          "sizes": {
+            "960": {
+              "envelope": [
+                115.19999999999999,
+                97.19999999999999
+              ],
+              "solid": [
+                91.0,
+                86.0
+              ]
+            },
+            "390": {
+              "envelope": [
+                46.8,
+                39.487500000000004
+              ],
+              "solid": [
+                36.96875,
+                34.9375
+              ]
+            },
+            "320": {
+              "envelope": [
+                38.4,
+                32.4
+              ],
+              "solid": [
+                30.333333333333332,
+                28.666666666666668
+              ]
+            }
+          },
+          "base_contact_point": [
+            335.5,
+            175.06635802469134
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "objectId": "object-document-mat",
+          "physical_table": "object-table-window",
+          "method": "flat solid alpha footprint",
+          "footprint_pixels": 14202,
+          "outside_surface_pixels": 6969,
+          "inside_surface_fraction": 0.5092944655682299,
+          "base_anchor_inside_surface": null,
+          "surface_profile_at_anchor": null,
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-star-wallet",
+          "physical_table": "object-table-plant",
+          "method": "flat solid alpha footprint",
+          "footprint_pixels": 6763,
+          "outside_surface_pixels": 2318,
+          "inside_surface_fraction": 0.6572526985065799,
+          "base_anchor_inside_surface": null,
+          "surface_profile_at_anchor": null,
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-stand-12",
+          "physical_table": "object-table-plant",
+          "method": "stand lower-base ROI",
+          "footprint_pixels": 1028,
+          "outside_surface_pixels": 1028,
+          "inside_surface_fraction": 0.0,
+          "base_anchor_inside_surface": false,
+          "surface_profile_at_anchor": {
+            "x": 720,
+            "rear_inner_edge_y": 192,
+            "front_inner_edge_y": 360,
+            "anchor_minus_rear_y": -16.93364197530866
+          },
+          "proxy_pass": false
+        },
+        {
+          "objectId": "object-stand-21",
+          "physical_table": "object-table-window",
+          "method": "stand lower-base ROI",
+          "footprint_pixels": 1028,
+          "outside_surface_pixels": 1028,
+          "inside_surface_fraction": 0.0,
+          "base_anchor_inside_surface": false,
+          "surface_profile_at_anchor": {
+            "x": 336,
+            "rear_inner_edge_y": 192,
+            "front_inner_edge_y": 360,
+            "anchor_minus_rear_y": -16.93364197530866
+          },
+          "proxy_pass": false
+        }
+      ],
+      "target_correspondence": [
+        {
+          "objectId": "object-stand-21",
+          "solid_pixels": 6673,
+          "solid_pixels_outside_target": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "solid_pixels": 6673,
+          "solid_pixels_outside_target": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "solid_pixels": 6763,
+          "solid_pixels_outside_target": 0
+        }
+      ],
+      "passport_mat_correspondence": null,
+      "effective_character_alpha_bbox": [
+        6,
+        116,
+        559,
+        434
+      ],
+      "character_visibility_digest": "a803ccb3294cfe1333268249872afb1e5e6de62f6dfa20e4a3732f18542f4d99"
+    }
+  ]
+}

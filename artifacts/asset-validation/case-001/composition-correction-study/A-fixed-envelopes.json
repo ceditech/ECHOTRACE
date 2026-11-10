@@ -1,0 +1,324 @@
+{
+  "status": "OFFLINE_INTERNAL_ALIGNMENT_ONLY",
+  "scenes": [
+    {
+      "id": "scene-lounge-before",
+      "background": {
+        "id": "asset-lounge-background"
+      },
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.3,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-table-plant",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-document-mat",
+          "asset": {
+            "id": "asset-document-mat"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.2,
+            "height": 0.3
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "asset": {
+            "id": "asset-owen-backpack"
+          },
+          "position": {
+            "x": 0.92,
+            "y": 0.8
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-passport",
+          "asset": {
+            "id": "asset-passport"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "asset": {
+            "id": "asset-star-wallet"
+          },
+          "position": {
+            "x": 0.38,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "asset": {
+            "id": "asset-stand-12"
+          },
+          "position": {
+            "x": 0.35,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "asset": {
+            "id": "asset-stand-21"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        }
+      ],
+      "interactionRegions": []
+    },
+    {
+      "id": "scene-lounge-after",
+      "background": {
+        "id": "asset-lounge-background"
+      },
+      "visuals": [
+        {
+          "objectId": "object-table-window",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.3,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-table-plant",
+          "asset": {
+            "id": "asset-table"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.55
+          },
+          "size": {
+            "width": 0.4,
+            "height": 0.5
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-document-mat",
+          "asset": {
+            "id": "asset-document-mat"
+          },
+          "position": {
+            "x": 0.18,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.2,
+            "height": 0.3
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-owen-backpack",
+          "asset": {
+            "id": "asset-owen-backpack"
+          },
+          "position": {
+            "x": 0.92,
+            "y": 0.8
+          },
+          "size": {
+            "width": 0.1,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-star-wallet",
+          "asset": {
+            "id": "asset-star-wallet"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.65
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-12",
+          "asset": {
+            "id": "asset-stand-12"
+          },
+          "position": {
+            "x": 0.75,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        },
+        {
+          "objectId": "object-stand-21",
+          "asset": {
+            "id": "asset-stand-21"
+          },
+          "position": {
+            "x": 0.35,
+            "y": 0.25
+          },
+          "size": {
+            "width": 0.12,
+            "height": 0.18
+          },
+          "rotationDegrees": 0
+        }
+      ],
+      "interactionRegions": [
+        {
+          "objectId": "object-passport",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.09,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-21",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.26,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-stand-12",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.1
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        },
+        {
+          "objectId": "object-star-wallet",
+          "geometry": {
+            "kind": "rectangle",
+            "origin": {
+              "x": 0.66,
+              "y": 0.5
+            },
+            "size": {
+              "width": 0.18,
+              "height": 0.3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "canonical_envelopes_and_regions_unchanged": true,
+  "experiments": {
+    "A1": {
+      "table_offset_y": 0,
+      "mat_factor": 0.9,
+      "passport_factor": 0.85,
+      "wallet_factor": 0.85,
+      "flat_alignment": "top within canonical envelope; uniform contain; horizontal center",
+      "stands": "shift down to align solid bottom with envelope bottom"
+    },
+    "A2": {
+      "table_offset_y": -20,
+      "mat_factor": 0.6,
+      "passport_factor": 0.48,
+      "wallet_factor": 0.48,
+      "flat_alignment": "top within canonical envelope; uniform contain; horizontal center",
+      "stands": "shift down to align solid bottom with envelope bottom"
+    }
+  }
+}

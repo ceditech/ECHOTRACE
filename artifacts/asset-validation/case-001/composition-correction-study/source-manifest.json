@@ -1,0 +1,33 @@
+{
+  "source_files": {
+    "artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png": "655f0f2f8df1f580f5b8e511636910c583a5831a2cfafb27ba054e77fbe33fa9",
+    "artifacts/asset-validation/case-001/B-art-refinement/passport-candidate.png": "6d53912426aa5a3f1eae2de4a4ab48826c3d8f3e242783083602d96a01429a06",
+    "artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png": "691442aeacbfd0f677b3665ea3e4399cc54fbd596e93344aab680b4fc8fe72ee",
+    "artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png": "4016cb44452c0876671f3938e7f9a519162c819b54971044d0fdee95464733fc",
+    "artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png": "20d9d42b798adf1bc2ba4efee1edba1220df4b21fa9ff03a66702c295d69add6",
+    "artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png": "2417c34daa3cdaf8ee5b3c8b6418b5ce123cf0eb1a657ca148de9bb4c0da85a8",
+    "artifacts/asset-validation/case-001/character-placement-proof/static-character-layer.png": "9a2adff0ad0e35b7cfa16e891936ffe66c44e55e6e739e1ab4185fdf581244d4",
+    "docs/cases/CASE_001_THE_MISSING_PASSPORT.md": "295452c3d2cd411057e979560528c6b07d4c135b51b739f00717bcfb9c929626",
+    "public/assets/cases/case-001/lounge-background.webp": "394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d",
+    "public/assets/cases/case-001/owen-backpack.png": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651",
+    "src/cases/content/case-001/case.json": "0c6a1387d3c619ac03cdba9df97a4efdd2823de26d2f83367b19dbf36b8fe976"
+  },
+  "reviewed_reference_files": {
+    "AGENTS.md": "988553f561698619d8269ad1996f8ccf9d653ef9f16d4abd473c97c15497cecf",
+    "ARCHITECTURE.md": "c154ebe5936e843e9bc2b83dea7e1afc839334540f1658b81d9b532283156699",
+    "GAME_SPEC.md": "b1a76b1526b0534aa8db0ee12f5c3cb585fd9026e24293b28529bd7a4c9623eb",
+    "TESTING_STRATEGY.md": "f229c6ce970205944fcc50a24c32f9fbef306e940788d090f3978b95eb745f91",
+    "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+    "artifacts/asset-validation/case-001/character-placement-proof/REPORT.md": "1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65",
+    "artifacts/asset-validation/case-001/mobile-usability-study/README.md": "92a98375b9bbb4cb5f9e59c0a21244da13c42c416a5ddecfe35ff869bcd021a2",
+    "artifacts/asset-validation/case-001/mobile-usability-study/AUDIT_REPORT.md": "41d146dc7d7b6f94c8d1714681729e6669a4a416767e99a7618b63690ee0a533",
+    "artifacts/asset-validation/case-001/mobile-usability-study/REVISION_PLAN.md": "6d73c90151cfc5748370417f1d863095ae6c243bced2409da32c042277a145ba",
+    "artifacts/asset-validation/case-001/mobile-presentation-spec/MPS_001.md": "787e2dbd3797795dabafc13950798dedad516d5ab38b9fda4da33151f4f4e098",
+    "artifacts/asset-validation/case-001/mobile-presentation-spec/INTERACTION_CONTRACT.md": "b363959e9e9d26807f0263afa3f038e7d1f7319d63d7b69973c782ee9b81c4ed",
+    "artifacts/asset-validation/case-001/mobile-verification-prototype/OWNER_APPROVAL_RECORD.md": "df7e9152436e9d7e084ded2e60325dea9740dd158dee1ab5e4a04484fa8a486e",
+    "artifacts/asset-validation/case-001/mobile-verification-prototype/TEST_REPORT.md": "a6efad62b05489454c396804c5ebaa813419f24d0d3c1b24ab7173e14f1d3ca6",
+    "artifacts/asset-validation/case-001/mobile-verification-prototype/OPEN_ISSUES.md": "b7adde190de2ce8865d304eea62c797cb695d12238c1a695da880ed5a5b03996",
+    "artifacts/asset-validation/case-001/mobile-verification-prototype/MOBILE_READABILITY_REPORT.md": "89ff9dde15a9a6bfdd0af8c2aa9d9d2ef474bd1a810b57e3338a3f6861015a5b"
+  },
+  "method": "Existing raster layers; deterministic resizing/internal alignment only. No regeneration, retouch, new shadows, props or identity changes. Same source bytes across endpoints."
+}

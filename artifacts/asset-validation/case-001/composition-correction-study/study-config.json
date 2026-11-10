@@ -1,0 +1,119 @@
+{
+  "canvas": [
+    960,
+    540
+  ],
+  "surface_source_polygon": [
+    [
+      245,
+      100
+    ],
+    [
+      1040,
+      100
+    ],
+    [
+      1132,
+      123
+    ],
+    [
+      1180,
+      165
+    ],
+    [
+      1244,
+      449
+    ],
+    [
+      1254,
+      520
+    ],
+    [
+      1237,
+      568
+    ],
+    [
+      1200,
+      606
+    ],
+    [
+      1140,
+      636
+    ],
+    [
+      1030,
+      659
+    ],
+    [
+      251,
+      663
+    ],
+    [
+      147,
+      642
+    ],
+    [
+      70,
+      605
+    ],
+    [
+      32,
+      556
+    ],
+    [
+      26,
+      511
+    ],
+    [
+      93,
+      250
+    ],
+    [
+      131,
+      170
+    ],
+    [
+      173,
+      126
+    ]
+  ],
+  "surface_source_dimensions": [
+    1280,
+    900
+  ],
+  "stand_foot_source_roi": [
+    100,
+    525,
+    668,
+    605
+  ],
+  "stand_base_anchor_source": [
+    384,
+    595
+  ],
+  "surface_method": "Manually traced inner marble plane. Flat solid alpha footprint and stand base ROI are compared with this mask; visual inspection is independent.",
+  "contact_proxy_goals": {
+    "flat_inside_fraction": 0.98,
+    "stand_foot_inside_fraction": 0.95
+  },
+  "A1": {
+    "table_offset_y": 0,
+    "mat_factor": 0.9,
+    "passport_factor": 0.85,
+    "wallet_factor": 0.85,
+    "flat_alignment": "top within canonical envelope; uniform contain; horizontal center",
+    "stands": "shift down to align solid bottom with envelope bottom"
+  },
+  "A2": {
+    "table_offset_y": -20,
+    "mat_factor": 0.6,
+    "passport_factor": 0.48,
+    "wallet_factor": 0.48,
+    "flat_alignment": "top within canonical envelope; uniform contain; horizontal center",
+    "stands": "shift down to align solid bottom with envelope bottom"
+  },
+  "B": {
+    "status": "OFFLINE_PROPOSAL_NOT_CANONICAL",
+    "rationale": "Native candidate aspect ratios; smallest bounded reference composition with modest document/wallet size retained and independently separated targets"
+  }
+}

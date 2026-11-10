@@ -1,0 +1,1167 @@
+{
+  "method": "Hand-selected source material ROI mapped into each rendered original; median sRGB relative luminance ratios. Mobile sample patches can be 1 pixel and are unstable proxies, not whole-object/edge contrast or WCAG compliance.",
+  "source_rois": {
+    "passport_cover": [
+      "object-passport",
+      [
+        380,
+        365,
+        440,
+        405
+      ]
+    ],
+    "adjacent_mat": [
+      "object-document-mat",
+      [
+        650,
+        260,
+        710,
+        310
+      ]
+    ],
+    "stand_gold": [
+      "object-stand-12",
+      [
+        280,
+        260,
+        330,
+        350
+      ]
+    ],
+    "stand_face": [
+      "object-stand-12",
+      [
+        180,
+        250,
+        220,
+        320
+      ]
+    ],
+    "wallet_star": [
+      "object-star-wallet",
+      [
+        300,
+        195,
+        330,
+        225
+      ]
+    ],
+    "wallet_leather": [
+      "object-star-wallet",
+      [
+        155,
+        185,
+        185,
+        215
+      ]
+    ],
+    "strap_light": [
+      "object-star-wallet",
+      [
+        575,
+        130,
+        595,
+        180
+      ]
+    ],
+    "strap_dark": [
+      "object-star-wallet",
+      [
+        525,
+        130,
+        540,
+        180
+      ]
+    ]
+  },
+  "measurements": {
+    "baseline": {
+      "960": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              182,
+              368,
+              191,
+              375
+            ],
+            "sample_count": 63,
+            "median_luminance": 0.007306010953803637
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              233,
+              337,
+              247,
+              350
+            ],
+            "sample_count": 182,
+            "median_luminance": 0.008777548234658214
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              320,
+              125,
+              327,
+              138
+            ],
+            "sample_count": 91,
+            "median_luminance": 0.08706504572602053
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              305,
+              123,
+              311,
+              134
+            ],
+            "sample_count": 66,
+            "median_luminance": 0.026332217033908256
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              350,
+              337,
+              354,
+              342
+            ],
+            "sample_count": 20,
+            "median_luminance": 0.6392596570404354
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              329,
+              335,
+              334,
+              341
+            ],
+            "sample_count": 30,
+            "median_luminance": 0.09299979033509649
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              390,
+              325,
+              393,
+              334
+            ],
+            "sample_count": 27,
+            "median_luminance": 0.31775000150989924
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              382,
+              325,
+              385,
+              334
+            ],
+            "sample_count": 27,
+            "median_luminance": 0.023151084061031592
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.025678585132035,
+          "numeral_face": 1.7956382121736822,
+          "star_leather": 4.82000466871503,
+          "stripe_light_dark": 5.027266598032602
+        }
+      },
+      "390": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              74,
+              149,
+              78,
+              152
+            ],
+            "sample_count": 12,
+            "median_luminance": 0.007443414654320569
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              95,
+              137,
+              101,
+              142
+            ],
+            "sample_count": 30,
+            "median_luminance": 0.008645000808221703
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              130,
+              51,
+              133,
+              56
+            ],
+            "sample_count": 15,
+            "median_luminance": 0.1808954748791123
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              124,
+              50,
+              126,
+              54
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.02766559880528561
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              142,
+              137,
+              144,
+              139
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.48623032120684884
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              134,
+              136,
+              136,
+              138
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.08042448450110623
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              158,
+              132,
+              159,
+              136
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.6496495560215206
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              155,
+              132,
+              156,
+              136
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.016446143257924865
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0209177354990466,
+          "numeral_face": 2.972943985895059,
+          "star_leather": 4.111423735029605,
+          "stripe_light_dark": 10.529573602273375
+        }
+      },
+      "320": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              61,
+              123,
+              64,
+              125
+            ],
+            "sample_count": 6,
+            "median_luminance": 0.007709836584460027
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              78,
+              112,
+              82,
+              117
+            ],
+            "sample_count": 20,
+            "median_luminance": 0.008811240813224486
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              107,
+              42,
+              109,
+              46
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.3682517316233101
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              102,
+              41,
+              104,
+              45
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.027998110966017987
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              117,
+              112,
+              118,
+              114
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.5691351855233635
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              110,
+              112,
+              111,
+              114
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.0779307140198224
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              130,
+              108,
+              131,
+              111
+            ],
+            "sample_count": 3,
+            "median_luminance": 0.33563297158362054
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              127,
+              108,
+              128,
+              111
+            ],
+            "sample_count": 3,
+            "median_luminance": 0.01603333772468039
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0190852078943686,
+          "numeral_face": 5.362331554485119,
+          "star_leather": 4.839613303709308,
+          "stripe_light_dark": 5.839973941518447
+        }
+      }
+    },
+    "A1": {
+      "960": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              181,
+              349,
+              188,
+              354
+            ],
+            "sample_count": 35,
+            "median_luminance": 0.00737054079050612
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              228,
+              326,
+              241,
+              337
+            ],
+            "sample_count": 143,
+            "median_luminance": 0.008511069983507702
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              320,
+              131,
+              327,
+              144
+            ],
+            "sample_count": 91,
+            "median_luminance": 0.08706504572602053
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              305,
+              129,
+              311,
+              140
+            ],
+            "sample_count": 66,
+            "median_luminance": 0.026332217033908256
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              352,
+              326,
+              355,
+              330
+            ],
+            "sample_count": 12,
+            "median_luminance": 0.5984541546992818
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              334,
+              325,
+              338,
+              328
+            ],
+            "sample_count": 12,
+            "median_luminance": 0.0898225882776443
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              385,
+              318,
+              388,
+              324
+            ],
+            "sample_count": 18,
+            "median_luminance": 0.6398873392107751
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              379,
+              318,
+              381,
+              324
+            ],
+            "sample_count": 12,
+            "median_luminance": 0.022883150553943472
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0198800495391238,
+          "numeral_face": 1.7956382121736822,
+          "star_leather": 4.637692397823826,
+          "stripe_light_dark": 9.465662968290104
+        }
+      },
+      "390": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              73,
+              142,
+              77,
+              144
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.00756200632711969
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              92,
+              132,
+              98,
+              137
+            ],
+            "sample_count": 30,
+            "median_luminance": 0.008343622334159095
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              130,
+              53,
+              133,
+              59
+            ],
+            "sample_count": 18,
+            "median_luminance": 0.18283965900354338
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              124,
+              53,
+              126,
+              57
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.02699483009562559
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              143,
+              132,
+              144,
+              134
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.5848239054211934
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              136,
+              132,
+              137,
+              133
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.07836209983278221
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              157,
+              129,
+              158,
+              132
+            ],
+            "sample_count": 3,
+            "median_luminance": 0.04235173129006373
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              154,
+              129,
+              155,
+              132
+            ],
+            "sample_count": 3,
+            "median_luminance": 0.01951665947610432
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0135786790091637,
+          "numeral_face": 3.0240947179747333,
+          "star_leather": 4.9455712102573965,
+          "stripe_light_dark": 1.3284834453503729
+        }
+      },
+      "320": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              60,
+              116,
+              63,
+              118
+            ],
+            "sample_count": 6,
+            "median_luminance": 0.007518371047846456
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              76,
+              109,
+              80,
+              112
+            ],
+            "sample_count": 12,
+            "median_luminance": 0.008312740814085343
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              107,
+              44,
+              109,
+              48
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.3683611384724226
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              102,
+              43,
+              104,
+              47
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.028423183736063406
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              117,
+              109,
+              118,
+              110
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.5509204336969689
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              111,
+              108,
+              113,
+              109
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.15021026581918365
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              128,
+              106,
+              129,
+              108
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.7269873291224553
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              126,
+              106,
+              127,
+              108
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.015096114926485792
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.013810713894837,
+          "numeral_face": 5.33466149347411,
+          "star_leather": 3.001446660281044,
+          "stripe_light_dark": 11.936001557080958
+        }
+      }
+    },
+    "A2": {
+      "960": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              177,
+              328,
+              182,
+              331
+            ],
+            "sample_count": 15,
+            "median_luminance": 0.007306010953803637
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              208,
+              308,
+              217,
+              315
+            ],
+            "sample_count": 63,
+            "median_luminance": 0.008315835173722603
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              320,
+              131,
+              327,
+              144
+            ],
+            "sample_count": 91,
+            "median_luminance": 0.08706504572602053
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              305,
+              129,
+              311,
+              140
+            ],
+            "sample_count": 66,
+            "median_luminance": 0.026332217033908256
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              358,
+              315,
+              360,
+              317
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.47923216047768225
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              348,
+              315,
+              350,
+              317
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.07917811307040455
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              377,
+              311,
+              378,
+              314
+            ],
+            "sample_count": 3,
+            "median_luminance": 0.2130791086115444
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              373,
+              311,
+              374,
+              314
+            ],
+            "sample_count": 3,
+            "median_luminance": 0.019322777675168233
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.017621610771914,
+          "numeral_face": 1.7956382121736822,
+          "star_leather": 4.096918184501121,
+          "stripe_light_dark": 3.7949879885696016
+        }
+      },
+      "390": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              72,
+              133,
+              74,
+              135
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.007753239185614524
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              85,
+              125,
+              88,
+              128
+            ],
+            "sample_count": 9,
+            "median_luminance": 0.008309646454448082
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              130,
+              53,
+              133,
+              59
+            ],
+            "sample_count": 18,
+            "median_luminance": 0.18283965900354338
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              124,
+              53,
+              126,
+              57
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.02699483009562559
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              145,
+              128,
+              146,
+              129
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.5067581690688564
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              141,
+              128,
+              142,
+              129
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.10170230605780646
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              153,
+              126,
+              154,
+              128
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.1251320239843169
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              152,
+              126,
+              153,
+              128
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.48295915099954
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.009634217520602,
+          "numeral_face": 3.0240947179747333,
+          "star_leather": 3.6700705713511215,
+          "stripe_light_dark": 3.0431850147935635
+        }
+      },
+      "320": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              59,
+              109,
+              61,
+              110
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.007003976202008235
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              69,
+              103,
+              72,
+              105
+            ],
+            "sample_count": 6,
+            "median_luminance": 0.008048042660181373
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              107,
+              44,
+              109,
+              48
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.3683611384724226
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              102,
+              43,
+              104,
+              47
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.028423183736063406
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              119,
+              105,
+              120,
+              106
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.5384271961492046
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              116,
+              105,
+              117,
+              106
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.06084885848925895
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              126,
+              104,
+              127,
+              105
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.22085033783935595
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              124,
+              104,
+              125,
+              105
+            ],
+            "sample_count": 1,
+            "median_luminance": 0.09939119274068688
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0183156777427809,
+          "numeral_face": 5.33466149347411,
+          "star_leather": 5.308373980289767,
+          "stripe_light_dark": 1.8130274808736402
+        }
+      }
+    },
+    "B": {
+      "960": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              219,
+              300,
+              226,
+              305
+            ],
+            "sample_count": 35,
+            "median_luminance": 0.007306010953803637
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              271,
+              275,
+              285,
+              287
+            ],
+            "sample_count": 168,
+            "median_luminance": 0.008778931632935704
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              320,
+              171,
+              327,
+              184
+            ],
+            "sample_count": 91,
+            "median_luminance": 0.08706504572602053
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              305,
+              169,
+              311,
+              180
+            ],
+            "sample_count": 66,
+            "median_luminance": 0.026332217033908256
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              352,
+              279,
+              356,
+              283
+            ],
+            "sample_count": 16,
+            "median_luminance": 0.5736766058094434
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              333,
+              277,
+              337,
+              281
+            ],
+            "sample_count": 16,
+            "median_luminance": 0.08376034763010332
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              388,
+              270,
+              391,
+              277
+            ],
+            "sample_count": 21,
+            "median_luminance": 0.5548834952110328
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              382,
+              270,
+              384,
+              277
+            ],
+            "sample_count": 14,
+            "median_luminance": 0.024170034439278888
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0257027256760105,
+          "numeral_face": 1.7956382121736822,
+          "star_leather": 4.662641932825558,
+          "stripe_light_dark": 8.155362199625719
+        }
+      },
+      "390": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              89,
+              122,
+              92,
+              124
+            ],
+            "sample_count": 6,
+            "median_luminance": 0.007678550989509698
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              110,
+              112,
+              116,
+              117
+            ],
+            "sample_count": 30,
+            "median_luminance": 0.008416619022786322
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              130,
+              69,
+              133,
+              75
+            ],
+            "sample_count": 18,
+            "median_luminance": 0.1845980182770638
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              124,
+              69,
+              126,
+              73
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.027544477495514398
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              143,
+              113,
+              145,
+              115
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.4417239128430144
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              135,
+              113,
+              137,
+              114
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.08556788052860517
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              158,
+              110,
+              159,
+              112
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.15911549143347753
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              155,
+              110,
+              156,
+              112
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.021273032870553023
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0127962304984197,
+          "numeral_face": 3.0253349542607233,
+          "star_leather": 3.6271417014538283,
+          "stripe_light_dark": 2.9340057944955937
+        }
+      },
+      "320": {
+        "samples": {
+          "passport_cover": {
+            "mapped_pixel_roi": [
+              73,
+              100,
+              75,
+              102
+            ],
+            "sample_count": 4,
+            "median_luminance": 0.007391234501940991
+          },
+          "adjacent_mat": {
+            "mapped_pixel_roi": [
+              90,
+              92,
+              95,
+              96
+            ],
+            "sample_count": 20,
+            "median_luminance": 0.008452873035147558
+          },
+          "stand_gold": {
+            "mapped_pixel_roi": [
+              107,
+              57,
+              109,
+              61
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.39069397147523655
+          },
+          "stand_face": {
+            "mapped_pixel_roi": [
+              102,
+              56,
+              104,
+              60
+            ],
+            "sample_count": 8,
+            "median_luminance": 0.028962335387521944
+          },
+          "wallet_star": {
+            "mapped_pixel_roi": [
+              117,
+              93,
+              119,
+              94
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.5217235669312758
+          },
+          "wallet_leather": {
+            "mapped_pixel_roi": [
+              111,
+              92,
+              112,
+              94
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.0988864107651549
+          },
+          "strap_light": {
+            "mapped_pixel_roi": [
+              129,
+              90,
+              130,
+              92
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.7335442265046712
+          },
+          "strap_dark": {
+            "mapped_pixel_roi": [
+              127,
+              90,
+              128,
+              92
+            ],
+            "sample_count": 2,
+            "median_luminance": 0.017368888977326497
+          }
+        },
+        "ratios": {
+          "passport_mat": 1.0184982696821177,
+          "numeral_face": 5.581065571483557,
+          "star_leather": 3.8399983181344908,
+          "stripe_light_dark": 11.630653828481258
+        }
+      }
+    }
+  }
+}

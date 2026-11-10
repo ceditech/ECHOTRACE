@@ -1,0 +1,222 @@
+{
+  "baseline": {
+    "landmarks": {
+      "main_window": {
+        "reviewed_roi": [
+          0,
+          0,
+          280,
+          220
+        ],
+        "changed_from_baseline_pixels": 0
+      },
+      "main_plant": {
+        "reviewed_roi": [
+          820,
+          30,
+          960,
+          340
+        ],
+        "changed_from_baseline_pixels": 0
+      }
+    },
+    "characters": {
+      "Mara": {
+        "envelope_unchanged": [
+          5,
+          292,
+          133,
+          522
+        ],
+        "visible_pixels_alpha_gt8": 8428,
+        "effective_visible_bbox": [
+          6,
+          293,
+          95,
+          434
+        ]
+      },
+      "Owen": {
+        "envelope_unchanged": [
+          470,
+          116,
+          570,
+          321
+        ],
+        "visible_pixels_alpha_gt8": 9131,
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ]
+      }
+    },
+    "treatment": "Exact same source static layer and transformations; only existing foreground prop occlusion varies by experiment; no character pose/scale change"
+  },
+  "A1": {
+    "landmarks": {
+      "main_window": {
+        "reviewed_roi": [
+          0,
+          0,
+          280,
+          220
+        ],
+        "changed_from_baseline_pixels": 0
+      },
+      "main_plant": {
+        "reviewed_roi": [
+          820,
+          30,
+          960,
+          340
+        ],
+        "changed_from_baseline_pixels": 0
+      }
+    },
+    "characters": {
+      "Mara": {
+        "envelope_unchanged": [
+          5,
+          292,
+          133,
+          522
+        ],
+        "visible_pixels_alpha_gt8": 8526,
+        "effective_visible_bbox": [
+          6,
+          293,
+          95,
+          434
+        ]
+      },
+      "Owen": {
+        "envelope_unchanged": [
+          470,
+          116,
+          570,
+          321
+        ],
+        "visible_pixels_alpha_gt8": 9131,
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ]
+      }
+    },
+    "treatment": "Exact same source static layer and transformations; only existing foreground prop occlusion varies by experiment; no character pose/scale change"
+  },
+  "A2": {
+    "landmarks": {
+      "main_window": {
+        "reviewed_roi": [
+          0,
+          0,
+          280,
+          220
+        ],
+        "changed_from_baseline_pixels": 7946
+      },
+      "main_plant": {
+        "reviewed_roi": [
+          820,
+          30,
+          960,
+          340
+        ],
+        "changed_from_baseline_pixels": 13384
+      }
+    },
+    "characters": {
+      "Mara": {
+        "envelope_unchanged": [
+          5,
+          292,
+          133,
+          522
+        ],
+        "visible_pixels_alpha_gt8": 8526,
+        "effective_visible_bbox": [
+          6,
+          293,
+          95,
+          434
+        ]
+      },
+      "Owen": {
+        "envelope_unchanged": [
+          470,
+          116,
+          570,
+          321
+        ],
+        "visible_pixels_alpha_gt8": 8821,
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ]
+      }
+    },
+    "treatment": "Exact same source static layer and transformations; only existing foreground prop occlusion varies by experiment; no character pose/scale change"
+  },
+  "B": {
+    "landmarks": {
+      "main_window": {
+        "reviewed_roi": [
+          0,
+          0,
+          280,
+          220
+        ],
+        "changed_from_baseline_pixels": 0
+      },
+      "main_plant": {
+        "reviewed_roi": [
+          820,
+          30,
+          960,
+          340
+        ],
+        "changed_from_baseline_pixels": 0
+      }
+    },
+    "characters": {
+      "Mara": {
+        "envelope_unchanged": [
+          5,
+          292,
+          133,
+          522
+        ],
+        "visible_pixels_alpha_gt8": 8526,
+        "effective_visible_bbox": [
+          6,
+          293,
+          95,
+          434
+        ]
+      },
+      "Owen": {
+        "envelope_unchanged": [
+          470,
+          116,
+          570,
+          321
+        ],
+        "visible_pixels_alpha_gt8": 9131,
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ]
+      }
+    },
+    "treatment": "Exact same source static layer and transformations; only existing foreground prop occlusion varies by experiment; no character pose/scale change"
+  }
+}
