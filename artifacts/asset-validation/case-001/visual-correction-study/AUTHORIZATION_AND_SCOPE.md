@@ -1,0 +1,11 @@
+# VCS-001 authorization and scope
+
+2026-11-10 · feature/echotrace. Current attached owner request authorizes isolated research candidates only under artifacts/asset-validation/case-001/visual-correction-study/. Initial HEAD/status and486 protected raw hashes are recorded in protected-before.json. Initial working tree clean; output directory absent. All existing repository content is read-only, including prior VAR/MIV/PDQA/studies, production assets, canonical/frozen data, code/tests/packages/governance and Git state.
+
+Authorized variables: two passport-only cover-tone candidates, two matched numeral treatments within the existing numeral region, and two translations of the separable existing Owen cutout. Prop/table/target geometry stays exactly refined B. Only Owen's offline staging translation is varied under the explicit C3 exception; Mara, source character scale/pose/style/expression and mystery facts remain unchanged. Source pixel transformations are deterministic local retouching/rendering, not image regeneration or new character synthesis. No historical generator is run or overwritten.
+
+B0 is copied byte-for-byte from composition-correction-study/B/original-960.png and changed-960.png. In-memory reconstruction only verifies the source chain; it is not exported as a substitute control. Exactly three events: passport disappearance,12/21 exchange, closed star-wallet movement. Nia's accidental swap and Ellis's return to resulting12 explain Owen's recovery, not theft. No extra props, labels, hints or character reactions. Existing scene remains960×540,16:9.
+
+No production adoption, canonical/frozen change, runtime/test implementation, new participant trial, dependency install, status update, Git mutation, commit or push. Rights and human recognition remain separate unresolved gates. The closed five-participant desktop study stays closed. No new device/browser test or independent video review is claimed.
+
+Scripts are confined to this study's output paths and read-only source inputs. Generation refuses existing candidate directories; verification can refresh only this study's metrics/inventory. Historical protected baselines are never refreshed. See [sources](SOURCE_MANIFEST.md), [regressions](THREE_CHANGE_REGRESSION_REPORT.md) and [verification](VERIFICATION_REPORT.md).

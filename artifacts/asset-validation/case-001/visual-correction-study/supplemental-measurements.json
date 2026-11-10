@@ -1,0 +1,628 @@
+{
+  "limitations": "Material/glyph/edge luminance proxies and component masks are not human legibility, font-size, accessibility or recognition tests.",
+  "candidates": [
+    {
+      "id": "B0",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.0263972828606333
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.01630487657826976
+        },
+        "median_luminance_ratio": 1.1522121268177,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 577,
+          "glyph_luminance": 0.6554691299360184,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 10.10326152924917,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 53,
+          "glyph_luminance": 0.5473882172961042,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 8.536102827298715,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 89,
+          "glyph_luminance": 0.4911723338339895,
+          "same_location_blank_luminance": 0.019212048690032547,
+          "contrast_proxy": 7.819048042597899,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 102,
+          "glyph_luminance": 0.6445825405138368,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 9.947351007545926,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 553,
+          "glyph_luminance": 0.6501224312563153,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.914694373427453,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 55,
+          "glyph_luminance": 0.5686351147490453,
+          "same_location_blank_luminance": 0.020679155450652395,
+          "contrast_proxy": 8.752723639729556,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 98,
+          "glyph_luminance": 0.40588880550581485,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 6.52893746137409,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 111,
+          "glyph_luminance": 0.5919803169738524,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.091322249353246,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    },
+    {
+      "id": "C1a",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.03955969201252455
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.016403970550469937
+        },
+        "median_luminance_ratio": 1.348709892949176,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 577,
+          "glyph_luminance": 0.6554691299360184,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 10.10326152924917,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 53,
+          "glyph_luminance": 0.5473882172961042,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 8.536102827298715,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 89,
+          "glyph_luminance": 0.4911723338339895,
+          "same_location_blank_luminance": 0.019212048690032547,
+          "contrast_proxy": 7.819048042597899,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 102,
+          "glyph_luminance": 0.6445825405138368,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 9.947351007545926,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 553,
+          "glyph_luminance": 0.6501224312563153,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.914694373427453,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 55,
+          "glyph_luminance": 0.5686351147490453,
+          "same_location_blank_luminance": 0.020679155450652395,
+          "contrast_proxy": 8.752723639729556,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 98,
+          "glyph_luminance": 0.40588880550581485,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 6.52893746137409,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 111,
+          "glyph_luminance": 0.5919803169738524,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.091322249353246,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    },
+    {
+      "id": "C1b",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.05189772542473603
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.016321552696453443
+        },
+        "median_luminance_ratio": 1.5364194787644807,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 577,
+          "glyph_luminance": 0.6554691299360184,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 10.10326152924917,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 53,
+          "glyph_luminance": 0.5473882172961042,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 8.536102827298715,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 89,
+          "glyph_luminance": 0.4911723338339895,
+          "same_location_blank_luminance": 0.019212048690032547,
+          "contrast_proxy": 7.819048042597899,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 102,
+          "glyph_luminance": 0.6445825405138368,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 9.947351007545926,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 553,
+          "glyph_luminance": 0.6501224312563153,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.914694373427453,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 55,
+          "glyph_luminance": 0.5686351147490453,
+          "same_location_blank_luminance": 0.020679155450652395,
+          "contrast_proxy": 8.752723639729556,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 98,
+          "glyph_luminance": 0.40588880550581485,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 6.52893746137409,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 111,
+          "glyph_luminance": 0.5919803169738524,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.091322249353246,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    },
+    {
+      "id": "C2a",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.0263972828606333
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.01630487657826976
+        },
+        "median_luminance_ratio": 1.1522121268177,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 577,
+          "glyph_luminance": 0.8040103239084083,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 12.230570105750731,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 53,
+          "glyph_luminance": 0.6658053125282237,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 10.228169179036563,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 89,
+          "glyph_luminance": 0.600671941377334,
+          "same_location_blank_luminance": 0.019212048690032547,
+          "contrast_proxy": 9.401136849616755,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 102,
+          "glyph_luminance": 0.7873600962211244,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 11.992116575032197,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 553,
+          "glyph_luminance": 0.7994489754051232,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 12.029363152742038,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 55,
+          "glyph_luminance": 0.6918371211565985,
+          "same_location_blank_luminance": 0.020679155450652395,
+          "contrast_proxy": 10.495840201069509,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 98,
+          "glyph_luminance": 0.4912178568323073,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 7.750963606830612,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 111,
+          "glyph_luminance": 0.7177464688676646,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 10.872343543459873,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    },
+    {
+      "id": "C2b",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.0263972828606333
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.01630487657826976
+        },
+        "median_luminance_ratio": 1.1522121268177,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 492,
+          "glyph_luminance": 0.799794786795551,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 12.17019797587268,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 56,
+          "glyph_luminance": 0.4804331117926052,
+          "same_location_blank_luminance": 0.01990479938456203,
+          "contrast_proxy": 7.5879355418012615,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 73,
+          "glyph_luminance": 0.6699145164547387,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 10.310138785385037,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 105,
+          "glyph_luminance": 0.5379495508212706,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 8.420223969956862,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 490,
+          "glyph_luminance": 0.7965849552738948,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 12.124228895225507,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 54,
+          "glyph_luminance": 0.5865641489067758,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 9.095889195529274,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 81,
+          "glyph_luminance": 0.6183915879913515,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 9.572261536148623,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 106,
+          "glyph_luminance": 0.5033789808170924,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 7.925127168202962,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    },
+    {
+      "id": "C3a",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.0263972828606333
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.01630487657826976
+        },
+        "median_luminance_ratio": 1.1522121268177,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 577,
+          "glyph_luminance": 0.6554691299360184,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 10.10326152924917,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 53,
+          "glyph_luminance": 0.5473882172961042,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 8.536102827298715,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 89,
+          "glyph_luminance": 0.4911723338339895,
+          "same_location_blank_luminance": 0.019212048690032547,
+          "contrast_proxy": 7.819048042597899,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 102,
+          "glyph_luminance": 0.6445825405138368,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 9.947351007545926,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 553,
+          "glyph_luminance": 0.6501224312563153,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.914694373427453,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 55,
+          "glyph_luminance": 0.5686351147490453,
+          "same_location_blank_luminance": 0.020679155450652395,
+          "contrast_proxy": 8.752723639729556,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 98,
+          "glyph_luminance": 0.40588880550581485,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 6.52893746137409,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 111,
+          "glyph_luminance": 0.5919803169738524,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.091322249353246,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    },
+    {
+      "id": "C3b",
+      "passport_native_two_pixel_boundary_band": {
+        "inside": {
+          "samples": 507,
+          "median": 0.0263972828606333
+        },
+        "outside_on_mat": {
+          "samples": 543,
+          "median": 0.01630487657826976
+        },
+        "median_luminance_ratio": 1.1522121268177,
+        "method": "2px inner/outer morphology bands on source-native passport solid mask; outer constrained to mat; includes gold edge, not only cover"
+      },
+      "glyph_contrast": [
+        {
+          "number": "12",
+          "width": 960,
+          "mask_samples": 577,
+          "glyph_luminance": 0.6554691299360184,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 10.10326152924917,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 320,
+          "mask_samples": 53,
+          "glyph_luminance": 0.5473882172961042,
+          "same_location_blank_luminance": 0.01998371849336664,
+          "contrast_proxy": 8.536102827298715,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 390,
+          "mask_samples": 89,
+          "glyph_luminance": 0.4911723338339895,
+          "same_location_blank_luminance": 0.019212048690032547,
+          "contrast_proxy": 7.819048042597899,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "12",
+          "width": 430,
+          "mask_samples": 102,
+          "glyph_luminance": 0.6445825405138368,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 9.947351007545926,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 960,
+          "mask_samples": 553,
+          "glyph_luminance": 0.6501224312563153,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.914694373427453,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 320,
+          "mask_samples": 55,
+          "glyph_luminance": 0.5686351147490453,
+          "same_location_blank_luminance": 0.020679155450652395,
+          "contrast_proxy": 8.752723639729556,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 390,
+          "mask_samples": 98,
+          "glyph_luminance": 0.40588880550581485,
+          "same_location_blank_luminance": 0.019825880275757414,
+          "contrast_proxy": 6.52893746137409,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        },
+        {
+          "number": "21",
+          "width": 430,
+          "mask_samples": 111,
+          "glyph_luminance": 0.5919803169738524,
+          "same_location_blank_luminance": 0.020614625613949913,
+          "contrast_proxy": 9.091322249353246,
+          "method": "Uniformly resized source tile over shared navy underlay; median glyph support versus same-location blank master; not whole-scene conformance contrast"
+        }
+      ]
+    }
+  ]
+}

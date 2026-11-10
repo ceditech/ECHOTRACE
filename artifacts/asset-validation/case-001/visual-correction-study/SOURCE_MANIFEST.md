@@ -1,0 +1,70 @@
+# Exact source chain
+
+All60 existing source paths were read/decoded. Raw SHA-256 hashes below and in [source-manifest.json](source-manifest.json). That JSON also records request-text hash and installed Arial Bold font path/hash. Reference/generation records establish an internal source chain, not production rights clearance. No AGQA report was assumed or manufactured; current scope is visual study only.
+
+| # | Exact repository-relative source | Open | SHA-256 |
+|---|---|---|---|
+| 1 | `AGENTS.md` | [open](../../../../AGENTS.md) | 988553f561698619d8269ad1996f8ccf9d653ef9f16d4abd473c97c15497cecf |
+| 2 | `GAME_SPEC.md` | [open](../../../../GAME_SPEC.md) | b1a76b1526b0534aa8db0ee12f5c3cb585fd9026e24293b28529bd7a4c9623eb |
+| 3 | `ARCHITECTURE.md` | [open](../../../../ARCHITECTURE.md) | c154ebe5936e843e9bc2b83dea7e1afc839334540f1658b81d9b532283156699 |
+| 4 | `docs/cases/CASE_001_THE_MISSING_PASSPORT.md` | [open](../../../../docs/cases/CASE_001_THE_MISSING_PASSPORT.md) | 295452c3d2cd411057e979560528c6b07d4c135b51b739f00717bcfb9c929626 |
+| 5 | `src/cases/content/case-001/case.json` | [open](../../../../src/cases/content/case-001/case.json) | 0c6a1387d3c619ac03cdba9df97a4efdd2823de26d2f83367b19dbf36b8fe976 |
+| 6 | `artifacts/asset-validation/case-001/mobile-presentation-spec/MPS_001.md` | [open](../mobile-presentation-spec/MPS_001.md) | 787e2dbd3797795dabafc13950798dedad516d5ab38b9fda4da33151f4f4e098 |
+| 7 | `artifacts/asset-validation/case-001/mobile-presentation-spec/OWNER_DECISIONS.md` | [open](../mobile-presentation-spec/OWNER_DECISIONS.md) | 3262e423c83b2fe4119ad6784fbb9ac288c2a8eb1d32fbc4883ac2fec42ad1c3 |
+| 8 | `artifacts/asset-validation/case-001/mobile-presentation-spec/OBSERVATION_FAIRNESS.md` | [open](../mobile-presentation-spec/OBSERVATION_FAIRNESS.md) | a3df360a83858615e6f218db7dfb5072d467115e1bd715f5752919e9c0fa3bb4 |
+| 9 | `artifacts/asset-validation/case-001/composition-correction-study/README.md` | [open](../composition-correction-study/README.md) | 5bf2589eb73114982aaebb0b838059748518f50ea348254c35450bd3924964b2 |
+| 10 | `artifacts/asset-validation/case-001/composition-correction-study/APPROACH_B_REPORT.md` | [open](../composition-correction-study/APPROACH_B_REPORT.md) | a0bc8e85c1d4c3d510ebd8361d925c6d8feff63f82639b3b92d691ec956cf552 |
+| 11 | `artifacts/asset-validation/case-001/composition-correction-study/B-geometry-diff.json` | [open](../composition-correction-study/B-geometry-diff.json) | bda9a307fc0bf10b3d7fece03e97602a3be4cd974a1a9ad2aef0236bd043dd19 |
+| 12 | `artifacts/asset-validation/case-001/composition-correction-study/B-proposed-case.json` | [open](../composition-correction-study/B-proposed-case.json) | b6284efcfa6925ae6e37eb854b2647b53720643839c040c8c79f6e0427ef9306 |
+| 13 | `artifacts/asset-validation/case-001/composition-correction-study/CHARACTER_STAGING_REPORT.md` | [open](../composition-correction-study/CHARACTER_STAGING_REPORT.md) | 90c71aee85b77d3c4dc3fb9fa71b7234f26195adce3525befd6140c3f5f5ad94 |
+| 14 | `artifacts/asset-validation/case-001/composition-correction-study/character-landmark-analysis.json` | [open](../composition-correction-study/character-landmark-analysis.json) | 5dd8fc70293dcc62ca7b42da1e6f153bf02fddfcfa1bdac82e971793ac7f5b60 |
+| 15 | `artifacts/asset-validation/case-001/composition-correction-study/contrast-proxies.json` | [open](../composition-correction-study/contrast-proxies.json) | 5611544dde3a21d2467622531c4577127b83584b05c04d607a553272b7d6fc3e |
+| 16 | `artifacts/asset-validation/case-001/composition-correction-study/study-config.json` | [open](../composition-correction-study/study-config.json) | fed0ad2e26e703280a2a5bd0640e2d36b3e25ad25133803395c2142e3c76c887 |
+| 17 | `artifacts/asset-validation/case-001/composition-correction-study/VERIFICATION_REPORT.md` | [open](../composition-correction-study/VERIFICATION_REPORT.md) | d61af5fe684e3a5c3248aa2c8840b60aac39bfac84a85dbb14176bc652caa118 |
+| 18 | `artifacts/asset-validation/case-001/composition-correction-study/source-manifest.json` | [open](../composition-correction-study/source-manifest.json) | 6cd5f836f3223dc677d494745b76a8d79f3b817e92a3516b4f848c98a9b04d89 |
+| 19 | `artifacts/asset-validation/case-001/composition-correction-study/study.py` | [open](../composition-correction-study/study.py) | f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40 |
+| 20 | `artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png` | [open](../composition-correction-study/B/original-960.png) | 89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e |
+| 21 | `artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png` | [open](../composition-correction-study/B/changed-960.png) | 7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b |
+| 22 | `artifacts/asset-validation/case-001/composition-correction-study/B/original-320.png` | [open](../composition-correction-study/B/original-320.png) | ab69ae68d261bac1b4fc2cc6c1778a3a1beb8f4fd5cb0771086f167aebda826f |
+| 23 | `artifacts/asset-validation/case-001/composition-correction-study/B/changed-320.png` | [open](../composition-correction-study/B/changed-320.png) | e9452bdacd5df2d52c96ee96bb9a9371ccea7cc54e1787b02ed58d2ee61a5a48 |
+| 24 | `artifacts/asset-validation/case-001/composition-correction-study/B/original-390.png` | [open](../composition-correction-study/B/original-390.png) | e841bd282931524242364f55b31b5acd71a968c230d6483f1866e6eba5d4b64c |
+| 25 | `artifacts/asset-validation/case-001/composition-correction-study/B/changed-390.png` | [open](../composition-correction-study/B/changed-390.png) | 171d0e1b0d8cfaef0aa8b09f1430b51a894d388911d1521dfd486f2310b8165d |
+| 26 | `artifacts/asset-validation/case-001/B-mobile-interaction-validation/MOBILE_READABILITY_REPORT.md` | [open](../B-mobile-interaction-validation/MOBILE_READABILITY_REPORT.md) | 2f67924458885bfa87469ad9b56c1922a0620deded7d9de3bfe9b6ca4d654745 |
+| 27 | `artifacts/asset-validation/case-001/B-mobile-interaction-validation/INTERACTION_TEST_REPORT.md` | [open](../B-mobile-interaction-validation/INTERACTION_TEST_REPORT.md) | 9776ea1d108514c28e01cb308bbc9a4b3c4718c5a22a3d63c1e2ea95aa3e104c |
+| 28 | `artifacts/asset-validation/case-001/B-mobile-interaction-validation/verification.json` | [open](../B-mobile-interaction-validation/verification.json) | 6700dc5d13bfa806788322d345095dab2dc8c07eb4a3bd1958d5011e90ebb7fe |
+| 29 | `artifacts/asset-validation/case-001/B-mobile-interaction-validation/measurements.json` | [open](../B-mobile-interaction-validation/measurements.json) | 69c6e6344505c38cef32c8509a6b9b73d5ba829e7e53e5067a3ba3cb084206ac |
+| 30 | `artifacts/asset-validation/case-001/B-mobile-interaction-validation/source-audit.json` | [open](../B-mobile-interaction-validation/source-audit.json) | d3ebed451bf6eec080e744cc49d09b4483b466401748500ee5794319750a862d |
+| 31 | `artifacts/asset-validation/case-001/physical-device-qa-addendum/EVIDENCE_REGISTER.md` | [open](../physical-device-qa-addendum/EVIDENCE_REGISTER.md) | d1f0904c5dc66648396fd42f8cfbd974fce76319e45a3322d1914ac254ab63c8 |
+| 32 | `artifacts/asset-validation/case-001/physical-device-qa-addendum/PRODUCTION_READINESS_GATES.md` | [open](../physical-device-qa-addendum/PRODUCTION_READINESS_GATES.md) | fe1e54160605beeb86a5746b05f8e2b97d89977205a46dab600c2defd7d11415 |
+| 33 | `artifacts/asset-validation/case-001/B-art-refinement/REPORT.md` | [open](../B-art-refinement/REPORT.md) | 028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534 |
+| 34 | `artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json` | [open](../B-art-refinement/generation-paths.json) | 8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9 |
+| 35 | `artifacts/asset-validation/case-001/character-placement-proof/REPORT.md` | [open](../character-placement-proof/REPORT.md) | 1ddd2b26fce1c9062aceab3d4ee034eca087e362f796e622fc8557ce05cdfe65 |
+| 36 | `artifacts/asset-validation/case-001/character-placement-proof/generation.json` | [open](../character-placement-proof/generation.json) | 519bd6f1cabb777d98c30396da888887d6a30cebf97f653f5f3b3f91dcd19caa |
+| 37 | `artifacts/asset-validation/case-001/character-placement-proof/placement-zones.json` | [open](../character-placement-proof/placement-zones.json) | b9f5648f58cddfb12d41e8c85ee70e9a3627d3dceee42f67fe4f70786524c652 |
+| 38 | `artifacts/asset-validation/case-001/character-placement-proof/static-character-layer.png` | [open](../character-placement-proof/static-character-layer.png) | 9a2adff0ad0e35b7cfa16e891936ffe66c44e55e6e739e1ab4185fdf581244d4 |
+| 39 | `artifacts/asset-validation/case-001/final-art-qa/REPORT.md` | [open](../final-art-qa/REPORT.md) | 7e18006dd04402579084a3a4237d40acd38a6a124476996b84b43b81b0743053 |
+| 40 | `public/assets/cases/case-001/lounge-background.webp` | [open](../../../../public/assets/cases/case-001/lounge-background.webp) | 394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d |
+| 41 | `public/assets/cases/case-001/owen-backpack.png` | [open](../../../../public/assets/cases/case-001/owen-backpack.png) | 50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651 |
+| 42 | `artifacts/asset-validation/case-001/B-art-refinement/table-candidate.png` | [open](../B-art-refinement/table-candidate.png) | 2417c34daa3cdaf8ee5b3c8b6418b5ce123cf0eb1a657ca148de9bb4c0da85a8 |
+| 43 | `artifacts/asset-validation/case-001/B-art-refinement/document-mat-candidate.png` | [open](../B-art-refinement/document-mat-candidate.png) | 655f0f2f8df1f580f5b8e511636910c583a5831a2cfafb27ba054e77fbe33fa9 |
+| 44 | `artifacts/asset-validation/case-001/B-art-refinement/passport-candidate.png` | [open](../B-art-refinement/passport-candidate.png) | 6d53912426aa5a3f1eae2de4a4ab48826c3d8f3e242783083602d96a01429a06 |
+| 45 | `artifacts/asset-validation/case-001/B-art-refinement/star-wallet-candidate.png` | [open](../B-art-refinement/star-wallet-candidate.png) | 20d9d42b798adf1bc2ba4efee1edba1220df4b21fa9ff03a66702c295d69add6 |
+| 46 | `artifacts/asset-validation/case-001/B-art-refinement/stand-12-candidate.png` | [open](../B-art-refinement/stand-12-candidate.png) | 691442aeacbfd0f677b3665ea3e4399cc54fbd596e93344aab680b4fc8fe72ee |
+| 47 | `artifacts/asset-validation/case-001/B-art-refinement/stand-21-candidate.png` | [open](../B-art-refinement/stand-21-candidate.png) | 4016cb44452c0876671f3938e7f9a519162c819b54971044d0fdee95464733fc |
+| 48 | `artifacts/asset-validation/case-001/character-placement-proof/mara-generated-cutout.png` | [open](../character-placement-proof/mara-generated-cutout.png) | c74abdc18b74a786a98b54a74467696dfc46d3fbd6bf6ac9053aa01a04fd0115 |
+| 49 | `artifacts/asset-validation/case-001/character-placement-proof/owen-generated-cutout.png` | [open](../character-placement-proof/owen-generated-cutout.png) | 42c312d33720d24b4b9ed58cc8c15f396843a191593f346975ddaa3d0d5996c0 |
+| 50 | `artifacts/asset-validation/case-001/REPORT.md` | [open](../REPORT.md) | 68c0643f3866104414a965a3808409d872ba5485eaaa71a7c216b1f3f4c82e66 |
+| 51 | `artifacts/asset-validation/case-001/visual-acceptance-review/README.md` | [open](../visual-acceptance-review/README.md) | b75defbdfd5f2563683814721de19332bd1ce89aed9df847ca3e943d178bbb8d |
+| 52 | `artifacts/asset-validation/case-001/visual-acceptance-review/VISUAL_READABILITY_REPORT.md` | [open](../visual-acceptance-review/VISUAL_READABILITY_REPORT.md) | f2d1f438d08e8731f5569e9a720fd3f54bb472dd72428e49016fc8c7d1649420 |
+| 53 | `artifacts/asset-validation/case-001/visual-acceptance-review/CHARACTER_STAGING_REPORT.md` | [open](../visual-acceptance-review/CHARACTER_STAGING_REPORT.md) | 11efe5b9d74f04fba57bb8a01013a1db3a39e9e732280e89fe40f337f7d91bf0 |
+| 54 | `artifacts/asset-validation/case-001/visual-acceptance-review/VISUAL_ACCEPTANCE_MATRIX.md` | [open](../visual-acceptance-review/VISUAL_ACCEPTANCE_MATRIX.md) | 98554939f1274ae4983f23ca26db0436afcb6861b82234ba31ff055c0f75edc3 |
+| 55 | `artifacts/asset-validation/case-001/visual-acceptance-review/MINIMUM_CORRECTION_RECOMMENDATIONS.md` | [open](../visual-acceptance-review/MINIMUM_CORRECTION_RECOMMENDATIONS.md) | 1b3bc4e3db57ae391464e38d9220deb6b65d495cffe436330b5dc8d897933a7a |
+| 56 | `artifacts/asset-validation/case-001/visual-acceptance-review/measurements.json` | [open](../visual-acceptance-review/measurements.json) | 03d2f85b5fce420693380b8ba4204ab7f99f701e02994c8c5f2791b040b2c817 |
+| 57 | `artifacts/asset-validation/case-001/visual-acceptance-review/source-manifest.json` | [open](../visual-acceptance-review/source-manifest.json) | 52f131618c335fd215ce6d5c6c75e109b81b8b0cd84ccf08f74ccb0c60a96ff5 |
+| 58 | `artifacts/asset-validation/case-001/B-art-refinement/stand-master-candidate.png` | [open](../B-art-refinement/stand-master-candidate.png) | 9ca1b88820af33ad5b5e85c1f306e8edbfac029fc64bfc6b09c8963477f0bb89 |
+| 59 | `artifacts/asset-validation/case-001/B-art-refinement/refine.py` | [open](../B-art-refinement/refine.py) | 80733f6daa608e40ab48bf904b5ddada19853a94e4ab535efd6307f4b2b49747 |
+| 60 | `artifacts/asset-validation/case-001/character-placement-proof/compose.py` | [open](../character-placement-proof/compose.py) | c80b18e3156a68b7721e8d9045f539b30f1ca9bcf414f151c8a0d6ddd694f934 |
+
+Transform parameters/output hashes: [candidate-manifest.json](candidate-manifest.json) and [FILE_INVENTORY.json](FILE_INVENTORY.json). Candidate geometry is an unchanged read-only input. Separable Mara/Owen layers reconstruct exactly to the existing static-character-layer.png before translations; recorded crop/thumbnail/chair-mask operations were reproduced without cutting up the combined layer.
+
+Sources include frozen dossier/canonical data; MPS; composition control/geometry/source layers; staging/generation; MIV measurements; PDQA gates; VAR readability/staging/matrix/recommendations/measurements and provenance. Existing background/backpack/character/reference rights remain unresolved; see [rights](PROVENANCE_AND_RIGHTS_GAPS.md).

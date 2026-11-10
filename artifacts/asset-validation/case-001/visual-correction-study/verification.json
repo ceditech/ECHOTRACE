@@ -1,0 +1,84 @@
+{
+  "integrity_status": "PASS",
+  "overall_study_assessment": "CONDITIONAL; C3b rejected on visual tradeoff",
+  "protected_files": 486,
+  "protected_raw_hashes_unchanged": true,
+  "outside_inventory_unchanged": true,
+  "captured_git_state_unchanged": true,
+  "source_hashes_unchanged": true,
+  "source_count": 60,
+  "candidate_pairs": 7,
+  "new_treatment_pairs": 6,
+  "byte_exact_control_pairs": 1,
+  "combined_generated": false,
+  "candidates": [
+    {
+      "id": "B0",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "CONDITIONAL",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    },
+    {
+      "id": "C1a",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "CONDITIONAL",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    },
+    {
+      "id": "C1b",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "CONDITIONAL",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    },
+    {
+      "id": "C2a",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "CONDITIONAL",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    },
+    {
+      "id": "C2b",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "CONDITIONAL",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    },
+    {
+      "id": "C3a",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "CONDITIONAL",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    },
+    {
+      "id": "C3b",
+      "fresh_structural_R1_R11": "PASS",
+      "manual_R12": "PASS static review only",
+      "overall_status": "REJECT",
+      "unexplained_pair_pixels": 0,
+      "exact_render_reproduction": true
+    }
+  ],
+  "manual_review": "Native pair plus320/390/430 pair panels; static informed inspection, no participant/device test",
+  "reproducible_reconstruction_and_output_hashes": "PASS",
+  "local_markdown_links_checked": 115,
+  "JSON_and_Python_AST": "PASS",
+  "git_diff_check": "PASS",
+  "human_recognition": "NOT VERIFIED; no new study",
+  "rights": "NOT VERIFIED",
+  "production_adoption": false,
+  "canonical_edits": false,
+  "application_tests_or_code_modified": false,
+  "T17_T18": false,
+  "commit_push": false
+}

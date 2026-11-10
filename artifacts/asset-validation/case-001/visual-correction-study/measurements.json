@@ -1,0 +1,3642 @@
+{
+  "method": "Fresh deterministic source-pixel transforms and in-memory exact B0 reconstruction; manual/physical recognition not inferred",
+  "Pillow_version": "11.3.0",
+  "candidates": [
+    {
+      "id": "B0",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 0,
+          "bbox": null,
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 0,
+          "bbox": null,
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15391,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2891,
+          "local_bbox": [
+            14,
+            17,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1268,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1267,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.007306010953803637,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                340,
+                237
+              ],
+              "thresholded_pixels": 577,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                337,
+                216
+              ],
+              "thresholded_pixels": 553,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.007391234501940991,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                31,
+                22
+              ],
+              "thresholded_pixels": 53,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                33,
+                22
+              ],
+              "thresholded_pixels": 55,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.007678550989509698,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                58,
+                31
+              ],
+              "thresholded_pixels": 89,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                60,
+                38
+              ],
+              "thresholded_pixels": 98,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.007666201305186793,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                64,
+                38
+              ],
+              "thresholded_pixels": 102,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                65,
+                46
+              ],
+              "thresholded_pixels": 111,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          0,
+          0
+        ],
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 9131,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.22916666666666666,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          470,
+          116,
+          570,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 172.39999999999998,
+            "bbox_gap_at320": 57.46666666666666,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 47.60000000000002,
+            "bbox_gap_at320": 15.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "CONDITIONAL",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Control only; unresolved Original readability/staging/rights inherited",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    },
+    {
+      "id": "C1a",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 2581,
+          "bbox": [
+            176,
+            257,
+            250,
+            320
+          ],
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 0,
+          "bbox": null,
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15393,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2893,
+          "local_bbox": [
+            14,
+            17,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1268,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1267,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.016204499499998574,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.1263304327039194,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                340,
+                237
+              ],
+              "thresholded_pixels": 577,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                337,
+                216
+              ],
+              "thresholded_pixels": 553,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.016111911420590118,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.131029288856977,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                31,
+                22
+              ],
+              "thresholded_pixels": 53,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                33,
+                22
+              ],
+              "thresholded_pixels": 55,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.016708715218244116,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.1419475542092454,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                58,
+                31
+              ],
+              "thresholded_pixels": 89,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                60,
+                38
+              ],
+              "thresholded_pixels": 98,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.01625939944183237,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.1322078473574326,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                64,
+                38
+              ],
+              "thresholded_pixels": 102,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                65,
+                46
+              ],
+              "thresholded_pixels": 111,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          0,
+          0
+        ],
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 9131,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.22916666666666666,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          470,
+          116,
+          570,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 172.39999999999998,
+            "bbox_gap_at320": 57.46666666666666,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 47.60000000000002,
+            "bbox_gap_at320": 15.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "CONDITIONAL",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Preferred smallest passport-only correction for owner review; improvement modest, no proven recognition",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    },
+    {
+      "id": "C1b",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 2637,
+          "bbox": [
+            176,
+            256,
+            250,
+            320
+          ],
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 0,
+          "bbox": null,
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15396,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2896,
+          "local_bbox": [
+            14,
+            16,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1268,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1267,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.024944755760482898,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.2750275256532386,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                340,
+                237
+              ],
+              "thresholded_pixels": 577,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                337,
+                216
+              ],
+              "thresholded_pixels": 553,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.024921726405713975,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.2817458324189428,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                31,
+                22
+              ],
+              "thresholded_pixels": 53,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                33,
+                22
+              ],
+              "thresholded_pixels": 55,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.02488535979881257,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.2819187596187713,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                58,
+                31
+              ],
+              "thresholded_pixels": 89,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                60,
+                38
+              ],
+              "thresholded_pixels": 98,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.025091494932853058,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.2831263269660862,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                64,
+                38
+              ],
+              "thresholded_pixels": 102,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                65,
+                46
+              ],
+              "thresholded_pixels": 111,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          0,
+          0
+        ],
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 9131,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.22916666666666666,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          470,
+          116,
+          570,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 172.39999999999998,
+            "bbox_gap_at320": 57.46666666666666,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 47.60000000000002,
+            "bbox_gap_at320": 15.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "CONDITIONAL",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Natural stronger cover separation; reserve alternative, no evidence it is necessary",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    },
+    {
+      "id": "C2a",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 1774,
+          "bbox": [
+            314,
+            160,
+            738,
+            194
+          ],
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 1772,
+          "bbox": [
+            312,
+            160,
+            742,
+            194
+          ],
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15411,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2891,
+          "local_bbox": [
+            14,
+            17,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1278,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1277,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.007306010953803637,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                340,
+                237
+              ],
+              "thresholded_pixels": 577,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                337,
+                216
+              ],
+              "thresholded_pixels": 553,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.007391234501940991,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                31,
+                22
+              ],
+              "thresholded_pixels": 53,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                33,
+                22
+              ],
+              "thresholded_pixels": 55,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.007678550989509698,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                58,
+                31
+              ],
+              "thresholded_pixels": 89,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                60,
+                38
+              ],
+              "thresholded_pixels": 98,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.007666201305186793,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                64,
+                38
+              ],
+              "thresholded_pixels": 102,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                65,
+                46
+              ],
+              "thresholded_pixels": 111,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          0,
+          0
+        ],
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 9131,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.22916666666666666,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          470,
+          116,
+          570,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 172.39999999999998,
+            "bbox_gap_at320": 57.46666666666666,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 47.60000000000002,
+            "bbox_gap_at320": 15.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "CONDITIONAL",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Useful independent matched contrast option; retained glyph dimensions/continuity; no proven recognition",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    },
+    {
+      "id": "C2b",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 2232,
+          "bbox": [
+            313,
+            160,
+            740,
+            194
+          ],
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 2232,
+          "bbox": [
+            312,
+            160,
+            742,
+            194
+          ],
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15265,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2891,
+          "local_bbox": [
+            14,
+            17,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1206,
+          "local_bbox": [
+            23,
+            30,
+            67,
+            63
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1203,
+          "local_bbox": [
+            23,
+            30,
+            67,
+            63
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.007306010953803637,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                252,
+                207,
+                509,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                38.483072916666664,
+                27.39351851851852
+              ],
+              "thresholded_component_sizes": [
+                296,
+                196
+              ],
+              "thresholded_pixels": 492,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                259,
+                207,
+                501,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                36.236979166666664,
+                27.39351851851852
+              ],
+              "thresholded_component_sizes": [
+                295,
+                195
+              ],
+              "thresholded_pixels": 490,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.007391234501940991,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                252,
+                207,
+                509,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                12.827690972222221,
+                9.131172839506174
+              ],
+              "thresholded_component_sizes": [
+                33,
+                23
+              ],
+              "thresholded_pixels": 56,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                259,
+                207,
+                501,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                12.078993055555554,
+                9.131172839506174
+              ],
+              "thresholded_component_sizes": [
+                32,
+                22
+              ],
+              "thresholded_pixels": 54,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.007678550989509698,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                252,
+                207,
+                509,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                15.633748372395832,
+                11.128616898148149
+              ],
+              "thresholded_component_sizes": [
+                44,
+                29
+              ],
+              "thresholded_pixels": 73,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                259,
+                207,
+                501,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                14.721272786458332,
+                11.128616898148149
+              ],
+              "thresholded_component_sizes": [
+                46,
+                35
+              ],
+              "thresholded_pixels": 81,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.007666201305186793,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                252,
+                207,
+                509,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                17.237209743923607,
+                12.270013503086421
+              ],
+              "thresholded_component_sizes": [
+                61,
+                44
+              ],
+              "thresholded_pixels": 105,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                259,
+                207,
+                501,
+                390
+              ],
+              "CSS_bbox_dimensions": [
+                16.23114691840278,
+                12.270013503086421
+              ],
+              "thresholded_component_sizes": [
+                62,
+                44
+              ],
+              "thresholded_pixels": 106,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          0,
+          0
+        ],
+        "effective_visible_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 9131,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.22916666666666666,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          470,
+          116,
+          570,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 172.39999999999998,
+            "bbox_gap_at320": 57.46666666666666,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 47.60000000000002,
+            "bbox_gap_at320": 15.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 63.60000000000002,
+            "bbox_gap_at320": 21.200000000000006,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "CONDITIONAL",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Not recommended: smaller glyph height and inconsistent downsample proxy benefit",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    },
+    {
+      "id": "C3a",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 15460,
+          "bbox": [
+            470,
+            116,
+            593,
+            311
+          ],
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 15460,
+          "bbox": [
+            470,
+            116,
+            593,
+            311
+          ],
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15391,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2891,
+          "local_bbox": [
+            14,
+            17,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1268,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1267,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.007306010953803637,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                340,
+                237
+              ],
+              "thresholded_pixels": 577,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                337,
+                216
+              ],
+              "thresholded_pixels": 553,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.007391234501940991,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                31,
+                22
+              ],
+              "thresholded_pixels": 53,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                33,
+                22
+              ],
+              "thresholded_pixels": 55,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.007678550989509698,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                58,
+                31
+              ],
+              "thresholded_pixels": 89,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                60,
+                38
+              ],
+              "thresholded_pixels": 98,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.007666201305186793,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                64,
+                38
+              ],
+              "thresholded_pixels": 102,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                65,
+                46
+              ],
+              "thresholded_pixels": 111,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          24,
+          0
+        ],
+        "effective_visible_bbox": [
+          495,
+          116,
+          583,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 7976,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [
+          {
+            "endpoint": 0,
+            "objectId": "object-passport",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-document-mat",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-star-wallet",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-stand-12",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-stand-21",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-document-mat",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-star-wallet",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-stand-12",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-stand-21",
+            "changed_pixels_on_clue_alpha": 0
+          }
+        ],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.22916666666666666,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          494,
+          116,
+          594,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 196.39999999999998,
+            "bbox_gap_at320": 65.46666666666665,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 71.60000000000002,
+            "bbox_gap_at320": 23.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 39.60000000000002,
+            "bbox_gap_at320": 13.200000000000008,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 39.60000000000002,
+            "bbox_gap_at320": 13.200000000000008,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "CONDITIONAL",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Closer plant-side positioning, but visible area falls12.65%; chair association still needs owner judgment",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    },
+    {
+      "id": "C3b",
+      "regression": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "R4": true,
+        "R5": true,
+        "R6": true,
+        "R7": true,
+        "R8": true,
+        "R9": true,
+        "R10": true,
+        "R11": true,
+        "R12": "PASS \u2014 manual static review, no new narrative cues; not a human recognition result"
+      },
+      "structural_status": "PASS",
+      "B0_deltas": [
+        {
+          "endpoint": "original",
+          "changed_pixels_vs_B0": 16570,
+          "bbox": [
+            470,
+            116,
+            617,
+            311
+          ],
+          "outside_allowed_variable_pixels": 0
+        },
+        {
+          "endpoint": "changed",
+          "changed_pixels_vs_B0": 16570,
+          "bbox": [
+            470,
+            116,
+            617,
+            311
+          ],
+          "outside_allowed_variable_pixels": 0
+        }
+      ],
+      "pair_changed_pixels": 15391,
+      "event_regions": [
+        {
+          "event_region": "passport",
+          "ROI": [
+            160,
+            240,
+            270,
+            335
+          ],
+          "changed_pixels": 2891,
+          "local_bbox": [
+            14,
+            17,
+            90,
+            81
+          ]
+        },
+        {
+          "event_region": "left_numeral",
+          "ROI": [
+            290,
+            130,
+            382,
+            225
+          ],
+          "changed_pixels": 1268,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "right_numeral",
+          "ROI": [
+            674,
+            130,
+            766,
+            225
+          ],
+          "changed_pixels": 1267,
+          "local_bbox": [
+            22,
+            30,
+            68,
+            64
+          ]
+        },
+        {
+          "event_region": "wallet_departure",
+          "ROI": [
+            310,
+            245,
+            425,
+            330
+          ],
+          "changed_pixels": 4985,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        },
+        {
+          "event_region": "wallet_arrival",
+          "ROI": [
+            665,
+            245,
+            780,
+            330
+          ],
+          "changed_pixels": 4980,
+          "local_bbox": [
+            3,
+            8,
+            108,
+            79
+          ]
+        }
+      ],
+      "unexplained_pair_pixels": 0,
+      "outside_event_alpha_pixels": 0,
+      "passport_solid_native_bbox": [
+        177,
+        259,
+        248,
+        319
+      ],
+      "widths": [
+        {
+          "width": 960,
+          "CSS_scene": [
+            960,
+            540.0
+          ],
+          "raster_scene": [
+            960,
+            540
+          ],
+          "passport_sample": {
+            "samples": 35,
+            "median": 0.007306010953803637,
+            "box": [
+              219,
+              300,
+              226,
+              305
+            ]
+          },
+          "mat_sample": {
+            "samples": 168,
+            "median": 0.008778931632935704,
+            "box": [
+              271,
+              275,
+              285,
+              287
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0257027256760105,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                39.08203125,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                340,
+                237
+              ],
+              "thresholded_pixels": 577,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                36.8359375,
+                28.59104938271605
+              ],
+              "thresholded_component_sizes": [
+                337,
+                216
+              ],
+              "thresholded_pixels": 553,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "raster_scene": [
+            320,
+            180
+          ],
+          "passport_sample": {
+            "samples": 4,
+            "median": 0.007391234501940991,
+            "box": [
+              73,
+              100,
+              75,
+              102
+            ]
+          },
+          "mat_sample": {
+            "samples": 20,
+            "median": 0.008452873035147558,
+            "box": [
+              90,
+              92,
+              95,
+              96
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0184982696821177,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                13.02734375,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                31,
+                22
+              ],
+              "thresholded_pixels": 53,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                12.278645833333334,
+                9.530349794238683
+              ],
+              "thresholded_component_sizes": [
+                33,
+                22
+              ],
+              "thresholded_pixels": 55,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "raster_scene": [
+            390,
+            219
+          ],
+          "passport_sample": {
+            "samples": 6,
+            "median": 0.007678550989509698,
+            "box": [
+              89,
+              122,
+              92,
+              124
+            ]
+          },
+          "mat_sample": {
+            "samples": 30,
+            "median": 0.008416619022786322,
+            "box": [
+              110,
+              112,
+              116,
+              117
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0127962304984197,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                15.8770751953125,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                58,
+                31
+              ],
+              "thresholded_pixels": 89,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                14.964599609375,
+                11.615113811728396
+              ],
+              "thresholded_component_sizes": [
+                60,
+                38
+              ],
+              "thresholded_pixels": 98,
+              "mask_threshold": 128
+            }
+          ]
+        },
+        {
+          "width": 430,
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "raster_scene": [
+            430,
+            242
+          ],
+          "passport_sample": {
+            "samples": 9,
+            "median": 0.007666201305186793,
+            "box": [
+              98,
+              134,
+              101,
+              137
+            ]
+          },
+          "mat_sample": {
+            "samples": 42,
+            "median": 0.008522293054655532,
+            "box": [
+              121,
+              123,
+              128,
+              129
+            ]
+          },
+          "material_patch_contrast_proxy": 1.0148456414692213,
+          "glyphs": [
+            {
+              "number": "12",
+              "source_bbox": [
+                257,
+                203,
+                518,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                17.5054931640625,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                64,
+                38
+              ],
+              "thresholded_pixels": 102,
+              "mask_threshold": 128
+            },
+            {
+              "number": "21",
+              "source_bbox": [
+                243,
+                203,
+                489,
+                394
+              ],
+              "CSS_bbox_dimensions": [
+                16.499430338541668,
+                12.806407536008232
+              ],
+              "thresholded_component_sizes": [
+                65,
+                46
+              ],
+              "thresholded_pixels": 111,
+              "mask_threshold": 128
+            }
+          ]
+        }
+      ],
+      "Owen": {
+        "translation_native": [
+          48,
+          0
+        ],
+        "effective_visible_bbox": [
+          519,
+          116,
+          606,
+          298
+        ],
+        "B0_effective_bbox": [
+          471,
+          116,
+          559,
+          298
+        ],
+        "visible_alpha_gt8_pixels": 6259,
+        "B0_visible_alpha_gt8_pixels": 9131,
+        "target_intrusion": [
+          {
+            "objectId": "object-passport",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-21",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-stand-12",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          },
+          {
+            "objectId": "object-star-wallet",
+            "Owen_alpha_gt0_inside_conservative_target": 0
+          }
+        ],
+        "clue_delta": [
+          {
+            "endpoint": 0,
+            "objectId": "object-passport",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-document-mat",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-star-wallet",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-stand-12",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 0,
+            "objectId": "object-stand-21",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-document-mat",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-star-wallet",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-stand-12",
+            "changed_pixels_on_clue_alpha": 0
+          },
+          {
+            "endpoint": 1,
+            "objectId": "object-stand-21",
+            "changed_pixels_on_clue_alpha": 0
+          }
+        ],
+        "scale": "unchanged existing cutout",
+        "plant_table_envelope": [
+          528,
+          162,
+          912,
+          432
+        ],
+        "visible_width_to_table_width": 0.2265625,
+        "full_source_alpha_pixels": 11080,
+        "source_alpha_bbox": [
+          518,
+          116,
+          618,
+          311
+        ],
+        "target_bbox_distances": [
+          {
+            "target": "object-passport",
+            "bbox_gap_native_px": 220.39999999999998,
+            "bbox_gap_at320": 73.46666666666665,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-21",
+            "bbox_gap_native_px": 95.60000000000002,
+            "bbox_gap_at320": 31.866666666666674,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-stand-12",
+            "bbox_gap_native_px": 15.600000000000023,
+            "bbox_gap_at320": 5.200000000000007,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          },
+          {
+            "target": "object-star-wallet",
+            "bbox_gap_native_px": 15.600000000000023,
+            "bbox_gap_at320": 5.200000000000007,
+            "method": "Conservative full-alpha source bbox to unchanged target rectangle; not touch accuracy"
+          }
+        ]
+      },
+      "manual_review": {
+        "status": "REJECT",
+        "R12": "PASS \u2014 same sources, no new gestures/expressions/props, no evident new custody hint in static inspection",
+        "reason": "Not recommended:31.45% visible-area loss and weaker seat anchoring outweigh unproven association benefit; no structural mystery failure",
+        "inspected": "Both native snapshots; full-frame320/390/430 pair panels; not a participant/device test"
+      }
+    }
+  ],
+  "verifier_correction": "R7 now compares stand-ID/position mapping independent of scene-array order; initial results archived in records/. No candidate images changed."
+}

@@ -1,0 +1,868 @@
+{
+  "control_sources": [
+    {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/B/original-960.png",
+      "sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e"
+    },
+    {
+      "path": "artifacts/asset-validation/case-001/composition-correction-study/B/changed-960.png",
+      "sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b"
+    }
+  ],
+  "candidate_geometry_source": "artifacts/asset-validation/case-001/composition-correction-study/B-proposed-case.json",
+  "geometry_sha256": "b6284efcfa6925ae6e37eb854b2647b53720643839c040c8c79f6e0427ef9306",
+  "candidates": [
+    {
+      "id": "B0",
+      "parts": {},
+      "transformation_parameters": {},
+      "outputs": [
+        {
+          "path": "candidates/B0/original-960.png",
+          "sha256": "89bf6885dadb3851893710a14db533573a5d6707b13850bc973ad1170abce54e",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": true
+        },
+        {
+          "path": "previews/B0/original-320.png",
+          "sha256": "ab69ae68d261bac1b4fc2cc6c1778a3a1beb8f4fd5cb0771086f167aebda826f",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/B0/original-390.png",
+          "sha256": "e841bd282931524242364f55b31b5acd71a968c230d6483f1866e6eba5d4b64c",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/B0/original-430.png",
+          "sha256": "009532e4782280aff8b5d2a1af0b8c2cf8047a222e4b54d237d27710ecb11a4b",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/B0/changed-960.png",
+          "sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": true
+        },
+        {
+          "path": "previews/B0/changed-320.png",
+          "sha256": "e9452bdacd5df2d52c96ee96bb9a9371ccea7cc54e1787b02ed58d2ee61a5a48",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/B0/changed-390.png",
+          "sha256": "171d0e1b0d8cfaef0aa8b09f1430b51a894d388911d1521dfd486f2310b8165d",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/B0/changed-430.png",
+          "sha256": "1c074bd80e75e9c51b65bd7f759f39b1a09b27f2814d7c902f4642d6c28fcb68",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    },
+    {
+      "id": "C1a",
+      "parts": {
+        "passport": "a"
+      },
+      "transformation_parameters": {
+        "passport": {
+          "cover_mask": "clamp((B-R)/25)*clamp((150-maxRGB)/70)",
+          "RGB_increments_times_mask": [
+            10,
+            14,
+            18
+          ],
+          "alpha": "unchanged",
+          "mat": "unchanged"
+        }
+      },
+      "outputs": [
+        {
+          "path": "candidates/C1a/original-960.png",
+          "sha256": "7246aa3b142957686f4d2f3cc455bd85247680d14e72e390e9e9c6f473f4d452",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C1a/original-320.png",
+          "sha256": "3e316869d4f156e5d381685a25b7565ea1a383816354ad8e30439404008538c5",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1a/original-390.png",
+          "sha256": "06e48b873d9e12d819f9e4f7ea544d176ba7530021ef1b1ccd6511451415c69f",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1a/original-430.png",
+          "sha256": "aaa8f149c060a59897a41d9e1722a7d88ba04582489c0dc92da6aebecefa413f",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/C1a/changed-960.png",
+          "sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C1a/changed-320.png",
+          "sha256": "e9452bdacd5df2d52c96ee96bb9a9371ccea7cc54e1787b02ed58d2ee61a5a48",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1a/changed-390.png",
+          "sha256": "171d0e1b0d8cfaef0aa8b09f1430b51a894d388911d1521dfd486f2310b8165d",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1a/changed-430.png",
+          "sha256": "1c074bd80e75e9c51b65bd7f759f39b1a09b27f2814d7c902f4642d6c28fcb68",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    },
+    {
+      "id": "C1b",
+      "parts": {
+        "passport": "b"
+      },
+      "transformation_parameters": {
+        "passport": {
+          "cover_mask": "clamp((B-R)/25)*clamp((150-maxRGB)/70)",
+          "RGB_increments_times_mask": [
+            18,
+            24,
+            30
+          ],
+          "alpha": "unchanged",
+          "mat": "unchanged"
+        }
+      },
+      "outputs": [
+        {
+          "path": "candidates/C1b/original-960.png",
+          "sha256": "17952cac52d9e6b62b0865f39cec98af70da3c58b2416e8e624d84d9cb2a7109",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C1b/original-320.png",
+          "sha256": "9f510ae53f75bfc9d50dc961b5addb78b5336a356828f500800182a11d7f5579",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1b/original-390.png",
+          "sha256": "2f45c714f0ac603b8f23b2d796187d927d3c6bc048cd97bc3b1cfe3d92692df5",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1b/original-430.png",
+          "sha256": "d4a3c09a6f36775ea44c6f773141381a170e79b1f6213a34e3e39515bddad884",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/C1b/changed-960.png",
+          "sha256": "7e98dc2b023cfb6dda0cb58e41e9322934d032915bd280904bd9cc094ff17c9b",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C1b/changed-320.png",
+          "sha256": "e9452bdacd5df2d52c96ee96bb9a9371ccea7cc54e1787b02ed58d2ee61a5a48",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1b/changed-390.png",
+          "sha256": "171d0e1b0d8cfaef0aa8b09f1430b51a894d388911d1521dfd486f2310b8165d",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C1b/changed-430.png",
+          "sha256": "1c074bd80e75e9c51b65bd7f759f39b1a09b27f2814d7c902f4642d6c28fcb68",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    },
+    {
+      "id": "C2a",
+      "parts": {
+        "numerals": "a"
+      },
+      "transformation_parameters": {
+        "numerals": {
+          "font": "C:/Windows/Fonts/arialbd.ttf",
+          "font_size": 260,
+          "tracking": 0,
+          "fill": [
+            255,
+            232,
+            160,
+            255
+          ],
+          "stroke_width": 2,
+          "stroke_fill": [
+            72,
+            47,
+            12,
+            255
+          ],
+          "ROI": [
+            243,
+            203,
+            518,
+            394
+          ],
+          "body": "unchanged blank master, shared variants"
+        }
+      },
+      "outputs": [
+        {
+          "path": "candidates/C2a/original-960.png",
+          "sha256": "d4aa360f4b50edbc44dd0e7f87ed53eda9a246f6afd232511f77325df3e96b4d",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C2a/original-320.png",
+          "sha256": "c5111658ef0a681d43d8c78fcca4fe7684d71eb0f9e1d9c77c78140e0b923ec9",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2a/original-390.png",
+          "sha256": "4b064680196e4d5c47c657238720e6931511aacd6eb8599804fe3fa2f123b875",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2a/original-430.png",
+          "sha256": "dc63cddf49e6d6c6af4b351e8b48d8b526bc5204c5a8bd417ca8a3f67a72a4f1",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/C2a/changed-960.png",
+          "sha256": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C2a/changed-320.png",
+          "sha256": "0bfeea180aa4a49d07e09d80a55c5d6799e82ba7fd0dd7d5f1a87c1855c4b0bd",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2a/changed-390.png",
+          "sha256": "54ada3e92bb54385d4de44efe8aa925e37fb196002cd02becd9cf3fb6e3daa62",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2a/changed-430.png",
+          "sha256": "0e649f6995bec4d4e2bd31fb11d2a11969e732bfef07b9ff80ad1f81f6a3e8ed",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    },
+    {
+      "id": "C2b",
+      "parts": {
+        "numerals": "b"
+      },
+      "transformation_parameters": {
+        "numerals": {
+          "font": "C:/Windows/Fonts/arialbd.ttf",
+          "font_size": 248,
+          "tracking": 8,
+          "fill": [
+            255,
+            232,
+            160,
+            255
+          ],
+          "stroke_width": 2,
+          "stroke_fill": [
+            72,
+            47,
+            12,
+            255
+          ],
+          "ROI": [
+            243,
+            203,
+            518,
+            394
+          ],
+          "body": "unchanged blank master, shared variants"
+        }
+      },
+      "outputs": [
+        {
+          "path": "candidates/C2b/original-960.png",
+          "sha256": "bdd7f40fbcdb1534e4990d23322a8f9347378c4e9d029f6825031d5c26a12684",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C2b/original-320.png",
+          "sha256": "65f78167679c077052f16d305d59b793015e756c2e8467e27bad0d46bcc344a0",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2b/original-390.png",
+          "sha256": "209b3cf7fc52519badc3ce65948f0adb65e893fa91eec88e91e9870313323ae9",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2b/original-430.png",
+          "sha256": "ed4a766c3951bb0edfcd626d2389a4ccfb219f2a04e6335d50b125b740838f08",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/C2b/changed-960.png",
+          "sha256": "3939c236262d588efd4d5d6d0a30f0b881c7401dabfe878e8826cf7a30dae5e5",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C2b/changed-320.png",
+          "sha256": "b4b309d1f8053f4a7412d67dd279b1a0e8b9b5e992962012a94e59cabdbf42f1",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2b/changed-390.png",
+          "sha256": "4436f01fc05a1f8f1c1af899d1bf72d32bb59f2feacb6aea4ffe662ef29a0a33",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C2b/changed-430.png",
+          "sha256": "a05294f0a12cdea436367d05bbd266b09ba5fe9c679584ea37224237de9fcdb4",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    },
+    {
+      "id": "C3a",
+      "parts": {
+        "Owen": [
+          24,
+          0
+        ]
+      },
+      "transformation_parameters": {
+        "Owen": {
+          "translation_native": [
+            24,
+            0
+          ],
+          "source": "existing Owen cutout at original scale",
+          "Mara": "unchanged"
+        }
+      },
+      "outputs": [
+        {
+          "path": "candidates/C3a/original-960.png",
+          "sha256": "d8871bba5237eb1d63f280aacf7ac927283244f968eeb54db3505704fc103d98",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C3a/original-320.png",
+          "sha256": "46ea3bc2a46fdf8c37505bc2ab4a7445555349ab214241361336a1d974e20d9b",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3a/original-390.png",
+          "sha256": "c691e3c01d26cf49748e324555cb46f02e605bd5591c8924d08d9653768b8501",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3a/original-430.png",
+          "sha256": "11b2c98b1e6319e97632c00194fedd69af0906fb756d5e8e1f7486141316c158",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/C3a/changed-960.png",
+          "sha256": "1df26662e409ee46d3894bacf7c4e4a12cba54c3b10a8facf6c2e4beb2c96e59",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C3a/changed-320.png",
+          "sha256": "6192518f9a7a70404ee4b6f14417669c1532a76b73b417c6db4f293bf2a03805",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3a/changed-390.png",
+          "sha256": "10d6a4ecff51d9cb119c029d8755ae684dc608ee179a855f0db3fdc1d3cdfd9b",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3a/changed-430.png",
+          "sha256": "6cf9037198288da04b08131cef94ad9f6051bd4d03ae22aaff3faf4baa0eb9c9",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    },
+    {
+      "id": "C3b",
+      "parts": {
+        "Owen": [
+          48,
+          0
+        ]
+      },
+      "transformation_parameters": {
+        "Owen": {
+          "translation_native": [
+            48,
+            0
+          ],
+          "source": "existing Owen cutout at original scale",
+          "Mara": "unchanged"
+        }
+      },
+      "outputs": [
+        {
+          "path": "candidates/C3b/original-960.png",
+          "sha256": "382daa4f9f5db27313a6583556131e5ffd8a1166603d24dbc932c3596612ef47",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C3b/original-320.png",
+          "sha256": "68818dfe0828a4efd814be1a7e6c87e68db2f9c890ac67d9622d9737533c323d",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3b/original-390.png",
+          "sha256": "3b3f495203e2c0846d32325d61db98c3e37e8b85d547a50a138cd7daf50f2028",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3b/original-430.png",
+          "sha256": "2d731cf0e0a10fdc60e82d3fb3aa2e853a45dd710f4d62da2c25f63fe49856ba",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "candidates/C3b/changed-960.png",
+          "sha256": "ed204835d300155d721501cf6522608de3b588af8b5b01e63980f43e5d39dab8",
+          "dimensions": [
+            960,
+            540
+          ],
+          "control_copy_exact": false
+        },
+        {
+          "path": "previews/C3b/changed-320.png",
+          "sha256": "53b1e24524bbce75b91af45d4dcb766b2e3d40e2d678f729dc584a138beb92cb",
+          "dimensions": [
+            320,
+            180
+          ],
+          "CSS_scene": [
+            320,
+            180.0
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3b/changed-390.png",
+          "sha256": "c24d39270d472c58d1401e7f9e8f5eacb965381192677318bce8c9791b6a4d70",
+          "dimensions": [
+            390,
+            219
+          ],
+          "CSS_scene": [
+            390,
+            219.375
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        },
+        {
+          "path": "previews/C3b/changed-430.png",
+          "sha256": "6136a3de905fa54b7aefa64a36533b0a578f2aacb51dd53ee9a7ec2973ee5a01",
+          "dimensions": [
+            430,
+            242
+          ],
+          "CSS_scene": [
+            430,
+            241.875
+          ],
+          "method": "full-frame LANCZOS; nearest integer raster height; no crop/sharpen/retouch"
+        }
+      ],
+      "structural_status": "REJECT",
+      "manual_status": "PENDING_REVIEW",
+      "source_chain": "source-manifest.json; exact immutable CASE and source assets; derived files only under this study"
+    }
+  ]
+}
