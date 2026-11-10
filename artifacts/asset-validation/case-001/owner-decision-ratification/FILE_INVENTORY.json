@@ -1,0 +1,85 @@
+{
+  "file_count_including_inventory": 16,
+  "files": [
+    {
+      "path": "AUTHORIZATION_AND_SCOPE.md",
+      "bytes": 11578,
+      "sha256": "671a1e5cfa4ed8f8ef5c7e9de7c9755669c4623267fa5b92bd70c25191744fa7"
+    },
+    {
+      "path": "DECISION_DEPENDENCY_MAP.md",
+      "bytes": 3267,
+      "sha256": "4d687942ea6c5101620e5d81a2862afb2c0ffa05e3c123c15ea679e7a1429437"
+    },
+    {
+      "path": "EXACT_RESEARCH_CANDIDATE.md",
+      "bytes": 1777,
+      "sha256": "049ad5198b823d98f35e17db0f1ab831f0dbea7ddc71ee6ae440382e71c3ccfc"
+    },
+    {
+      "path": "gate-impact.json",
+      "bytes": 15149,
+      "sha256": "8145b4a46554345f62c81b755c047189d285f06fe8a2bd23060ec3a86d55b911"
+    },
+    {
+      "path": "GATE_IMPACT_ANALYSIS.md",
+      "bytes": 4848,
+      "sha256": "4cbcf9595b448635fc6da067a4c9d4f330056db09b19d3ab2211fce5c0bc6d2d"
+    },
+    {
+      "path": "owner-decisions.json",
+      "bytes": 16122,
+      "sha256": "831181e41efebb36f261b74b5a7eb0b17d8801efe3a110d9a2aeace1c0b764d6"
+    },
+    {
+      "path": "OWNER_DECISION_RATIFICATION.md",
+      "bytes": 3821,
+      "sha256": "05130ad3ebfac1f3805e7aa1b9955548bc7700abb40dc351a952b6bee3848294"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2291,
+      "sha256": "857b9a249addff29568f124e21ab00f0b96950786bcdaea1cdcb65e90274f445"
+    },
+    {
+      "path": "REMAINING_OWNER_DECISIONS.md",
+      "bytes": 2409,
+      "sha256": "19782f2400b402d2a7afdcb1297c93f1299752af45d97b4f5abf054efe9d079c"
+    },
+    {
+      "path": "RESPONSIVE_FALLBACK_STUDY_BRIEF.md",
+      "bytes": 3225,
+      "sha256": "5e67682bf9c3094d3e8e1272780fe4095aefe22c30d72786686dd7ae0a0890c2"
+    },
+    {
+      "path": "RIGHTS_EVIDENCE_NEXT_STEPS.md",
+      "bytes": 5597,
+      "sha256": "1720992d94140509d0a7d88ef9ba04c49ffb411b4f514bbc69bc1080ccca5400"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 117562,
+      "sha256": "1de383d455179c49fa14f37ee24fc92d6ae90f82980814b93cfbbb1cf1627a09"
+    },
+    {
+      "path": "UPDATED_DECISION_REGISTER.md",
+      "bytes": 3404,
+      "sha256": "c11d300584968a0a46da61c6d96aa987d5e057f4719308236378a0caebfaf297"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1770,
+      "sha256": "61eb3f4ae46cb16cc266de360c5289a7f8ff04fa0af5e0a0402c00491a6dcc8f"
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "bytes": 3716,
+      "sha256": "000177165973bd31692857971332d3f7c0d0824c993634cb78f45c0c33cd6f88"
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "note": "Recursive self hash/size omitted."
+    }
+  ]
+}

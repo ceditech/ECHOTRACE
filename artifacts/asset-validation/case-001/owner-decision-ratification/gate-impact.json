@@ -1,0 +1,415 @@
+{
+  "source_baseline": "artifacts/asset-validation/case-001/final-artwork-governance/acceptance-gates.json",
+  "interpretation": "Governance overlay only; all22 evidence-based gate statuses preserved",
+  "gates": [
+    {
+      "id": "G01",
+      "gate": "Exact candidate identity",
+      "before_status": "PASS",
+      "status": "PASS",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/measurements.json"
+      ],
+      "affected_decisions": [
+        "D01"
+      ],
+      "governance_impact": "D01 confirms this exact research designation; identity PASS already existed. No production authority.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G02",
+      "gate": "Three-change mystery integrity",
+      "before_status": "PASS",
+      "status": "PASS",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/regression-results.json",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/measurements.json"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No status change; no new technical/visual/device/rights evidence and no further permission.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G03",
+      "gate": "Stable-layer integrity",
+      "before_status": "PASS",
+      "status": "PASS",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/PIXEL_INTEGRITY_REPORT.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/verification.json"
+      ],
+      "affected_decisions": [
+        "D03"
+      ],
+      "governance_impact": "Existing stable-layer PASS unchanged; S1 retains B0 without image edits.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G04",
+      "gate": "Passport Original readability",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/MOBILE_COMPARISON_REPORT.md",
+        "artifacts/asset-validation/case-001/visual-acceptance-review/VISUAL_READABILITY_REPORT.md"
+      ],
+      "affected_decisions": [
+        "D02"
+      ],
+      "governance_impact": "D02 F3 explicitly HOLDS final visual acceptance; Original readability/recognition assessments stay CONDITIONAL. F1/F2 not selected.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G05",
+      "gate": "Table numeral Original readability",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/MOBILE_COMPARISON_REPORT.md"
+      ],
+      "affected_decisions": [
+        "D02"
+      ],
+      "governance_impact": "D02 F3 explicitly HOLDS final visual acceptance; Original readability/recognition assessments stay CONDITIONAL. F1/F2 not selected.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G06",
+      "gate": "Wallet/star Original readability",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "B",
+        "C"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/visual-acceptance-review/VISUAL_READABILITY_REPORT.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/VISUAL_ACCEPTANCE_BRIEF.md"
+      ],
+      "affected_decisions": [
+        "D02"
+      ],
+      "governance_impact": "D02 F3 explicitly HOLDS final visual acceptance; Original readability/recognition assessments stay CONDITIONAL. F1/F2 not selected.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G07",
+      "gate": "Mara staging",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "B"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/visual-acceptance-review/CHARACTER_STAGING_REPORT.md"
+      ],
+      "affected_decisions": [
+        "D03"
+      ],
+      "governance_impact": "D03 S1 provisionally retains B0; final staging/proportions remain CONDITIONAL, not PASS.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G08",
+      "gate": "Owen staging",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "B"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/visual-correction-study/OWEN_STAGING_STUDY.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/README.md"
+      ],
+      "affected_decisions": [
+        "D03"
+      ],
+      "governance_impact": "D03 S1 provisionally retains B0; final staging/proportions remain CONDITIONAL, not PASS.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G09",
+      "gate": "Character/furniture proportions",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "B"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/visual-acceptance-review/CHARACTER_STAGING_REPORT.md"
+      ],
+      "affected_decisions": [
+        "D03"
+      ],
+      "governance_impact": "D03 S1 provisionally retains B0; final staging/proportions remain CONDITIONAL, not PASS.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G10",
+      "gate": "16:9 scene fit",
+      "before_status": "PASS",
+      "status": "PASS",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "B"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/MOBILE_COMPARISON_REPORT.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/measurements.json"
+      ],
+      "affected_decisions": [
+        "D04"
+      ],
+      "governance_impact": "Existing native full-frame16:9 PASS unchanged. W3 authorizes no presentation modification.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G11",
+      "gate": "Supported effective-width policy",
+      "before_status": "BLOCKED",
+      "status": "BLOCKED",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "B"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/MOBILE_READABILITY_REPORT.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/MOBILE_COMPARISON_REPORT.md"
+      ],
+      "affected_decisions": [
+        "D04"
+      ],
+      "governance_impact": "W3 is direction only: no RFS execution or minimum width selected. BLOCKED pending separate study authority/evidence and explicit width policy.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G12",
+      "gate": "Interaction-target geometry",
+      "before_status": "PASS",
+      "status": "PASS",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/verification.json",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/regression-results.json"
+      ],
+      "affected_decisions": [
+        "D04"
+      ],
+      "governance_impact": "W3 does not modify targets or approve browser/accessibility behavior; research geometry/accessibility evidence status unchanged.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G13",
+      "gate": "Physical Android evidence",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "D"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/physical-device-qa-addendum/ANDROID_QA_SUMMARY.md",
+        "artifacts/asset-validation/case-001/physical-device-qa-addendum/EVIDENCE_REGISTER.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No status change; no new technical/visual/device/rights evidence and no further permission.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G14",
+      "gate": "iOS Safari evidence",
+      "before_status": "NOT VERIFIED",
+      "status": "NOT VERIFIED",
+      "status_changed": false,
+      "evidence_levels": [
+        "D"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/DEVICE_QA_PROCEDURE.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No status change; no new technical/visual/device/rights evidence and no further permission.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G15",
+      "gate": "Installed PWA evidence",
+      "before_status": "NOT VERIFIED",
+      "status": "NOT VERIFIED",
+      "status_changed": false,
+      "evidence_levels": [
+        "D"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/OPEN_ISSUES.md",
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/DEVICE_QA_PROCEDURE.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No status change; no new technical/visual/device/rights evidence and no further permission.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G16",
+      "gate": "Accessibility and browser zoom",
+      "before_status": "NOT VERIFIED",
+      "status": "NOT VERIFIED",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "D"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/BROWSER_VERIFICATION_REPORT.md",
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/DEVICE_QA_PROCEDURE.md"
+      ],
+      "affected_decisions": [
+        "D04"
+      ],
+      "governance_impact": "W3 does not modify targets or approve browser/accessibility behavior; research geometry/accessibility evidence status unchanged.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G17",
+      "gate": "Artwork source provenance",
+      "before_status": "CONDITIONAL",
+      "status": "CONDITIONAL",
+      "status_changed": false,
+      "evidence_levels": [
+        "E"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/PROVENANCE_AND_RIGHTS_GAPS.md",
+        "artifacts/asset-validation/case-001/visual-acceptance-review/ART_PROVENANCE_REVIEW.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No status change; no new technical/visual/device/rights evidence and no further permission.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G18",
+      "gate": "Artwork/font/reference rights",
+      "before_status": "BLOCKED",
+      "status": "BLOCKED",
+      "status_changed": false,
+      "evidence_levels": [
+        "E"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/visual-correction-study/PROVENANCE_AND_RIGHTS_GAPS.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/PROVENANCE_AND_RIGHTS_GAPS.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "Required rights evidence remains unresolved; D05 PENDING, G18 BLOCKED.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G19",
+      "gate": "Canonical versus refined geometry",
+      "before_status": "BLOCKED",
+      "status": "BLOCKED",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "src/cases/content/case-001/case.json",
+        "artifacts/asset-validation/case-001/composition-correction-study/B-proposed-case.json"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "Canonical remains authoritative; D06 PENDING and no refined migration approved.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G20",
+      "gate": "Production artwork adoption",
+      "before_status": "NOT AUTHORIZED",
+      "status": "NOT AUTHORIZED",
+      "status_changed": false,
+      "evidence_levels": [
+        "A",
+        "E"
+      ],
+      "FAG001_supporting_sources": [
+        "artifacts/asset-validation/case-001/controlled-combination-validation/AUTHORIZATION_AND_SCOPE.md",
+        "TRACKER.md"
+      ],
+      "affected_decisions": [
+        "D01",
+        "D02",
+        "D03",
+        "D04"
+      ],
+      "governance_impact": "Confirmed research identity/F3 hold/S1 provisional/W3 direction provide no production adoption authority; D07 PENDING.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G21",
+      "gate": "T17 authorization",
+      "before_status": "NOT AUTHORIZED",
+      "status": "NOT AUTHORIZED",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "TRACKER.md",
+        "artifacts/asset-validation/case-001/B-mobile-interaction-validation/OWNER_AUTHORIZATION_RECORD.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No T17/T18 authority. D08/D09 and relevant dependencies remain PENDING.",
+      "technical_findings_rewritten": false
+    },
+    {
+      "id": "G22",
+      "gate": "T18 authorization",
+      "before_status": "NOT AUTHORIZED",
+      "status": "NOT AUTHORIZED",
+      "status_changed": false,
+      "evidence_levels": [
+        "A"
+      ],
+      "FAG001_supporting_sources": [
+        "TRACKER.md",
+        "artifacts/asset-validation/case-001/mobile-presentation-spec/IMPLEMENTATION_SEQUENCE.md"
+      ],
+      "affected_decisions": [],
+      "governance_impact": "No T17/T18 authority. D08/D09 and relevant dependencies remain PENDING.",
+      "technical_findings_rewritten": false
+    }
+  ]
+}

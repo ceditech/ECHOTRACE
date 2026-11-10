@@ -1,0 +1,383 @@
+{
+  "source_baseline": "artifacts/asset-validation/case-001/final-artwork-governance/owner-decisions.json",
+  "historical_established_record_refs": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05"
+  ],
+  "overlay_rule": "Only D01\u2013D04 ratified; prior pending wording remains historical in FAG-001",
+  "research_candidate_label": "PREFERRED RESEARCH CANDIDATE \u2014 NOT PRODUCTION APPROVED",
+  "final_visual_acceptance": "HELD \u2014 F3",
+  "existing_visual_assessment": "CONDITIONAL",
+  "staging": "B0 PROVISIONAL \u2014 S1",
+  "supported_minimum_effective_scene_width": "UNDECIDED",
+  "RFS001_execution_authorized": false,
+  "decisions": [
+    {
+      "id": "D01",
+      "description": "Confirm final preferred research designation",
+      "selected_option": "CONFIRM",
+      "owner_authorization_evidence": {
+        "source": "Current FAG-002 owner instruction \u00a7\u00a75\u20138, attachment identified in source-manifest.json",
+        "path": "C:\\Users\\CedricYovodevi\\.codex\\attachments\\e11d1d40-ea52-49b2-887a-ed4a80ec1444\\Pasted text.txt",
+        "sha256": "dcde83f70abc5eb0a086bda9dcfb72a91091fc6f74d5170c71571af47cf184e8"
+      },
+      "scope": "Research designation only",
+      "effective_status": "CONFIRMED",
+      "owner_approval_status": "RATIFIED LIMITED GOVERNANCE DECISION",
+      "recorded_calendar_date": "2026-11-10",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "date_note": "Calendar recording date only; no separate approval date/time or signature supplied",
+      "establishes": [
+        "Exact CCV hash-bound pair is the confirmed preferred research baseline",
+        "Earlier variants remain historical evidence"
+      ],
+      "does_not_establish": [
+        "No production approval, final visual acceptance, rights clearance or canonical migration",
+        "No T17/T18 or additional task authority"
+      ],
+      "dependencies": [],
+      "affected_gates": [
+        "G01",
+        "G20"
+      ],
+      "next_separately_authorized_action": "Future review/planning requires its own scope; no production use",
+      "decision_recorded": true,
+      "new_technical_human_device_or_rights_evidence": false,
+      "new_task_execution_authorized": false,
+      "production_adoption_approved": false
+    },
+    {
+      "id": "D02",
+      "description": "Original readability/fairness risk",
+      "selected_option": "F3",
+      "owner_authorization_evidence": {
+        "source": "Current FAG-002 owner instruction \u00a7\u00a75\u20138, attachment identified in source-manifest.json",
+        "path": "C:\\Users\\CedricYovodevi\\.codex\\attachments\\e11d1d40-ea52-49b2-887a-ed4a80ec1444\\Pasted text.txt",
+        "sha256": "dcde83f70abc5eb0a086bda9dcfb72a91091fc6f74d5170c71571af47cf184e8"
+      },
+      "scope": "Final visual acceptance remains held",
+      "effective_status": "F3 \u2014 HOLD FINAL VISUAL ACCEPTANCE",
+      "owner_approval_status": "RATIFIED LIMITED GOVERNANCE DECISION",
+      "recorded_calendar_date": "2026-11-10",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "date_note": "Calendar recording date only; no separate approval date/time or signature supplied",
+      "establishes": [
+        "Passport/numeral/wallet Original assessments remain conditional",
+        "First-time recognition/fairness unresolved; closed study stays closed"
+      ],
+      "does_not_establish": [
+        "F1/F2 not selected; no further study/testing, new art or timing change",
+        "25-second observation remains an existing planning fact, not a new implementation permission"
+      ],
+      "dependencies": [
+        "D01"
+      ],
+      "affected_gates": [
+        "G04",
+        "G05",
+        "G06",
+        "G20"
+      ],
+      "next_separately_authorized_action": "Maintain hold; further evidence activity requires distinct authorization",
+      "decision_recorded": true,
+      "new_technical_human_device_or_rights_evidence": false,
+      "new_task_execution_authorized": false,
+      "production_adoption_approved": false
+    },
+    {
+      "id": "D03",
+      "description": "Character staging/proportions",
+      "selected_option": "S1",
+      "owner_authorization_evidence": {
+        "source": "Current FAG-002 owner instruction \u00a7\u00a75\u20138, attachment identified in source-manifest.json",
+        "path": "C:\\Users\\CedricYovodevi\\.codex\\attachments\\e11d1d40-ea52-49b2-887a-ed4a80ec1444\\Pasted text.txt",
+        "sha256": "dcde83f70abc5eb0a086bda9dcfb72a91091fc6f74d5170c71571af47cf184e8"
+      },
+      "scope": "Provisional B0 retention only",
+      "effective_status": "S1 \u2014 RETAIN B0 STAGING PROVISIONALLY",
+      "owner_approval_status": "RATIFIED LIMITED GOVERNANCE DECISION",
+      "recorded_calendar_date": "2026-11-10",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "date_note": "Calendar recording date only; no separate approval date/time or signature supplied",
+      "establishes": [
+        "Mara/Owen positions, appearance, scale and compositing unchanged",
+        "No C3a/C3b adoption; avoids their additional visibility loss",
+        "Owen plant-table ambiguity and proportion concerns stay documented"
+      ],
+      "does_not_establish": [
+        "No final staging acceptance or G07/G08/G09 PASS upgrade",
+        "No reposition, redraw, scale or image output authority"
+      ],
+      "dependencies": [
+        "D01"
+      ],
+      "affected_gates": [
+        "G03",
+        "G07",
+        "G08",
+        "G09"
+      ],
+      "next_separately_authorized_action": "Retain existing baseline only; any investigation needs separate scope",
+      "decision_recorded": true,
+      "new_technical_human_device_or_rights_evidence": false,
+      "new_task_execution_authorized": false,
+      "production_adoption_approved": false
+    },
+    {
+      "id": "D04",
+      "description": "Effective scene width policy",
+      "selected_option": "W3",
+      "owner_authorization_evidence": {
+        "source": "Current FAG-002 owner instruction \u00a7\u00a75\u20138, attachment identified in source-manifest.json",
+        "path": "C:\\Users\\CedricYovodevi\\.codex\\attachments\\e11d1d40-ea52-49b2-887a-ed4a80ec1444\\Pasted text.txt",
+        "sha256": "dcde83f70abc5eb0a086bda9dcfb72a91091fc6f74d5170c71571af47cf184e8"
+      },
+      "scope": "Direction toward a separately authorized study only",
+      "effective_status": "W3 \u2014 RESPONSIVE FALLBACK STUDY DIRECTION",
+      "owner_approval_status": "RATIFIED LIMITED GOVERNANCE DECISION",
+      "recorded_calendar_date": "2026-11-10",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "date_note": "Calendar recording date only; no separate approval date/time or signature supplied",
+      "establishes": [
+        "W3 governance direction selected",
+        "Supported minimum effective scene width remains UNDECIDED",
+        "Viewport and actual fitted scene width remain distinct"
+      ],
+      "does_not_establish": [
+        "No RFS-001 execution, design, prototype, device/human testing or implementation",
+        "No W1/W2 or320/390 minimum approval",
+        "No crop, Original gameplay zoom,16:9 FIT change, geometry/target modification"
+      ],
+      "dependencies": [
+        "D02"
+      ],
+      "affected_gates": [
+        "G10",
+        "G11",
+        "G12",
+        "G16"
+      ],
+      "next_separately_authorized_action": "Obtain separate RFS-001 scope, authorization and acceptance criteria before execution",
+      "decision_recorded": true,
+      "new_technical_human_device_or_rights_evidence": false,
+      "new_task_execution_authorized": false,
+      "production_adoption_approved": false
+    },
+    {
+      "id": "D05",
+      "kind": "Pending owner decision",
+      "description": "Required provenance/rights clearance",
+      "options": [
+        "Provide and review needed source/reference/font permissions",
+        "Hold artwork adoption"
+      ],
+      "recommended_option": "Complete evidence if proceeding; no unsupported clearance",
+      "evidence": [
+        "EV14"
+      ],
+      "tradeoffs": "Internal generation/source hashes alone are insufficient",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Collect/document permissions only under appropriate scope; no legal approval invented",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    },
+    {
+      "id": "D06",
+      "kind": "Pending owner decision",
+      "description": "Canonical/refined geometry governance",
+      "options": [
+        "Retain authoritative canonical geometry",
+        "Separately authorize exact refined migration plan",
+        "Hold migration decision"
+      ],
+      "recommended_option": "Canonical stays authoritative until an explicit later decision",
+      "evidence": [
+        "EV12",
+        "EV16"
+      ],
+      "tradeoffs": "Refined visual support/layout and targets differ; frozen facts stay unchanged",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D02",
+        "D03",
+        "D04"
+      ],
+      "next_permitted_action": "Owner may commission bounded migration planning; FAG permits no edit",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    },
+    {
+      "id": "D07",
+      "kind": "Pending owner decision",
+      "description": "Production artwork adoption",
+      "options": [
+        "Hold adoption",
+        "Separately authorize exact files/use after required gates"
+      ],
+      "recommended_option": "Remain on hold while required gates unresolved",
+      "evidence": [
+        "EV01",
+        "EV14",
+        "EV15"
+      ],
+      "tradeoffs": "Adoption distinct from candidate preference, geometry and implementation",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D10"
+      ],
+      "next_permitted_action": "No adoption; future explicit authorization required",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    },
+    {
+      "id": "D08",
+      "kind": "Pending owner decision",
+      "description": "T17 implementation authorization",
+      "options": [
+        "Do not authorize",
+        "Separately authorize a bounded T17 task with dependencies/tests"
+      ],
+      "recommended_option": "No T17 work under FAG",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Not all future platform checks necessarily precede every preparatory slice; scope/gates must be explicit",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D06",
+        "D10"
+      ],
+      "next_permitted_action": "No implementation until explicit task authority",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    },
+    {
+      "id": "D09",
+      "kind": "Pending owner decision",
+      "description": "T18 implementation authorization",
+      "options": [
+        "Do not authorize",
+        "Separately authorize timer task after relevant dependencies"
+      ],
+      "recommended_option": "No T18 work under FAG",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Timer implementation not granted by observation planning",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D08",
+        "D11"
+      ],
+      "next_permitted_action": "No implementation until explicit task authority",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    },
+    {
+      "id": "D10",
+      "kind": "Pending owner decision",
+      "description": "Platform/accessibility/performance coverage and sequencing",
+      "options": [
+        "Define Android/iOS/PWA and accessibility acceptance coverage",
+        "Explicitly defer specified platform claims"
+      ],
+      "recommended_option": "No coverage waiver assumed",
+      "evidence": [
+        "EV09",
+        "EV11",
+        "EV13"
+      ],
+      "tradeoffs": "Owner reports/simulations cannot certify all physical behavior",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D04"
+      ],
+      "next_permitted_action": "Record plan; further QA requires separate authorization",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    },
+    {
+      "id": "D11",
+      "kind": "Pending owner decision",
+      "description": "Timing/interruption/recovery policy",
+      "options": [
+        "Approved trusted deadline recovery policy",
+        "Approved interrupted-attempt handling policy",
+        "Hold policy decision"
+      ],
+      "recommended_option": "No production default selected",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Clock uncertainty, original masking/replay and progress semantics unresolved",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Resolve product/architecture policy before relevant future implementation",
+      "selected_option": null,
+      "effective_status": "PENDING",
+      "approval_date": null,
+      "approval_timestamp": null,
+      "recorded_calendar_date": "2026-11-10",
+      "ratified_by_FAG002": false,
+      "note": "D01\u2013D04 direction selections do not satisfy this decision or its dependent acceptance gates"
+    }
+  ]
+}
