@@ -1,0 +1,362 @@
+{
+  "selection_authority": "Owner only; FAG documentation does not choose W/F/S options",
+  "decisions": [
+    {
+      "id": "E01",
+      "kind": "Established record",
+      "description": "Exact CCV identity/preferred research label permitted",
+      "options": [
+        "Record exact pair as preferred research candidate only"
+      ],
+      "recommended_option": "No new option selected",
+      "evidence": [
+        "EV01"
+      ],
+      "tradeoffs": "Preferred research label is not final owner selection or production approval",
+      "owner_approval_status": "ESTABLISHED IDENTITY; final owner confirmation D01 pending",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Document exact hashes only",
+      "selected_option": null
+    },
+    {
+      "id": "E02",
+      "kind": "Established record",
+      "description": "CCV technical combination integrity PASS",
+      "options": [
+        "Retain historical CCV result with evidence level"
+      ],
+      "recommended_option": "Not an owner consent decision",
+      "evidence": [
+        "EV02"
+      ],
+      "tradeoffs": "No new pixel/visual/interaction tests in FAG",
+      "owner_approval_status": "ESTABLISHED TECHNICAL FINDING, not production authorization",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Cite archived result and freshly verified identity",
+      "selected_option": null
+    },
+    {
+      "id": "E03",
+      "kind": "Established record",
+      "description": "Visual acceptance CONDITIONAL",
+      "options": [
+        "Retain assessed limitations"
+      ],
+      "recommended_option": "Not an owner consent decision",
+      "evidence": [
+        "EV03",
+        "EV04"
+      ],
+      "tradeoffs": "A/B results do not prove C/D recognition/device acceptance",
+      "owner_approval_status": "ESTABLISHED ASSESSMENT, not owner final visual approval",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Present pending fairness/staging choices",
+      "selected_option": null
+    },
+    {
+      "id": "E04",
+      "kind": "Established restriction",
+      "description": "Production adoption/T17/T18 not authorized",
+      "options": [
+        "Respect current prohibition"
+      ],
+      "recommended_option": "Required existing boundary",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Later explicit permission must be separately scoped",
+      "owner_approval_status": "ESTABLISHED CURRENT RESTRICTION",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Documentation only; stop for owner review",
+      "selected_option": null
+    },
+    {
+      "id": "E05",
+      "kind": "Established planning record",
+      "description": "MPS O01\u2013O12 accepted planning baseline",
+      "options": [
+        "Retain accepted planning with deferred details"
+      ],
+      "recommended_option": "Maintain source/version distinctions",
+      "evidence": [
+        "EV15",
+        "EV16"
+      ],
+      "tradeoffs": "Older pending register/recommended defaults do not override later baseline approval or grant implementation",
+      "owner_approval_status": "ACCEPTED PLANNING ONLY per later MIV authorization record",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Use planning constraints; no implementation",
+      "selected_option": null
+    },
+    {
+      "id": "D01",
+      "kind": "Pending owner decision",
+      "description": "Confirm final preferred research designation",
+      "options": [
+        "Confirm exact CCV pair for research review",
+        "Hold designation"
+      ],
+      "recommended_option": "Confirmation supported if owner agrees; no adoption inferred",
+      "evidence": [
+        "EV01",
+        "EV02",
+        "EV03"
+      ],
+      "tradeoffs": "Technically exact but visually conditional",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Owner review only; designation creates no production permission",
+      "selected_option": null
+    },
+    {
+      "id": "D02",
+      "kind": "Pending owner decision",
+      "description": "Original readability/fairness risk",
+      "options": [
+        "F1 conditional risk acceptance for research planning",
+        "F2 require separately authorized evidence",
+        "F3 hold final visual acceptance"
+      ],
+      "recommended_option": "No selection or recommendation among F1\u2013F3",
+      "evidence": [
+        "EV03",
+        "EV10"
+      ],
+      "tradeoffs": "Known small details; closed study stays closed; no proof from metrics",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D01"
+      ],
+      "next_permitted_action": "Record owner choice; F2 needs distinct scope before any evidence activity",
+      "selected_option": null
+    },
+    {
+      "id": "D03",
+      "kind": "Pending owner decision",
+      "description": "Character staging/proportions",
+      "options": [
+        "S1 retain B0 provisionally",
+        "S2 hold final staging acceptance",
+        "S3 separately authorize bounded investigation"
+      ],
+      "recommended_option": "No selection or arbitrary resize recommendation",
+      "evidence": [
+        "EV04",
+        "EV05"
+      ],
+      "tradeoffs": "B0 ambiguity versus added occlusion in rejected/conditional translations",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D01"
+      ],
+      "next_permitted_action": "Record owner choice only; no new position/art generated",
+      "selected_option": null
+    },
+    {
+      "id": "D04",
+      "kind": "Pending owner decision",
+      "description": "Effective scene width policy",
+      "options": [
+        "W1 effective320 minimum with explicit limitations",
+        "W2 effective390 preferred and defined below-floor treatment",
+        "W3 separately authorized responsive fallback study"
+      ],
+      "recommended_option": "No selection or preferred width adopted",
+      "evidence": [
+        "EV07"
+      ],
+      "tradeoffs": "Target comfort is not recognition; viewport width is not effective width",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D02"
+      ],
+      "next_permitted_action": "Record supported effective width and below-floor requirement; no UI implementation",
+      "selected_option": null
+    },
+    {
+      "id": "D05",
+      "kind": "Pending owner decision",
+      "description": "Required provenance/rights clearance",
+      "options": [
+        "Provide and review needed source/reference/font permissions",
+        "Hold artwork adoption"
+      ],
+      "recommended_option": "Complete evidence if proceeding; no unsupported clearance",
+      "evidence": [
+        "EV14"
+      ],
+      "tradeoffs": "Internal generation/source hashes alone are insufficient",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Collect/document permissions only under appropriate scope; no legal approval invented",
+      "selected_option": null
+    },
+    {
+      "id": "D06",
+      "kind": "Pending owner decision",
+      "description": "Canonical/refined geometry governance",
+      "options": [
+        "Retain authoritative canonical geometry",
+        "Separately authorize exact refined migration plan",
+        "Hold migration decision"
+      ],
+      "recommended_option": "Canonical stays authoritative until an explicit later decision",
+      "evidence": [
+        "EV12",
+        "EV16"
+      ],
+      "tradeoffs": "Refined visual support/layout and targets differ; frozen facts stay unchanged",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D02",
+        "D03",
+        "D04"
+      ],
+      "next_permitted_action": "Owner may commission bounded migration planning; FAG permits no edit",
+      "selected_option": null
+    },
+    {
+      "id": "D07",
+      "kind": "Pending owner decision",
+      "description": "Production artwork adoption",
+      "options": [
+        "Hold adoption",
+        "Separately authorize exact files/use after required gates"
+      ],
+      "recommended_option": "Remain on hold while required gates unresolved",
+      "evidence": [
+        "EV01",
+        "EV14",
+        "EV15"
+      ],
+      "tradeoffs": "Adoption distinct from candidate preference, geometry and implementation",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D10"
+      ],
+      "next_permitted_action": "No adoption; future explicit authorization required",
+      "selected_option": null
+    },
+    {
+      "id": "D08",
+      "kind": "Pending owner decision",
+      "description": "T17 implementation authorization",
+      "options": [
+        "Do not authorize",
+        "Separately authorize a bounded T17 task with dependencies/tests"
+      ],
+      "recommended_option": "No T17 work under FAG",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Not all future platform checks necessarily precede every preparatory slice; scope/gates must be explicit",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D06",
+        "D10"
+      ],
+      "next_permitted_action": "No implementation until explicit task authority",
+      "selected_option": null
+    },
+    {
+      "id": "D09",
+      "kind": "Pending owner decision",
+      "description": "T18 implementation authorization",
+      "options": [
+        "Do not authorize",
+        "Separately authorize timer task after relevant dependencies"
+      ],
+      "recommended_option": "No T18 work under FAG",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Timer implementation not granted by observation planning",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D08",
+        "D11"
+      ],
+      "next_permitted_action": "No implementation until explicit task authority",
+      "selected_option": null
+    },
+    {
+      "id": "D10",
+      "kind": "Pending owner decision",
+      "description": "Platform/accessibility/performance coverage and sequencing",
+      "options": [
+        "Define Android/iOS/PWA and accessibility acceptance coverage",
+        "Explicitly defer specified platform claims"
+      ],
+      "recommended_option": "No coverage waiver assumed",
+      "evidence": [
+        "EV09",
+        "EV11",
+        "EV13"
+      ],
+      "tradeoffs": "Owner reports/simulations cannot certify all physical behavior",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [
+        "D04"
+      ],
+      "next_permitted_action": "Record plan; further QA requires separate authorization",
+      "selected_option": null
+    },
+    {
+      "id": "D11",
+      "kind": "Pending owner decision",
+      "description": "Timing/interruption/recovery policy",
+      "options": [
+        "Approved trusted deadline recovery policy",
+        "Approved interrupted-attempt handling policy",
+        "Hold policy decision"
+      ],
+      "recommended_option": "No production default selected",
+      "evidence": [
+        "EV15"
+      ],
+      "tradeoffs": "Clock uncertainty, original masking/replay and progress semantics unresolved",
+      "owner_approval_status": "PENDING",
+      "date_approved": null,
+      "date_note": "No approval date/signature invented; report dates are not owner approval dates",
+      "dependencies": [],
+      "next_permitted_action": "Resolve product/architecture policy before relevant future implementation",
+      "selected_option": null
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "head": "e2c37758e7798ce610b4a460c1a192950a988833",
+  "branch": "feature/echotrace",
+  "packages": [
+    {
+      "package": "VAR-001",
+      "directory": "artifacts/asset-validation/case-001/visual-acceptance-review",
+      "introduction_commits": [
+        "1c7508fa6876988028226338029480c6e39a164d"
+      ],
+      "first_introduction": "1c7508fa6876988028226338029480c6e39a164d",
+      "author_timestamp_recorded": "2026-11-10T01:28:00-06:00",
+      "committer_timestamp_recorded": "2026-11-10T01:28:00-06:00",
+      "subject": "VAR-001 Conditional Visual acceptance",
+      "files_in_introduction_tree": 24,
+      "all_introduction_changes_added": true,
+      "introduced_change_count": 24,
+      "task_start_HEAD_recorded": "704d5c48ca311c051d178125fdd9d5c107baf04d",
+      "introduction_parent": "704d5c48ca311c051d178125fdd9d5c107baf04d",
+      "task_start_HEAD_equals_introduction_parent": true,
+      "actor": "NOT ESTABLISHED; names/timestamps are metadata, not authentication",
+      "commit_body_contains_exact_committed_pushed_phrase": false
+    },
+    {
+      "package": "VCS-001",
+      "directory": "artifacts/asset-validation/case-001/visual-correction-study",
+      "introduction_commits": [
+        "c3db9a1b08230bb041219e1f2742c3bcefc3cccd"
+      ],
+      "first_introduction": "c3db9a1b08230bb041219e1f2742c3bcefc3cccd",
+      "author_timestamp_recorded": "2026-11-10T01:42:05-06:00",
+      "committer_timestamp_recorded": "2026-11-10T01:42:05-06:00",
+      "subject": "VCS-001 Conditional Research",
+      "files_in_introduction_tree": 132,
+      "all_introduction_changes_added": true,
+      "introduced_change_count": 132,
+      "task_start_HEAD_recorded": "1c7508fa6876988028226338029480c6e39a164d",
+      "introduction_parent": "1c7508fa6876988028226338029480c6e39a164d",
+      "task_start_HEAD_equals_introduction_parent": true,
+      "actor": "NOT ESTABLISHED; names/timestamps are metadata, not authentication",
+      "commit_body_contains_exact_committed_pushed_phrase": false
+    },
+    {
+      "package": "CCV-001",
+      "directory": "artifacts/asset-validation/case-001/controlled-combination-validation",
+      "introduction_commits": [
+        "e2c37758e7798ce610b4a460c1a192950a988833"
+      ],
+      "first_introduction": "e2c37758e7798ce610b4a460c1a192950a988833",
+      "author_timestamp_recorded": "2026-11-10T01:55:02-06:00",
+      "committer_timestamp_recorded": "2026-11-10T01:55:02-06:00",
+      "subject": "CCV-001 complete: candidate integrity PASS; visual acceptance CONDITIONAL.",
+      "files_in_introduction_tree": 46,
+      "all_introduction_changes_added": true,
+      "introduced_change_count": 46,
+      "task_start_HEAD_recorded": "c3db9a1b08230bb041219e1f2742c3bcefc3cccd",
+      "introduction_parent": "c3db9a1b08230bb041219e1f2742c3bcefc3cccd",
+      "task_start_HEAD_equals_introduction_parent": true,
+      "actor": "NOT ESTABLISHED; names/timestamps are metadata, not authentication",
+      "commit_body_contains_exact_committed_pushed_phrase": false
+    }
+  ],
+  "recent_commits": [
+    "e2c37758e7798ce610b4a460c1a192950a988833 2026-11-10T01:55:02-06:00 2026-11-10T01:55:02-06:00 CCV-001 complete: candidate integrity PASS; visual acceptance CONDITIONAL.",
+    "c3db9a1b08230bb041219e1f2742c3bcefc3cccd 2026-11-10T01:42:05-06:00 2026-11-10T01:42:05-06:00 VCS-001 Conditional Research",
+    "1c7508fa6876988028226338029480c6e39a164d 2026-11-10T01:28:00-06:00 2026-11-10T01:28:00-06:00 VAR-001 Conditional Visual acceptance",
+    "704d5c48ca311c051d178125fdd9d5c107baf04d 2026-11-10T00:49:20-06:00 2026-11-10T00:49:20-06:00 PASS Documentation integrity",
+    "e09bf815e3c5216caa10824172d866defe159b1d 2026-11-09T18:55:20-06:00 2026-11-09T18:55:20-06:00 PASS-READY for actual-device diagnostic QA",
+    "267e6f0e51aeed0ad11f768501aeb16cfd384ade 2026-11-09T18:12:37-06:00 2026-11-09T18:12:37-06:00 APPROACH B RECOMMENDED\u00e2\u20ac\u201dfor owner design review, not adoption",
+    "f8709ef4fa19cd96f63686135236896ba477b50b 2026-10-22T16:33:51-05:00 2026-10-22T16:33:51-05:00 I have added a console log of an html entity to an unit test file",
+    "003ec1d78fe856575dae3e287aaff5b7a6c1c9fc 2026-10-21T13:17:03-05:00 2026-10-21T13:17:03-05:00 Fixed locally. Historical QA artifacts now have a dedicated CI verification step, separate from application formatting and linting.",
+    "540a73542ba7a70e7f2889bd27021e7f175fe08f 2026-10-21T12:55:27-05:00 2026-10-21T12:55:27-05:00 Created the standalone report and 33 file inventory",
+    "f369ad76e6e79c71e8cc152dc29d9742178cfdb6 2026-10-10T23:42:28-05:00 2026-10-10T23:42:28-05:00 ECHOTRACE MPS-001"
+  ],
+  "local_tracking_refs": [
+    "refs/heads/feature/echotrace e2c37758e7798ce610b4a460c1a192950a988833 origin/feature/echotrace ",
+    "refs/remotes/origin/feature/echotrace e2c37758e7798ce610b4a460c1a192950a988833"
+  ],
+  "local_branch_reflog": [
+    "e2c37758e7798ce610b4a460c1a192950a988833 refs/heads/feature/echotrace@{2026-11-10T01:55:02-06:00} commit: CCV-001 complete: candidate integrity PASS; visual acceptance CONDITIONAL.",
+    "c3db9a1b08230bb041219e1f2742c3bcefc3cccd refs/heads/feature/echotrace@{2026-11-10T01:42:05-06:00} commit: VCS-001 Conditional Research",
+    "1c7508fa6876988028226338029480c6e39a164d refs/heads/feature/echotrace@{2026-11-10T01:28:00-06:00} commit: VAR-001 Conditional Visual acceptance",
+    "704d5c48ca311c051d178125fdd9d5c107baf04d refs/heads/feature/echotrace@{2026-11-10T00:49:20-06:00} commit: PASS Documentation integrity",
+    "e09bf815e3c5216caa10824172d866defe159b1d refs/heads/feature/echotrace@{2026-11-09T18:55:20-06:00} commit: PASS-READY for actual-device diagnostic QA",
+    "267e6f0e51aeed0ad11f768501aeb16cfd384ade refs/heads/feature/echotrace@{2026-11-09T18:12:37-06:00} commit: APPROACH B RECOMMENDED\u00e2\u20ac\u201dfor owner design review, not adoption",
+    "f8709ef4fa19cd96f63686135236896ba477b50b refs/heads/feature/echotrace@{2026-10-22T16:33:51-05:00} commit: I have added a console log of an html entity to an unit test file",
+    "003ec1d78fe856575dae3e287aaff5b7a6c1c9fc refs/heads/feature/echotrace@{2026-10-21T13:17:03-05:00} commit: Fixed locally. Historical QA artifacts now have a dedicated CI verification step, separate from application formatting and linting."
+  ],
+  "local_remote_tracking_reflog": [
+    "e2c37758e7798ce610b4a460c1a192950a988833 refs/remotes/origin/feature/echotrace@{2026-11-10T01:55:13-06:00} update by push",
+    "c3db9a1b08230bb041219e1f2742c3bcefc3cccd refs/remotes/origin/feature/echotrace@{2026-11-10T01:42:18-06:00} update by push",
+    "1c7508fa6876988028226338029480c6e39a164d refs/remotes/origin/feature/echotrace@{2026-11-10T01:28:08-06:00} update by push",
+    "704d5c48ca311c051d178125fdd9d5c107baf04d refs/remotes/origin/feature/echotrace@{2026-11-10T00:49:52-06:00} update by push",
+    "e09bf815e3c5216caa10824172d866defe159b1d refs/remotes/origin/feature/echotrace@{2026-11-09T18:55:31-06:00} update by push",
+    "267e6f0e51aeed0ad11f768501aeb16cfd384ade refs/remotes/origin/feature/echotrace@{2026-11-09T18:12:50-06:00} update by push",
+    "f8709ef4fa19cd96f63686135236896ba477b50b refs/remotes/origin/feature/echotrace@{2026-10-22T16:34:04-05:00} update by push",
+    "003ec1d78fe856575dae3e287aaff5b7a6c1c9fc refs/remotes/origin/feature/echotrace@{2026-10-21T13:17:12-05:00} update by push"
+  ],
+  "local_HEAD_vs_tracking_ahead_behind": "0\t0",
+  "remote_advertisement_record": "remote-advertisement.json",
+  "claimed_message_source": "Current FAG-001 request section14; exact alleged completion messages not present as repository artifacts",
+  "finding": "Local commits confirmed; tracking reflogs report update by push. Live remote advertises current HEAD. Agent/owner/UI actor and exact tool execution during prior task not established. Later history does not itself contradict task-scoped no-commit/push reports.",
+  "local_HEAD_candidate_blobs": [
+    {
+      "path": "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Original-960.png",
+      "commit": "e2c37758e7798ce610b4a460c1a192950a988833",
+      "committed_blob_sha256": "d7a4bbb6c141b1c2b9d15c38591f16ff6bc4d80629cad0877ce05a43a2993945",
+      "matches_exact_research_candidate": true
+    },
+    {
+      "path": "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Changed-960.png",
+      "commit": "e2c37758e7798ce610b4a460c1a192950a988833",
+      "committed_blob_sha256": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba",
+      "matches_exact_research_candidate": true
+    }
+  ]
+}

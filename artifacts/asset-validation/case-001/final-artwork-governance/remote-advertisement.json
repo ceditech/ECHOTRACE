@@ -1,0 +1,13 @@
+{
+  "command": "git -c credential.helper= -c core.askPass= ls-remote --heads origin feature/echotrace",
+  "kind": "Read-only remote advertisement; no fetch/pull/push/ref update",
+  "observed_utc": "2026-11-10T08:00:20.237501+00:00",
+  "exit_code": 0,
+  "advertised_refs": [
+    {
+      "object": "e2c37758e7798ce610b4a460c1a192950a988833",
+      "ref": "refs/heads/feature/echotrace"
+    }
+  ],
+  "result": "PASS remote advertisement read"
+}

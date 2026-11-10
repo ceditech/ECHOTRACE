@@ -1,0 +1,794 @@
+{
+  "rows": [
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-table-window",
+      "canonical": {
+        "objectId": "object-table-window",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.3,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-table-window",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.3,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "different": false,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-table-plant",
+      "canonical": {
+        "objectId": "object-table-plant",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-table-plant",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "different": false,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-document-mat",
+      "canonical": {
+        "objectId": "object-document-mat",
+        "asset": {
+          "id": "asset-document-mat"
+        },
+        "position": {
+          "x": 0.18,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.2,
+          "height": 0.3
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-document-mat",
+        "asset": {
+          "id": "asset-document-mat"
+        },
+        "position": {
+          "x": 0.22,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.2,
+          "height": 0.28
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-owen-backpack",
+      "canonical": {
+        "objectId": "object-owen-backpack",
+        "asset": {
+          "id": "asset-owen-backpack"
+        },
+        "position": {
+          "x": 0.92,
+          "y": 0.8
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-owen-backpack",
+        "asset": {
+          "id": "asset-owen-backpack"
+        },
+        "position": {
+          "x": 0.92,
+          "y": 0.8
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "different": false,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-passport",
+      "canonical": {
+        "objectId": "object-passport",
+        "asset": {
+          "id": "asset-passport"
+        },
+        "position": {
+          "x": 0.18,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-passport",
+        "asset": {
+          "id": "asset-passport"
+        },
+        "position": {
+          "x": 0.22,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.08,
+          "height": 0.12
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-star-wallet",
+      "canonical": {
+        "objectId": "object-star-wallet",
+        "asset": {
+          "id": "asset-star-wallet"
+        },
+        "position": {
+          "x": 0.38,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-star-wallet",
+        "asset": {
+          "id": "asset-star-wallet"
+        },
+        "position": {
+          "x": 0.38,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.11,
+          "height": 0.132
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-stand-12",
+      "canonical": {
+        "objectId": "object-stand-12",
+        "asset": {
+          "id": "asset-stand-12"
+        },
+        "position": {
+          "x": 0.35,
+          "y": 0.25
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-stand-12",
+        "asset": {
+          "id": "asset-stand-12"
+        },
+        "position": {
+          "x": 0.35,
+          "y": 0.335
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-before",
+      "kind": "visuals",
+      "objectId": "object-stand-21",
+      "canonical": {
+        "objectId": "object-stand-21",
+        "asset": {
+          "id": "asset-stand-21"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.25
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-stand-21",
+        "asset": {
+          "id": "asset-stand-21"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.335
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-table-window",
+      "canonical": {
+        "objectId": "object-table-window",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.3,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-table-window",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.3,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "different": false,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-table-plant",
+      "canonical": {
+        "objectId": "object-table-plant",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-table-plant",
+        "asset": {
+          "id": "asset-table"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.55
+        },
+        "size": {
+          "width": 0.4,
+          "height": 0.5
+        },
+        "rotationDegrees": 0
+      },
+      "different": false,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-document-mat",
+      "canonical": {
+        "objectId": "object-document-mat",
+        "asset": {
+          "id": "asset-document-mat"
+        },
+        "position": {
+          "x": 0.18,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.2,
+          "height": 0.3
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-document-mat",
+        "asset": {
+          "id": "asset-document-mat"
+        },
+        "position": {
+          "x": 0.22,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.2,
+          "height": 0.28
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-owen-backpack",
+      "canonical": {
+        "objectId": "object-owen-backpack",
+        "asset": {
+          "id": "asset-owen-backpack"
+        },
+        "position": {
+          "x": 0.92,
+          "y": 0.8
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-owen-backpack",
+        "asset": {
+          "id": "asset-owen-backpack"
+        },
+        "position": {
+          "x": 0.92,
+          "y": 0.8
+        },
+        "size": {
+          "width": 0.1,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "different": false,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-star-wallet",
+      "canonical": {
+        "objectId": "object-star-wallet",
+        "asset": {
+          "id": "asset-star-wallet"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.65
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-star-wallet",
+        "asset": {
+          "id": "asset-star-wallet"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.535
+        },
+        "size": {
+          "width": 0.11,
+          "height": 0.132
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-stand-12",
+      "canonical": {
+        "objectId": "object-stand-12",
+        "asset": {
+          "id": "asset-stand-12"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.25
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-stand-12",
+        "asset": {
+          "id": "asset-stand-12"
+        },
+        "position": {
+          "x": 0.75,
+          "y": 0.335
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "visuals",
+      "objectId": "object-stand-21",
+      "canonical": {
+        "objectId": "object-stand-21",
+        "asset": {
+          "id": "asset-stand-21"
+        },
+        "position": {
+          "x": 0.35,
+          "y": 0.25
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "refined": {
+        "objectId": "object-stand-21",
+        "asset": {
+          "id": "asset-stand-21"
+        },
+        "position": {
+          "x": 0.35,
+          "y": 0.335
+        },
+        "size": {
+          "width": 0.12,
+          "height": 0.18
+        },
+        "rotationDegrees": 0
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "interactionRegions",
+      "objectId": "object-passport",
+      "canonical": {
+        "objectId": "object-passport",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.09,
+            "y": 0.5
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.3
+          }
+        }
+      },
+      "refined": {
+        "objectId": "object-passport",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.13,
+            "y": 0.47
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.27
+          }
+        }
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "interactionRegions",
+      "objectId": "object-stand-21",
+      "canonical": {
+        "objectId": "object-stand-21",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.26,
+            "y": 0.1
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.3
+          }
+        }
+      },
+      "refined": {
+        "objectId": "object-stand-21",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.26,
+            "y": 0.15
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.27
+          }
+        }
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "interactionRegions",
+      "objectId": "object-stand-12",
+      "canonical": {
+        "objectId": "object-stand-12",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.66,
+            "y": 0.1
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.3
+          }
+        }
+      },
+      "refined": {
+        "objectId": "object-stand-12",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.66,
+            "y": 0.15
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.27
+          }
+        }
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    },
+    {
+      "scene": "scene-lounge-after",
+      "kind": "interactionRegions",
+      "objectId": "object-star-wallet",
+      "canonical": {
+        "objectId": "object-star-wallet",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.66,
+            "y": 0.5
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.3
+          }
+        }
+      },
+      "refined": {
+        "objectId": "object-star-wallet",
+        "geometry": {
+          "kind": "rectangle",
+          "origin": {
+            "x": 0.66,
+            "y": 0.47
+          },
+          "size": {
+            "width": 0.18,
+            "height": 0.27
+          }
+        }
+      },
+      "different": true,
+      "authority": "Canonical case.json remains authoritative; refined B is offline research only"
+    }
+  ],
+  "change_metadata": [
+    {
+      "id": "change-passport-removed",
+      "kind": "object_removed",
+      "canonical": {
+        "observationSceneId": "scene-lounge-before",
+        "investigationSceneId": "scene-lounge-after",
+        "significance": "meaningful",
+        "isRequired": true,
+        "id": "change-passport-removed",
+        "kind": "object_removed",
+        "objectId": "object-passport"
+      },
+      "refined": {
+        "observationSceneId": "scene-lounge-before",
+        "investigationSceneId": "scene-lounge-after",
+        "significance": "meaningful",
+        "isRequired": true,
+        "id": "change-passport-removed",
+        "kind": "object_removed",
+        "objectId": "object-passport"
+      },
+      "different": false
+    },
+    {
+      "id": "change-stands-exchanged",
+      "kind": "object_exchanged",
+      "canonical": {
+        "observationSceneId": "scene-lounge-before",
+        "investigationSceneId": "scene-lounge-after",
+        "significance": "meaningful",
+        "isRequired": true,
+        "id": "change-stands-exchanged",
+        "kind": "object_exchanged",
+        "objectIds": [
+          "object-stand-12",
+          "object-stand-21"
+        ]
+      },
+      "refined": {
+        "observationSceneId": "scene-lounge-before",
+        "investigationSceneId": "scene-lounge-after",
+        "significance": "meaningful",
+        "isRequired": true,
+        "id": "change-stands-exchanged",
+        "kind": "object_exchanged",
+        "objectIds": [
+          "object-stand-12",
+          "object-stand-21"
+        ]
+      },
+      "different": false
+    },
+    {
+      "id": "change-wallet-moved",
+      "kind": "object_moved",
+      "canonical": {
+        "observationSceneId": "scene-lounge-before",
+        "investigationSceneId": "scene-lounge-after",
+        "significance": "meaningful",
+        "isRequired": true,
+        "id": "change-wallet-moved",
+        "kind": "object_moved",
+        "objectId": "object-star-wallet",
+        "from": {
+          "x": 0.38,
+          "y": 0.65
+        },
+        "to": {
+          "x": 0.75,
+          "y": 0.65
+        }
+      },
+      "refined": {
+        "observationSceneId": "scene-lounge-before",
+        "investigationSceneId": "scene-lounge-after",
+        "significance": "meaningful",
+        "isRequired": true,
+        "id": "change-wallet-moved",
+        "kind": "object_moved",
+        "objectId": "object-star-wallet",
+        "from": {
+          "x": 0.38,
+          "y": 0.535
+        },
+        "to": {
+          "x": 0.75,
+          "y": 0.535
+        }
+      },
+      "different": true
+    }
+  ],
+  "canonical_authority": true,
+  "refined_adopted": false
+}
