@@ -1,0 +1,46 @@
+{
+  "file_count": 8,
+  "files": [
+    {
+      "path": "BACKGROUND_BACKPACK_LIMITATIONS.md",
+      "sha256": "4ef8a9811bee2c0701dc5c83b65a5eca4c8896ee7bfc8d594b9cc894aaf68ea1",
+      "bytes": 2779
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self entry excluded from hashing"
+    },
+    {
+      "path": "GOVERNANCE_AND_GIT_EXCEPTION.md",
+      "sha256": "bb8db9799ac581c89afb98f79a498cc602a6a93dee66ac63237de381b970824b",
+      "bytes": 1577
+    },
+    {
+      "path": "INVESTIGATION_CLOSURE_AND_REOPENING_POLICY.md",
+      "sha256": "cda0d2d979910f153b60ba002b2d42cef67100c8a581e09da98b7456506bfb13",
+      "bytes": 1453
+    },
+    {
+      "path": "OWNER_OPTION_A_RATIFICATION.md",
+      "sha256": "94881640f75b21eacba3969dd49d4edbfd4c31512a686751a7e7a1fdb68c52da",
+      "bytes": 1389
+    },
+    {
+      "path": "README.md",
+      "sha256": "b2cb5567ab20b8d1675e2889911a1dac72afdcca6b56b5f76afe3b8c08ede514",
+      "bytes": 739
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "4b2dc66b59ccb3637dd59211ad5f9455e4e1e7105c3232ce929f3bb27572fdd6",
+      "bytes": 1402
+    },
+    {
+      "path": "owner-decision.json",
+      "sha256": "f9f792e786051247a7d05f7a2367b118ce60b2d3e6a7e47bbab985ca5d82647b",
+      "bytes": 135930
+    }
+  ]
+}

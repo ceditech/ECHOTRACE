@@ -1,0 +1,66 @@
+{
+  "file_count": 12,
+  "files": [
+    {
+      "path": "AUTHORIZATION_AND_SCOPE.md",
+      "sha256": "8c6e89d8781ad91baaeca71dd5f3f1fcf9b95e9097fc2caf2064edb684f72d06",
+      "bytes": 860
+    },
+    {
+      "path": "BACKGROUND_PROVENANCE_TRACE.md",
+      "sha256": "a7eca762106ef92438e3b6885de0c49ba50eeccad580b08b432b2d447aa55d54",
+      "bytes": 2166
+    },
+    {
+      "path": "BACKPACK_PROVENANCE_TRACE.md",
+      "sha256": "75fa178ce8ffe913f30bf1bd52e2fea0ce6b5c5def48df85dbcecef1fe77da54",
+      "bytes": 2700
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self entry excluded from hashing"
+    },
+    {
+      "path": "GOVERNANCE_IMPACT.md",
+      "sha256": "32a3b74a9c3fdb5fefd74506b3f4e824f35527ccccd8a957c10009cafbdae99a",
+      "bytes": 1027
+    },
+    {
+      "path": "MINIMUM_REMAINING_ACTIONS.md",
+      "sha256": "3ddc9ee8fe6aa5c12141b75824a4568f9c02dc3f5dd3629ee7c219cf77619f3d",
+      "bytes": 1284
+    },
+    {
+      "path": "README.md",
+      "sha256": "c09e4794f88c23bb76fc729b05101d9071ab7201f4bb6adc6c4b282c06f1c3df",
+      "bytes": 928
+    },
+    {
+      "path": "READ_ONLY_GIT_AUDIT.md",
+      "sha256": "d60d5397277e14ea2c564a772473bd26b6459af971d79e96d2cf6c7fa34f7033",
+      "bytes": 2138
+    },
+    {
+      "path": "TARGETED_RIGHTS_ASSESSMENT.md",
+      "sha256": "ffa795d321aeed8e3550be99d37e2a2aa5b900f66d5f170eef61bd7e4b3074e4",
+      "bytes": 1740
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "a1328e5ffb8d7829d811786326791ef6fffb4670940d2b538c1929f5b2fb7a9e",
+      "bytes": 1529
+    },
+    {
+      "path": "git-audit.json",
+      "sha256": "a1a94680c4f0e5fde63697403bc9cc899c7b8fd30c94056a0756a1e06497ab68",
+      "bytes": 129956
+    },
+    {
+      "path": "provenance-findings.json",
+      "sha256": "1b12e7b8c8e737ba98b15b887a4e0ea4698f822762ec7cc652a4ee108fdf42b8",
+      "bytes": 17003
+    }
+  ]
+}

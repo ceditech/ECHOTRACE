@@ -1,0 +1,256 @@
+{
+  "assets": [
+    {
+      "id": "A01",
+      "name": "Background",
+      "path": "public/assets/cases/case-001/lounge-background.webp",
+      "sha256": "394291387030b6f3149a6a767796c08518ee3855908f44c3043b9e82c40fc03d",
+      "git_blob": "3f22fbb69213386bb2a312931c8eb46f8194b128",
+      "first_commit": "cff220bacd46bf1e24341c0245cf0b1dcd9bcd1c",
+      "first_commit_recorded_time": "2026-10-08T03:07:18-05:00",
+      "source_linkage": "VERIFIED",
+      "creation_chain": "PARTIAL",
+      "creator": "UNKNOWN",
+      "generation_provider": "UNKNOWN",
+      "prompt_or_generation_record": "UNKNOWN",
+      "acquisition_method": "UNKNOWN",
+      "upstream_external_input": "UNKNOWN",
+      "commercial_use_authority": "UNRESOLVED",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/inventory.json",
+          "sha256": "85604fa088aeb907d9b8e62b31e050894a3f2f8f453f7252e411c923053ed47f",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/REPORT.md",
+          "sha256": "68c0643f3866104414a965a3808409d872ba5485eaaa71a7c216b1f3f4c82e66",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+          "sha256": "f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md",
+          "sha256": "3eeca642749ef09d8852a8cea633fc4597ae2522eab340132affe2b0f5d19c85",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        }
+      ],
+      "claims": [
+        {
+          "classification": "VERIFIED",
+          "finding": "The first reachable path introduction contains the exact current bytes. CCV lists this same source and SHA-256.",
+          "sources": [
+            "artifacts/asset-validation/case-001/inventory.json",
+            "artifacts/asset-validation/case-001/controlled-combination-validation/source-manifest.json"
+          ]
+        },
+        {
+          "classification": "SUPPORTED",
+          "finding": "Composition resizes the existing background to 960 × 540 with Lanczos and places the static character layer and object visuals over it. Refined B carried this background forward.",
+          "sources": [
+            "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+            "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+            "artifacts/asset-validation/case-001/controlled-combination-validation/scripts/reproduce-combination.py",
+            "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md"
+          ]
+        },
+        {
+          "classification": "SUPPORTED",
+          "finding": "An earlier character-generation record cites this file as a camera and lighting input. The record establishes downstream reference use. It supplies no creation record for the room.",
+          "sources": [
+            "artifacts/asset-validation/case-001/character-placement-proof/superseded/generation.json"
+          ]
+        },
+        {
+          "classification": "UNRESOLVED",
+          "finding": "Creator, method, provider, source prompt, upstream references and any pre-repository conversion are UNKNOWN.",
+          "sources": [
+            "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/ASSET_PROVENANCE_MATRIX.md",
+            "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json"
+          ]
+        }
+      ],
+      "output_terms": "Conditional AIR-001 terms framework only if exact asset is linked to covered service/account and agreement period.",
+      "composite_use": "Same source in both endpoints. Coverage for intended downstream use depends on the source and any material upstream input.",
+      "receipt_request": "NOT APPLICABLE on current evidence. Reassess if an acquisition is identified.",
+      "next_action": "Find the earliest room-generation or source record and link the source/export to this WebP."
+    },
+    {
+      "id": "A18",
+      "name": "Owen backpack",
+      "path": "public/assets/cases/case-001/owen-backpack.png",
+      "sha256": "50909a9cd018ce38da0072fb77ce6d6003d4e2aa18d3452253af18f08a923651",
+      "git_blob": "3c6ef3db3f879306dda8914732d3e9e8b115f9d0",
+      "first_commit": "cff220bacd46bf1e24341c0245cf0b1dcd9bcd1c",
+      "first_commit_recorded_time": "2026-10-08T03:07:18-05:00",
+      "source_linkage": "VERIFIED",
+      "creation_chain": "PARTIAL",
+      "creator": "UNKNOWN",
+      "generation_provider": "UNKNOWN",
+      "prompt_or_generation_record": "UNKNOWN",
+      "acquisition_method": "UNKNOWN",
+      "upstream_external_input": "UNKNOWN",
+      "commercial_use_authority": "UNRESOLVED",
+      "dimensions": [
+        1278,
+        1230
+      ],
+      "mode": "RGBA",
+      "supporting_evidence": [
+        {
+          "path": "artifacts/asset-validation/case-001/inventory.json",
+          "sha256": "85604fa088aeb907d9b8e62b31e050894a3f2f8f453f7252e411c923053ed47f",
+          "tier": 3,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/REPORT.md",
+          "sha256": "68c0643f3866104414a965a3808409d872ba5485eaaa71a7c216b1f3f4c82e66",
+          "tier": 4,
+          "role": "Traceability or secondary assessment; not a production-use grant"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+          "sha256": "f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40",
+          "tier": 2,
+          "role": "Creation/transform record"
+        },
+        {
+          "path": "artifacts/asset-validation/case-001/controlled-combination-validation/scripts/reproduce-combination.py",
+          "sha256": "d0a870bb595b495b873966c8444e791b6c1509d5ec5bce5667d90c3b517ab4d5",
+          "tier": 2,
+          "role": "Creation/transform record"
+        }
+      ],
+      "claims": [
+        {
+          "classification": "VERIFIED",
+          "finding": "The first reachable path introduction contains the exact current bytes. CCV lists this same source and SHA-256. The initial inventory records a standalone 1278 × 1230 RGBA asset.",
+          "sources": [
+            "artifacts/asset-validation/case-001/inventory.json",
+            "artifacts/asset-validation/case-001/controlled-combination-validation/source-manifest.json"
+          ]
+        },
+        {
+          "classification": "SUPPORTED",
+          "finding": "The compositor loads the backpack as a separate prop after the static character layer. It resizes and places the same source in both snapshots. Refined B carried it forward.",
+          "sources": [
+            "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md",
+            "artifacts/asset-validation/case-001/composition-correction-study/study.py",
+            "artifacts/asset-validation/case-001/controlled-combination-validation/scripts/reproduce-combination.py",
+            "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md",
+            "artifacts/asset-validation/case-001/final-artwork-governance/CANONICAL_GEOMETRY_COMPARISON.md"
+          ]
+        },
+        {
+          "classification": "SUPPORTED",
+          "finding": "The earlier Owen prompt explicitly excludes bags and luggage. The later harmonization excludes copying Mara’s bag and adding objects. These are records for the Owen cutout. No repository record links the separately rendered prop to either cutout, the paired concept, or a crop from a character image.",
+          "sources": [
+            "artifacts/asset-validation/case-001/character-placement-proof/superseded/generation.json",
+            "artifacts/asset-validation/case-001/character-placement-proof/generation.json",
+            "artifacts/asset-validation/case-001/character-placement-proof/compose.py"
+          ]
+        },
+        {
+          "classification": "UNRESOLVED",
+          "finding": "Creator, provider, generation or extraction method, prompt and upstream reference for the standalone prop are UNKNOWN. Its independent raster file establishes separability in the compositor. Earlier derivation from an unlocated source image remains UNKNOWN.",
+          "sources": [
+            "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/ASSET_PROVENANCE_MATRIX.md",
+            "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json"
+          ]
+        }
+      ],
+      "output_terms": "Conditional AIR-001 terms framework only if exact asset is linked to covered service/account and agreement period.",
+      "composite_use": "Same source in both endpoints. Coverage for intended downstream use depends on the source and any material upstream input.",
+      "receipt_request": "NOT APPLICABLE on current evidence. Reassess if an acquisition is identified.",
+      "next_action": "Find the standalone prop generation or source/export record. If derived, identify the parent image and transformation."
+    }
+  ],
+  "owner_statement": {
+    "classification": "OWNER-REPORTED",
+    "scope": "project level",
+    "finding": "Owner confirms primarily ChatGPT image-generation, other AI tools and Codex-assisted workflows. No specific A01 or A18 generation attribution."
+  },
+  "historical_chats": "NOT ACCESSIBLE",
+  "candidate_sha256": {
+    "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Original-960.png": "d7a4bbb6c141b1c2b9d15c38591f16ff6bc4d80629cad0877ce05a43a2993945",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Changed-960.png": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba"
+  },
+  "decisions": {
+    "D01": "CONFIRMED",
+    "D02": "F3 · final visual acceptance HELD",
+    "D03": "S1 · B0 staging provisional",
+    "D04": "W3 · responsive fallback execution NOT AUTHORIZED",
+    "D05-B": "Direction CONFIRMED",
+    "D05": "Rights resolution PENDING",
+    "D06": "PENDING",
+    "D07": "PENDING",
+    "D08": "PENDING",
+    "D09": "PENDING",
+    "D10": "PENDING",
+    "D11": "PENDING"
+  },
+  "gates": {
+    "G17": "CONDITIONAL",
+    "G18": "BLOCKED",
+    "G19": "BLOCKED",
+    "G20": "NOT AUTHORIZED",
+    "G21": "NOT AUTHORIZED",
+    "G22": "NOT AUTHORIZED"
+  },
+  "p0_01": "OPEN",
+  "reviewed_source_sha256": {
+    "artifacts/asset-validation/case-001/REPORT.md": "68c0643f3866104414a965a3808409d872ba5485eaaa71a7c216b1f3f4c82e66",
+    "artifacts/asset-validation/case-001/inventory.json": "85604fa088aeb907d9b8e62b31e050894a3f2f8f453f7252e411c923053ed47f",
+    "artifacts/asset-validation/case-001/compose.py": "72c6dac597d937a70c4d36200c1f26db672c45ec54facc22254559160ebfa6fb",
+    "artifacts/asset-validation/case-001/placements.json": "7ad811fedae0b7717b8885d7bba1228adf5ea55b792ec1bbad11f87e77699b4f",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/COMBINATION_METHOD.md": "3eeca642749ef09d8852a8cea633fc4597ae2522eab340132affe2b0f5d19c85",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/source-manifest.json": "973e9259e8f8d49f059da595b56b89c6d482acf361c5b4fa90c57accb70d849e",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/scripts/reproduce-combination.py": "d0a870bb595b495b873966c8444e791b6c1509d5ec5bce5667d90c3b517ab4d5",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/verification.json": "3440c9a8f2744feb6e0d8302f09a8266c8511826c8eb36ecc198f4572ca11166",
+    "artifacts/asset-validation/case-001/visual-correction-study/PROVENANCE_AND_RIGHTS_GAPS.md": "1ff98aae70915de8770898210c69f8afb8fb71c84519506ca9dcfe926932e419",
+    "artifacts/asset-validation/case-001/visual-correction-study/source-manifest.json": "97b42696e88111b23d293db5476f889a495e6548061742455f2d8bb569a6f6d3",
+    "artifacts/asset-validation/case-001/final-artwork-governance/ARTWORK_RIGHTS_REGISTER.md": "d8d51d6d36ad46d98087897454d446059eefe20205ea2bad351c801747a57814",
+    "artifacts/asset-validation/case-001/final-artwork-governance/GIT_HISTORY_DISCREPANCY_AUDIT.md": "0ab787dd8a692de3fa504cbf4154d0ef277b9827c3d042f902089fb964bd817e",
+    "artifacts/asset-validation/case-001/final-artwork-governance/CANONICAL_GEOMETRY_COMPARISON.md": "c448ec92b9ce2062ca30b6c9f3ae1d5e6fd80ab820051c5ef275e74bb61a949b",
+    "artifacts/asset-validation/case-001/owner-decision-ratification/RIGHTS_EVIDENCE_NEXT_STEPS.md": "1720992d94140509d0a7d88ef9ba04c49ffb411b4f514bbc69bc1080ccca5400",
+    "artifacts/asset-validation/case-001/owner-decision-ratification/gate-impact.json": "8145b4a46554345f62c81b755c047189d285f06fe8a2bd23060ec3a86d55b911",
+    "artifacts/asset-validation/case-001/owner-decision-ratification/owner-decisions.json": "831181e41efebb36f261b74b5a7eb0b17d8801efe3a110d9a2aeace1c0b764d6",
+    "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/asset-evidence.json": "f8ed81f4e483e297261ebc63a816a75491dba4215d7156794907dc7b302ffc0b",
+    "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/ASSET_PROVENANCE_MATRIX.md": "bf47ad4fda223e7c9398c2e9c8b04be931e60c0b9dc4b8d020afa16a61ed7226",
+    "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/DERIVATION_CHAIN_AUDIT.md": "6fbce7d330d66c2cb22587b9bf5bb91bea16059bc7ff9ef6ede7f5d78573f66a",
+    "artifacts/asset-validation/case-001/artwork-rights-evidence-verification/rights-gaps.json": "67e2041d1aff3cb0d3d99e290e7c41f66ac03fb4a3374cc6718c4144a361d018",
+    "artifacts/asset-validation/case-001/rights-evidence-collection-plan/P0_EVIDENCE_REQUEST_MATRIX.md": "227fd4be3cf562ef5613b6ba04d722fc1121a37a2ae483585f951405fd97ce39",
+    "artifacts/asset-validation/case-001/rights-evidence-collection-plan/ASSET_TO_EVIDENCE_MAPPING.md": "f9d12d84e2f84ac3ebeb55f1b113520df8c98ab033706be91516a32dadf60612",
+    "artifacts/asset-validation/case-001/owner-held-rights-review-preparation/RIGHTS_DEPENDENCY_AND_REMAINING_GAPS.md": "74118e2b557a68330dce1c997808ac7f09ff987c12dcdcb4e27219be2f860707",
+    "artifacts/asset-validation/case-001/owner-held-rights-review-preparation/owner-direction.json": "85243840410a27a7f6fff0d932d5b53d01a7d07dbe8e4eec58429032e216ed56",
+    "artifacts/asset-validation/case-001/owner-held-rights-review-preparation/REQUEST_TO_DOCUMENT_MAPPING.md": "74830ad457106008e7d4b13476d2150ecd6614fd1aa7ec55c41dc4911bbd2a03",
+    "artifacts/asset-validation/case-001/ai-artwork-terms-reconciliation/VERIFICATION_REPORT.md": "0f7d8012b5eacb3a50895b2b4f6b3a59e2c4431ace973503ffb1add65129bd54",
+    "artifacts/asset-validation/case-001/ai-artwork-terms-reconciliation/asset-origin-reconciliation.json": "f17503f5e8785b74b3cced5bd99ed99009668ee4e95d79a4700f1ed112e024e7",
+    "artifacts/asset-validation/case-001/ai-artwork-terms-reconciliation/OPENAI_TERMS_REVIEW.md": "63a5a49f1677896eac029a6b1562e5061ee760a8fd7bba3bc29518f1bfa82164",
+    "artifacts/asset-validation/case-001/ai-artwork-terms-reconciliation/terms-evidence.json": "9163a7ecbee21bb8bfd8ccbbb9d30e2178beb1fbff8cb919263bb575fa9e985d",
+    "artifacts/asset-validation/case-001/composition-correction-study/study.py": "f9a7a1e76e7e0215b8f5d55ac4556812fc7028fccd20b665b88c3940de790b40",
+    "artifacts/asset-validation/case-001/composition-correction-study/source-manifest.json": "6cd5f836f3223dc677d494745b76a8d79f3b817e92a3516b4f848c98a9b04d89",
+    "artifacts/asset-validation/case-001/B-art-refinement/REPORT.md": "028a24e390faf808aa7197424c7024dca9267ae39c659982bd938664ad800534",
+    "artifacts/asset-validation/case-001/B-art-refinement/generation-paths.json": "8941c83ae9b03ec18795285fad4036aac5e69586b3e00c87c728d32c81b3bcc9",
+    "artifacts/asset-validation/case-001/table-proof/REPORT.md": "529d28893e4cd3aa6e13e6fd4f18090df735f510f169ec9e38641daed958fc60",
+    "artifacts/asset-validation/case-001/character-placement-proof/superseded/generation.json": "869514624398161295d1374ae6950000a9f072346aece20ba224ecae2c7a2f20",
+    "artifacts/asset-validation/case-001/character-placement-proof/generation.json": "519bd6f1cabb777d98c30396da888887d6a30cebf97f653f5f3b3f91dcd19caa",
+    "artifacts/asset-validation/case-001/character-placement-proof/compose.py": "c80b18e3156a68b7721e8d9045f539b30f1ca9bcf414f151c8a0d6ddd694f934"
+  },
+  "exact_candidate_label": "PREFERRED RESEARCH CANDIDATE — NOT PRODUCTION APPROVED",
+  "additional_terms_browsed": false,
+  "production_approved": false
+}
