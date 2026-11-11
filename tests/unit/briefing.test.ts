@@ -3,6 +3,7 @@ import raw from "@/cases/content/case-001/case.json";
 import catalog from "@/cases/content/case-001/en.json";
 import { validateCaseDefinition } from "@/cases/validation/validate-case-definition";
 import { createInitialSession } from "@/game/domain/session-machine";
+import { projectNeutralScene } from "@/game/application/neutral-scene";
 import {
   initialBriefingState,
   prepareBriefing,
@@ -15,6 +16,8 @@ function ready(): Extract<BriefingState, { status: "ready" }> {
   if (!validated.ok) throw new Error(JSON.stringify(validated.issues));
   const prepared = prepareBriefing(validated.value, catalog);
   if (!prepared.ok) throw new Error("Missing briefing");
+  const original = projectNeutralScene(validated.value, "original");
+  if (!original.ok) throw new Error("Missing Original");
   return {
     status: "ready",
     requestId: 0,
@@ -24,6 +27,8 @@ function ready(): Extract<BriefingState, { status: "ready" }> {
       startedAt: 100,
     }),
     startError: false,
+    original: original.scene,
+    observation: null,
   };
 }
 
@@ -70,6 +75,7 @@ describe("T16 briefing preparation and session ownership", () => {
       requestId: 0,
       model: state.model,
       session: state.session,
+      original: state.original,
     } as const;
     const accepted = reduceBriefing(initialBriefingState, action);
     expect(accepted).toEqual(state);
@@ -100,6 +106,7 @@ describe("T16 briefing preparation and session ownership", () => {
         requestId: 0,
         model: state.model,
         session: state.session,
+        original: state.original,
       }),
     ).toBe(retried);
     expect(

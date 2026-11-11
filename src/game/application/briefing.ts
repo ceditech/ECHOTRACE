@@ -7,6 +7,21 @@ import {
 } from "../domain/session-machine";
 import type { CaseSource } from "./case-source";
 import { loadCase } from "@/cases/load-case";
+import { projectNeutralScene } from "./neutral-scene";
+import type {
+  NeutralScene,
+  ObservationRenderFailure,
+  ObservationRenderOutcome,
+} from "./neutral-scene";
+
+type ObservationState =
+  | { readonly status: "loading" | "ready"; readonly revision: number }
+  | {
+      readonly status: "failed";
+      readonly revision: number;
+      readonly code:
+        ObservationRenderFailure | "invalid_scene" | "phase_rejected";
+    };
 
 export interface BriefingModel {
   readonly caseId: string;
@@ -67,6 +82,8 @@ export type BriefingState =
       readonly model: BriefingModel;
       readonly session: CaseSession;
       readonly startError: boolean;
+      readonly original: NeutralScene<"original"> | null;
+      readonly observation: ObservationState | null;
     };
 export type BriefingAction =
   | {
@@ -74,6 +91,7 @@ export type BriefingAction =
       readonly requestId: number;
       readonly model: BriefingModel;
       readonly session: CaseSession;
+      readonly original: NeutralScene<"original"> | null;
     }
   | {
       readonly type: "failed";
@@ -81,7 +99,12 @@ export type BriefingAction =
       readonly code: BriefingFailure;
     }
   | { readonly type: "retry" }
-  | { readonly type: "start"; readonly attemptId: string; readonly at: number };
+  | { readonly type: "start"; readonly attemptId: string; readonly at: number }
+  | (Extract<ObservationRenderOutcome, { type: "observation_ready" }> & {
+      readonly at: number;
+    })
+  | Extract<ObservationRenderOutcome, { type: "observation_failed" }>
+  | { readonly type: "retry_observation" };
 export const initialBriefingState: BriefingState = {
   status: "loading",
   requestId: 0,
@@ -123,7 +146,14 @@ export async function loadBriefing(
     return { type: "failed", requestId, code: "missing_briefing_text" };
   try {
     const session = createInitialSession(loaded.value, initialize());
-    return { type: "loaded", requestId, model: prepared.model, session };
+    const original = projectNeutralScene(loaded.value, "original");
+    return {
+      type: "loaded",
+      requestId,
+      model: prepared.model,
+      session,
+      original: original.ok ? original.scene : null,
+    };
   } catch {
     return { type: "failed", requestId, code: "invalid_initialization" };
   }
@@ -143,6 +173,8 @@ export function reduceBriefing(
         model: action.model,
         session: action.session,
         startError: false,
+        original: action.original,
+        observation: null,
       };
     case "failed":
       if (state.status !== "loading" || state.requestId !== action.requestId)
@@ -174,8 +206,73 @@ export function reduceBriefing(
         { ok: true },
       );
       return result.ok
-        ? { ...state, session: result.state, startError: false }
+        ? {
+            ...state,
+            session: result.state,
+            startError: false,
+            observation: state.original
+              ? { status: "loading", revision: 0 }
+              : { status: "failed", revision: 0, code: "invalid_scene" },
+          }
         : { ...state, startError: true };
     }
+    case "observation_ready":
+    case "observation_failed": {
+      if (
+        state.status !== "ready" ||
+        state.session.currentPhase !== "observation_intro" ||
+        state.session.attemptId !== action.attemptId ||
+        state.observation?.status !== "loading" ||
+        state.observation.revision !== action.revision ||
+        !state.original
+      )
+        return state;
+      if (action.type === "observation_failed")
+        return {
+          ...state,
+          observation: {
+            status: "failed",
+            revision: action.revision,
+            code: action.code,
+          },
+        };
+      const result = applySessionCommand(
+        state.session,
+        {
+          type: "advance_phase",
+          from: "observation_intro",
+          to: "observation_active",
+          at: action.at,
+        },
+        { ok: true },
+      );
+      return result.ok
+        ? {
+            ...state,
+            session: result.state,
+            observation: { status: "ready", revision: action.revision },
+          }
+        : {
+            ...state,
+            observation: {
+              status: "failed",
+              revision: action.revision,
+              code: "phase_rejected",
+            },
+          };
+    }
+    case "retry_observation":
+      return state.status === "ready" &&
+        state.session.currentPhase === "observation_intro" &&
+        state.original &&
+        state.observation?.status === "failed"
+        ? {
+            ...state,
+            observation: {
+              status: "loading",
+              revision: state.observation.revision + 1,
+            },
+          }
+        : state;
   }
 }

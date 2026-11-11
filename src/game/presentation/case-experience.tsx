@@ -10,6 +10,7 @@ import {
   reduceBriefing,
 } from "../application/briefing";
 import { BriefingView } from "./briefing-view";
+import { PhaserHost } from "../renderer/phaser-host";
 
 export function CaseExperience() {
   const [state, dispatch] = useReducer(reduceBriefing, initialBriefingState);
@@ -116,13 +117,51 @@ export function CaseExperience() {
               >
                 Ready to observe
               </h1>
-              <p className="mt-5 leading-relaxed text-slate-200">
-                Your case has started. The observation scene is not available
-                yet.
-              </p>
-              <p className="mt-3 text-sm text-slate-300">
-                No countdown is running. Return to EchoTrace when you are ready.
-              </p>
+              {state.observation?.status === "failed" ? (
+                <>
+                  <p className="mt-5 text-slate-200" role="alert">
+                    The neutral observation scene could not load.
+                  </p>
+                  {state.original && (
+                    <button
+                      type="button"
+                      className="mt-4 rounded-xl bg-amber-300 px-6 py-3 font-semibold text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300"
+                      onClick={() => {
+                        handoffHeading.current?.focus();
+                        dispatch({ type: "retry_observation" });
+                      }}
+                    >
+                      Retry scene
+                    </button>
+                  )}
+                </>
+              ) : (
+                state.original &&
+                state.observation && (
+                  <>
+                    <p className="mt-5 text-slate-200" role="status">
+                      {state.observation.status === "ready"
+                        ? "Original scene ready. Development representation."
+                        : "Loading the neutral observation scene…"}
+                    </p>
+                    <PhaserHost
+                      key={`${state.session.attemptId}:${state.observation.revision}`}
+                      observation={{
+                        attemptId: state.session.attemptId,
+                        revision: state.observation.revision,
+                        scene: state.original,
+                      }}
+                      onObservationOutcome={(outcome) =>
+                        dispatch(
+                          outcome.type === "observation_ready"
+                            ? { ...outcome, at: Date.now() }
+                            : outcome,
+                        )
+                      }
+                    />
+                  </>
+                )
+              )}
             </section>
           ))}
       </div>
