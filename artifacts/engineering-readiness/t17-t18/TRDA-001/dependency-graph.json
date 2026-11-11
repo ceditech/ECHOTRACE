@@ -1,0 +1,220 @@
+{
+  "edge_direction": "node requires prerequisite",
+  "nodes": [
+    {
+      "id": "shell",
+      "status": "READY",
+      "category": "technical",
+      "requires": [],
+      "sources": [
+        "src/game/renderer/phaser-runtime.ts",
+        "src/game/renderer/phaser-host.tsx",
+        "src/game/renderer/shell-lifecycle.ts"
+      ],
+      "finding": "Neutral Canvas/FIT mount, resize, readiness and disposal are present."
+    },
+    {
+      "id": "case",
+      "status": "READY",
+      "category": "technical",
+      "requires": [],
+      "sources": [
+        "src/cases/content/case-001/case.json",
+        "src/cases/load-case.ts",
+        "src/cases/validation/validate-case-definition.ts"
+      ],
+      "finding": "Validated logical case data with authored scenes and events."
+    },
+    {
+      "id": "session",
+      "status": "READY",
+      "category": "technical",
+      "requires": [],
+      "sources": [
+        "src/game/domain/session-machine.ts",
+        "src/game/application/briefing.ts"
+      ],
+      "finding": "Intro handoff and gated adjacent phase transitions exist."
+    },
+    {
+      "id": "projection",
+      "status": "CONDITIONAL",
+      "category": "technical",
+      "requires": [
+        "shell",
+        "case",
+        "session"
+      ],
+      "sources": [
+        "src/game/application/renderer-bridge.ts",
+        "src/game/presentation/case-experience.tsx"
+      ],
+      "finding": "Extend single-target preview boundary to read-only scene projection and explicit readiness; preserve stale-attempt/revision checks."
+    },
+    {
+      "id": "assets",
+      "status": "CONDITIONAL",
+      "category": "technical",
+      "requires": [
+        "case"
+      ],
+      "sources": [
+        "src/infrastructure/cases/bundled-case-source.ts",
+        "src/game/renderer/phaser-runtime.ts"
+      ],
+      "finding": "Resolve approved physical assets or separately authorized neutral representations; verify decode and handle failures."
+    },
+    {
+      "id": "responsive",
+      "status": "CONDITIONAL",
+      "category": "release acceptance",
+      "requires": [
+        "shell"
+      ],
+      "sources": [
+        "artifacts/asset-validation/case-001/owner-decision-ratification/RESPONSIVE_FALLBACK_STUDY_BRIEF.md",
+        "artifacts/asset-validation/case-001/controlled-combination-validation/MOBILE_COMPARISON_REPORT.md"
+      ],
+      "finding": "Effective width floor/fallback and first-time clue recognition unresolved."
+    },
+    {
+      "id": "access",
+      "status": "CONDITIONAL",
+      "category": "technical",
+      "requires": [
+        "projection"
+      ],
+      "sources": [
+        "src/game/renderer/bridge-preview.tsx",
+        "GAME_SPEC.md"
+      ],
+      "finding": "Native controls and focus foundation; neutral phase-specific operation and nonvisual limitations need design and QA."
+    },
+    {
+      "id": "testinfra",
+      "status": "READY",
+      "category": "technical",
+      "requires": [],
+      "sources": [
+        "vitest.config.mts",
+        "TESTING_STRATEGY.md",
+        "tests/unit/shell-lifecycle.test.ts",
+        "tests/unit/session-machine.test.ts"
+      ],
+      "finding": "Node unit/integration setup, mock lifecycle and pure domain tests exist; browser coverage separate."
+    },
+    {
+      "id": "t17",
+      "status": "CONDITIONAL",
+      "category": "technical",
+      "requires": [
+        "projection",
+        "assets",
+        "access",
+        "testinfra"
+      ],
+      "sources": [
+        "ROADMAP.md",
+        "TRACKER.md",
+        "src/game/presentation/case-experience.tsx"
+      ],
+      "finding": "Playable original presentation with observation interaction disabled and a trustworthy readiness edge remains to be implemented."
+    },
+    {
+      "id": "policy",
+      "status": "CONDITIONAL",
+      "category": "technical policy",
+      "requires": [],
+      "sources": [
+        "GAME_SPEC.md",
+        "artifacts/asset-validation/case-001/mobile-presentation-spec/OBSERVATION_FAIRNESS.md",
+        "artifacts/asset-validation/case-001/mobile-verification-prototype/OWNER_APPROVAL_RECORD.md"
+      ],
+      "finding": "25 seconds specified; background/restore and uncertain-clock disposition unresolved."
+    },
+    {
+      "id": "t18",
+      "status": "CONDITIONAL",
+      "category": "technical",
+      "requires": [
+        "session",
+        "t17",
+        "policy",
+        "testinfra"
+      ],
+      "sources": [
+        "TRACKER.md",
+        "ARCHITECTURE.md",
+        "GAME_SPEC.md"
+      ],
+      "finding": "Pure timing can be isolated; integrated start/expiry requires a ready T17 surface and approved recovery policy."
+    },
+    {
+      "id": "auth17",
+      "status": "BLOCKED",
+      "category": "governance",
+      "requires": [],
+      "sources": [
+        "TRACKER.md"
+      ],
+      "finding": "Separate T17 implementation authorization absent."
+    },
+    {
+      "id": "auth18",
+      "status": "BLOCKED",
+      "category": "governance",
+      "requires": [],
+      "sources": [
+        "TRACKER.md"
+      ],
+      "finding": "Separate T18 implementation authorization absent."
+    },
+    {
+      "id": "art",
+      "status": "BLOCKED",
+      "category": "governance",
+      "requires": [
+        "responsive"
+      ],
+      "sources": [
+        "artifacts/asset-validation/case-001/owner-decision-ratification/gate-impact.json",
+        "artifacts/asset-validation/case-001/owner-provenance-retention-decision/owner-decision.json"
+      ],
+      "finding": "Final visual acceptance held, rights pending, G18/G19 blocked."
+    },
+    {
+      "id": "release",
+      "status": "BLOCKED",
+      "category": "governance",
+      "requires": [
+        "t17",
+        "t18",
+        "auth17",
+        "auth18",
+        "art",
+        "responsive"
+      ],
+      "sources": [
+        "artifacts/asset-validation/case-001/owner-decision-ratification/gate-impact.json"
+      ],
+      "finding": "Production acceptance and execution require separate authority and validation."
+    }
+  ],
+  "topological_order": [
+    "shell",
+    "case",
+    "session",
+    "projection",
+    "assets",
+    "responsive",
+    "access",
+    "testinfra",
+    "t17",
+    "policy",
+    "t18",
+    "auth17",
+    "auth18",
+    "art",
+    "release"
+  ]
+}

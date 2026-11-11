@@ -1,0 +1,76 @@
+{
+  "file_count": 14,
+  "files": [
+    {
+      "path": "AUTHORIZATION_AND_SCOPE.md",
+      "sha256": "9bff9a61605a4a3a61af4487e35ba46f5ba18acd59c2b2b813c6f01c27be0c10",
+      "bytes": 882
+    },
+    {
+      "path": "DEPENDENCY_AND_BLOCKER_MATRIX.md",
+      "sha256": "8851c2c9c31065f97411574d2ee1eb6aba6daa010d825321a541b83ab8c59b7b",
+      "bytes": 5314
+    },
+    {
+      "path": "ENGINEERING_BASELINE.md",
+      "sha256": "3d4d87223c54111a00b37ef954c91d1ecbf9dff4ee9f60501bd683c056f9c8f9",
+      "bytes": 4024
+    },
+    {
+      "path": "GOVERNANCE_BOUNDARIES.md",
+      "sha256": "bae32b368910ecff417dc76ce8d85c4f286a7ce4cd02e9024cf85b1fbe6a9529",
+      "bytes": 1546
+    },
+    {
+      "path": "OWNER_DECISION_BRIEF.md",
+      "sha256": "3e035cf306419ef6f66fe368ef691f0ce42e193993bca2078101a7ab3c549833",
+      "bytes": 1414
+    },
+    {
+      "path": "PLACEHOLDER_FEASIBILITY_ASSESSMENT.md",
+      "sha256": "75b7fded54abd0a289e489f1d51b3153f964f01e3583439f6a790c886bfd9329",
+      "bytes": 1872
+    },
+    {
+      "path": "README.md",
+      "sha256": "98696d5086e20200dee635524da29b3f2b13456402f1659d2849a9846f563391",
+      "bytes": 1076
+    },
+    {
+      "path": "T17_OBSERVATION_SCENE_READINESS.md",
+      "sha256": "b4cdda5728eb0daf2659cb64f3b748570304bf5aed93e97e9cca0924dd1482bc",
+      "bytes": 4924
+    },
+    {
+      "path": "T18_TIMER_READINESS.md",
+      "sha256": "0a1c7f3086cfbf2bf9e101421434a56442b0d33cc9dd5e8a028f3b20e09f3448",
+      "bytes": 3559
+    },
+    {
+      "path": "TEST_READINESS_AND_ACCEPTANCE.md",
+      "sha256": "356f4ad5858d2676437884619828a810a94cdbc39f2575d9a8aaf3a254b55906",
+      "bytes": 3142
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "d4a2365cd6795a41df8f7024a1a6316d6d5f38cdb20b9a61e66ec4bf198b094d",
+      "bytes": 1118
+    },
+    {
+      "path": "dependency-graph.json",
+      "sha256": "d796577115ebbe359262a566dfd53a869a5cf22b1058f3aec5a616a2d21044c2",
+      "bytes": 6245
+    },
+    {
+      "path": "readiness-matrix.json",
+      "sha256": "dc1b5036cca1cbb215d39e0e94b36d0ed4ade45edf29c48118fc0b09232059dd",
+      "bytes": 144079
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self entry excluded from hashing"
+    }
+  ]
+}
