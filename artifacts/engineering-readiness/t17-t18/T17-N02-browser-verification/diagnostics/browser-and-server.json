@@ -1,0 +1,22 @@
+{
+  "initialAttempt": {
+    "info": {
+      "node": "v22.18.0",
+      "npm": "11.5.2",
+      "os": "Windows 11 Pro 10.0.26300",
+      "serverCommand": "npm run dev -- --hostname 127.0.0.1 --port 53947",
+      "port": 53947,
+      "profileRemoved": true,
+      "serverStopped": true
+    },
+    "failure": "Error: Next server unavailable fetch failed\n    at until (file:///C:/Users/CedricYovodevi/sources/repo/Games/ECHOTRACE/[eval1]:37:168)\n    at async file:///C:/Users/CedricYovodevi/sources/repo/Games/ECHOTRACE/[eval1]:93:2",
+    "events": [],
+    "consoleEvents": [],
+    "serverLog": "\n> echotrace@0.1.0 dev\n> next dev --hostname 127.0.0.1 --port 53947\n\n▲ Next.js 16.3.8 (Turbopack)\n- Local:         http://127.0.0.1:53947\n- Network:       http://127.0.0.1:53947\n✓ Ready in 6.6s\n✓ Running next.config.ts took 836ms\n\n",
+    "chromeStartupLog": ""
+  },
+  "events": [],
+  "consoleEvents": [],
+  "serverLog": "\n> echotrace@0.1.0 dev\n> next dev --hostname 127.0.0.1 --port 55126\n\n▲ Next.js 16.3.8 (Turbopack)\n- Local:         http://127.0.0.1:55126\n- Network:       http://127.0.0.1:55126\n✓ Ready in 438ms\n✓ Running next.config.ts took 40ms\n⨯ Another next dev server is already running.\n\n- Local:        http://127.0.0.1:53947\n- PID:          53692\n- Dir:          C:\\Users\\CedricYovodevi\\sources\\repo\\Games\\ECHOTRACE\n- Log:          .next\\dev\\logs\\next-development.log\n\nYou can access the existing server at http://127.0.0.1:53947,\nor run taskkill /PID 53692 /F to stop it and start a new one.\n\u001b[?25h\n",
+  "chromeStartupLog": ""
+}

@@ -1,0 +1,24 @@
+T17-N02 resume setup observations
+
+Initial local loopback test returned connect EACCES 127.0.0.1.
+The first dev server reported ready on port 53947.
+The second attempt reported another next dev server already running on port 53947, PID 53692.
+The mission then terminated PID 53692, identified by the server diagnostic as the server from its first attempt.
+An elevated local loopback self-test returned "ok".
+The final local setup attempt reported:
+Browser run issue Server unavailable The operation was aborted due to timeout
+
+Its finally block attempted to stop its own browser/server processes before metadata checking.
+No browser was launched because the server readiness request did not succeed.
+The post-run metadata assertion then failed:
+Error: Git metadata changed FETCH_HEAD
+
+This stopped further testing. No source repair or Git mutation was performed.
+Final read-only process verification returned:
+NO MATCHING ECHOTRACE NEXT PROCESS
+
+The final .next/dev/lock check returned False.
+No browser screenshots, console messages or page network logs were produced.
+The existing setup JSON contains empty browser event lists. These indicate no browser capture, not a clean browser run.
+Earlier diagnostic serverStopped flags used reachability and did not prove process exit.
+The final process check supplies the cleanup evidence.

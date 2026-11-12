@@ -1,0 +1,61 @@
+{
+  "file_count": 11,
+  "files": [
+    {
+      "path": "ACCESSIBILITY_AND_FOCUS_FINDINGS.md",
+      "sha256": "247092cae6b417a28d5344fd57f261c113ff8927e5fb4b705fe5420ea7d9907d",
+      "bytes": 571
+    },
+    {
+      "path": "BROWSER_TEST_MATRIX.md",
+      "sha256": "622ab7539f098a97cd8e9878c784e33b38e2544958ca191be2668c0c91751f10",
+      "bytes": 3042
+    },
+    {
+      "path": "DEFECTS_AND_LIMITATIONS.md",
+      "sha256": "79de9e000bdc43ee8204aa1cca0f3c3a949a42968bf1af7c19c5dfce2cb3af33",
+      "bytes": 1736
+    },
+    {
+      "path": "DESKTOP_AND_MOBILE_FINDINGS.md",
+      "sha256": "e97fb4942cdcfff2f2063c0d17574b1bc740b004f0306b1f59c3e9ccb22164a5",
+      "bytes": 582
+    },
+    {
+      "path": "FAILURE_RETRY_AND_LIFECYCLE.md",
+      "sha256": "a59a7c7d2757844b76258640b2a5adf630180942cfa1d9af851ee2f49eb5ecca",
+      "bytes": 1417
+    },
+    {
+      "path": "README.md",
+      "sha256": "fa3a92c8940b60c7a24ce93d074a4eb80d7579e1da9b3735bd428eaac2448abb",
+      "bytes": 793
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "25643330a1de0c08f221cec02a2479b13c26ee8fa7cf98774b08cd27fe26c0c0",
+      "bytes": 2656
+    },
+    {
+      "path": "browser-results.json",
+      "sha256": "af493fa982f96fec56cd558196098a8f81ea2a62c1b433b2890b33e69f01b219",
+      "bytes": 144808
+    },
+    {
+      "path": "diagnostics/browser-and-server.json",
+      "sha256": "0b8d2fe8d61fad49968c2addfb4bc514d3cc3a579fee655d17478fac093f08a5",
+      "bytes": 1591
+    },
+    {
+      "path": "diagnostics/resume-stop.txt",
+      "sha256": "745afc1828d885a259ab1b7f4883daf49ce2aa0297b305979f0873f692ad13fe",
+      "bytes": 1334
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self digest omitted to avoid recursion"
+    }
+  ]
+}
