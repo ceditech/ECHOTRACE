@@ -1,0 +1,61 @@
+{
+  "file_count": 11,
+  "files": [
+    {
+      "path": "ENVIRONMENT_BASELINE.md",
+      "sha256": "7f1fbdbaed758a22a71a01fe0a9ac6b8bc666cde9cd80b3bbd2d59655fd60d2e",
+      "bytes": 1586
+    },
+    {
+      "path": "FETCH_HEAD_METADATA_FINDINGS.md",
+      "sha256": "0c1feb5f53edd1d2897d9f22f136514742d4439163f521764350e123b194bc17",
+      "bytes": 2456
+    },
+    {
+      "path": "LOOPBACK_CONNECTIVITY_MATRIX.md",
+      "sha256": "fa48524c130567776a280bf6cee6f8ef931ac53848cb7bab051a04aee947d8c4",
+      "bytes": 1972
+    },
+    {
+      "path": "NEXTJS_STARTUP_FINDINGS.md",
+      "sha256": "37ea2aedd63f4e89f9eacd1d880d194bcfdd992db9756c40e825ecaf1c18545c",
+      "bytes": 1259
+    },
+    {
+      "path": "PROCESS_AND_PORT_LIFECYCLE.md",
+      "sha256": "73a10fca1e2c6e29baca42ecc7eba82af0a0ba6cdcef5417a34f89a1174bbc38",
+      "bytes": 1275
+    },
+    {
+      "path": "README.md",
+      "sha256": "2590485b9fc455d98939ff2e9eb111a53c486986081d66024141d76172ae3730",
+      "bytes": 903
+    },
+    {
+      "path": "RECOMMENDED_RECOVERY.md",
+      "sha256": "7f0d22a88b4de706150f127b41689eb27a2e51ee066f4230e30f76b5a908f226",
+      "bytes": 1553
+    },
+    {
+      "path": "ROOT_CAUSE_ASSESSMENT.md",
+      "sha256": "67256d2624ef27e632e20c044bcd6f5d01173a7d83e2f79b62f372774c0d2d94",
+      "bytes": 1661
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "29b5a03b020eef893d6d20b692bf2e4b33317914b2cac665f2ff877d893515c3",
+      "bytes": 1800
+    },
+    {
+      "path": "diagnostic-results.json",
+      "sha256": "c845ec9f5125bc378ee7631d1370eb27057c4f647b69b10c7117fdaf2ce34726",
+      "bytes": 162725
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self entry excluded from hashing"
+    }
+  ]
+}
