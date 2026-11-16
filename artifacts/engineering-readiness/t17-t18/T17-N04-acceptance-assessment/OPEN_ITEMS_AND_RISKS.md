@@ -1,0 +1,15 @@
+# Open items and risks
+
+| Item | Assessment and disposition | Evidence/next action |
+| --- | --- | --- |
+| BV10 failure/retry | Medium evidence gap; deferrable for bounded engineering acceptance, required before claiming direct browser recovery verification | [R01 matrix](../T17-N02-R01-owner-browser-verification/BROWSER_TEST_MATRIX.md) says injection unavailable. [Integration](../../../../tests/integration/neutral-observation.test.ts), [runtime](../../../../tests/unit/neutral-phaser-runtime.test.ts), [lifecycle](../../../../tests/unit/shell-lifecycle.test.ts) cover failure/retry/stale outcomes. AGENTS mandates applicable checks, not a specific browser injection method; TRDA separates integration failure checks from browser checks. Optional separately authorized owner-assisted safe request-block/retry mission; never relabel mocks as browserPASS. |
+| First-frame readiness | Low bounded limitation; important T18 integration risk | Runtime POST_RENDER plus mocks supports contract. Settled browser ready is not precise ordering proof. Measure exposure/readiness/timer relationship in authorized T18 integration. |
+| Tiny mobile labels | Low diagnostic limitation; material later product risk | N03 corrects layering, not size. 320/390 viewports yield215/300px scenes. GAME_SPEC§7.4 requires actual clue perception; no approved numeric width threshold. |
+| Favicon404 | Low/nonblocking developer resource issue | [Console findings](../T17-N02-R01-owner-browser-verification/CONSOLE_FINDINGS.md) records404; absent favicon source supports missing-resource inference. No observed handoff effect. Optional later shell polish; no fix. |
+| Async listener error | Unattributed console limitation, no demonstrated runtime failure | R01 lacks authenticated stack/origin. Do not blame Phaser or extension. Optional separately authorized clean-profile comparison. |
+| N03 helper refs | Historical integrity exception retained | [Verification](../T17-N03-presentation-corrections/VERIFICATION_REPORT.md) and [raw checks](../T17-N03-presentation-corrections/diagnostics/check-results.json) record two old refs/codex/turn-diffs replaced by two new; actor unproven. Feature HEAD/index/FETCH_HEAD stable. No repair. Owner subsequent commit is current approved baseline, not proof of agent mutation. |
+| Assets/fairness/staging/geometry/width | Full production-scene acceptance blockers | [Governance](GOVERNANCE_BOUNDARIES.md); needs owner decisions and evidence, not more neutral screenshots. |
+| Tracker/scope mismatch | Formal closure blocker | Ledger remains NOT_STARTED; owner must distinguish bounded acceptance and full T17 in separate authorized administration. |
+| Quality timeout/global format | Disclosed limitation | N03 unchanged232pass rerun supports bounded quality. No new global formatting claim. |
+
+No new critical source failure established. No general repeat browser mission required. If owner requires BV10 evidence, authorize only safe failure→retry, identity/canvas/hidden-Changed checks; unavailable mechanism must remain NOT EXECUTED, without source hooks or hidden-state injection.
