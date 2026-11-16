@@ -107,11 +107,13 @@ export function PhaserHost({
     if (projection) bridge.current?.publish(projection);
   }, [projection]);
   return (
-    <figure className="mt-8">
+    <figure
+      className={`mt-8 ${observation ? "sm:[@media(max-height:600px)]:mt-3" : ""}`}
+    >
       <div
         ref={container}
         data-testid="phaser-host"
-        className="relative h-[min(60vh,28rem)] min-h-48 w-full overflow-hidden rounded-xl bg-slate-950 ring-1 ring-slate-700"
+        className={`relative h-[min(60vh,28rem)] min-h-48 w-full overflow-hidden rounded-xl bg-slate-950 ring-1 ring-slate-700 ${observation ? "sm:[@media(max-height:600px)]:h-[calc(100dvh-13rem)] sm:[@media(max-height:600px)]:min-h-0" : ""}`}
       />
       {!observation && (
         <figcaption

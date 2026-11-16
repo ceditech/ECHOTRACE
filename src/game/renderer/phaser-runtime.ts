@@ -22,7 +22,7 @@ function drawNeutralOriginal(
   scene.add
     .rectangle(WIDTH / 2, HEIGHT / 2, WIDTH - 2, HEIGHT - 2, 0x17202d)
     .setStrokeStyle(2, 0x94a3b8);
-  for (const { position, size, rotationDegrees, label } of original.objects) {
+  for (const { position, size, rotationDegrees } of original.objects) {
     const x = position.x * WIDTH;
     const y = position.y * HEIGHT;
     const width = size.width * WIDTH;
@@ -31,13 +31,25 @@ function drawNeutralOriginal(
       .rectangle(x, y, width, height, 0x344155)
       .setStrokeStyle(2, 0xb9c5d4)
       .setAngle(rotationDegrees);
+  }
+  // Draw all labels last. Upper-edge anchors separate nested objects sharing a center.
+  for (const { position, size, rotationDegrees, label } of original.objects) {
+    const width = size.width * WIDTH;
+    const height = size.height * HEIGHT;
+    const angle = (rotationDegrees * Math.PI) / 180;
+    const offset = -height / 2 + Math.min(8, height * 0.1);
     const text = scene.add
-      .text(x, y, label, {
-        fontFamily: "sans-serif",
-        fontSize: "16px",
-        color: "#f8fafc",
-      })
-      .setOrigin(0.5)
+      .text(
+        position.x * WIDTH - Math.sin(angle) * offset,
+        position.y * HEIGHT + Math.cos(angle) * offset,
+        label,
+        {
+          fontFamily: "sans-serif",
+          fontSize: "16px",
+          color: "#f8fafc",
+        },
+      )
+      .setOrigin(0.5, 0)
       .setAngle(rotationDegrees);
     text.setScale(
       Math.min(1, (width * 0.92) / text.width, (height * 0.9) / text.height),

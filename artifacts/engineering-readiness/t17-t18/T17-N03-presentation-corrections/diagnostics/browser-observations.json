@@ -1,0 +1,486 @@
+{
+  "mode": "Direct Chrome extension browser control",
+  "scope": "BV-03, BV-05 and six-size presentation/lifecycle smoke retest",
+  "baseURL": "http://127.0.0.1:53949",
+  "screenshots": [
+    {
+      "path": "screenshots/fresh-start-960x540.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        960,
+        540
+      ],
+      "sha256": "009ade71ca23c4d0fa1db62aa6355777c6c57f5be5dc3a977ee70fea9e9d6d21",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-1280x720.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "sha256": "d22e2faf8d1c14c406d0bb7dcc2d2778d9fbcb583b3412764dacea2a385fe277",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-1440x900-ready.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "af748caddb8af26db20bcb2b783a52aed997527bd1be0da4023df3c54b842a21",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-1440x900.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "71721e2e65d63d9db39a1d055c3d36c9cf1807da74bff6bd7b39153afc554250",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-320x640.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        305,
+        610
+      ],
+      "sha256": "20a5b260e92024df184ec11a51603e066daf94dd6ca43728d440f2b11f19cd0b",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-390x844.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        390,
+        844
+      ],
+      "sha256": "9e403b83ac6ab9476cbab0bb53b2fa24f8e4445d961aab8d91a2414e3253d6b7",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-430x932.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        430,
+        932
+      ],
+      "sha256": "119b83296132c35b43488ca86f50ffe299d07ebe5f4dbe7cc015c711c5aa107f",
+      "unalteredBrowserCapture": true
+    },
+    {
+      "path": "screenshots/original-960x540.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        960,
+        540
+      ],
+      "sha256": "009ade71ca23c4d0fa1db62aa6355777c6c57f5be5dc3a977ee70fea9e9d6d21",
+      "unalteredBrowserCapture": true
+    }
+  ],
+  "measurements": [
+    {
+      "requested": [
+        1440,
+        900
+      ],
+      "dom": {
+        "canvas": {
+          "bottom": 698.875,
+          "height": 340.875,
+          "top": 358,
+          "width": 606,
+          "x": 417
+        },
+        "canvasCount": 1,
+        "clientHeight": 900,
+        "clientWidth": 1440,
+        "host": {
+          "bottom": 753,
+          "height": 448,
+          "top": 305,
+          "width": 606,
+          "x": 417
+        },
+        "scrollHeight": 900,
+        "scrollWidth": 1440,
+        "status": "Original scene ready. Development representation."
+      },
+      "checks": {
+        "oneCanvas": true,
+        "fitAspectRatio": true,
+        "containedInHost": true,
+        "centeredInHost": true,
+        "noHorizontalOverflow": true,
+        "initialCanvasInsideViewport": true
+      }
+    },
+    {
+      "requested": [
+        960,
+        540
+      ],
+      "dom": {
+        "back": {
+          "bottom": 56,
+          "top": 12
+        },
+        "canvas": {
+          "bottom": 513,
+          "height": 332,
+          "top": 181,
+          "width": 590.21875,
+          "x": 184
+        },
+        "canvasCount": 1,
+        "clientHeight": 540,
+        "clientWidth": 960,
+        "heading": {
+          "bottom": 137,
+          "top": 105
+        },
+        "host": {
+          "bottom": 513,
+          "height": 332,
+          "top": 181,
+          "width": 662,
+          "x": 149
+        },
+        "scrollHeight": 540,
+        "scrollTop": 0,
+        "scrollWidth": 960,
+        "status": {
+          "bottom": 169,
+          "text": "Original scene ready. Development representation.",
+          "top": 145
+        }
+      },
+      "checks": {
+        "oneCanvas": true,
+        "fitAspectRatio": true,
+        "containedInHost": true,
+        "centeredInHost": true,
+        "noHorizontalOverflow": true,
+        "initialCanvasInsideViewport": true
+      }
+    },
+    {
+      "requested": [
+        1280,
+        720
+      ],
+      "dom": {
+        "canvas": {
+          "bottom": 690.875,
+          "height": 340.875,
+          "top": 350,
+          "width": 606,
+          "x": 329.5
+        },
+        "canvasCount": 1,
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "host": {
+          "bottom": 737,
+          "height": 432,
+          "top": 305,
+          "width": 606,
+          "x": 329.5
+        },
+        "scrollHeight": 826,
+        "scrollWidth": 1265,
+        "status": "Original scene ready. Development representation."
+      },
+      "checks": {
+        "oneCanvas": true,
+        "fitAspectRatio": true,
+        "containedInHost": true,
+        "centeredInHost": true,
+        "noHorizontalOverflow": true,
+        "initialCanvasInsideViewport": true
+      }
+    },
+    {
+      "requested": [
+        430,
+        932
+      ],
+      "dom": {
+        "canvas": {
+          "bottom": 616.25,
+          "height": 191.25,
+          "top": 425,
+          "width": 340,
+          "x": 45
+        },
+        "canvasCount": 1,
+        "clientHeight": 932,
+        "clientWidth": 430,
+        "host": {
+          "bottom": 745,
+          "height": 448,
+          "top": 297,
+          "width": 340,
+          "x": 45
+        },
+        "scrollHeight": 932,
+        "scrollWidth": 430,
+        "status": "Original scene ready. Development representation."
+      },
+      "checks": {
+        "oneCanvas": true,
+        "fitAspectRatio": true,
+        "containedInHost": true,
+        "centeredInHost": true,
+        "noHorizontalOverflow": true,
+        "initialCanvasInsideViewport": true
+      }
+    },
+    {
+      "requested": [
+        390,
+        844
+      ],
+      "dom": {
+        "canvas": {
+          "bottom": 604.75,
+          "height": 168.75,
+          "top": 436,
+          "width": 300,
+          "x": 45
+        },
+        "canvasCount": 1,
+        "clientHeight": 844,
+        "clientWidth": 390,
+        "host": {
+          "bottom": 745,
+          "height": 448,
+          "top": 297,
+          "width": 300,
+          "x": 45
+        },
+        "scrollHeight": 844,
+        "scrollWidth": 390,
+        "status": "Original scene ready. Development representation."
+      },
+      "checks": {
+        "oneCanvas": true,
+        "fitAspectRatio": true,
+        "containedInHost": true,
+        "centeredInHost": true,
+        "noHorizontalOverflow": true,
+        "initialCanvasInsideViewport": true
+      }
+    },
+    {
+      "requested": [
+        320,
+        640
+      ],
+      "dom": {
+        "canvas": {
+          "bottom": 584.9375,
+          "height": 120.9375,
+          "top": 464,
+          "width": 215,
+          "x": 45
+        },
+        "canvasCount": 1,
+        "clientHeight": 640,
+        "clientWidth": 305,
+        "host": {
+          "bottom": 717,
+          "height": 384,
+          "top": 333,
+          "width": 215,
+          "x": 45
+        },
+        "scrollHeight": 774,
+        "scrollWidth": 305,
+        "status": "Original scene ready. Development representation."
+      },
+      "checks": {
+        "oneCanvas": true,
+        "fitAspectRatio": true,
+        "containedInHost": true,
+        "centeredInHost": true,
+        "noHorizontalOverflow": true,
+        "initialCanvasInsideViewport": true
+      }
+    }
+  ],
+  "briefing": {
+    "canvasCount": 0,
+    "dom": "- main:\n  - link \"← Back to EchoTrace\":\n    - /url: /\n  - region \"The Missing Passport\":\n    - paragraph: Case 001 · case-001\n    - paragraph: \"Difficulty: Easy\"\n    - heading \"The Missing Passport\" [level=1]\n    - paragraph: Airport lounge shortly before boarding.\n    - region \"The incident\":\n      - heading \"The incident\" [level=2]\n      - paragraph: This fictional airport lounge offers an optional concierge service that packs loose travel documents into a guest's own travel wallet and returns it to their numbered table. Mara requested the service before stepping out to take a private call. When she returned, her passport and wallet were gone from the window table.\n    - region \"Your objective\":\n      - heading \"Your objective\" [level=2]\n      - paragraph: Determine what happened to Mara's missing passport.\n    - region \"Before you begin\":\n      - heading \"Before you begin\" [level=2]\n      - paragraph: Remember the documents, table numbers and where they belong. Please collect my passport and the star wallet from the window table. Put the passport inside the wallet, then leave the wallet at table 12.\n    - paragraph: Take your time with the briefing. Start when you are ready.\n    - button \"Start case\"\n- button \"Open Next.js Dev Tools\":\n- alert"
+  },
+  "homeAfterNavigation": {
+    "canvasCount": 0,
+    "dom": "- button \"Open Next.js Dev Tools\":\n- alert\n- main:\n  - paragraph: Stage 1 — Vertical Slice\n  - heading \"EchoTrace\" [level=1]\n  - paragraph: Observe. Remember. Deduce.\n  - paragraph: Visual detective mysteries where every detail leaves a trace.\n  - link \"Open Case 001 briefing\":\n    - /url: /case\n  - link \"View scene preview\":\n    - /url: /renderer"
+  },
+  "freshBriefingCanvasCount": 0,
+  "fresh960": {
+    "back": {
+      "bottom": 56,
+      "top": 12
+    },
+    "canvas": {
+      "bottom": 513,
+      "height": 332,
+      "top": 181,
+      "width": 590.21875,
+      "x": 184
+    },
+    "canvasCount": 1,
+    "clientHeight": 540,
+    "clientWidth": 960,
+    "heading": {
+      "bottom": 137,
+      "focusVisible": true,
+      "top": 105
+    },
+    "scrollHeight": 540,
+    "scrollTop": 0,
+    "scrollWidth": 960,
+    "status": {
+      "bottom": 169,
+      "text": "Original scene ready. Development representation.",
+      "top": 145
+    }
+  },
+  "returnDesktop": {
+    "canvas": {
+      "bottom": 698.875,
+      "height": 340.875,
+      "top": 358,
+      "width": 606,
+      "x": 417
+    },
+    "canvasCount": 1,
+    "clientHeight": 900,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "status": "Original scene ready. Development representation."
+  },
+  "consoleLogs": [
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.698Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.698Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.698Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.700Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.700Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.700Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.700Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:49:28.700Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:50:24.174Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:50:24.174Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:50:24.221Z",
+      "url": "http://127.0.0.1:53949/case"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:50:24.221Z",
+      "url": "http://127.0.0.1:53949/case"
+    }
+  ],
+  "browser": {
+    "name": "Google Chrome",
+    "version": "Not recorded",
+    "devicePixelRatio": "Not recorded",
+    "control": "Existing authorized Chrome extension",
+    "mobileChecks": "CSS viewport simulations only"
+  },
+  "cleanup": {
+    "viewportOverrideReset": true,
+    "existingOwnerTabRetained": true,
+    "existingOwnerServerRetained": true,
+    "serverLaunchedByMission": false
+  },
+  "result": "PASS",
+  "BV03": {
+    "result": "PASS",
+    "evidence": [
+      "screenshots/original-1440x900-ready.jpg",
+      "screenshots/original-960x540.jpg",
+      "screenshots/fresh-start-960x540.jpg"
+    ],
+    "finding": "Document mat and window table labels are visible. All geometry precedes labels and nested objects use distinct upper-edge anchors. No new desktop label overlap observed."
+  },
+  "BV05": {
+    "result": "PASS",
+    "evidence": "screenshots/fresh-start-960x540.jpg",
+    "initialViewportHeight": 540,
+    "domClientHeight": 540,
+    "canvasTop": 181,
+    "canvasBottom": 513,
+    "pageScrollHeight": 540,
+    "scrollTop": 0,
+    "entireCanvasInitiallyVisible": true
+  },
+  "limitations": [
+    "This is a bounded BV-03/BV-05 retest plus viewport, handoff, navigation/remount and resize smoke checks. Full BV-01 through BV-11 reacceptance was not performed.",
+    "Mobile checks are CSS viewport simulations. Physical device, touch, DPR and exact Chrome version were not measured.",
+    "Fine mobile development labels remain small. No new minimum supported width or final-artwork acceptance is established.",
+    "No failure injection, clean-profile comparison, hidden storage/listener audit or independent callback-order instrumentation was performed.",
+    "Existing asynchronous-listener console messages may appear in the captured log. Their origin and prior console issues were outside this correction.",
+    "The first 1440 screenshot catches the loading caption with geometry present. The separate ready capture records the settled status. No timing inference is made from screenshot ordering."
+  ]
+}

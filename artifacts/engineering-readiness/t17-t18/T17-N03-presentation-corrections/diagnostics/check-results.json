@@ -1,0 +1,113 @@
+{
+  "mission": "T17-N03",
+  "result": "PASS",
+  "checks": [
+    {
+      "command": "npm run test -- tests/unit/neutral-phaser-runtime.test.ts tests/unit/phaser-host.test.tsx",
+      "phase": "Before correction",
+      "exitCode": 1,
+      "result": "Expected regression reproduction",
+      "testsPassed": 4,
+      "testsFailed": 2,
+      "detail": "Geometry-before-label assertion and observation compact-height rule assertion both failed on the original implementation."
+    },
+    {
+      "command": "npm run test -- tests/unit/neutral-phaser-runtime.test.ts tests/unit/phaser-host.test.tsx tests/integration/neutral-observation.test.ts tests/integration/briefing.test.ts tests/unit/shell-lifecycle.test.ts tests/unit/briefing.test.ts",
+      "phase": "After correction",
+      "exitCode": 0,
+      "testsPassed": 38,
+      "testFilesPassed": 6
+    },
+    {
+      "command": "npm run test:run",
+      "phase": "First full run",
+      "exitCode": 1,
+      "testsPassed": 231,
+      "testsFailed": 1,
+      "testFiles": 22,
+      "detail": "Unchanged tests/unit/quality-scope.test.ts timed out in its ESLint isPathIgnored check. No code or test was changed in response. Exact cause was not established."
+    },
+    {
+      "command": "npm run test:run",
+      "phase": "Unchanged full-suite rerun",
+      "exitCode": 0,
+      "testsPassed": 232,
+      "testFilesPassed": 22,
+      "durationSeconds": 5.5
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "detail": "Main tsc --noEmit and domain tsconfig check passed."
+    },
+    {
+      "command": "node_modules/.bin/eslint.cmd src/game/renderer/phaser-runtime.ts src/game/presentation/case-experience.tsx src/game/renderer/phaser-host.tsx tests/unit/neutral-phaser-runtime.test.ts tests/unit/phaser-host.test.tsx --max-warnings=0",
+      "exitCode": 0
+    },
+    {
+      "command": "node_modules/.bin/prettier.cmd --check src/game/renderer/phaser-runtime.ts src/game/presentation/case-experience.tsx src/game/renderer/phaser-host.tsx tests/unit/neutral-phaser-runtime.test.ts tests/unit/phaser-host.test.tsx",
+      "exitCode": 0
+    },
+    {
+      "command": "git --no-optional-locks diff --check",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "detail": "Next.js 16.3.8 production compilation, TypeScript and static generation passed. Routes /, /case and /renderer generated."
+    }
+  ],
+  "baselineHead": "eafd8584d1fe9dfcc6adde0558771736fee3d2f5",
+  "branch": "feature/echotrace",
+  "authorizedChangedFiles": {
+    "src/game/presentation/case-experience.tsx": {
+      "before": "ccf73267780099e73b84e033eafe82df597f848b9256c7260af5c2e3437431d6",
+      "after": "4c1d699dda8c44fc5416b59b741fd2bb9fe39674130ecfecd9ce3124d7b4bc2b"
+    },
+    "src/game/renderer/phaser-host.tsx": {
+      "before": "25d4226b4eb53623e510165b8197019cea85b07cff9901e7b9ffdee972331657",
+      "after": "e7e0034f441dc9afc5390dad43968c28791be000482200b016a0ae93078a468e"
+    },
+    "src/game/renderer/phaser-runtime.ts": {
+      "before": "8b5a6b1e46f300421da2c3460486d3d2000accbc7d5c69918d4057da036fc1d1",
+      "after": "07c4bf345fcdeff4c84697b47fe00268cc25593fab1569d621acb0e25d55d95a"
+    },
+    "tests/unit/neutral-phaser-runtime.test.ts": {
+      "before": "fb2f9cf7d87c4d3c77935da38752ca51e147845bf98f6aa158be96d8ec70b9dc",
+      "after": "b6213ac0376232b67b9a3a93aa3fd038b5fc0a445c8ea143c2b6a195b0823937"
+    },
+    "tests/unit/phaser-host.test.tsx": {
+      "before": "07eae9644562138848ad5ef13477ff56bb8325455efc40cf4de3926362d0956e",
+      "after": "85cceb2517d548fc6f6001256bd7c60e53a3647d5e7fb3b0486226d51c1f1265"
+    }
+  },
+  "unchangedProtectedFileCount": 852,
+  "preExistingFileCount": 857,
+  "allPriorR01EvidenceUnchanged": true,
+  "candidateSha256": {
+    "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Original-960.png": "d7a4bbb6c141b1c2b9d15c38591f16ff6bc4d80629cad0877ce05a43a2993945",
+    "artifacts/asset-validation/case-001/controlled-combination-validation/candidate/CCV-C1a-C2a-B0-Changed-960.png": "4668c32059ec29c4b087f2efcd46f8e64d2829c042545228b6e2031df5cde7ba"
+  },
+  "candidatesUnchanged": true,
+  "headAndBranchTrackingRefsUnchanged": true,
+  "allRefsUnchanged": false,
+  "helperRefChanges": {
+    "removed": [
+      "refs/codex/turn-diffs/captures/1794869112226/f53bb3d8-7434-4b9a-ab36-9468fff18e6c/base 35601b84a1708511783e12fb5b2fc8d3cbf2250d",
+      "refs/codex/turn-diffs/checkpoints/fc71237f1f1cb9f62509093b61fb7928/475a45874838d66a76924730bebde9fd/1794867319524/e698d0e8-70c4-44f4-9176-e13e00cd14fd 35601b84a1708511783e12fb5b2fc8d3cbf2250d"
+    ],
+    "added": [
+      "refs/codex/turn-diffs/captures/1794869579459/f9895299-3249-4628-9a8d-6ef553948a89/base aed47e1f761330c16ade867509502d028980e0e8",
+      "refs/codex/turn-diffs/checkpoints/fc71237f1f1cb9f62509093b61fb7928/19ff6967097dd7fe9d85dc227a6e41e5/1794869523963/c669a55e-afbb-43a1-981a-ec6b24d84ad2 aed47e1f761330c16ade867509502d028980e0e8"
+    ],
+    "actor": "UNKNOWN; names identify Codex turn-diff helper refs",
+    "allRefsUnchanged": false
+  },
+  "refsAfter": "refs/codex/turn-diffs/captures/1794869579459/f9895299-3249-4628-9a8d-6ef553948a89/base aed47e1f761330c16ade867509502d028980e0e8\nrefs/codex/turn-diffs/checkpoints/fc71237f1f1cb9f62509093b61fb7928/19ff6967097dd7fe9d85dc227a6e41e5/1794869523963/c669a55e-afbb-43a1-981a-ec6b24d84ad2 aed47e1f761330c16ade867509502d028980e0e8\nrefs/heads/feature/echotrace eafd8584d1fe9dfcc6adde0558771736fee3d2f5\nrefs/remotes/origin/feature/echotrace eafd8584d1fe9dfcc6adde0558771736fee3d2f5",
+  "gitMetadataHashChanges": {},
+  "noStagingCommitPush": true,
+  "noCanonicalDomainSessionProjectionGovernanceChanges": true,
+  "repositoryWideFormatting": "NOT EXECUTED; changed-file formatting passed and historical files were preserved",
+  "buildArtifacts": "Ignored Next development/build caches were produced by existing server reloads and npm run build; no generated cache was manually edited."
+}

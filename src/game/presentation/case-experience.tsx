@@ -16,6 +16,8 @@ export function CaseExperience() {
   const [state, dispatch] = useReducer(reduceBriefing, initialBriefingState);
   const handoffHeading = useRef<HTMLHeadingElement>(null);
   const phase = state.status === "ready" ? state.session.currentPhase : null;
+  const observing =
+    phase === "observation_intro" || phase === "observation_active";
 
   useEffect(() => {
     let current = true;
@@ -51,14 +53,18 @@ export function CaseExperience() {
   }, [phase]);
 
   return (
-    <main className="mx-auto min-h-dvh max-w-3xl px-5 py-8 sm:px-10 sm:py-12">
+    <main
+      className={`mx-auto min-h-dvh max-w-3xl px-5 py-8 sm:px-10 sm:py-12 ${observing ? "sm:[@media(max-height:600px)]:py-3" : ""}`}
+    >
       <Link
         href="/"
         className="inline-flex min-h-11 items-center rounded text-sm text-slate-300 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300"
       >
         ← Back to EchoTrace
       </Link>
-      <div className="mt-6">
+      <div
+        className={`mt-6 ${observing ? "sm:[@media(max-height:600px)]:mt-2" : ""}`}
+      >
         {state.status === "loading" && (
           <p
             role="status"
@@ -104,7 +110,7 @@ export function CaseExperience() {
           ) : (
             <section
               aria-labelledby="observation-intro-title"
-              className="rounded-2xl border border-slate-700 bg-slate-900 p-6 sm:p-10"
+              className="rounded-2xl border border-slate-700 bg-slate-900 p-6 sm:p-10 sm:[@media(max-height:600px)]:p-3"
             >
               <p className="text-sm font-semibold uppercase tracking-widest text-amber-300">
                 {state.model.title}
@@ -113,7 +119,7 @@ export function CaseExperience() {
                 ref={handoffHeading}
                 tabIndex={-1}
                 id="observation-intro-title"
-                className="mt-4 rounded text-3xl font-bold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300"
+                className="mt-4 rounded text-3xl font-bold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 sm:[@media(max-height:600px)]:mt-2 sm:[@media(max-height:600px)]:text-2xl"
               >
                 Ready to observe
               </h1>
@@ -139,7 +145,10 @@ export function CaseExperience() {
                 state.original &&
                 state.observation && (
                   <>
-                    <p className="mt-5 text-slate-200" role="status">
+                    <p
+                      className="mt-5 text-slate-200 sm:[@media(max-height:600px)]:mt-2"
+                      role="status"
+                    >
                       {state.observation.status === "ready"
                         ? "Original scene ready. Development representation."
                         : "Loading the neutral observation scene…"}
