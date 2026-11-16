@@ -1,0 +1,105 @@
+{
+  "initial": [
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.415Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.416Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.416Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.416Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    }
+  ],
+  "afterNavigation": [
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:02:43.916Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.415Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.416Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.416Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    },
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-11-16T22:05:18.416Z",
+      "url": "http://127.0.0.1:53949/case?utm_source=chatgpt.com"
+    }
+  ],
+  "normalProfileComparisonOnly": true,
+  "stackOriginAvailable": false,
+  "cleanProfileExecuted": false
+}

@@ -1,0 +1,114 @@
+{
+  "file_count": 21,
+  "required_document_count": 11,
+  "screenshot_count": 9,
+  "diagnostic_log_count": 1,
+  "files": [
+    {
+      "path": "ACCESSIBILITY_AND_FOCUS_FINDINGS.md",
+      "sha256": "0b7d22368993e3dba79278d73b63828d50876b0ca852af0fa8585307ea0fb6b2",
+      "bytes": 1189
+    },
+    {
+      "path": "BROWSER_TEST_MATRIX.md",
+      "sha256": "335e92de407d6374f4d5e5e7e5440e19a1bd61edf1f046602561cdab76207c08",
+      "bytes": 6333
+    },
+    {
+      "path": "CONSOLE_FINDINGS.md",
+      "sha256": "36aeccbf921ebfe3e0997bcd5d5ab59854567be5410c2af279033d53a070e4ac",
+      "bytes": 1551
+    },
+    {
+      "path": "DEFECTS_AND_LIMITATIONS.md",
+      "sha256": "5f818661ba192072063ea1bb7f47024874e27945f476abac697c467c59ce50b5",
+      "bytes": 1720
+    },
+    {
+      "path": "DESKTOP_AND_MOBILE_FINDINGS.md",
+      "sha256": "c3b2803ed3a43e196ca4b999cd687705781212d5a1e1c602daab581a1de3578f",
+      "bytes": 2757
+    },
+    {
+      "path": "LIFECYCLE_AND_RETRY_FINDINGS.md",
+      "sha256": "1bf241c8f8e8cc01d711b512ae3cbc651f82681d4996c47182576f65a61e3d9a",
+      "bytes": 1437
+    },
+    {
+      "path": "OWNER_BROWSER_TEST_INSTRUCTIONS.md",
+      "sha256": "9810320e54354bf6ea2365a5c8ac4d494c647b347802475fd0e216f4ea94226a",
+      "bytes": 2993
+    },
+    {
+      "path": "README.md",
+      "sha256": "6a7e61bf812137845243482caf01f48ac878b2cf3fae457d4e609fcf306b3645",
+      "bytes": 1203
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "sha256": "333684a26e036a5a5da9ce3a94aa01e069005c38c8eb26c03db80bc7a5cb3bfb",
+      "bytes": 2681
+    },
+    {
+      "path": "browser-results.json",
+      "sha256": "190b3601bce763e65e699f473f0ac4f631e340c99078d68efe7ac214b10123ea",
+      "bytes": 177466
+    },
+    {
+      "path": "diagnostics/console-log.json",
+      "sha256": "720909625e4beaf1702d2e6985dc67ef28a909652acbdec44c2609b57954efaf",
+      "bytes": 5018
+    },
+    {
+      "path": "screenshots/desktop-briefing.jpg",
+      "sha256": "c7fe01a3454fe01524b8348b788509afdd7c4c450bee2d5aeb37ecd07eb6e5f9",
+      "bytes": 79944
+    },
+    {
+      "path": "screenshots/keyboard-start-focus.jpg",
+      "sha256": "d59f039f0106a3ae2ee8996e752fbfd0d1ef8201fd6fcb7adfc5dddd922d1312",
+      "bytes": 81804
+    },
+    {
+      "path": "screenshots/original-desktop-1280.jpg",
+      "sha256": "33aa6f8e3671106e3356add0d47d16b9b1f3f692547a65a091a1ed03f9fdab31",
+      "bytes": 33905
+    },
+    {
+      "path": "screenshots/original-desktop-1440.jpg",
+      "sha256": "b1634c11a68a163323f4cfe782ca620db9927229da0f8ae1d69e023c2f2243c0",
+      "bytes": 39723
+    },
+    {
+      "path": "screenshots/original-desktop-960-fullpage.jpg",
+      "sha256": "1cee150d8651f6ce236993a470d7ec132d71b874a7b385c28d420681fd60e91c",
+      "bytes": 32398
+    },
+    {
+      "path": "screenshots/original-mobile-320-fullpage.jpg",
+      "sha256": "f4c47ab6629897f399d2074ef2068f3facaba451e4298edffb3dda17031d5cd7",
+      "bytes": 21439
+    },
+    {
+      "path": "screenshots/original-mobile-320-viewport.jpg",
+      "sha256": "32c9bcd809fecd9d39f626e60dcdd6f0677fa26a6bb42e1ef9194884153da4c2",
+      "bytes": 19791
+    },
+    {
+      "path": "screenshots/original-mobile-390.jpg",
+      "sha256": "8b4d97942da2c2bb76e0d611a2a7de53576c3083595fc35ece8b22281018a06a",
+      "bytes": 23632
+    },
+    {
+      "path": "screenshots/original-mobile-430-fullpage.jpg",
+      "sha256": "459281a005d7fce95db287e6e14bcfead8d6c4d66a534b7cfb40ae0658bafbbb",
+      "bytes": 25693
+    },
+    {
+      "path": "FILE_INVENTORY.json",
+      "sha256": null,
+      "bytes": null,
+      "note": "Self entry excluded from hashing"
+    }
+  ]
+}
