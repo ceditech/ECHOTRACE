@@ -73,15 +73,15 @@ CANCELLED
 | Current Milestone | M3 — Case 001 Content & Core Loop (IN_PROGRESS, 3/7) |
 | Current Sprint | S5 — Case 001 Definition & Observation (IN_PROGRESS, 3/5) |
 | Implementation Status | T01–T16 complete; M1 6/6; M2 7/7; M3 3/7; S3 4/4; S4 3/3; S5 3/5 |
-| Current Engineering Task | T16 — Build briefing (DONE) |
-| Next Implementation Task | T17 after explicit authorization |
+| Current Engineering Task | T17 — Build observation scene (IN_PROGRESS; neutral foundation conditionally accepted) |
+| Next Implementation Task | Full T17 production-scene work pending separate authorization; T18 not authorized |
 | Vertical Slice | Case 001 — The Missing Passport |
 | Documentation | Complete |
 | Overall T01–T34 Completion | 16 / 34 (approximately 47.1%) |
 | Blockers | None; accepted development-tooling risks recorded below |
-| Last Tracker Update | 2026-10-07 |
+| Last Tracker Update | 2026-11-16 |
 
-**Important:** T01–T16, M2 and S4 are DONE. T14's canonical dossier remains frozen. T16 provides a briefing and observation-intro handoff, not playable observation. M3 and S5 remain IN_PROGRESS. T17 is not started or authorized.
+**Important:** T01–T16, M2 and S4 are DONE. T14's canonical dossier remains frozen. T16's completed briefing is now connected to the conditionally accepted T17 neutral observation engineering foundation. M3 and S5 remain IN_PROGRESS. Full T17 remains OPEN and NOT DONE; production-scene work requires separate authorization, and T18 remains NOT_STARTED / NOT AUTHORIZED.
 
 ---
 
@@ -108,7 +108,7 @@ CANCELLED
 | S2 | M1 | T04–T06 | DONE | 3/3 complete; validation, integrity, and session state machine verified |
 | S3 | M2 | T07–T10 | DONE | 4/4 complete; deterministic rules and local progress verified |
 | S4 | M2 | T11–T13 | DONE | 3/3 complete; Phaser shell, typed bridge and trusted case loader verified |
-| S5 | M3 | T14–T18 | IN_PROGRESS | 3/5 complete; approved design, validated content and briefing; observation deferred |
+| S5 | M3 | T14–T18 | IN_PROGRESS | 3/5 complete; approved design, validated content and briefing; T17 neutral foundation conditionally accepted, full T17 open |
 | S6 | M3/M4 | T19–T23 | NOT_STARTED | Investigation + evidence + witness + deduction |
 | S7 | M4 | T24–T26 | NOT_STARTED | Decision + resolution + results |
 | S8 | M5 | T27–T30 | NOT_STARTED | Replay + app shell + accessibility + polish |
@@ -137,7 +137,7 @@ CANCELLED
 | T14 | Finalize Case 001 authoring | M3 | S5 | DONE | CRITICAL | Documentation baseline |
 | T15 | Add Case 001 structured data | M3 | S5 | DONE | HIGH | T13,T14 |
 | T16 | Build briefing | M3 | S5 | DONE | HIGH | T06,T15 |
-| T17 | Build observation scene | M3 | S5 | NOT_STARTED | HIGH | T11–T12,T15 |
+| T17 | Build observation scene | M3 | S5 | IN_PROGRESS | HIGH | T11–T12,T15 |
 | T18 | Build observation timer | M3 | S5 | NOT_STARTED | HIGH | T06,T17 |
 | T19 | Build transition | M3 | S6 | NOT_STARTED | MEDIUM | T17,T18 |
 | T20 | Build investigation | M3 | S6 | NOT_STARTED | HIGH | T07,T12,T15,T19 |
@@ -170,7 +170,7 @@ Approved for planning by the owner on 2026-10-08. Feature and both gates remain 
 | CIN-01A | Creative and Asset Approval | NOT_STARTED | Creative production NOT_AUTHORIZED | Coordinate with T17 visual design; owner approval of storyboard, 20–30-second shots, dialogue/subtitles, continuity, canonical consistency, assets and provenance |
 | CIN-01B | Player Experience Implementation | NOT_STARTED | Implementation NOT_AUTHORIZED | After CIN-01A approval and accepted media; reuse T16; before final vertical-slice QA in the T31–T34 window |
 
-Accounting unchanged: T01–T34 retain all identifiers, dependencies, membership and completion history; 16/34 (47.1%), M3 3/7 and S5 3/5. CIN-01 is excluded from these counts pending an owner-approved rebaseline. T17 remains NOT_STARTED and NOT_AUTHORIZED.
+Accounting unchanged: T01–T34 retain all identifiers, dependencies, membership and completion history; 16/34 (47.1%), M3 3/7 and S5 3/5. CIN-01 is excluded from these counts pending an owner-approved rebaseline. T17 is IN_PROGRESS with its neutral engineering foundation conditionally accepted; full production-scene work remains subject to separate authorization. T18 remains NOT_STARTED / NOT AUTHORIZED.
 
 Open scheduling decisions: exact CIN-01B sprint, first-entry recognition/persistence semantics and optional future auto-skip preference. Autoplay, immediate Skip, failure fallback, replay, captions/mute, reduced motion and untimed briefing handoff are required future acceptance checks; none is implemented or verified here. No artwork/video generation is authorized.
 
@@ -497,6 +497,57 @@ Human review only.
 
 ---
 
+## T17 — Neutral Observation Foundation: Conditional Acceptance
+
+**Owner decision:** Option B, November 16, 2026.
+
+**Tracker status:** IN_PROGRESS.
+
+**Conditionally accepted scope:**
+
+- Case 001 canonical Original projection.
+- Preservation of authored identities, geometry and exactly three meaningful differences.
+- Neutral Phaser rendering.
+- Briefing-to-observation handoff.
+- Readiness and lifecycle contracts.
+- Stale attempt/revision protection.
+- Responsive FIT behavior.
+- Navigation, cleanup, remount and resize handling.
+- T17-N03 label-layering and short-viewport corrections.
+
+**Supporting evidence:**
+
+- T17-N01 implementation and tests: [neutral projection](src/game/application/neutral-scene.ts), [integration tests](tests/integration/neutral-observation.test.ts) and [runtime tests](tests/unit/neutral-phaser-runtime.test.ts); original eight-file scope assessed in [N04 implementation assessment](artifacts/engineering-readiness/t17-t18/T17-N04-acceptance-assessment/IMPLEMENTATION_ASSESSMENT.md) and [quality evidence](artifacts/engineering-readiness/t17-t18/T17-N04-acceptance-assessment/QUALITY_AND_BROWSER_EVIDENCE.md).
+- [T17-N02-R01 browser verification](artifacts/engineering-readiness/t17-t18/T17-N02-R01-owner-browser-verification/BROWSER_TEST_MATRIX.md).
+- [T17-N03 presentation corrections](artifacts/engineering-readiness/t17-t18/T17-N03-presentation-corrections/VERIFICATION_REPORT.md).
+- [T17-N04 acceptance assessment](artifacts/engineering-readiness/t17-t18/T17-N04-acceptance-assessment/ASSESSMENT_REPORT.md) and [acceptance traceability matrix](artifacts/engineering-readiness/t17-t18/T17-N04-acceptance-assessment/ACCEPTANCE_TRACEABILITY_MATRIX.md).
+
+**Remaining full T17 requirements:**
+
+- P01 — Physical production-scene asset loading: NOT SATISFIED.
+- P02 — Natural-object and clue perceptibility: NOT VERIFIED.
+- P03 — Intended-scene mobile framing: PARTIALLY SATISFIED.
+- Applicable artwork provenance, rights, geometry, visual acceptance and governance gates remain unresolved.
+
+**Documented limitations:**
+
+- BV-10 direct browser failure/retry was NOT EXECUTED.
+- Exact first-frame callback ordering was not independently measured in Chrome.
+- Physical-device, screen-reader and final mobile visual acceptance remain outstanding.
+- Historical console findings and the documented Git helper-ref exception remain preserved in their original evidence.
+
+The 15 bounded neutral-foundation criteria are satisfied or satisfied with limitations. N04's 11 SATISFIED, 5 SATISFIED WITH LIMITATION, 1 PARTIALLY SATISFIED, 1 NOT SATISFIED, 1 NOT VERIFIED and 3 NOT APPLICABLE classifications are evidence classifications, not task-completion percentages. No requirement is waived. See [N04 remaining risks](artifacts/engineering-readiness/t17-t18/T17-N04-acceptance-assessment/OPEN_ITEMS_AND_RISKS.md) and [governance boundaries](artifacts/engineering-readiness/t17-t18/T17-N04-acceptance-assessment/GOVERNANCE_BOUNDARIES.md).
+
+**Formal closure:** Full T17 is OPEN and NOT DONE.
+
+**T18:** NOT_STARTED / NOT AUTHORIZED.
+
+**Project completion:** 16/34 (47.1%).
+
+**Authorization boundary:** This record does not authorize additional implementation, production artwork adoption, canonical changes, governance-gate advancement, RFS-001 or T18.
+
+---
+
 # 9. Task Detail Template
 
 Use this template when a task becomes active.
@@ -716,11 +767,14 @@ CURRENT:
 M1 DONE (6/6); S1/S2/S3/S4 DONE; T01–T16 DONE; M2 DONE (7/7)
 M3 IN_PROGRESS (3/7); S5 IN_PROGRESS (3/5); overall 16/34
 
-NEXT AFTER EXPLICIT AUTHORIZATION:
-T17 — Build Observation Scene (NOT_STARTED — NOT AUTHORIZED)
+CURRENT ENGINEERING TASK:
+T17 — Build observation scene (IN_PROGRESS; neutral foundation conditionally accepted)
+
+NEXT AFTER SEPARATE EXPLICIT AUTHORIZATION:
+Full T17 production-scene work; T18 remains NOT_STARTED / NOT AUTHORIZED
 ```
 
-T16 briefing is verified. Do not start T17 without separate owner authorization.
+T16 briefing is verified. Owner Option B conditionally accepts the bounded T17 neutral foundation; full T17 remains OPEN and NOT DONE. Additional implementation requires separate owner authorization; T18 is not authorized.
 
 ---
 
@@ -734,4 +788,4 @@ T16 briefing is verified. Do not start T17 without separate owner authorization.
 
 **T01–T34 Complete:** 16 / 34 (approximately 47.1%)
 
-**Next Implementation Task:** T17 after explicit authorization
+**Next Implementation Task:** Full T17 production-scene work pending separate authorization; T18 not authorized
