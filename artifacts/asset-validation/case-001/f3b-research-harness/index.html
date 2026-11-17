@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>F3-B synthetic harness</title><link rel="stylesheet" href="/viewer.css"></head>
+<body>
+<main id="console" hidden>
+  <h1>F3-B synthetic technical harness</h1>
+  <p class="notice">Research-only images. Synthetic preflight only. No recruitment, real responses or personal data. Final fairness acceptance remains held.</p>
+  <p>Open the separate presentation window; keep this console off any future participant display. This package has no participant-execution permission.</p>
+  <div class="controls">
+    <label>Condition <select id="condition"><option>B1</option><option>B2</option></select></label>
+    <label>Input test <select id="fault"><option value="none">Exact CCV</option><option value="hash">Synthetic wrong hash</option><option value="missing">Synthetic missing input</option><option value="decode">Simulated decoder failure</option></select></label>
+    <button id="open">Open presentation</button><button id="prepare" disabled>Prepare synthetic trial</button>
+    <button id="start" disabled>Start 25-second observation</button><button id="end" disabled>End recall</button>
+    <button id="delay" disabled>Simulate scheduling delay</button>
+  </div>
+  <p id="status" role="status">Open a presentation window to verify inputs.</p>
+  <p id="error" role="alert"></p>
+  <h2>Fabricated response workflow</h2>
+  <p>No free-text entry or file download is enabled. All response content below is a predefined synthetic fixture.</p>
+  <div class="controls"><button id="capture" disabled>Capture mock free recall</button><button id="lock" disabled>Lock spontaneous record</button><button id="prompt" disabled>Add separate mock follow-up</button><button id="correct" disabled>Append mock correction</button><button id="review" disabled>Add synthetic second review</button><button id="roundtrip" disabled>Verify in-memory export/import</button></div>
+  <h2>Latest diagnostics</h2><pre id="metrics">No verified presentation yet.</pre>
+  <h2>Ordered synthetic audit record</h2><pre id="record">No trial.</pre>
+</main>
+<main id="presentation" hidden aria-label="Research scene"><div id="frame"><img id="original" alt="" hidden draggable="false"><img id="changed" alt="" hidden draggable="false"></div></main>
+<script src="/research-config.js"></script><script src="/viewer.js"></script></body></html>
